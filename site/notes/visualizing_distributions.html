@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="visualizing-variable-distributions">Visualizing Variable Distributions</h1>
+<h2 id="reading">Reading</h2>
+<p>Sections 2.1, 2.2</p>
+<h2 id="notes">Notes</h2>
+<p>For every variable we talk about the variable's <strong>distribution</strong>, which means a description of what values the variable takes, and how frequently it takes those values. Variables are visualized differently depending on their type.</p>
+<ul>
+<li><p>Visualizing Categorical Variables</p>
+<dl>
+<dt>Frequency Table</dt>
+<dd>A table showing each possible value, along with its <em>frequency</em> i.e. the count of its occurencies. One can also include <em>relative frequencies</em>.
+</dd>
+<dt>Pie Chart</dt>
+<dd>A circular shape is divided in parts proportional to the relative frequency of each value. Good for showing relation of each part to total.
+</dd>
+<dt>Bar Chart</dt>
+<dd>A rectangular bar for each value, whose height is proportional to the frequency. Good for comparing frequencies of values to each other.
+</dd>
+<dt>Pareto Chart</dt>
+<dd>A bar chart where the values have been ordered from most frequent to least frequent.
+</dd>
+</dl></li>
+<li><p>Visualizing Scalar Variables</p>
+<dl>
+<dt>Summaries</dt>
+<dd>Numerical summaries can give us some limited but easy-to-work-with information. Frequency tables turn out to be too unwieldy in this case.
+</dd>
+<dt>Histogram</dt>
+<dd>Values are broken into equally spaced intervals. Draw one bar per interval whose height is proportional to the frequency of values in that range.
+</dd>
+<dt>Stem-Leaf Plot</dt>
+<dd>Useful for certain types of values. Use first 1-2 digits for &quot;stem&quot;, then add one value via its &quot;leaf&quot; on the correct stem row.
+</dd>
+<dt>Box-plot</dt>
+<dd>Visual representation of the &quot;five number summary&quot; that we will talk about later.
+</dd>
+<dt>Density plot</dt>
+<dd>A continuous line that describes the data a bit like a histogram, only more precisely. We will not be using them in this course, but they are out there and are useful.
+</dd>
+</dl></li>
+<li><p>When visualizing scalar variables, there is some terminology we use and patterns we look for:</p>
+<dl>
+<dt>Modes</dt>
+<dd>A mode refers to a distinct section of the data that &quot;stands out&quot; as a spike in the graph. It need not be a single value, more of a tendency for values to concentrate around that point. A graph with a single mode is called <strong>unimodal</strong>, one with two modes is called <strong>bimodal</strong>. When multiple modes are present, they become the main characteristic of the dataset.
+</dd>
+<dt>Tails</dt>
+<dd>A term referring to the two ends of the data. A long tail indicates that the data on that side is spread out and &quot;goes on for a while&quot;.
+</dd>
+<dt>Skewed Left</dt>
+<dd>A skewed left distribution is one where the left tail is longer. This represents a concentration of data (higher bars) to the right.
+</dd>
+<dt>Skewed Right</dt>
+<dd>A skewed right distribution is one where the right tail is longer. This represents a concentration of data (higher bars) to the left.
+</dd>
+<dt>Symmetric</dt>
+<dd>In a symmetric distribution both tails seem to be about the same. If you look in the middle of a symmetric distribution, then the two sides around the middle should be (close to) mirror images of each other.
+</dd>
+<dt>Outliers</dt>
+<dd>Any values that seem to deviate from the overall pattern are called outliers. Some times these are simply values that are too far from the rest. But some times they can be outliers for other reasons.
+</dd>
+</dl></li>
+</ul>
+</body>
+</html>
