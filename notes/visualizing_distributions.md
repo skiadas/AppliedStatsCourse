@@ -4,6 +4,20 @@
 
 Sections 2.1, 2.2
 
+## Practice Problems
+
+2.1 (Page 123)
+  ~ 1-4, 8, 9
+
+2.2 (Page 125)
+  ~ 12-16
+
+2.1 (Page 135)
+  ~ 74-75
+
+2.2 (Page 136)
+  ~ 76-79, 81
+
 ## Notes
 
 For every variable we talk about the variable's **distribution**, which means a description of what values the variable takes, and how frequently it takes those values. Variables are visualized differently depending on their type.

@@ -4,6 +4,14 @@
 
 Section 1.1
 
+## Practice Problems
+
+1.1 (Page 53)
+  ~ 42-52
+
+1.2 (Page 53)
+  ~ 53-64 (But use our classification of the variables, slightly different than the book's)
+
 ## Notes
 
 - The science of **statistics** deals with the collection, analysis, interpretation, and presentation of **data**.
