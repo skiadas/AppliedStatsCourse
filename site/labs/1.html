@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="lab-1-introduction-to-spss">Lab 1: Introduction to SPSS</h1>
+<p>This lab will introduce you to how to:</p>
+<ul>
+<li>start up SPSS</li>
+<li>import new data into SPSS</li>
+<li>change the properties of the variables</li>
+<li>sort the data according to a variable</li>
+<li>generate basic frequency tables</li>
+<li>generate basic graphs</li>
+</ul>
+<h2 id="starting-up-spss">Starting up SPSS</h2>
+<ul>
+<li>You will find SPSS under “All programs”, in a folder titled “IBM SPSS Statistics”. There might be multiple versions there, you want the version 22, and the one that says nothing else after it; it should have the greek letter Sigma on its icon.</li>
+<li>It might offer you some pop-up windows at the start, just exit out of them until you see an Excel-like spreadsheet view.</li>
+</ul>
+<h2 id="importing-new-data-into-spss">Importing new data into SPSS</h2>
+<ul>
+<li>The next step would be to locate the file you want to load. In our case it is a file on the web, so:
+<ul>
+<li>Fire up your web browser.</li>
+<li>start by going to the <a href="http://skiadas.github.io/AppliedStatsCourse/site/datasets.html">datasets list</a> for the class.</li>
+<li>You will find there a dataset titled “cars”. Right-click on it. Do NOT left-click.</li>
+<li>Choose “Save link as” or something equivalent, and save the file somewhere that you could easily find.</li>
+</ul></li>
+<li>Now go back to SPSS. Open the File menu.</li>
+<li>Select the “Read Text Data” option. This is important to remember: For new data you typically need to do this “Read Text Data” process, and not use the normal “Open” menu.</li>
+<li>An “Open Data” window will have opened up.
+<ul>
+<li>Navigate to the folder where you saved your file.</li>
+<li>If your file is not visible, select “All files” from the “Files of Type” pulldown menu.</li>
+<li>Select the file and click “Open”.</li>
+</ul></li>
+<li>This will start the “Text Import Wizard”. It has 6 steps
+<ul>
+<li>In step 1, look at the area at the bottom and make sure it does not look “weird”. It should have rows of data. If it does not, then you have not downloaded your data properly. Make a note whether the first line of data is the variable names or not. Click Next.</li>
+<li>In step 2, check the correct box where it asks you whether the top of the file has the variable names or not (in this case it should be “yes”). When you look at your data at the bottom, the variable names should no longer be there. Click Next.</li>
+<li>In step 3 there is nothing for us to do. Click Next.</li>
+<li>In step 4, the data should have been lined up in columns, and some delimiters chosen at the top left. These are used to separate the entries. Look through the data to see if anything seems out of place. You may find some “-1” entries, and that is OK, they represent missing values. Some times SPSS might have used more delimiters, that would result in columns being misaligned. In that case you may have to deselect those delimiters. Click Next.</li>
+<li>In step 5, you are given the option to change the type of the columns variables. It is useful for data containing dates and times, but this dataset does not have any. We will return to this at a later lab.</li>
+<li>In step 6 there is nothing to do. Finish the process.</li>
+</ul></li>
+<li>You should now be looking at your dataset in SPSS. go ahead and use “File -&gt; Save” to save the dataset in the SPSS format. You can open those files in the future by double-clicking on them instead of having to do the Read Text Data steps.</li>
+</ul>
+<h2 id="changing-variable-properties">Changing variable properties</h2>
+<ul>
+<li>Use the “Data -&gt; Define Variable Properties” menu.</li>
+<li>Select which variables you want to change.
+<ul>
+<li>Keep the Ctrl key down to select multiple variables.</li>
+<li>Type Ctrl-A to select all variables. Do this in our example.</li>
+<li>Click the arrow in the middle when ready. Then click Continue.</li>
+</ul></li>
+<li>The “Define Variable Properties” menu pops up.</li>
+<li>On the left is a list of the variables you have selected. The currently highlighted variable is the one you are working on at the moment. Select the Type variable for now.</li>
+<li>On the right is information about the current variable, and we shall edit that information now.
+<ul>
+<li>The first field says “Current Variable”. Next to it it says “Label”. This is the name for the variable as it would appear on a graph or table. If it is blank, the variable’s shorter internal name is used. It is better to give more descriptive names here, including spaces. For instance put “Car Type” in.</li>
+<li>Right below is the “Measurement Level”. This is the classification of the variable as Scalar, Ordinal or Nominal. We will stick with Nominal in this case.</li>
+<li>The table a bit below that shows the different values together with counts of how many time each occured. If you see a value of -1, this usually indicates a missing value. If you have such a value, then you want to check the corresponding box in the “Missing” column.</li>
+<li>The “labels” column allows you to type more intuitive labels instead of the mysterious code numbers. Do this now for this variable. Use the arrows to move from one to the next. These are usually called “Value Labels”. Here are the labels for this variable:
+<ul>
+<li>0 -&gt; Standard</li>
+<li>1 -&gt; Sports</li>
+<li>2 -&gt; SUV</li>
+<li>3 -&gt; Wagon</li>
+<li>4 -&gt; Minivan</li>
+<li>5 -&gt; Pickup</li>
+</ul></li>
+<li>Give more appropriate labels to all the variables, by choosing each variable on the left. Here are the labels:
+<ul>
+<li>Car Name</li>
+<li>Car Type</li>
+<li>All-Wheel-Drive</li>
+<li>Front-Wheel-Drive</li>
+<li>Manufacturer Price (USD)</li>
+<li>Retail Price (USD)</li>
+<li>Engine Size (liters)</li>
+<li>Number of Cylinders</li>
+<li>Horsepower</li>
+<li>City Miles per Gallon</li>
+<li>Highway Miles per Gallon</li>
+<li>Weight (pounds)</li>
+<li>Wheel Base (inches)</li>
+<li>Length (inches)</li>
+<li>Width (inches)</li>
+</ul></li>
+<li>Some variables have -1 as values. Mark those as missing values.</li>
+<li>Assign a proper “Measurement Level” to each variable. Most are correct, but at least one requires a change.</li>
+</ul></li>
+<li>When you are done click OK. An Output window may appear, simply click back at the data window.</li>
+<li>This is a good time to SAVE your dataset, so that you don’t have to repeat this process the next time you want to work with it.</li>
+</ul>
+<h2 id="sorting-the-data">Sorting the data</h2>
+<ul>
+<li>Often times you want to have the rows sorted in a particular order. For instance suppose we want the most efficient cars, those with high CMpG, to be appear higher on the list.</li>
+<li>Right-click the name of the variable you want to use (CMpG in this case).</li>
+<li>Select “Sort Ascending” or “Sort Descending” depending on which is order you want (descending in our case).</li>
+<li>Win.</li>
+<li>What are the 3 most efficient cars in this list? Can you tell why?</li>
+</ul>
+<h2 id="generating-frequency-tables">Generating Frequency Tables</h2>
+<ul>
+<li>Choose “Analyze -&gt; Descriptive Statistics -&gt; Frequencies”</li>
+<li>Make sure “Display frequency tables” is selected.</li>
+<li>Select the variables you want. In our case that would be Car Type and Cylinders.</li>
+<li>Click “OK”. You shoul be seeing one table for each variable.</li>
+<li>Which Cylinder types are the most frequent?</li>
+<li>How many Sports car models were there? What percent of all the cars was that?</li>
+</ul>
+<h2 id="generating-basic-graphs">Generating Basic Graphs</h2>
+<ul>
+<li>Choose “Graphs -&gt; Chart Builder”.</li>
+<li>Click OK if you get a pop-up. You should now be staring at the “Chart Builder” window.</li>
+<li>First choose a graph from the Gallery. We will start with Bar graphs. So Select the “Bar” option from the list at the bottom left, then double-click the first graph there, the one with the 3 plain bars. A model for it should show up on the top right area.</li>
+<li>There is an area marked for the “x axis”. Drag there the variable that you want to correspond to the different columns. We will use Cylinders.</li>
+<li>The y-axis should now say Count. NEVER mess with the y-axis in a bar graph or a histogram. If you do, reset the graph and start from scratch.</li>
+<li>Click OK. You should see your graph in the viewer.
+<ul>
+<li>What conclusions can you draw about the number of cylinders on the different car models from this graph?</li>
+</ul></li>
+<li>You can find Pie charts in the “Pie/Polar” graph section. Try to make Pie charts for the number of cylinders and for the car types.
+<ul>
+<li>The Pie chart should be able to better give you the information that close to half of the car models have 6 cylinders. This information was not as easy to discern in the bar graph. DIFFERENT GRAPHS CONVEY DIFFERENT INFORMATION.</li>
+</ul></li>
+</ul>
+</body>
+</html>
