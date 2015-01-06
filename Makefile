@@ -7,7 +7,7 @@ PDFS := $(MDFILES:./%.md=site/%.pdf)
 # TEXS := $(ASSIGNMENTS:./%.md=site/%.tex)
 
 $(HTMLFILES): site/%.html: %.md $(TEMPLATE)
-	pandoc -o $@ --template=$(TEMPLATE) --mathjax --filter ./makeHtml.hs $<
+	pandoc -o $@ --template=$(TEMPLATE) --mathjax --smart --filter ./makeHtml.hs $<
 
 $(PDFS): site/%.pdf: %.md $(TEXTEMPLATE)
 	pandoc -o $@ --template=$(TEXTEMPLATE) -t latex --listings --filter ./makeTex.hs $<

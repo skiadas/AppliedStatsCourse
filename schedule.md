@@ -36,6 +36,7 @@ A week-by-week breakdown of the material.
 
 - Day 1
 - Day 2
+    - MIDTERM
 - Day 3
 - Day 4
 
@@ -75,8 +76,10 @@ BREAK
 
 - Day 1
 - Day 2
+    - MIDTERM
 - Day 3
 - Day 4
+
 
 ## Week 12 (03/23-03/27)
 
