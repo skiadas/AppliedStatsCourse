@@ -1,0 +1,18 @@
+Q0: Section C,D
+Q2: 1=male, 2=female
+Q3: 1=freshman, 2=sophomore, 3=junior, 4=senior
+Q5: 1=Yes, 0=No
+Q6: 1=Yes, 0=No
+Q7: 1=Yes, 0=No
+Q9: -99=reply was "11.12/12"
+Q10: 1=Always, 2=Often, 3=Sometimes, 4=Rarely, 5=Never
+Q12: 0=No, 1=Yes off Campus, 2=Yes on campus, 3= Yes both
+Q13: -99=reply was "sports"
+Q26: -99=reply was "thousands"
+Q30: -99=circled both
+Q31: Irregular=0, Regular=1
+Q33: 1=Very Conservative, 2=Conservative, 3=Moderate, 4=Liberal, 5=Very Liberal
+Q34: -99=reply was "hopefully 6 figures"
+Q37: 1=Weekly, 2=Monthly, 3=Special, 4=Don't, -99=circled both 2 and 3
+Q40: 1=Very Important, 2=Important, 3=Somewhat important, 4=Not important
+Q41: 1=left, 2=right, 3=both

@@ -8,6 +8,7 @@ A week-by-week breakdown of the material.
     - [Basic Terminology](notes/basic_terminology.md)
 - Day 2
     - [Visualizing Variables](notes/visualizing_distributions.md)
+    - [Lab 1](labs/1.md)
 - Day 3
 - Day 4
 

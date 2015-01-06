@@ -1,0 +1,55 @@
+Name	Capital	Currency	Official languages	Area	Pop	GDP per capita(USD)
+Algeria	Algiers 	Algerian dinar 	Arabic 	2381740 	33333216 	7124
+Angola	Luanda 	Kwanza 	Portuguese 	1246700 	15941000 	2813
+Benin 	Porto Novo 	West African CFA franc 	French 	112622 	8439000 	1176
+Botswana 	Gaborone 	Pula 	English, Setswana 	581726 	1839833 	11400
+Burkina Faso 	Ouagadougou 	West African CFA franc 	French 	274000 	13228000 	1284
+Burundi 	Bujumbura 	Burundi franc 	Kirundi, French 	27830 	7548000 	739
+Cameroon 	Yaoundé 	Central African CFA franc 	French, English 	475442 	17795000 	2421
+Cape Verde 	Praia 	Cape Verdean escudo 	Portuguese 	4033 	420979 	6418
+Central African Republic 	Bangui 	Central African CFA franc 	Sango, French 	622984 	4216666 	1198
+Chad 	NDjamena 	Central African CFA franc 	FrenchArabic 	1284000 	10146000 	1519
+Comoros 	Moroni 	Comorian franc 	Arabic, French, Comorian 	2235 	798000 	1660
+Cote dIvoire 	Yamoussoukro	West African CFA franc 	French 	322460 	17654843 	1600
+Democratic Republic of the Congo 	Kinshasa 	Congolese franc 	French 	2344858 	71712867 	774
+Republic of the Congo 	Brazzaville 	Central African CFA franc 	French 	342000 	4012809 	3919
+Djibouti 	Djibouti 	Djiboutian Franc 	Arabic, French 	23200 	496374 	2070
+Egypt 	Cairo 	Egyptian Pound 	Arabic 	1001449 	80335036 	4836
+Equatorial Guinea 	Malabo 	Central African CFA franc 	Spanish, French 	28051 	504000 	16312
+Eritrea 	Asmara 	Nakfa 	Tigrinya, Arabic, English 	117600 	5880000 	1000
+Ethiopia 	Addis Ababa 	Ethiopian birr 	Amharic, English 	1104300 	85237338 	4567
+Gabon 	Libreville 	Central African CFA franc 	French 	267668 	1384000 	7055
+The Gambia 	Banjul 	Dalasi 	English 	10380 	1517000 	2002
+Ghana 	Accra 	Ghanaian cedi 	English 	238534 	23000000 	2700
+Guinea 	Conakry 	Guinean franc 	French 	245857 	9402000 	2035
+Guinea-Bissau 	Bissau 	West African CFA franc 	Portuguese 	36125 	1586000 	736
+Kenya 	Nairobi 	Kenyan shilling 	Swahili, English 	580367 	34707817 	1445
+Lesotho 	Maseru 	Loti 	Southern Sotho, English 	30355 	1795000 	2113
+Liberia 	Monrovia 	Liberian dollar 	English 	111369 	3283000 	1003
+Libya 	Tripoli 	Libyan dinar 	Arabic 	1759540 	6036914 	12700
+Madagascar 	Antananarivo 	Malagasy Ariary 	Malagasy, French 	587041 	18606000 	905
+Malawi 	Lilongwe 	Malawian kwacha 	English, Chichewa 	118484 	12884000 	596
+Mali 	Bamako 	West African CFA franc 	French 	1240192 	13518000 	1154
+Mauritania 	Nouakchott 	Mauritanian ouguiya 	Arabic 	1030700 	3069000 	2402
+Mauritius 	Port Louis 	Mauritian rupee 	English 	2040 	1219220 	13703
+Morocco 	Rabat 	Moroccan dirham 	Arabic, Berber 	446550 	35757175 	4600
+Mozambique 	Maputo 	Mozambican metical 	Portuguese 	801590 	20366795 	1389
+Namibia 	Windhoek 	Namibian dollar 	English 	825418 	2031000 	7478
+Niger 	Niamey 	West African CFA franc 	French 	1267000 	13957000 	872
+Nigeria 	Abuja 	Nigerian naira 	English 	923768 	154729000 	1188
+Rwanda 	Kigali 	Rwandan franc 	Kinyarwanda, French, English 	26798 	7600000 	1300
+São Tomé and Príncipe 	São Tomé 	São Tomé and Príncipe Dobra 	Portuguese 	964 	157000 	1266
+Senegal 	Dakar 	West African CFA franc 	French 	196723 	11658000 	1759
+Seychelles 	Victoria 	Seychellois rupee 	English, French, Seychellois Creole 	451 	80654 	11818
+Sierra Leone 	Freetown 	Leone 	English 	71740 	6144562 	903
+Somalia 	Mogadishu 	Somali shilling 	Somali, Arabic 	637657 	9832017 	600
+South Africa 	Bloemfontein, Cape Town, and Pretoria	South African rand 	Afrikaans, English, Southern Ndebele, Northern Sotho, Sotho, Swati, Tsonga, Tswana, Venda, Xhosa, Zulu 	1221037 	47432000 	12161
+South Sudan 	Juba 	South Sudanese pound 	English 	644329 	8260490 	  
+Sudan 	Khartoum 	Sudanese pound 	Arabic, English 	1861484 	36787012 	2300
+Swaziland 	Lobamba	Lilangeni 	English, Swati 	17364 	1032000 	5245
+Tanzania 	Dodoma 	Tanzanian shilling 	Swahili, English 	945087 	37849133 	723
+Togo 	Lomé 	West African CFA franc 	French 	56785 	6100000 	1700
+Tunisia 	Tunis 	Tunisian dinar 	Arabic 	163610 	10102000 	8800
+Uganda 	Kampala 	Ugandan shilling 	English, Swahili 	236040 	27616000 	1700
+Zambia 	Lusaka 	Zambian kwacha 	English 	752614 	14668000 	931
+Zimbabwe 	Harare 	Zimbabwean dollar 	Shona, Ndebele, English 	390757 	13010000 	2607
