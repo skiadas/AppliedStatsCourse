@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="measures-of-spread">Measures of Spread</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 2.7</li>
+</ul>
+<h2 id="practice-problems">Practice Problems</h2>
+<dl>
+<dt>2.7 (Page 134)</dt>
+<dd>69, 70, 72
+</dd>
+<dt>2.7 (Page 143)</dt>
+<dd>94, 95, 97, 98, 99, 100, 101
+</dd>
+<dt>Overall 2 (p. 145)</dt>
+<dd>109, 110, 113, 114, 115
+</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<ul>
+<li>The goal of measures of spead is to assess the “variation” in the data in some way.</li>
+<li>Different measures achieve this in different ways.</li>
+<li><p>The two main measures of spread are:</p>
+<dl>
+<dt>Std. Dev.</dt>
+<dd><p>Standard Deviation. Measures distance of data from the mean.</p>
+<p>Often denoted by <span class="math">\(s\)</span>.</p>
+<p>Not resistant.</p>
+</dd>
+<dt>IQR</dt>
+<dd><p>Interquartile range. Measures range occupied by the middle 50% of the data.</p>
+<p>Resistant.</p>
+</dd>
+</dl></li>
+<li><p>Let us review how the standard deviation is computed. Its formula is a bit complicated, and it looks something like this:</p>
+<p><span class="math">\[s = \sqrt{\frac{1}{n-1} \sum (x-\bar{x})^2}\]</span></p>
+Basically:
+<ul>
+<li>Compute the mean of all the values.</li>
+<li>Subtract the mean from each value (the result of this step is the “<strong>deviations</strong>”).</li>
+<li>Square all the deviations.
+<ul>
+<li>Ensures values are positive before computing average.</li>
+</ul></li>
+<li>Average these squared deviations: Add them all up, then divide by <span class="math">\(n-1\)</span>. The result at this stage is called the <strong>variance</strong>.
+<ul>
+<li>Why <span class="math">\(n-1\)</span>: Technical reason, and won’t really matter for large <span class="math">\(n\)</span>.</li>
+<li>One way to think about it: The deviations always add up to <span class="math">\(0\)</span>, so once you know <span class="math">\(n-1\)</span> of them the last one is determined.</li>
+<li>In this context, <span class="math">\(n-1\)</span> is called the “degrees of freedom”.</li>
+</ul></li>
+<li>Take a square root at the end.
+<ul>
+<li>Fixes the units of measurement.</li>
+</ul></li>
+</ul></li>
+<li>Outliers have a considerable effect on this formula.
+<ul>
+<li>They have a very large deviation, and because they pull the mean towards themselves they cause larger deviations in the other values as well.</li>
+<li>Because we square them before adding, those large deviations will dominate the equation even more.</li>
+</ul></li>
+<li><p>What to use depends on the distribution:</p>
+<dl>
+<dt>Symmetric</dt>
+<dd>Mean for center, Standard Deviation for spread
+</dd>
+<dt>Skewed/Outliers</dt>
+<dd>Median for center, IQR for spread
+</dd>
+</dl></li>
+<li>Chebyshev’s Rule:
+<ul>
+<li>At least 75% of the data is within 2 standard deviations from the mean</li>
+<li>At least 89% of the data is within 3 standard deviations from the mean</li>
+</ul></li>
+<li>For Bell Shaped data (Empirical Rule):
+<ul>
+<li>Approximately 68% of the data is within one standard deviation of the mean.</li>
+<li>Approximately 95% of the data is within two standard deviations of the mean.</li>
+<li>More than 99% of the data is within three standard deviations of the mean.</li>
+</ul></li>
+</ul>
+</body>
+</html>
