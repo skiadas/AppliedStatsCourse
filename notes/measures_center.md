@@ -45,3 +45,18 @@
         In particular, outliers can be considered as values that were near others but their value somehow changed radically. So resistant measures are not affected much by outliers.
 
 - Based on this description, the median is a resistant measure, but the mean is not. (THINK ABOUT IT!)
+- Measures of center and skeweness:
+
+    Symmetric
+      ~ Mean and Median about the same
+
+    Skewed right
+      ~ The top half of the numbers pulled up, they take the mean with them.
+
+        Mean bigger than Median
+
+    Skewed left
+      ~ The bottom half of the numbers pulled down, they take the mean with them.
+
+        Mean smaller than Median
+
