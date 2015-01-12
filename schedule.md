@@ -16,6 +16,8 @@ A week-by-week breakdown of the material.
 ## Week  2 (01/12-01/16)
 
 - Day 1
+    - [Measures of Center](notes/measures_center.md)
+    - [Measures of Spread](notes/measures_spread.md)
 - Day 2
 - Day 3
 - Day 4
