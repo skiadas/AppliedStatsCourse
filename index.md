@@ -11,3 +11,4 @@ Course website for MAT 217 Applied Statistics
 - [Book](http://openstaxcollege.org/textbooks/introductory-statistics/get)
 - [Datasets](datasets.md)
 - [Labs](labs.md)
+- [Sample Project Proposal](project_proposal.md)
