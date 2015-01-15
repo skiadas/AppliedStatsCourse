@@ -27,12 +27,12 @@ Day 2
   ~ [Lab 2](labs/2.md)
 
 Day 3
-  ~ [Density Curves](notes/density_curves.md)
+  ~ [Linear Transformations](notes/linear_transformations.md)
 
-    [The Normal Distribution](notes/normal_distribution.md)
+    [Density Curves](notes/density_curves.md)
 
 Day 4
-  ~ TBA
+  ~ [The Normal Distribution](notes/normal_distribution.md)
 
 ## Week  3 (01/19-01/23)
 
