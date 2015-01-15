@@ -24,7 +24,7 @@ Websites
   ~ [for notes](skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=228)
 
 Class times
-  ~ MWRF 1pm-2pm SCC112. On Wednesdays in CFA112C
+  ~ MWRF 1pm-2pm in SCC112. On Wednesdays in CFA112C
 
 ## Course Description
 
@@ -107,7 +107,7 @@ Here is a more specific schedule:
 
 ## Grading
 
-Your final grade depends on class attendance, labs, project, quizzes, midterms and the final, as follows:
+Your final grade depends on class attendance, homework, project, quizzes, midterms and the final, as follows:
 
      Component   Percent
 --------------  --------
