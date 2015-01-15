@@ -15,17 +15,80 @@
 <h1 id="the-normal-distribution">The Normal Distribution</h1>
 <h2 id="reading">Reading</h2>
 <ul>
-<li>Section</li>
-<li>Section</li>
+<li>Section 6.1</li>
+<li>Section 6.2</li>
 </ul>
 <h2 id="practice-problems">Practice Problems</h2>
-<ol start="2" style="list-style-type: decimal">
-<li><p>(Page ) ~</p></li>
-<li><p>(Page ) ~</p></li>
-</ol>
+<dl>
+<dt>6.1 (Page 357)</dt>
+<dd>6, 7, 11, 12, 13, 15, 16, 18, 21, 23, 31, 32
+</dd>
+<dt>6.2 (Page 359)</dt>
+<dd>48, 49, 51, 52, 53, 54, 55
+</dd>
+<dt>6.1 (Page 361)</dt>
+<dd>60, 61, 63, 64, 65, 67
+</dd>
+<dt>6.2 (Page 362)</dt>
+<dd>68, 69, 70, 71, 72
+</dd>
+</dl>
 <h2 id="notes">Notes</h2>
 <ul>
-<li></li>
+<li>The <strong>Normal Distribution</strong> is a bell-shaped curve.</li>
+<li>Its equation depends on two parameters, <span class="math">\(\mu\)</span> (mean) and <span class="math">\(\sigma\)</span> (standard deviation)
+<ul>
+<li><span class="math">\(\mu\)</span> controls the center</li>
+<li><span class="math">\(\sigma\)</span> controls the width. More specifically, it is the distance between the center and the “inflection point”.</li>
+</ul></li>
+<li>Denoted <span class="math">\(N(\mu, \sigma)\)</span>.</li>
+<li>We use Table A or calculator/computer for computing values. We will explain shortly.</li>
+<li><p>Key step: <span class="math">\(z\)</span>-scores.</p>
+<p><span class="math">\[z = \frac{x-\mu}{\sigma}\]</span></p></li>
+<li>They are a simple rescaling of the <span class="math">\(x\)</span> values.</li>
+<li><p>Can also write:</p>
+<p><span class="math">\[x = \mu + \sigma \times z\]</span></p>
+<blockquote>
+<p><span class="math">\(z\)</span> scores measure “number of standard deviations away from the mean” that the corresponding <span class="math">\(x\)</span> value is.</p>
+</blockquote></li>
+<li><span class="math">\(z\)</span>-scores follow <strong>Standard Normal Distribution</strong>. With mean <span class="math">\(0\)</span> and standard deviation <span class="math">\(1\)</span>.</li>
+<li><p>It is those <span class="math">\(z\)</span> values we can look up in the table.</p></li>
+</ul>
+<h3 id="working-with-z-values-and-table-a">Working with <span class="math">\(z\)</span> values and Table A</h3>
+<ul>
+<li>Compute <span class="math">\(z\)</span> from <span class="math">\(x\)</span> if need be.</li>
+<li>Look <span class="math">\(z\)</span> up in the table. For example say <span class="math">\(z=2.31\)</span>:
+<ul>
+<li>Find <span class="math">\(2.3\)</span> on the left column.</li>
+<li>Find <span class="math">\(0.01\)</span> at the top row.</li>
+<li>Their intersection is the “p-value”.</li>
+</ul></li>
+<li>p-value is “the percent of values below this value”.</li>
+<li>Use that to compute the answer to the actual question.</li>
+<li>For values with more decimals, round to closest end, or average results in two ends.</li>
+</ul>
+<p>Practice questions:</p>
+<ul>
+<li>What percent of the data is below <span class="math">\(z=1.23\)</span>?</li>
+<li>What percent of the data is below <span class="math">\(z=-1.5\)</span>?</li>
+<li>What percent of the data is below <span class="math">\(z=-1.555\)</span>?</li>
+<li>What percent of the data is above <span class="math">\(z=2.1\)</span>?</li>
+<li>What percent of the data is between <span class="math">\(z=1.56\)</span> and <span class="math">\(z=2.1\)</span>?</li>
+</ul>
+<h3 id="inverse-lookups-in-table-a">Inverse Lookups in Table A</h3>
+<ul>
+<li>Do this if you know a <span class="math">\(p\)</span> and want to find a <span class="math">\(z\)</span>:</li>
+<li>Make sure the <span class="math">\(p\)</span> represents “data below a point”. If not convert it.</li>
+<li>Look for the <span class="math">\(p\)</span> INSIDE Table A. You will probably find one value bigger than it, right next to a value smaller than it.</li>
+<li>If your <span class="math">\(p\)</span> is closer to one of these values, just use the <span class="math">\(z\)</span> from that value.</li>
+<li>If it’s closer to the middle between, them, use the average of the two <span class="math">\(z\)</span> values.</li>
+</ul>
+<p>Practice questions:</p>
+<ul>
+<li>At what <span class="math">\(z\)</span> is the first quartile?</li>
+<li>At what <span class="math">\(z\)</span> is the third quartile?</li>
+<li>What is the IQR for the standard normal distribution?</li>
+<li>Find the <span class="math">\(z\)</span> range where the middle 20% of the data lies.</li>
 </ul>
 </body>
 </html>

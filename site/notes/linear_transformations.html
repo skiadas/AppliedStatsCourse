@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="linear-transformations">Linear Transformations</h1>
+<h2 id="notes">Notes</h2>
+<p>If <span class="math">\(x\)</span> represents a variable, then a <strong>linear transformation</strong> is an equation of the form:</p>
+<p><span class="math">\[y = a + b x\]</span></p>
+<p>where <span class="math">\(a\)</span>, <span class="math">\(b\)</span> are some numbers. For instance <span class="math">\(y = x + 10\)</span>, or <span class="math">\(y = 2x - 1\)</span>.</p>
+<p>We think of <span class="math">\(y\)</span> here as a <em>new variable</em>, and the equation tells us how to convert values of the one variable into values of the other.</p>
+<p>Examples:</p>
+<ul>
+<li><p><span class="math">\(x\)</span> is a student’s height measured in “inches from 5 feet”. <span class="math">\(y\)</span> is their actual height in inches. Then:</p>
+<p><span class="math">\[y = x + 60\]</span></p></li>
+<li><p><span class="math">\(x\)</span> is a student’s height in inches, <span class="math">\(y\)</span> is their height in meters. 1 meter is <span class="math">\(39.37\)</span> inches. So:</p>
+<p><span class="math">\[y = x / 39.37\]</span></p></li>
+<li><p><span class="math">\(x\)</span> is a room’s temperatures measured in F, <span class="math">\(y\)</span> is the same temperatures in <span class="math">\(C\)</span>. <span class="math">\(F = 1.8 C + 32\)</span>. So:</p>
+<p><span class="math">\[y = (x - 32) / 1.8 = x/ 1.8 - 32/1.8\]</span></p></li>
+</ul>
+<blockquote>
+<p>A linear transformation between two variables tells us how individual values transform to each other.</p>
+</blockquote>
+<p>But how measures of center or spread behave requires more thinking!</p>
+<blockquote>
+<p>Behavior of variables under linear transformation. Assume <span class="math">\(y = a + bx\)</span>.</p>
+<dl>
+<dt>shape</dt>
+<dd>stays the same (modes, skewness, outliers)
+</dd>
+<dt>center</dt>
+<dd><p>Follows the same transformation (mean, median do that)</p>
+<p>e.g. <span class="math">\(\bar y = a + b\bar x\)</span></p>
+</dd>
+<dt>spread</dt>
+<dd><p>Only follows the multiplier (std. dev., IQR do that)</p>
+<p>e.g. <span class="math">\(s_y = b s_x\)</span>.</p>
+</dd>
+</dl>
+</blockquote>
+<h3 id="a-special-case-standardized-scores">A special case: Standardized scores</h3>
+<p>Standardized scores, also called <span class="math">\(z\)</span>-scores, are given by the following linear transformation:</p>
+<p><span class="math">\[z = \frac{x-\bar x}{s_x}\]</span></p>
+<p>Alternatively, they relate to <span class="math">\(x\)</span> via:</p>
+<p><span class="math">\[x = \bar x + s_x z\]</span></p>
+<p>Key properties:</p>
+<ul>
+<li>Think of <span class="math">\(z\)</span>-score as saying “how many standard deviations away from the mean you are”.</li>
+<li><span class="math">\(z\)</span>-scores are unitless.</li>
+<li><span class="math">\(z\)</span>-scores always have a mean of 0 and a standard deviation of 1.</li>
+<li>They are great for comparing quantities that are measured in different scales.</li>
+</ul>
+</body>
+</html>
