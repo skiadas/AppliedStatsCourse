@@ -37,7 +37,7 @@ Day 4
 ## Week  3 (01/19-01/23)
 
 Day 1
-  ~ TBA
+  ~ [Relationships between two variables](notes/relationships.md)
 
 Day 2
   ~ TBA
