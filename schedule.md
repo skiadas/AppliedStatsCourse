@@ -40,7 +40,7 @@ Day 1
   ~ [Relationships between two variables](notes/relationships.md)
 
 Day 2
-  ~ TBA
+  ~ [Lab 3](labs/3.md)
 
 Day 3
   ~ TBA
