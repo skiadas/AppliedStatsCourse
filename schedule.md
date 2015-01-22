@@ -43,7 +43,7 @@ Day 2
   ~ [Lab 3](labs/3.md)
 
 Day 3
-  ~ TBA
+  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
 Day 4
   ~ TBA

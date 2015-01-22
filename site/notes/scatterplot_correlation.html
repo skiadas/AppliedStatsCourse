@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="scatterplots-and-correlation">Scatterplots and Correlation</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 12.2</li>
+<li>Section 12.3 (only page 642)</li>
+</ul>
+<h2 id="practice-problems">Practice Problems</h2>
+<dl>
+<dt>12.2 (Page 666)</dt>
+<dd>17, 18, 19, 20
+</dd>
+<dt>12.2 (Page 672)</dt>
+<dd>59, 60, 61
+</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<h3 id="scatterplots">Scatterplots</h3>
+<p>Scatterplots visually display the relationship between two quantitative/scalar variables.</p>
+<p>One of the first things we want to do is <em>describe</em> the relationship seen in the graph:</p>
+<dl>
+<dt>Clusters</dt>
+<dd><p>Are there multiple clusters? A “cluster” is a group of points that exhibit a common behavior. They do not have to be near each other, but they do have to share a pattern.</p>
+<p>If there are multiple clusters, we usually describe each separately, as far as the following items are concerned.</p>
+</dd>
+<dt>Form</dt>
+<dd>Does the pattern resemble a straight line? Some other curve?
+</dd>
+<dt>Direction</dt>
+<dd>Do the y values increase as the x values increase? Do they decrease instead? These would make the direction <em>positive/negative</em>.
+</dd>
+<dt>Strength</dt>
+<dd>How close to the points resemble the form?
+</dd>
+<dt>Outliers</dt>
+<dd>Are there points that deviate from the pattern in some way?
+</dd>
+</dl>
+<p>Let us look at an example:</p>
+<div class="figure">
+<img src="images/scatter.png" title="A Scatterplot" alt="Example of a Scatterplot" />
+<p class="caption">Example of a Scatterplot</p>
+</div>
+<p>This is an image of the relation between city mileage and highway mileage for various car types.</p>
+<p>We notice a single cluster, with an overall positive direction, pretty close to linear form. This makes sense to some extent: Some cars are more efficient than others, so they will have better performance both in city and highway.</p>
+<p>And in general we don’t expect a car to be much more efficient on the highway but not as much more efficient in the city, hence the linear form.</p>
+<p>The strength of the relation is that the relation appears to be fairly strong, as the points stay relatively close to the linear direction. There is one very marked <em>outlier</em>: A car that is doing extremely well in the city, with a very high CMpG, but its highway mileage, while very good, is not just as good.</p>
+<p>There are two more cars that are “far from the pack”, but I would not classify them as outliers as they are still part of the linear pattern, just a bit further ahead from the rest.</p>
+<p>Let us look at another example:</p>
+<div class="figure">
+<img src="images/scatter2.png" title="A Scatterplot of population vs area" alt="Another example of a Scatterplot" />
+<p class="caption">Another example of a Scatterplot</p>
+</div>
+<p>This example shows the relationship between a country’s population and its land mass. See if you can identify the various outliers.</p>
+<p>Overall here we can’t really talk about a pattern. There are some interesting outliers:</p>
+<ul>
+<li>a country with very little area but a large population;</li>
+<li>a country with moderate area and very large population;</li>
+<li>a country with very large area but relatively small population;</li>
+<li>a cluster of countries with moderate area but relatively small population;</li>
+</ul>
+<p>Overall not much of a pattern. We could look for a pattern by “zooming in” on the bottom left of the graph:</p>
+<div class="figure">
+<img src="images/scatter2zoomed.png" title="A zoomed-in version of population vs area" alt="A zoomed-in version" />
+<p class="caption">A zoomed-in version</p>
+</div>
+<p>Even in this zoomed-in version we do not see much of a pattern going on. Overall we can conclude that there is not much of a relationship between a country’s area and its population.</p>
+<h3 id="correlation">Correlation</h3>
+<p>The <strong>correlation coefficient</strong> is a specific number, denoted by <span class="math">\(r\)</span>, that we compute from our data.</p>
+<p>It is only appropriate to use for linear relationships without too many outliers.</p>
+<p>In that case it can measure the <em>strength</em> and <em>direction</em> of the linear relationship.</p>
+<p>Some key facts about the correlation coefficient, before we look at its computation:</p>
+<ul>
+<li>It is a unitless number. No matter what measuring units the variables have, <span class="math">\(r\)</span> does not have any.</li>
+<li>It does not change if the variables undergo linear transformations: It only depends on their z-scores.</li>
+<li>It is always a value between -1 and 1.</li>
+<li><span class="math">\(r= 1\)</span> means a perfect positive linear relation (all points exactly on a line).</li>
+<li><span class="math">\(r= -1\)</span> means a perfect negative linear relation (all points exactly on a line).</li>
+<li>Values close to those indicate strong association.</li>
+<li>Values close to <span class="math">\(0\)</span> indicate a very weak association.</li>
+</ul>
+<p>For example, our mileage example earlier has an <span class="math">\(r = 0.94\)</span>, while the population example has an <span class="math">\(r=0.306\)</span>, which is typical of a very weak positive correlation.</p>
+<p>If we “zoom in” on the lower left part of that graph, we find a correlation of <span class="math">\(r = -0.0856\)</span>, practically 0.</p>
+<p>Now we describe the computation. First the formula:</p>
+<blockquote>
+<p><span class="math">\[r = \frac{1}{n-1}\sum \left(\frac{x-\bar x}{s_x}\right)\left(\frac{y-\bar y}{s_y}\right)\]</span></p>
+</blockquote>
+<p>Basically:</p>
+<ul>
+<li>Compute the standardized values of the <span class="math">\(x\)</span>’s and the <span class="math">\(y\)</span>’s.</li>
+<li>Pairwise multiply the corresponding standardized values.</li>
+<li>Average those products, dividing by <span class="math">\(n-1\)</span>.</li>
+</ul>
+<p>The idea behind this is as follows:</p>
+<ul>
+<li>The standardized values are negative when below the mean, and positive when above the mean.</li>
+<li>If we have a positive association, then high <span class="math">\(x\)</span> values (above the mean) will tend to be paired with high <span class="math">\(y\)</span> values (above the mean), and conversely for low <span class="math">\(x\)</span> values. Therefore positive standardized values from <span class="math">\(x\)</span> are paired with and multiplied with positive standardized values from <span class="math">\(y\)</span>, while negatives are paired with negatives. The result is that almost all of the pairwise products are positive, resulting in a large positive <span class="math">\(r\)</span>.</li>
+<li>Conversely, if we have a negative association, then high <span class="math">\(x\)</span> values are paired with low <span class="math">\(y\)</span> values, and low <span class="math">\(x\)</span> values are paired with high <span class="math">\(y\)</span> values. In terms of standardized values, it means that positives are paired with negatives, resulting in negative pairwise products. When we average them all up, we end up with negative <span class="math">\(r\)</span>.</li>
+<li>Finally, if there is no clear association, then we end up with a mixture of products, which cancel each other out in the summation. This results in <span class="math">\(r\)</span> close to <span class="math">\(0\)</span>.</li>
+</ul>
+</body>
+</html>
