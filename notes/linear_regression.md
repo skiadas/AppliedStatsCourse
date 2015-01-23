@@ -100,7 +100,7 @@ Think of the residuals as springs attached to the line. The further they are, th
 >
 > The line will try to move towards points with large residuals, if it can do so without sacrificing too much on the other points.
 
-TODO: Link applet here
+Here is a [little applet to play with](http://vault.hanover.edu/~skiadas/D3Regression/index2.html) to investigate the effect of residuals on a page:
 
 TODO: Talk about outliers
 
