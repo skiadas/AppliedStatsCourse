@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="linear-models-and-regression">Linear Models and Regression</h1>
+<h2 id="reading">Reading</h2>
+<p>Sections 12.1, 12.3, 12.5, 12.6</p>
+<h2 id="practice-problems">Practice Problems</h2>
+<dl>
+<dt>12.1 (Page 664)</dt>
+<dd>7, 10, 11
+</dd>
+<dt>12.3 (Page 668)</dt>
+<dd>20-25
+</dd>
+<dt>12.5 (Page 669)</dt>
+<dd>31, 32, 33, 34, 35
+</dd>
+<dt>12.6 (Page 671)</dt>
+<dd>51, 53, 54
+</dd>
+<dt>12.5 (Page 674)</dt>
+<dd>70, 72
+</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<h3 id="basics-of-regression-lines">Basics of Regression Lines</h3>
+<p>When the data appears to have an overall linear direction, it would be reasonable to attempt to obtain a linear model fit, so an equation of the form:</p>
+<p><span class="math">\[y \sim a + b x\]</span></p>
+<p>where <span class="math">\(a\)</span>, <span class="math">\(b\)</span> are the two parameters to be determined.</p>
+<p>Notice that unlike what you may be used to, we use <span class="math">\(b\)</span> to denote the slope of the line, and <span class="math">\(a\)</span> to denote the <span class="math">\(y\)</span> intercept.</p>
+<blockquote>
+<p>The <strong>least squares regression line</strong> is the linear equation with the smallest sum of squared residuals (SSR).</p>
+<p>It is obtained by computing <span class="math">\(a\)</span>, <span class="math">\(b\)</span> according to the formula:</p>
+<p><span class="math">\[b = r\frac{s_y}{s_x}\]</span></p>
+<p><span class="math">\[a = \bar y - b \bar x\]</span></p>
+</blockquote>
+<p>Let us see this in action in the example of the city mileage and the highway mileage:</p>
+<div class="figure">
+<img src="images/regression.png" title="A regression line" alt="A regression line" />
+<p class="caption">A regression line</p>
+</div>
+<p>There is overall a linear direction, and therefore it makes sense to look for a linear equation like that. Let’s see how we would compute the equation for that line by hand. We will need to know the means and standard deviations for both CMpG (our x variable) and HMpG (our y variable):</p>
+<table>
+<colgroup>
+<col width="13%" />
+<col width="9%" />
+<col width="13%" />
+<col width="16%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Variable</th>
+<th align="right">Mean</th>
+<th align="right">Std. Dev</th>
+<th align="right">Correlation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">CMpG HMpG</td>
+<td align="right">20.09 26.90</td>
+<td align="right">5.213 5.967</td>
+<td align="right">0.94</td>
+</tr>
+</tbody>
+</table>
+<p>It is really important to not forget which variable is your <span class="math">\(x\)</span> and which is your <span class="math">\(y\)</span>, or you’ll get the formulas all wrong. In our case, CMpG is our <span class="math">\(x\)</span>.</p>
+<p>So let us compute the regression line. Slope first:</p>
+<p><span class="math">\[b = r \frac{s_y}{s_x} = 0.94\times \frac{5.967}{5.213} = 1.076\]</span></p>
+<p><span class="math">\[a = \bar y - b \bar x = 26.9 - 1.076\times 20.09 = 5.283\]</span></p>
+<p>So our final equation for the regression line is:</p>
+<blockquote>
+<p><span class="math">\[\hat y = 5.283 + 1.076 \times x\]</span></p>
+</blockquote>
+<p>We used <span class="math">\(\hat y\)</span> there instead of <span class="math">\(y\)</span> because that equation gives us the <em>predicted</em> values, not the actual <span class="math">\(y\)</span> values in the data.</p>
+<p>Let’s use this line to do some prediction. For instance, suppose we have a car that has CMpG of 20. We would then predict that its HMpG would be:</p>
+<p><span class="math">\[5.283 + 1.076 \times 20 = 26.803\]</span></p>
+<p>so we would predict a highway mileage of <span class="math">\(26.8\)</span> for such a car. Now if you look at the graph, you will see that there a number of cars with CMpG of 20, whose corresponding HMpGs range from around 24 to 30. There is no way for our model to predict all those accurately: Our model can only make one prediction from the CMpG of 20. So it’s bound to make some errors. But it’s doing as best as we could expect it to.</p>
+<h3 id="interpreting-r-squared">Interpreting r-squared</h3>
+<p>There is a certain interpretation afforded to the square of the correlation, <span class="math">\(r^2\)</span>. In order to understand it, we have to understand the main goal of modeling.</p>
+<p>When we use a linear equation <span class="math">\(y=a+bx\)</span> as a model, we are in effect saying: “We know <span class="math">\(y\)</span> is changing, and we believe it is because <span class="math">\(x\)</span> is changing, and this formula tells us about this change.”</p>
+<p>We can think of that equation as “explaining part of the variance in <span class="math">\(y\)</span>”. It does it via the predicted values <span class="math">\(\hat y\)</span>. Since <span class="math">\(\hat y\)</span> is exactly equal to <span class="math">\(a+bx\)</span>, all the variation that <span class="math">\(\hat y\)</span> undergoes is directly caused by the corresponding variation in <span class="math">\(x\)</span>. This is where <span class="math">\(r^2\)</span> comes in:</p>
+<blockquote>
+<p><span class="math">\[r^2 = \frac{\textrm{Variance}(\hat y)}{\textrm{Variance}(y)}\]</span></p>
+<p><span class="math">\(r^2\)</span> measures the percent of the variance of <span class="math">\(y\)</span> that is explained by the variance in <span class="math">\(x\)</span>.</p>
+</blockquote>
+<p>In our example, <span class="math">\(r=0.94\)</span> and so <span class="math">\(r^2=0.8836\)</span>. So we can say that 88% of the variation we observe in HMpG can be explained by the corresponding variation in $CMpG.</p>
+<h3 id="residuals-in-the-graph">Residuals in the Graph</h3>
+<p>Recall that the residual is the difference between the <span class="math">\(y\)</span> value and the corresponding <span class="math">\(\hat y\)</span> predicted value. Geometrically we can think of the residuals as the vertical distances from each point to the regression line:</p>
+<div class="figure">
+<img src="images/regression2.png" title="Residuals" alt="The residuals" />
+<p class="caption">The residuals</p>
+</div>
+<p>Think of the residuals as springs attached to the line. The further they are, the more stretched out the springs, and the stronger they pull the line towards them:</p>
+<blockquote>
+<p>The goal of the least squares regression line is to be as close as it can to its points, resulting in small residuals.</p>
+<p>The line will try to move towards points with large residuals, if it can do so without sacrificing too much on the other points.</p>
+</blockquote>
+<p>TODO: Link applet here</p>
+<p>TODO: Talk about outliers</p>
+<p>TODO: Talk about residual plots</p>
+</body>
+</html>
