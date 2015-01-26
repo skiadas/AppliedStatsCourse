@@ -102,6 +102,23 @@ Think of the residuals as springs attached to the line. The further they are, th
 
 Here is a [little applet to play with](http://vault.hanover.edu/~skiadas/D3Regression/index2.html) to investigate the effect of residuals on a page:
 
-TODO: Talk about outliers
+### Behavior of Outliers
 
-TODO: Talk about residual plots
+There are two kinds of outliers:
+
+> Outliers that are far in the $x$ direction (possibly also the $y$ direction) will affect both the slope and the intercept of the line (line changes slope to move towards them).
+>
+> Outliers that are far only in the $y$ direction will not affect the slope much, but will affect the intercept (line moves parallel up or down towards them).
+
+Outliers that affect the slope are usually called *influential*.
+
+### Residual Plots
+
+In a residual plot, we draw a graph of the residuals on the $y$ axis, against either the $x$ or the predicted $\hat y$ values, or occationally against other variable's values.
+
+The effect of this is that it accenuates any non-linear patterns that were possibly not visible because of the dominance of the linear effect.
+
+> In a residual plot, we look for the *absence of a pattern*. Since the residuals are the error our model makes when predicting values, they should appear to be just random "noise" if our model accurately captures the interaction between the variables.
+>
+> If a pattern exists in the residual plot, it is an indication that our model does
+> not accurately capture the behavior of the data, that there is something else going on.

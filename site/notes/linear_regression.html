@@ -108,7 +108,19 @@
 <p>The line will try to move towards points with large residuals, if it can do so without sacrificing too much on the other points.</p>
 </blockquote>
 <p>Here is a <a href="http://vault.hanover.edu/~skiadas/D3Regression/index2.html">little applet to play with</a> to investigate the effect of residuals on a page:</p>
-<p>TODO: Talk about outliers</p>
-<p>TODO: Talk about residual plots</p>
+<h3 id="behavior-of-outliers">Behavior of Outliers</h3>
+<p>There are two kinds of outliers:</p>
+<blockquote>
+<p>Outliers that are far in the <span class="math">\(x\)</span> direction (possibly also the <span class="math">\(y\)</span> direction) will affect both the slope and the intercept of the line (line changes slope to move towards them).</p>
+<p>Outliers that are far only in the <span class="math">\(y\)</span> direction will not affect the slope much, but will affect the intercept (line moves parallel up or down towards them).</p>
+</blockquote>
+<p>Outliers that affect the slope are usually called <em>influential</em>.</p>
+<h3 id="residual-plots">Residual Plots</h3>
+<p>In a residual plot, we draw a graph of the residuals on the <span class="math">\(y\)</span> axis, against either the <span class="math">\(x\)</span> or the predicted <span class="math">\(\hat y\)</span> values, or occationally against other variable’s values.</p>
+<p>The effect of this is that it accenuates any non-linear patterns that were possibly not visible because of the dominance of the linear effect.</p>
+<blockquote>
+<p>In a residual plot, we look for the <em>absence of a pattern</em>. Since the residuals are the error our model makes when predicting values, they should appear to be just random “noise” if our model accurately captures the interaction between the variables.</p>
+<p>If a pattern exists in the residual plot, it is an indication that our model does not accurately capture the behavior of the data, that there is something else going on.</p>
+</blockquote>
 </body>
 </html>
