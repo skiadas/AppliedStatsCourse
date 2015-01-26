@@ -48,12 +48,10 @@ Day 3
 Day 4
   ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
-    [Linear Models and Regression Lines](notes/linear_regression.md)
-
 ## Week  4 (01/26-01/30)
 
 Day 1
-  ~ TBA
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
 Day 2
   ~ TBA
