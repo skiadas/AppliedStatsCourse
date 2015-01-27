@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="lab-4-scatterplots-and-regression">Lab 4: Scatterplots and Regression</h1>
+<p>In this lab we examine in greater detail a variety of scatterplots, draw regression lines in them, and discuss correlation.</p>
+<h2 id="loading-a-new-dataset">Loading a new dataset</h2>
+<p>We will start our explorations by loading a new dataset, and refreshing that process.</p>
+<ul>
+<li>Find the datasets section in the web site, and find a link called <code>drivingAll</code>. Do NOT click it.</li>
+<li>Right-click the link, and choose “Save link as” or “Save target as”, and save the file somewhere on your computer.</li>
+<li>Start SPSS, and choose “File -&gt; Read Text Data”. Find the file, and click Open.</li>
+<li>Now we go through the 6 steps of the wizzard.
+<ol style="list-style-type: decimal">
+<li>You should be seeing the first line with variable names, then lots of rows of data. Click Next to go to next step.</li>
+<li>In the second step you must switch the checkbox about “variable names included at top of the file”. It should be at Yes. Click Next.</li>
+<li>Third page is always OK.</li>
+<li>On step 4, you will see that some things are out of place. This is because it has chosen to use Space as a delimiter in addition to Comma. Uncheck the “Space” checkbox, and it should all line up. Click Next.</li>
+<li>This time we have work to do on step 5. Some of the variable columns are special, they are dates or time. We have to tell it about them.
+<ul>
+<li>You will see right now that the “Day” column is selected. It currently thinks the format is “String”. Choose instead “Date/Time”. It shows you a list of formats. Find the format that says “yyyy/mm/dd”.</li>
+<li>Then click on the second column, “WeekDay”. Change that to “Date/Time” as well, and choose “Day of Week” from the list of formats to the right.</li>
+<li>Next up is the “LeaveTime” variable. It should be “Date/Time” again, and with format “hh:mm”.</li>
+<li>Do the same for the “ArrTime” variable.</li>
+<li>Click Next.</li>
+</ul></li>
+<li>6th step is always OK. Click Finish</li>
+</ol></li>
+<li>Your data should now be set! SAVE IT!</li>
+</ul>
+<p>This dataset is data I recorded over an entire semester. I resided in Louisville at the time, and I recorded for every day information about my driving from Louisville to Hanover and back. The “direction” column indicates where I was headed, work or home.</p>
+<p>We will come back to this dataset later. For now save it to a location that you can find it later, and we will bring up another dataset to work with.</p>
+<ul>
+<li>Find a dataset called “Cigarettes and cancer”. Right-click and save it.</li>
+<li>Start the Read Text Data wizard like before.</li>
+<li>Tell it about the included Variable names in step 2.</li>
+<li>In step 4 you will need to again uncheck the “Space” checkbox.</li>
+<li>Everything else should be fine. Finish the wizard.</li>
+<li>Save!</li>
+</ul>
+<p>These are measurements relating the amount of per capita sales of cigarettes in each state vs the incidence rate of certain types of cancer in the state.</p>
+<p>We will start by considering scatterplots of cigarette sales and other types of cancer.</p>
+<h2 id="doing-scatterplots-with-regression-lines">Doing scatterplots with regression lines</h2>
+<p>Go to the Chart Builder, choose Scatter/dot, choose the first graph, then put cigarettes on the x axis, and “blad” (cancer of the bladder) in the y axis. You should be seeing what seems like a somewhat weak positive relationship.</p>
+<p>Double-click the graph to edit it, and under elements choose “Fit Line at Total”</p>
+<p>When you do this, it should give you a regression line, with an equation on it, “y=1.09 + 0.12*x“. You should also see that it says what”r-squared&quot; is, 0.495. so this relation “explains” only about 50% of the variation in bladder cancer amounts.</p>
+<p>Another way to “assess” how good a line fit is is to choose the “Loess” option for Fit Line, instead of “Linear”. Do that now, and it should show you a curve that fits the data as best as a curve could do. If that deviates a fair bit from being linear, then it might be an indication that a linear regression is not the best tool.</p>
+<p>Do the same to compare between cigarettes and the other types of cancer.</p>
+<ul>
+<li>Scatterplot, assess the relation.</li>
+<li>Add linear line, look at r-squared.</li>
+<li>Switch it to Loess curve.</li>
+</ul>
+<ol style="list-style-type: decimal">
+<li>Which types of Cancer appear to have the strongest relation to Cigarette sales?</li>
+<li>There are some states that have a very large number of cigarette sales per capita, but correspondingly low incidence of cancer. Sort the data to find out who those states are (note that the <a href="http://en.wikipedia.org/wiki/List_of_U.S._state_abbreviations#Coast_Guard_vessel_prefixes">“coast guard” prefixes</a> are used). Try to find a reasonable explanation for the large number of per-capita cigarette sales (i.e. cigarette sales per person residing in the state).</li>
+</ol>
+<h2 id="computing-correlations">Computing Correlations</h2>
+<p>Let us compute the correlation coefficients for each pair of variables. In fact we will have SPSS create a table of all pairs of correlations.</p>
+<ul>
+<li>Go to “Analyze -&gt; Correlate -&gt; Bivariate”</li>
+<li>Select all variables and move them to the right</li>
+<li>Click OK.</li>
+</ul>
+<p>You should now be seeing a table of all pairwise correlations. Look especially at those that are close to or more than 0.7. Which pairs of variables have a correlation of around 0.7 or more?</p>
+<h2 id="working-with-a-subset-of-the-cases">Working with a subset of the Cases</h2>
+<p>It seems that there are a couple of states that are unusual, we should try to remove them. We do not want to delete them of course, we just want to tell the system to ignore them for a while. This goes under the name of “<strong>Select Cases</strong>”.</p>
+<ul>
+<li>Go to “Data -&gt; Select Cases”. It’s near the end.</li>
+<li>Right now it should say “All cases”. Switch it to “If condition is satisfied”.</li>
+<li>Click on the “If” button. This brings up an “equation editor”.</li>
+<li>We need to write in the box on the top right which cases we want to have included. The formula would be “CIG &lt; 39”. You can either type it in or drag and click on things.</li>
+<li>Click on Continue, then OK.</li>
+<li>You should now see in your data that the row numbers for those two cases have been crossed out. Everything we do from now on will ignore those rows.</li>
+<li>When you want to get back to looking at all values, go to “Data -&gt; Select Cases” again and switch to “All cases”.</li>
+</ul>
+<p>Go ahead and do a comparison of cigarette sales and lung cancer now. Does the fit look any better?</p>
+<p>Let’s identify some of those points that are outliers by deviating from the pattern. Go back to Chart Builder, but this time use “Groups/Point ID” and activate the “Point ID label”, and put “STATE” in the Point ID spot in the graph. You should be able to see a number of outliers now, identified by state name. Try to think of reasons for those.</p>
+<ul>
+<li>Some states have large cancer incidence compared to per-capita cigarette sales.</li>
+<li>Some states have small cancer incidence compared to per-capita cigarette sales.</li>
+</ul>
+<p>Think about explanations for both scenarios.</p>
+<h2 id="further-explorations">Further explorations</h2>
+<p>The “cereal” dataset has a wealth of scalar variables to look at, looking at dietary features of various cereal products. Use any remaining time you have to download it, import it using Read Text Data, and explore relations between its scalar variables.</p>
+</body>
+</html>

@@ -54,7 +54,7 @@ Day 1
   ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
 Day 2
-  ~ TBA
+  ~ [Lab 4](labs/4.md)
 
 Day 3
   ~ TBA
