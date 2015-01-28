@@ -57,7 +57,7 @@ Day 2
   ~ [Lab 4](labs/4.md)
 
 Day 3
-  ~ TBA
+  ~ [The question of causation](notes/correlation_causation.md)
 
 Day 4
   ~ TBA
