@@ -60,7 +60,7 @@ Day 3
   ~ [The question of causation](notes/correlation_causation.md)
 
 Day 4
-  ~ TBA
+  ~ [Introduction to Probability](notes/probability_intro.md)
 
 ## Week  5 (02/02-02/06)
 
