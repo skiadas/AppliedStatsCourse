@@ -21,9 +21,9 @@ As a simple example, consider rolling a 6-sided die:
 - We know that only the outcomes 1 through 6 are possible.
 - If the die is "fair", then if we roll the die many many times we expect about 1/6th of them to come up 1, 1/6th to come up 2 and so on.
 
-> The **Sample space** for a random phenomenon, denoted by S, is the set of possible outcomes.
+> The **sample space** for a random phenomenon, denoted by S, is the set of possible outcomes.
 >
-> The *probability of an outcome* is the long-term relative frequency of that outcome.
+> The **probability of an outcome** is the long-term relative frequency of that outcome.
 >
 > The sum of all the probabilities for all outcomes must equal 1.
 
@@ -33,10 +33,10 @@ Coin Flip
   ~ Flipping a fair coin. Sample space: $\{H, T\}$. Probability of $1/2$ for each.
 
 Unfair Coin Flip
-  ~ Flipping an unfair coint. $P(H) = p$, $P(T) = 1-p$.
+  ~ Flipping an unfair coin. $P(H) = p$, $P(T) = 1-p$.
 
 Five-sided die
-  ~ Rolling a "five-sided" die. From a mathematical point of view there is no problem: Sample space: $\{1, 2, 3, 4, 5\}$. Probability of $1/5$th for each.
+  ~ Rolling a "five-sided" die. From a mathematical point of view there is no problem with that. Sample space: $\{1, 2, 3, 4, 5\}$. Probability of $1/5$th for each.
 
 Unfair die
   ~ Imagine a five-sided die where "1" is 3 times as likely as any of the others. Find their probabilities.
@@ -46,7 +46,7 @@ Smoking and Gender
 
 A key concept in probability theory is that of an event:
 
-> An *event* is a collection of zero or more outcomes.
+> An **event** is a collection of zero or more outcomes.
 >
 > The probability of an event, $P(E)$, is the sum of the probabilities of its outcomes.
 
@@ -65,10 +65,10 @@ Complement
   ~ The complement of an event $A$, denoted $A'$, is the event consisting of all outcomes that are not in $A$.
 
 Union
-  ~ The union of two events $A$ and $B$, denoted $A\cup B$ or $A\textrm{ or }B$, is all outcomes that are in at least one of the two sets. It informally says: "I want at least one of these two events to occur."
+  ~ The union of two events $A$ and $B$, denoted $A\cup B$ or "$A\textrm{ or }B$", is all outcomes that are in at least one of the two sets. It informally says: "I want at least one of these two events to occur."
 
 Intersection
-  ~ The intersection of two events $A$ and $B$, denoted by $A\cap B$ or $A\textrm{ and }B$, is all outcomes that belong to both sets. It informally says: "I want both events to occur *at the same time*."
+  ~ The intersection of two events $A$ and $B$, denoted by $A\cap B$ or "$A\textrm{ and }B$", is all outcomes that belong to both sets. It informally says: "I want both events to occur *at the same time*."
 
 For instance in the 5-side die example:
 
