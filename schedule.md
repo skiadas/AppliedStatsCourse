@@ -65,16 +65,16 @@ Day 4
 ## Week  5 (02/02-02/06)
 
 Day 1
-  ~ TBA
+  ~ Review
 
 Day 2
   ~ **MIDTERM**
 
 Day 3
-  ~ TBA
+  ~ [Introduction to Probability (cont)](notes/probability_intro.md)
 
 Day 4
-  ~ TBA
+  ~ [Independent Events](notes/independent_events.md)
 
 ## Week  6 (02/09-02/13)
 
