@@ -79,7 +79,7 @@ Day 4
 ## Week  6 (02/09-02/13)
 
 Day 1
-  ~ TBA
+  ~ [Probability rules](notes/probability_rules.md)
 
 Day 2
   ~ TBA
