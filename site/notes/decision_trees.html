@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="tree-diagrams">Tree Diagrams</h1>
+<h2 id="reading">Reading</h2>
+<p>Section 3.4</p>
+<h2 id="practice-problems">Practice Problems</h2>
+<p>3.4 (Page ) ~</p>
+<p>3.4 (Page ) ~</p>
+<h2 id="notes">Notes</h2>
+<p><strong>Tree Diagrams</strong> are a way to visualize random processes with multiple steps. They help us keep track of what is what along the way. Here are the main components:</p>
+<dl>
+<dt>Root</dt>
+<dd>There is a root of the tree, which is considered our starting point.
+</dd>
+<dt>Branch Levels</dt>
+<dd><p>Each branching level from that point on corresponds to one step in the process. For instance when rolling a die 3 times, there will be three steps corresponding to each of the 3 rolls.</p>
+<p>At each branching level there is a number of different paths to follow, corresponding to mutually exclusive events that exhaust all possibilities. Each path taken amounts to selecting a particular event to occur.</p>
+<p>For example in the event of rolling a die three times, and if we only cared about whether each outcome is even or odd, we would have two paths at each branching point, corresponding to those two possibilities.</p>
+</dd>
+<dt>Leaves</dt>
+<dd>Each “full path” through the tree, ending in a leaf, corresponds to one outcome of the whole process, that outcome being the intersection of all the events along the path.
+</dd>
+<dt>Branch probabilities</dt>
+<dd><p>At each branch point, each branch from that point has a corresponding <em>conditional probability</em> of taking that branch, <em>given</em> that we are already at that point.</p>
+<p>The probabilities for all branches from a given branch point must add up to 100%.</p>
+</dd>
+<dt>Leaf probabilities</dt>
+<dd><p>At each leaf, as well as each branch point in the tree, there is a corresponding <em>probability</em> of making it to that point starting from the root.</p>
+<p>To find this probability, multiply the probabilities of all the branches taken to get there.</p>
+</dd>
+</dl>
+<h3 id="an-example">An example</h3>
+<p>An illustration will help. Consider the following problem:</p>
+<blockquote>
+<p>Two teams A and B will play in a “best out of 3” series of games. On any particular game, team A has a 60% chance to win, while B has only a 40% chance.</p>
+<p>What are the overall chances that team A will win?</p>
+</blockquote>
+<p>Here is how a diagram for this problem might look like.</p>
+<div class="figure">
+<img src="images/tree1.png" title="A tree diagram" alt="Tree Diagram, Best out of 3" />
+<p class="caption">Tree Diagram, “Best out of 3”</p>
+</div>
+<p>You can see that we have one branching point for each game, with two options each time depending on which game wins. The conditional probabilities along the branches are always <span class="math">\(0.6\)</span> and <span class="math">\(0.4\)</span>.</p>
+<p>Notice that some paths only need to go 2 levels deep, as a third game is not always necessary.</p>
+<p>So now to find the overall chances of team A winning, we have to follow all the paths that end up with a win for A. These are the paths AA, ABA and BAA. They are disjoint, so we add their probabilities:</p>
+<p><span class="math">\[P(AA) + P(ABA) + P(BAA) = 0.36 + 0.144 + 0.144 = 0.648\]</span></p>
+<p>So team A has a <span class="math">\(64.8\)</span>% chance of winning a “best out of 3” against team B. Their chances went up vs a single game: This is because the more games they have to play, the more opportunities they have to assert their 60% superiority.</p>
+<p>As a better illustration of that, imagine they played 500 games. How likely are they to win over half of those games? The more they play, the more pronounced the difference between 40% and 60% becomes.</p>
+<p>We will now consider a number of related questions:</p>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li>If team A does end up winning, what are the chances that a third game was necessary?</li>
+<li>Overall, what are the chances that a third game is necessary?</li>
+<li>If a third game was necessary, what are the chances that team A won?</li>
+<li>If only two games were needed, what are the chances that team A won?</li>
+</ol>
+</blockquote>
+<p>Let us try to answer those questions.</p>
+<ol style="list-style-type: decimal">
+<li><p>The first is simple. It is a conditional probability, given that team A ended up winning. So it will be a quotient, where the denominator is all the ways team A wins an the numerator are those ways in which team A wins and 3 games are played. So we would have:</p>
+<p><span class="math">\[\frac{P(ABA) + P(BAA)}{P(AA) + P(ABA) + P(BAA)} = \frac{0.288}{0.648} = 0.4444\]</span></p>
+So the chances that a third game was necessary given that A won are <span class="math">\(44.44\)</span>%</li>
+<li><p>Now we proceed to the second question, the chances that a third game was necessary. To do that, we actually want to stop earlier in the paths. So we want to follow the two middle paths, AB and BA, but only up to that point, as those are the two locations that would necessitate a third game. The chances would therefore be:</p>
+<p><span class="math">\[P(AB) + P(BA) = 0.24 + 0.24 = 0.48\]</span></p>
+<p>or 48%. Another way to do the same problem would have been to look at the complement, which would have been that the series ended in 2 games, then subtract that probability from 1. This would be:</p>
+<span class="math">\[1 - P(AA) - P(BB) = 1-0.36-0.16 = 1-0.52=0.48\]</span></li>
+<li><p>For the third question, it is again a conditional. We need to compute a quotient where the denominator is what we just computed, and the numerator is those paths with 3 games that ended up in a team A win. So we would have:</p>
+<p><span class="math">\[\frac{P(ABA) + P(BAA)}{0.48} = \frac{0.288}{0.48} = 0.6\]</span></p>
+<p>So the chances are 60%.</p>
+Take a moment to ponder this: The chances of A winning, given that we know a third game was necessary, are the same as the chances of A winning a single game. There is a very simple explanation for that, make sure you figure it out.</li>
+<li><p>This is similar to previous problems. The computation would be:</p>
+<p><span class="math">\[\frac{P(AA)}{P(AA) + P(BB)} = \frac{0.36}{0.52} = 0.6923\]</span></p>
+<p>So there is a <span class="math">\(69.23\)</span>% probability.</p></li>
+</ol>
+</body>
+</html>
