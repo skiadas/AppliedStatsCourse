@@ -2,15 +2,15 @@
 
 ## Reading
 
-Section 3.4
+Section 3.5
 
 ## Practice Problems
 
-3.4 (Page )
-  ~
+3.5 (Page 213)
+  ~ 114, 115, 116
 
-3.4 (Page )
-  ~
+General (Page 213)
+  ~ 121, 122, 123
 
 ## Notes
 
@@ -96,3 +96,67 @@ Let us try to answer those questions.
     $$\frac{P(AA)}{P(AA) + P(BB)} = \frac{0.36}{0.52} = 0.6923$$
 
     So there is a $69.23$% probability.
+
+### Medical tests
+
+Tree diagrams and conditional probabilities can help us understand the setup on most medical tests. There are two key components: The sample and the test. This is more generally the setup for what is known as "binary classification test".
+
+We want to test if a particular person has a particular disease. Whether the person has the disease or not is the **sample**, and it can be **positive** or **negative**.
+
+Then we perform the test. The test can come out positive or negative as well. So we have in total 4 cases:
+
+- Positive sample, positive test (S+T+). This is a correct diagnosis.
+- Positive sample, negative test (S+T-). This is a false diagnosis, and is known as a **false negative**. This is a severe case, as the person has something and we told them they are fine.
+- Negative sample, positive test (S-T+). This is another false diagnosis, known as a **false positive**. This is less severe in a way. We are probably unnecessarily alarming the person, but followup tests should clear things up.
+- Negative sample, negative test (S-T-). This is another correct diagnosis.
+
+We can represent this as a 2-step tree diagram: The first step is whether the sample is positive or negative, the second is whether the test is positive or negative.
+
+![Tree Diagram, medical tests](images/tree2.png "Medical Tests diagram")
+
+The probabilities associated with the first branches are $P(S-)$ and $P(S+)$. These are the chances that the person is positive/negative, so for these we need to know some population statistics, i.e. what percent of those who go for a test are positive/negative.
+
+The second set of branches is more interesting. It contains things like $P(T-|S-)$, i.e. conditional probabilities, given that we know if the sample is positive/negative, of getting the test to be positive/negative. These are usually known to us by the work that was done during the development of the test: The test was probably tested on a number of samples that we knew were positive/negative, and we measured how many times it was right/wrong. These probabilities have specific names:
+
+sensitivity
+  ~ This is $P(T+|S+)$, in other words the percent of positive samples that are correctly classified. Also known as *true positive rate* or *recall rate*.
+
+false negative rate
+  ~ This is $P(T-|S+)$, i.e. the percent of the positive samples that are misclassified. This is complementary to the sensitivity.
+
+specificity
+  ~ This is $P(T-|S-)$, i.e. the percent of negative samples that are correctly classified. It is also known as *true negative rate*.
+
+false positive rate
+  ~ This is $P(T+|S-)$, i.e. the percent of negative samples that are misclassified. Complementary to the specificity.
+
+Both sensitivity and specificity are important: Sensitivity is the test's ability to detect positive patients, specificity is its ability to detect negative patients.
+
+Let us work out a specific example. Suppose we try to diagnose a disease that only 5% of the population has (so $P(S+) = 0.05$ assuming all people are equally likely to come in for a test). The particular test we will employ has a specificity of $0.96$ and a sensitivity of $0.99$. In other words, it misclassifies one in every 100 positive samples and 4 in every 100 negative samples.
+
+The question of interest in practice is this: If the test comes out negative, what are the chances that the person is in fact negative?
+
+This is in fact a conditional probability given a test result, which is the opposite of what we are given as part of our inputs.
+
+> In binary classification tests / medical diagnosis we know $P(T\pm|S\pm)$ and we need to find out $(S\pm|T\pm)$.
+
+For instance let us compute $P(S-|T-)$:
+
+$$P(S-|T-) = \frac{P(S-T-)}{P(T-)} = \frac{P(S-T-)}{P(S-T-) + P(S+T-)}$$
+
+We can use the tree diagram to compute the required probabilities:
+
+$$P(S-T-) = P(S-)P(T-|S-) = 0.95 \cdot 0.96 = 0.912$$
+
+$$P(S+T-) = P(S+)P(T-|S+) = 0.05 \cdot 0.01 = 0.0005$$
+
+So we can now finish the computation:
+
+$$P(S-|T-) = \frac{0.912}{0.9125} = 0.99945$$
+
+So this is nice, if the test is negative we have a very high probability of being negative, and a very small ($0.00055 = 0.055\%$) of being positive.
+
+For practice:
+
+- Work out the chances of being positive given that the test came out positive.
+- Work out the same questions if $P(S+) = 0.4$, i.e. if we had more of the positive people coming in for tests, and not as many of the negative people.

@@ -15,10 +15,16 @@
 <body>
 <h1 id="tree-diagrams">Tree Diagrams</h1>
 <h2 id="reading">Reading</h2>
-<p>Section 3.4</p>
+<p>Section 3.5</p>
 <h2 id="practice-problems">Practice Problems</h2>
-<p>3.4 (Page ) ~</p>
-<p>3.4 (Page ) ~</p>
+<dl>
+<dt>3.5 (Page 213)</dt>
+<dd>114, 115, 116
+</dd>
+<dt>General (Page 213)</dt>
+<dd>121, 122, 123
+</dd>
+</dl>
 <h2 id="notes">Notes</h2>
 <p><strong>Tree Diagrams</strong> are a way to visualize random processes with multiple steps. They help us keep track of what is what along the way. Here are the main components:</p>
 <dl>
@@ -85,5 +91,56 @@ Take a moment to ponder this: The chances of A winning, given that we know a thi
 <p><span class="math">\[\frac{P(AA)}{P(AA) + P(BB)} = \frac{0.36}{0.52} = 0.6923\]</span></p>
 <p>So there is a <span class="math">\(69.23\)</span>% probability.</p></li>
 </ol>
+<h3 id="medical-tests">Medical tests</h3>
+<p>Tree diagrams and conditional probabilities can help us understand the setup on most medical tests. There are two key components: The sample and the test. This is more generally the setup for what is known as “binary classification test”.</p>
+<p>We want to test if a particular person has a particular disease. Whether the person has the disease or not is the <strong>sample</strong>, and it can be <strong>positive</strong> or <strong>negative</strong>.</p>
+<p>Then we perform the test. The test can come out positive or negative as well. So we have in total 4 cases:</p>
+<ul>
+<li>Positive sample, positive test (S+T+). This is a correct diagnosis.</li>
+<li>Positive sample, negative test (S+T-). This is a false diagnosis, and is known as a <strong>false negative</strong>. This is a severe case, as the person has something and we told them they are fine.</li>
+<li>Negative sample, positive test (S-T+). This is another false diagnosis, known as a <strong>false positive</strong>. This is less severe in a way. We are probably unnecessarily alarming the person, but followup tests should clear things up.</li>
+<li>Negative sample, negative test (S-T-). This is another correct diagnosis.</li>
+</ul>
+<p>We can represent this as a 2-step tree diagram: The first step is whether the sample is positive or negative, the second is whether the test is positive or negative.</p>
+<div class="figure">
+<img src="images/tree2.png" title="Medical Tests diagram" alt="Tree Diagram, medical tests" />
+<p class="caption">Tree Diagram, medical tests</p>
+</div>
+<p>The probabilities associated with the first branches are <span class="math">\(P(S-)\)</span> and <span class="math">\(P(S+)\)</span>. These are the chances that the person is positive/negative, so for these we need to know some population statistics, i.e. what percent of those who go for a test are positive/negative.</p>
+<p>The second set of branches is more interesting. It contains things like <span class="math">\(P(T-|S-)\)</span>, i.e. conditional probabilities, given that we know if the sample is positive/negative, of getting the test to be positive/negative. These are usually known to us by the work that was done during the development of the test: The test was probably tested on a number of samples that we knew were positive/negative, and we measured how many times it was right/wrong. These probabilities have specific names:</p>
+<dl>
+<dt>sensitivity</dt>
+<dd>This is <span class="math">\(P(T+|S+)\)</span>, in other words the percent of positive samples that are correctly classified. Also known as <em>true positive rate</em> or <em>recall rate</em>.
+</dd>
+<dt>false negative rate</dt>
+<dd>This is <span class="math">\(P(T-|S+)\)</span>, i.e. the percent of the positive samples that are misclassified. This is complementary to the sensitivity.
+</dd>
+<dt>specificity</dt>
+<dd>This is <span class="math">\(P(T-|S-)\)</span>, i.e. the percent of negative samples that are correctly classified. It is also known as <em>true negative rate</em>.
+</dd>
+<dt>false positive rate</dt>
+<dd>This is <span class="math">\(P(T+|S-)\)</span>, i.e. the percent of negative samples that are misclassified. Complementary to the specificity.
+</dd>
+</dl>
+<p>Both sensitivity and specificity are important: Sensitivity is the test’s ability to detect positive patients, specificity is its ability to detect negative patients.</p>
+<p>Let us work out a specific example. Suppose we try to diagnose a disease that only 5% of the population has (so <span class="math">\(P(S+) = 0.05\)</span> assuming all people are equally likely to come in for a test). The particular test we will employ has a specificity of <span class="math">\(0.96\)</span> and a sensitivity of <span class="math">\(0.99\)</span>. In other words, it misclassifies one in every 100 positive samples and 4 in every 100 negative samples.</p>
+<p>The question of interest in practice is this: If the test comes out negative, what are the chances that the person is in fact negative?</p>
+<p>This is in fact a conditional probability given a test result, which is the opposite of what we are given as part of our inputs.</p>
+<blockquote>
+<p>In binary classification tests / medical diagnosis we know <span class="math">\(P(T\pm|S\pm)\)</span> and we need to find out <span class="math">\((S\pm|T\pm)\)</span>.</p>
+</blockquote>
+<p>For instance let us compute <span class="math">\(P(S-|T-)\)</span>:</p>
+<p><span class="math">\[P(S-|T-) = \frac{P(S-T-)}{P(T-)} = \frac{P(S-T-)}{P(S-T-) + P(S+T-)}\]</span></p>
+<p>We can use the tree diagram to compute the required probabilities:</p>
+<p><span class="math">\[P(S-T-) = P(S-)P(T-|S-) = 0.95 \cdot 0.96 = 0.912\]</span></p>
+<p><span class="math">\[P(S+T-) = P(S+)P(T-|S+) = 0.05 \cdot 0.01 = 0.0005\]</span></p>
+<p>So we can now finish the computation:</p>
+<p><span class="math">\[P(S-|T-) = \frac{0.912}{0.9125} = 0.99945\]</span></p>
+<p>So this is nice, if the test is negative we have a very high probability of being negative, and a very small (<span class="math">\(0.00055 = 0.055\%\)</span>) of being positive.</p>
+<p>For practice:</p>
+<ul>
+<li>Work out the chances of being positive given that the test came out positive.</li>
+<li>Work out the same questions if <span class="math">\(P(S+) = 0.4\)</span>, i.e. if we had more of the positive people coming in for tests, and not as many of the negative people.</li>
+</ul>
 </body>
 </html>
