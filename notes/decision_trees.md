@@ -6,7 +6,7 @@ Section 3.5
 
 ## Practice Problems
 
-3.5 (Page 213)
+3.5 (Page 212)
   ~ 114, 115, 116
 
 General (Page 213)
