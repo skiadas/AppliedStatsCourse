@@ -82,10 +82,10 @@ Day 1
   ~ [Probability rules](notes/probability_rules.md)
 
 Day 2
-  ~ [Tree Diagrams](notes/decision_trees.md)
+  ~ Catchup
 
 Day 3
-  ~ TBA
+  ~ [Tree Diagrams](notes/decision_trees.md)
 
 Day 4
   ~ TBA
