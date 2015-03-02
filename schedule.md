@@ -88,21 +88,21 @@ Day 3
   ~ [Tree Diagrams](notes/decision_trees.md)
 
 Day 4
-  ~ TBA
+  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
 
 ## Week  7 (02/16-02/20)
 
 Day 1
-  ~ TBA
+  ~ Snow day
 
 Day 2
-  ~ TBA
+  ~ Probability Practice
 
 Day 3
-  ~ TBA
+  ~ Probability Practice
 
 Day 4
-  ~ TBA
+  ~ Probability Practice
 
 ## Week  8 (02/23-02/27)
 
@@ -111,13 +111,13 @@ BREAK
 ## Week  9 (03/02-03/06)
 
 Day 1
-  ~ TBA
+  ~ [Random Variables](notes/random_variables.md)
 
 Day 2
-  ~ TBA
+  ~ Lab Practice
 
 Day 3
-  ~ TBA
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 4
   ~ TBA

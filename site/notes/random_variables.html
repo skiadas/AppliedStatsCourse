@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="random-variables">Random Variables</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 4.1</li>
+</ul>
+<h2 id="practice-problems">Practice Problems</h2>
+<dl>
+<dt>4.1 (Page 262)</dt>
+<dd>1, 2, 3, 6, 7, 8, 10, 11, 13-17
+</dd>
+<dt>4.1 (Page 267)</dt>
+<dd>69
+</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<h3 id="random-variables-1">Random Variables</h3>
+<blockquote>
+<p>A <strong>random variable</strong> <span class="math">\(X\)</span> is the numeric outcome of a random phenomenon. For instance, when we roll a die and <span class="math">\(X\)</span> is the outcome, the possible values are <span class="math">\(1, 2, \ldots, 6\)</span>.</p>
+<p>When we have a random variable <span class="math">\(X\)</span>, we write <span class="math">\(P(X=k)\)</span> for the probability that <span class="math">\(X\)</span> takes the value <span class="math">\(k\)</span>. We will often also look at <span class="math">\(P(X&gt;k)\)</span> and <span class="math">\(P(X\geq k)\)</span>, and similarly for “less than”.</p>
+</blockquote>
+<p>Random variables are separated in <strong>discrete</strong> and <strong>continuous</strong>.</p>
+<dl>
+<dt>Discrete</dt>
+<dd>Discrete random variables are those that take a finite set of possible values (for instance the result of a die roll, counting the number of heads in 5 coin flips and so on).
+</dd>
+<dt>Continuous</dt>
+<dd>Continuous random variables are those that take values in a whole range. A variable that follows the normal distribution is a good example of that.
+</dd>
+</dl>
+<p>We will mostly study discrete distributions, with the exception of the normal distribution.</p>
+<h3 id="random-variables-and-sampling">Random Variables and Sampling</h3>
+<p>We can think of any “fixed” variable with numerical values as a random variable. For instance imagine we have a group of 20 people, 4 of them with no siblings, 5 with 1 sibling, 10 of them with 2 siblings and 1 with 3 siblings.</p>
+<p>The number of siblings in this case is one of the standard, fixed, variables we studied at the beginning of the class. In SPSS it would correspond to a column with 20 rows on it, 4 of which are 0, 5 of them are 1 and so on.</p>
+<p>We can also think of a corresponding random variable: “Pick one person at random, and look at the number of siblings”. The possible outcomes are <span class="math">\(0\)</span>, <span class="math">\(1\)</span>, <span class="math">\(2\)</span> and <span class="math">\(3\)</span>, and their probabilities are equal to the <em>relative frequencies</em> of those outcomes. For instance <span class="math">\(P(1) = 5 / 20 = 1 / 4\)</span>.</p>
+<blockquote>
+<p><span class="math">\[P(X=k)\longleftrightarrow\textrm{relative frequency of }k\]</span></p>
+</blockquote>
+<h3 id="probability-distribution-function">Probability Distribution Function</h3>
+<p>The <em>Probability Distribution Function</em> (often abreviated as PDF or pdf) is the function for a given <span class="math">\(k\)</span> tells us what <span class="math">\(P(X=k)\)</span> is. For discrete distributions, we can express it as a table. Let us look at an example:</p>
+<blockquote>
+<p>We roll a fair 6-sided die. If it is 3 or less, we don’t win anything. If it is 4 or more we win <span class="math">\(\$1\)</span> and roll the die a second time. If that second time is a <span class="math">\(5\)</span> or <span class="math">\(6\)</span> then we win one more dollar.</p>
+<p>X is the number of dollars end up winning.</p>
+</blockquote>
+<p>Make a tree/decision diagram showing how the play might go, and what values of <span class="math">\(X\)</span> you get on each resulting path. You should end up with the following table:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">X</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">P(X)</td>
+<td align="right"><span class="math">\(1/2\)</span></td>
+<td align="right"><span class="math">\(1/4\)</span></td>
+<td align="right"><span class="math">\(1/4\)</span></td>
+</tr>
+</tbody>
+</table>
+<p>Let us consider one more example:</p>
+<blockquote>
+<p>Alice and Bob play a game involving rolling a die. If the die is 4 or more, Bob wins <span class="math">\(\$1\)</span>, if it is 5 or more then Alice wins <span class="math">\(\$2\)</span>.</p>
+<p>X denotes the difference between Bob’s winnings and Alice’s winnings.</p>
+<p>There are two versions of the problem: One where Alice and Bob use the same, single, die roll, and one where they use two different die rolls.</p>
+</blockquote>
+<p>Construct tree diagrams and corresponding probability tables for both cases.</p>
+<p>And one more example for practice:</p>
+<blockquote>
+<p>You play a game that involves a coin that has a <span class="math">\(70\%\)</span> chance of coming up heads. You start by paying <span class="math">\(\$2\)</span> for the opportunity to play. You then get to flip the coin. Each time it lands heads you win a dollar, up to a total of 3 coin flips. BUT the first time you get tails the game stops.</p>
+<p>X is the total net gain (accounting for the 2 dollars you had to pay at the beginning)</p>
+</blockquote>
+<p>Create a tree diagram and a probability table for this problem.</p>
+</body>
+</html>

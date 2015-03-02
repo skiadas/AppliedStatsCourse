@@ -1,0 +1,630 @@
+3^(1:10) %% 5
+3^(1:10) %% 11
+11.5/2
+1.5 * 100
+1.5/1.01
+150/(1.5/1.01)
+100 * 1.5 /1.1
+100 * 1.5 /1.11
+1.11/1.1
+1.11/1.1  *100
+1.21/1.2  *100
+365*260
+82.5/90
+77.5/90
+83.5/90
+73/90
+74/90
+73/90
+82/90
+75/90
+0.42/0.58
+0.828/0.436 * 0.1176
+qnorm(-0.2)
+pnorm(-0.2)
+-3/1.5
+1/1.5
+pnorm(-2)
+pnorm(0.666667)
+0.7475-0.02275
+qnorm(0.2546)
+qnorm(0.3)
+pnorm(0.3)
+qnorm(-0.3)
+qnorm(0.3)
+qnorm(0.7)
+qnorm(0.3) * 1.5 + 2
+qnorm(0.7) * 1.5 + 2
+0.6*0.4*0.6
+0.6*0.4*0.4
+0.36 + 0.144 + 0.144
+0.144 + 0.144
+0.288/0.648
+0.144 + 0.144
+0.288/0.48
+0.36/0.52
+0.95*0.96
+0.912/0.9125
+C("A", "W","E","S","O","M","E")
+C("A", "W","E","S","O","M","E")
+c("A", "W","E","S","O","M","E")
+c("A", "W","E","S","O","M","E") %IN% LETTERS
+c("A", "W","E","S","O","M","E") %in% LETTERS
+?"%in%"
+match(c("A", "W","E","S","O","M","E"), LETTERS)
+match(c("A", "W","E","S","O","M","E"), LETTERS) + 3
+LETTERS[match(c("A", "W","E","S","O","M","E"), LETTERS) + 3]
+x<-scan(); 14 21 13 2 5 18
+x<-scan();
+x
+3*x
+(3*x) %% 26
+LETTERS[1]
+a = (3*x) %% 26
+a
+match(a, LETTERS)
+LETTERS[a]
+a
+a*9
+(a*9) %% 26
+strsplit("GREAT")
+strsplit("GREAT", "")
+strsplit("GREAT", "")[[1]]
+a=strsplit("GREAT", "")[[1]]
+match(a, LETTERS)
+(match(a, LETTERS) * 5) %% 26
+LETTERS[(match(a, LETTERS) * 5) %% 26]
+exp(-0.07)
+1/exp(-0.07)
+setwd("/Users/haris 1/Documents/Programming/PanthR-org-projects/rgen/test")
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+summaries
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+summaries
+?gamma
+?rgamma
+processed
+processed[[2]]
+str(processed[[2]])
+str(processed[[3]])
+rgamma(5000, shape = 2.1, scale = 0.2)
+summary(rgamma(5000, shape = 2.1, scale = 0.2))
+summary(rgamma(5000, shape = 2.1, scale = 0.2))
+summaries[[3]]
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+summaries[[3]]
+summary(rgamma(5000, shape = 2.1, rate = 1/0.2))
+summary(exp(rgamma(5000, shape = 2.1, rate = 1/0.2)))
+processed[[3]]
+str(processed[[3]])
+rs< -processed[[3]]$result.r
+js< -processed[[3]]$result.js
+js<- processed[[3]]$result.js
+rs<- processed[[3]]$result.r
+?qplot
+??qplot
+?qnorm
+??qqplot
+?qqnorm
+qqplot(rs, js)
+rs/js
+hist(rs/js)
+rs <- (rs - mean(rs))/sd(rs)
+js <- (js - mean(js))/sd(js)
+summary(rs)
+summary(js)
+h1 = hist(rs, plot=FALSE)#
+   h2 = hist(js, plot=FALSE)
+h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")
+?rgamma
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+summaries
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+?rchi
+?rchisquared
+??chisquared
+?rnorm
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+nrows
+summaries
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+summaries
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, plot=FALSE)#
+   h2 = hist(distr$result.js, breaks = h1$breaks, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, breaks = 15, plot=FALSE)#
+   h2 = hist(distr$result.js, breaks = 15, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+?rt
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, breaks = 15, plot=FALSE)#
+   h2 = hist(distr$result.js, breaks = 15, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+library(rjson)#
+filename = "sampleResults.json"#
+results = fromJSON(file = filename, method = "C")#
+#
+processDistr = function(n) {#
+   args = paste(sapply(n$params, function(param) {paste(param$name, "=", param$value, sep="") }), collapse=", ")#
+   count = length(n$values)#
+   command = paste(n$func, "(", count, ",", args, ")", sep="")#
+   list(command=parse(text=command),#
+        result.r = eval(parse(text=command)),#
+        result.js = n$values)#
+}#
+processed = lapply(results, processDistr)#
+summaries = lapply(processed, function(distr) { sapply(distr, summary )})#
+plotDistr = function(distr) {#
+   h1 = hist(distr$result.r, breaks = 20, plot=FALSE)#
+   h2 = hist(distr$result.js, breaks = 20, plot=FALSE)#
+   h2$counts = - h2$counts#
+   hmax = max(h1$counts)#
+   hmin = min(h2$counts)#
+   X = c(h1$breaks, h2$breaks)#
+   xmax = max(X)#
+   xmin = min(X)#
+   plot(h1, ylim=c(hmin, hmax), col="green", xlim=c(xmin, xmax))#
+   lines(h2, col="blue")#
+}#
+ncols = 3#
+nrows = ceiling(length(processed) / ncols)#
+png("backToBack.png")#
+par(mfrow= c(nrows, ncols))#
+for (distr in processed) { plotDistr(distr); }#
+dev.off()
+?Distributions
+26*55000
+2^(1:10) %% 11
+3^(1:10) %% 11
+4^(1:10) %% 11
+5^(1:10) %% 11
+6^(1:10) %% 11
+7^(1:10) %% 11
+8^(1:10) %% 11
+9^(1:10) %% 11
+10^(1:10) %% 11
+2^(1:12) %% 13
+3^(1:12) %% 13
+4^(1:12) %% 13
+5^(1:12) %% 13
+6^(1:12) %% 13
+7^(1:12) %% 13
+8^(1:12) %% 13
+9^(1:12) %% 13
+10^(1:12) %% 13
+11^(1:12) %% 13
+7^14
+7^14 %% 15
+143/(1:15)
+23*25
+23*5
+23*11+57*4
+23*11-57*4
+x<-scan()
+summary(x)
+table(x)
+x<-scan()
+summary(x)
+setwd("/Users/haris 1/Documents/Programming/MyCourses/AppliedStatsCourse/site/datasets")
+read.table("studentDirectory.txt")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+read.table("studentDirectory.txt", sep= "\t")
+a = read.table("studentDirectory.txt", sep= "\t")
+a[order(a[-3])]
+a[order(a[,3])]
+order(a[,3])
+a[order(a[,3]),]
+a = read.table("studentDirectory.txt", sep= "\t", header=TRUE)
+a[order(a[,3]),]
+a = read.table("studentDirectory.txt", sep= "\t", header=TRUE)
+a[order(a[,3]),]
+summary(a)
+write.csv(a, file="studentDirectory2.csv", row.names=FALSE)
+write.csv(a[order(a[,3]),], file="studentDirectory2.csv", row.names=FALSE)
+5*11*13
+123-64
+59-32
+91-64
+64 + 16 + 8 + 2 + 1
+36*36
+1296-714
+582^2
+338724/714
+338724-714*474
+288^2
+1296-715
+581^2
+337561/715
+337561-715*472
+337561 %% 715
+81^2
+6561 %% 715
+126^2
+15876 %% 715
+146^2
+21316 %% 715
+36*6
+81*216
+17496 %% 715
+126*336
+126*336 %% 715
+(126*336) %% 715
+581*151
+(87731) %% 715
+6^91
+(6^91) %% 715
+(6^10) %% 715
+(56^9) 715
+(56^9) %% 715
+441*6
+(441*6) %% 715
+300/5000
+85/28
+85 - 3*28
+match(c("M","A","T","H"), LETTERS)
+c(13, 1, 20, 8)^5
+(c(13, 1, 20, 8)^5) %% 29
+c(6,1,24,27)^17
+(c(6,1,24,27)^17) %% 29
+6^16 %% 29
+(6^16) %% 29
+(6^17) %% 29
+1*0.5+2*0.3
+q()
