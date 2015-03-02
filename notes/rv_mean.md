@@ -6,11 +6,11 @@
 
 ## Practice Problems
 
-4.2 (Page )
-  ~
+4.2 (Page 263)
+  ~ 18-36
 
-4.2 (Page )
-  ~
+4.2 (Page 268)
+  ~ 70-76, 78-79
 
 ## Notes
 
