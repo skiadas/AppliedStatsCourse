@@ -117,15 +117,15 @@ Day 2
   ~ Lab Practice
 
 Day 3
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+  ~ Snow Day
 
 Day 4
-  ~ TBA
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 ## Week 10 (03/09-03/13)
 
 Day 1
-  ~ TBA
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 2
   ~ TBA
