@@ -142,7 +142,7 @@ Day 1
   ~ Review / Catchup
 
 Day 2
-  ~ **MIDTERM** ([study guide](midterm2_study_guide.md))
+  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 3
   ~ TBA
