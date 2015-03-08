@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="combining-random-variables">Combining Random Variables</h1>
+<p>There are two main ways we will look at of creating new random variables from existing ones: linear transformations and addition of variables.</p>
+<h3 id="linear-transformations">Linear Transformations</h3>
+<p>A linear transformation of random variables is similar to the corresponding transformations we had seen earlier, it boils down to an equation like so:</p>
+<p><span class="math">\[Y = bX + a\]</span></p>
+<p>Let us look at an example: In a certain theater show the ticket price is <span class="math">\(\$5\)</span> plus twice the roll of a die. So if you roll a 3, then you pay <span class="math">\(5 + 3\cdot 3 = \$14\)</span>.</p>
+<p>We can represent this more generally as follows: Denote by <span class="math">\(X\)</span> the result of rolling a die, and by <span class="math">\(Y\)</span> the price of the ticket. Then we can write:</p>
+<p><span class="math">\[Y = 2X + 5\]</span></p>
+<p>So the question is how the two variables relate. That formula is a start: It means that for any particular value of <span class="math">\(X\)</span> we can compute the corresponding value for <span class="math">\(Y\)</span>. The key thing with linear transformations is that the probabilities stay the same, only the values change. So the probability tables for our variables would look as follows:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">X</td>
+<td align="right">1</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td align="right">6</td>
+</tr>
+<tr class="even">
+<td align="right">Y</td>
+<td align="right">7</td>
+<td align="right">9</td>
+<td align="right">11</td>
+<td align="right">13</td>
+<td align="right">15</td>
+<td align="right">17</td>
+</tr>
+<tr class="odd">
+<td align="right">p</td>
+<td align="right">1/6</td>
+<td align="right">1/6</td>
+<td align="right">1/6</td>
+<td align="right">1/6</td>
+<td align="right">1/6</td>
+<td align="right">1/6</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>When performing a linear transformation of random variables, the probabilities of the different values remain the same, only the values change.</p>
+<p>You can compute the mean and standard deviation of the new variable based on the original variable: <span class="math">\[\mu_Y = b\mu_X + a\]</span> <span class="math">\[\sigma_Y = b\sigma_X\]</span></p>
+</blockquote>
+<p>For instance let us consider the above example. The average price ticket is:</p>
+<p><span class="math">\[\mu_X = \frac{1}{6}\cdot 1 + \cdots + \frac{1}{6}\cdot 6 = \frac{21}{6} = 3.5\]</span></p>
+<p>And the standard deviation is:</p>
+<p><span class="math">\[\sigma_X = \sqrt{\frac{1}{6}\cdot (1 - 3.5)^2 + \cdots + \frac{1}{6}\cdot (6 - 3.5)^2} = \sqrt{\frac{17.5}{6}} = 1.708\]</span></p>
+<p>If we wanted to compute the same quantities for the variable <span class="math">\(Y\)</span>, we could try to do the corresponding computations from the table values for <span class="math">\(Y\)</span>, or we could instead use the relation with <span class="math">\(X\)</span>:</p>
+<p><span class="math">\[\mu_Y = 2\mu_X + 5 = 2\cdot 3.5 + 5 = 12\]</span> <span class="math">\[\sigma_Y = 2\sigma_X = 3.416\]</span></p>
+<h3 id="adding-random-variables">Adding random variables</h3>
+<p>Another key operation is when we want to add two random variables. This is a more complicated operation, which actually depends on how the two variables relate to each other. Let us consider the following two problems:</p>
+<blockquote>
+<p><strong>Case A</strong></p>
+<p>We roll a six-sided die. If the result is <span class="math">\(4\)</span> or more then Bob wins <span class="math">\(\$2\)</span>. If it is a <span class="math">\(3\)</span> or a <span class="math">\(5\)</span>, then Alice wins <span class="math">\(\$3\)</span>. Denote by <span class="math">\(X\)</span> Bob’s winnings, by <span class="math">\(Y\)</span> Alice’s winnings, and by <span class="math">\(Z\)</span> their total winnings, which we could write symbolically as <span class="math">\(Z = X+Y\)</span>.</p>
+</blockquote>
+<blockquote>
+<p><strong>Case B</strong></p>
+<p>We roll a six-sided die. If the result is <span class="math">\(4\)</span> or more then Bob wins <span class="math">\(\$2\)</span>. Then we roll another six-sided die. If the result is <span class="math">\(3\)</span>, <span class="math">\(4\)</span> or <span class="math">\(5\)</span>, then Alice wins <span class="math">\(\$3\)</span>. Denote by <span class="math">\(X\)</span> Bob’s winnings, by <span class="math">\(Y\)</span> Alice’s winnings, and by <span class="math">\(Z\)</span> their total winnings, so again we could write <span class="math">\(Z = X+Y\)</span>.</p>
+</blockquote>
+<p>In both of these cases, the tables for <span class="math">\(X\)</span> and Y$ are the same:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">X</td>
+<td align="right">0</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">p</td>
+<td align="right">1/2</td>
+<td align="right">1/2</td>
+</tr>
+</tbody>
+</table>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">Y</td>
+<td align="right">0</td>
+<td align="right">3</td>
+</tr>
+<tr class="even">
+<td align="right">p</td>
+<td align="right">1/2</td>
+<td align="right">1/2</td>
+</tr>
+</tbody>
+</table>
+<p>However, their “sum” is a complicated question. First off, what are the possible values for <span class="math">\(Z=X+Y\)</span>? It could be <span class="math">\(0\)</span>, <span class="math">\(2\)</span>, <span class="math">\(3\)</span> or <span class="math">\(5\)</span>. Let us compute the table for <span class="math">\(Z\)</span> in the first case. these would correspond respectively to the sets <span class="math">\(\{1, 2\}\)</span>, <span class="math">\(\{6\}\)</span>, <span class="math">\(\{3\}\)</span> and <span class="math">\(\{4, 5\}\)</span> respectively. So the table for <span class="math">\(Z\)</span> would be:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">Z</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">5</td>
+</tr>
+<tr class="even">
+<td align="right">p</td>
+<td align="right">1/3</td>
+<td align="right">1/6</td>
+<td align="right">1/6</td>
+<td align="right">1/3</td>
+</tr>
+</tbody>
+</table>
+<p>Now in the second example, case B, the two rolls are independent. For instance <span class="math">\(Z=0\)</span>, we must have <span class="math">\(X=0\)</span> and <span class="math">\(Y=0\)</span>, and those two are independent so we multiply them to find <span class="math">\(P(Z=0) = 1/4\)</span>. In general the table for <span class="math">\(Z\)</span> in this case would be:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">Z</td>
+<td align="right">0</td>
+<td align="right">2</td>
+<td align="right">3</td>
+<td align="right">5</td>
+</tr>
+<tr class="even">
+<td align="right">p</td>
+<td align="right">1/4</td>
+<td align="right">1/4</td>
+<td align="right">1/4</td>
+<td align="right">1/4</td>
+</tr>
+</tbody>
+</table>
+<p>Notice the two tables are different! The reason is that the interaction between the two variables matters a great deal. In the case B they are independent of each other, in case A they are not.</p>
+<blockquote>
+<p>To determine the probability distribution of the sum of two variables <span class="math">\(Z = X + Y\)</span> we need to know the <strong>joint probability</strong> distribution of <span class="math">\(X\)</span> and <span class="math">\(Y\)</span>, i.e. the chances of combined events like <span class="math">\(P(X=0\textrm{ and }Y=3)\)</span>.</p>
+</blockquote>
+<p>The joint probability distribution is a 2-way table showing the probabilities of all combined outcomes. For case A this would look as follows:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">Y\X</td>
+<td align="right">0</td>
+<td align="right">2</td>
+</tr>
+<tr class="even">
+<td align="right">0</td>
+<td align="right">1/3</td>
+<td align="right">1/6</td>
+</tr>
+<tr class="odd">
+<td align="right">3</td>
+<td align="right">1/6</td>
+<td align="right">1/3</td>
+</tr>
+</tbody>
+</table>
+<p>The corresponding table for case B will be different.</p>
+<blockquote>
+<p>Even though the actual distribution of a sum is harder to compute, the mean, and some times the standard deviation, have simple formulas:</p>
+<p><span class="math">\[\mu_{X+Y} = \mu_X + \mu_Y\]</span> and if the variables <span class="math">\(X\)</span>, <span class="math">\(Y\)</span> are independent of each other, then <span class="math">\[\sigma^2_{X+Y} = \sigma^2_X + \sigma^2_Y\]</span></p>
+</blockquote>
+<p>Verify these results in the above example:</p>
+<ol style="list-style-type: decimal">
+<li>Compute <span class="math">\(\mu_X\)</span> and <span class="math">\(\mu_Y\)</span> from their tables.</li>
+<li>Compute <span class="math">\(\mu_Z\)</span> for case A and case B directly from the computed tables.</li>
+<li>Verify that <span class="math">\(\mu_Z = \mu_X + \mu_Y\)</span>.</li>
+<li>Compute <span class="math">\(\sigma^2_X\)</span> and <span class="math">\(\sigma^2_Y\)</span> from their tables.</li>
+<li>Compute <span class="math">\(\sigma^2_Z\)</span> for case A and case B directly from the computed tables. Notice how they differ.</li>
+<li>Verify that the second case matches with <span class="math">\(\sigma^2_X + \sigma^2_Y\)</span>.</li>
+</ol>
+<p>Let us consider one more example of this:</p>
+<blockquote>
+<p>We roll a six-sided die. If the result is <span class="math">\(4\)</span> or more then Bob wins <span class="math">\(\$2\)</span>. If it is a <span class="math">\(5\)</span> or <span class="math">\(6\)</span>, then Alice wins <span class="math">\(\$3\)</span>. Denote by <span class="math">\(X\)</span> Bob’s winnings, by <span class="math">\(Y\)</span> Alice’s winnings, and by <span class="math">\(Z\)</span> their total winnings, which we could write symbolically as <span class="math">\(Z = X+Y\)</span>.</p>
+</blockquote>
+<ol style="list-style-type: decimal">
+<li>Compute the tables for <span class="math">\(X\)</span>, <span class="math">\(Y\)</span> and <span class="math">\(Z\)</span>, as well as the joint probability table for <span class="math">\(X\)</span> and <span class="math">\(Y\)</span> combined.</li>
+<li>Compute <span class="math">\(\mu_X\)</span>, <span class="math">\(\sigma^2_X\)</span>, <span class="math">\(\mu_Y\)</span>, <span class="math">\(\sigma^2_Y\)</span> from their tables.</li>
+<li>Compute <span class="math">\(\mu_Z\)</span>, <span class="math">\(\sigma^2_Z\)</span> from its table. Compute <span class="math">\(\sigma^2_X + \sigma^2_Y\)</span> and notice that it differs from <span class="math">\(\sigma^2_Z\)</span>.</li>
+</ol>
+</body>
+</html>
