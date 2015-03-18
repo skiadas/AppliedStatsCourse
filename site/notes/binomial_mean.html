@@ -29,5 +29,85 @@
 </dl>
 <h2 id="notes">Notes</h2>
 <h3 id="mean-and-standard-deviation-for-the-binomial">Mean and Standard Deviation for the Binomial</h3>
+<p>We have seen how to find the mean and standard deviation of combinations of variables, when those variables are independent of each other. We will now use that knowledge to find formulas for the mean and standard deviation of the binomial.</p>
+<blockquote>
+<p>Consider a binomial setting with parameters <span class="math">\(n\)</span> and <span class="math">\(p\)</span>, and denote by <span class="math">\(X\)</span> the number of successes.</p>
+<ul>
+<li>Denote by <span class="math">\(S_1\)</span> the “number of successes in the first trial”.</li>
+<li>Denote by <span class="math">\(S_2\)</span> the “number of successes in the second trial”.</li>
+</ul>
+<p>and so on. Then:</p>
+<ul>
+<li>All the <span class="math">\(S_i\)</span> are independent of each other.</li>
+<li><p>Each <span class="math">\(S_i\)</span> follows the distribution given by the table:</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="right">S</td>
+<td align="right">0</td>
+<td align="right">1</td>
+</tr>
+<tr class="even">
+<td align="right">Prob</td>
+<td align="right">1-p</td>
+<td align="right">p</td>
+</tr>
+</tbody>
+</table></li>
+<li><p>From this table we find: <span class="math">\[\mu_{S_i} = p\]</span> <span class="math">\[\sigma^2_{S_i} = p(1-p)\]</span></p></li>
+</ul>
+</blockquote>
+<p>To see why these are true:</p>
+<ul>
+<li>The probability table for the <span class="math">\(S_i\)</span> is pretty easy to see, since the <span class="math">\(i\)</span>-th trial is a trial with the two options success/failure, and we count the number of successes; so either <span class="math">\(0\)</span> or <span class="math">\(1\)</span>.</li>
+<li><p>Using the table we compute:</p>
+<p><span class="math">\[\mu_S = (1-p)\cdot 0 + p \cdot 1 = p\]</span> <span class="math">\[\sigma^2_S = (1-p)(0-p)^2 + p(1-p)^2 = p(1-p)\left[p + (1-p)\right] = p(1-p)\]</span></p></li>
+</ul>
+<p>We now use the <span class="math">\(S_i\)</span> to say something about <span class="math">\(X\)</span>:</p>
+<blockquote>
+<ul>
+<li><span class="math">\(X\)</span> relates to the <span class="math">\(S_i\)</span> via: <span class="math">\[X = S_1 + S_2 + \cdots + S_n\]</span></li>
+<li><p>Using this we find formulas for the mean and standard deviation of <span class="math">\(X\)</span>:</p>
+<span class="math">\[\mu_X = np\]</span> <span class="math">\[\sigma_X = \sqrt{np(1-p)}\]</span></li>
+<li><p>If we define by <span class="math">\(\hat p\)</span> the “percent of successes”, namely</p>
+<p><span class="math">\[\hat p = \frac{X}{n}\]</span></p>
+<p>then we have the formulas:</p>
+<p><span class="math">\[\mu_{\hat p} = p\]</span> <span class="math">\[\sigma_{\hat p} = \frac{\sqrt{p(1-p)}}{\sqrt{n}}\]</span></p></li>
+</ul>
+</blockquote>
+<p>The first part is straightforward. Because the <span class="math">\(S_i\)</span> are independent of each other, the formulas we learned earlier allow us to compute the mean and standard deviation of <span class="math">\(X\)</span> using the ones for <span class="math">\(S_i\)</span>:</p>
+<p><span class="math">\[\mu_X = \mu_{S_1} + \mu_{S_2} + \cdots + \mu_{S_n} = p + p + \cdots + p = np\]</span> <span class="math">\[\sigma^2_X = \sigma^2_{S_1} + \sigma^2_{S_2} + \cdots + \sigma^2_{S_n} = p(1-p) + p(1-p) + \cdots + p(1-p) = np(1-p)\]</span></p>
+<p>The formulas for <span class="math">\(\hat p\)</span> follow from the fact that it is just a linear transformation from <span class="math">\(X\)</span>, just dividing everything by <span class="math">\(p\)</span>.</p>
+<h3 id="approximation-via-normal-distribution">Approximation via Normal Distribution</h3>
+<p>These formulas become useful when <span class="math">\(n\)</span> is large, because in that case we can approximate the binomial distribution with normal:</p>
+<blockquote>
+<p>When <span class="math">\(n\)</span> “sufficiently large”, then the binomial follows an approximately normal distribution. So we have:</p>
+<p><span class="math">\[X\sim N\left(np, \sqrt{np(1-p)}\right)\]</span> <span class="math">\[\hat p\sim N\left(p, \frac{\sqrt{p(1-p)}}{\sqrt{n}}\right)\]</span></p>
+<p>The <strong>rule of thumb</strong> for when <span class="math">\(n\)</span> is sufficiently large is that we should have:</p>
+<p><span class="math">\[np \geq 10\]</span> <span class="math">\[n(1-p) \geq 10\]</span></p>
+<p>Both of these conditions should be true. We only need to check the smallest of <span class="math">\(p\)</span>, <span class="math">\(1-p\)</span>, since if that one results in <span class="math">\(10\)</span> or more then the other will do as well.</p>
+</blockquote>
+<p>Using these we can quickly do some computations, without having to use the explicit formula for <span class="math">\(P(X=k)\)</span>, which becomes very hard to use for large <span class="math">\(n\)</span>.</p>
+<p>Here’s an example:</p>
+<blockquote>
+<p>In a multiple-choice test there are <span class="math">\(100\)</span> questions. We pick answers at random and there are <span class="math">\(5\)</span> possible answers to each question, so we have a <span class="math">\(20\%\)</span> chance to answer each question correctly. What are the chances, that we will get at least <span class="math">\(25\)</span> answers correct?</p>
+</blockquote>
+<p>This is a binomial setting, since there is a fixed number of questions <span class="math">\(n=5\)</span>, and for each one we either get it right with probability <span class="math">\(p=0.2\)</span> or we get it wrong, and since we pick answers at random the trials are independent. <span class="math">\(X\)</span> measures the number of correct answers.</p>
+<p>We start by computing the mean and standard deviation of <span class="math">\(X\)</span>. We have:</p>
+<p><span class="math">\[\mu_X = np = 100\cdot 0.2 = 20\]</span> <span class="math">\[\sigma_X = \sqrt{np(1-p)} = \sqrt{20\cdot 0.8} = 4\]</span></p>
+<p>We then check the rule of thumb: We need both <span class="math">\(np\)</span> and <span class="math">\(n(1-p)\)</span> to be at least <span class="math">\(10\)</span>. But <span class="math">\(np\)</span> is clearly the smallest of the two, and it is already <span class="math">\(\geq 10\)</span>, so we are OK and can use the normal approximation.</p>
+<p>Therefore we can approximate <span class="math">\(X\)</span> by <span class="math">\(N(20, 4)\)</span>. The question therefore becomes, in <span class="math">\(N(20, 4)\)</span> how much data is above <span class="math">\(x = 25\)</span>.</p>
+<p>This is now a problem about a normal distribution, and we know well how to solve those problems. We would compute:</p>
+<p><span class="math">\[z = \frac{x-\mu}{\sigma} = \frac{25 - 20}{4} = 1.25\]</span></p>
+<p>Then look that up in our table to get <span class="math">\(p = 0.894\)</span>. Since this measures how many are below that value, we need to look at the rest, so <span class="math">\(1-0.894=0.106\)</span>, or <span class="math">\(10.6\%\)</span>. So there is roughly a <span class="math">\(10\%\)</span> chance that we would score more than <span class="math">\(25\)</span> points at random like that.</p>
+<h4 id="continuity-correction">Continuity Correction</h4>
+<p>One important topic to discuss is that of <strong>continuity correction</strong>. This is relevant when <span class="math">\(n\)</span> is relatively small, like in this example.</p>
+<p>The problem is this: We are approximating the binomial distribution with a normal distribution. But the binomial distribution corresponds to integers only, while the normal distribution allows for all numbers. So for instance according to the normal distribution there should be a number of students who scored between 24 and 25. But that is not possible. This is a discrepancy we need to somehow correct.</p>
+<p>The fix is to divide the space between 24 and 25 in half, and count the upper half as part of 25, and the lower half as part of 24. What this means is that in these problems you want to often start halfway to the previous or next value, depending on the question.</p>
+<p>In other words, in this instance we should be using <span class="math">\(x=24.5\)</span> rather than <span class="math">\(x=25\)</span>. You can think of it as saying that we should include as part of <span class="math">\(25\)</span> values that would have “rounded up to 25”.</p>
+<p>With that in mind, the computation would have been:</p>
+<p><span class="math">\[z = \frac{24.5 - 20}{4} = 1.125\]</span> <span class="math">\[p = 0.8697\]</span> <span class="math">\[1-p = 0.1303\]</span></p>
+<p>So with this computation, the answer would be closer to <span class="math">\(13\%\)</span>, rather than <span class="math">\(10\%\)</span>. This would be a better estimate in this case.</p>
+<p>For comparison, the perfect answer, the one that would be computed if we did the exact formula for <span class="math">\(P(X=k)\)</span> for all numbers from <span class="math">\(25\)</span> to <span class="math">\(100\)</span>, would have given us a percent of <span class="math">\(13.135\%\)</span>.</p>
 </body>
 </html>

@@ -128,13 +128,13 @@ Day 1
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 2
-  ~ [Combining Random Variables](notes/rv_combine.md)
+  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
 
 Day 3
-  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
 
 Day 4
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Combining Random Variables (cont)](notes/rv_combine.md)
 
 ## Week 11 (03/16-03/20)
 
@@ -142,18 +142,18 @@ Day 1
   ~ Review / Catchup
 
 Day 2
-  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
+  ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
 
 Day 3
-  ~ TBA
+  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 4
-  ~ TBA
+  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
 ## Week 12 (03/23-03/27)
 
 Day 1
-  ~ TBA
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 2
   ~ TBA
