@@ -68,7 +68,7 @@ The first part is straightforward. Because the $S_i$ are independent of each oth
 $$\mu_X = \mu_{S_1} + \mu_{S_2} + \cdots + \mu_{S_n} = p + p + \cdots + p = np$$
 $$\sigma^2_X = \sigma^2_{S_1} + \sigma^2_{S_2} + \cdots + \sigma^2_{S_n} = p(1-p) + p(1-p) + \cdots + p(1-p) = np(1-p)$$
 
-The formulas for $\hat p$ follow from the fact that it is just a linear transformation from $X$, just dividing everything by $p$.
+The formulas for $\hat p$ follow from the fact that it is just a linear transformation from $X$, just dividing everything by $n$.
 
 ### Approximation via Normal Distribution
 
