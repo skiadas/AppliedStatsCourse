@@ -153,16 +153,16 @@ Day 4
 ## Week 12 (03/23-03/27)
 
 Day 1
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 Day 2
-  ~ TBA
+  ~ Work on Projects
 
 Day 3
-  ~ TBA
+  ~ [Samples and Populations](notes/iid_setting.md)
 
 Day 4
-  ~ TBA
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 ## Week 13 (03/30-04/03)
 
