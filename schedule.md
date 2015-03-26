@@ -159,10 +159,10 @@ Day 2
   ~ Work on Projects
 
 Day 3
-  ~ [Samples and Populations](notes/iid_setting.md)
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 4
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Samples and Populations](notes/iid_setting.md)
 
 ## Week 13 (03/30-04/03)
 

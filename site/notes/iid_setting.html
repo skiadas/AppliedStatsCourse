@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="the-sample-mean-iid-setting">The Sample Mean / IID setting</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section</li>
+</ul>
+<h2 id="practice-problems">Practice Problems</h2>
+<dl>
+<dt>. (Page)</dt>
+<dd>41, 42
+</dd>
+<dt>. (Page)</dt>
+<dd>86, 89, 95
+</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<h3 id="the-iid-setting">The IID setting</h3>
+<p>The IID setting is somewhat analogous to the binomial setting in the case where the values in question are scalar. Here are its characteristics:</p>
+<ol style="list-style-type: decimal">
+<li>Fixed number of trials. As in the binomial setting, we are repeating something a fixed number of times. We will again denote that by <span class="math">\(n\)</span>. It is often called the <em>sample size</em>, as it is usually exactly what it is.</li>
+<li>Trials have numerical values as outcomes. As such we can describe them as random variables. for instance we might be selecting students at random and looking at their gpa. We will denote by <span class="math">\(X_1\)</span>, <span class="math">\(X_2\)</span>, <span class="math">\(X_3\)</span>, , <span class="math">\(X_n\)</span> the random variables for each of the trials.</li>
+<li>The distributions of the different trials are all identical. In other words, the “tables” for <span class="math">\(X_1\)</span>, <span class="math">\(X_2\)</span>, and so on are all identical. We often use <span class="math">\(X\)</span> to denote that common distribution. In the example with the GPAs, this means that the kinds of values we can get when we look at the GPA of the first student we pick are the same as the kinds of values we can get when we look at the second student we pick and so on. In a sample case, this basically means that <em>all samples are drawn from the same population</em>.</li>
+<li>The trials are independent of each other. In our example, it would mean that what gpa we get for the first say 5 students does not have an effect on the gpa we might get for the 6th student. The checks we need to perform for this independence are the same checks we had to perform to determine if the trials in a binomial are independent. In particular, in the case where we have an actual population and removing people from it to form the sample, then we need to know that the population is at least 20 times the sample size.</li>
+</ol>
+<p>We can summarize this by saying:</p>
+<blockquote>
+<p>In the IID setting we have a <em>fixed number of <strong>I</strong>ndependent, <strong>I</strong>dentically <strong>D</strong>istributed trials</em></p>
+</blockquote>
+<p>You should see a lot of similarities with the binomial. In the case of the binomial we had the same chance of success, <span class="math">\(p\)</span>. The analog of this here is the claim that the distributions of all trials are identical.</p>
+<h3 id="sample-mean">Sample Mean</h3>
+<blockquote>
+<p>In the IID setting, the quantity of interest is the <strong>sample mean</strong>:</p>
+<p><span class="math">\[\bar x = \frac{X_1+X_2+\cdots+X_n}{n}\]</span></p>
+</blockquote>
+<p>Notice that it is a random variable, the sum of all the <span class="math">\(X_i\)</span>. Its value depends on the sample we end up with, just like the value of <span class="math">\(\hat p\)</span> depended on the sample in the binomial case. So <em>different samples would give us different values for the sample mean</em>.</p>
+<p>Just like in the binomial we were interested in the kinds of values that <span class="math">\(\hat p\)</span> can take, and how likely each is, we can do the same thing here.</p>
+<h3 id="sampling-distribution">Sampling Distribution</h3>
+<blockquote>
+<p>The <strong>sampling distribution</strong> of <span class="math">\(\bar x\)</span> is the distribution of the values that <span class="math">\(\bar x\)</span> takes across all possible samples of size <span class="math">\(n\)</span>.</p>
+</blockquote>
+<p>The remarkable fact is that we can describe what this distribution is, even if we know very little about the values that the <span class="math">\(X_i\)</span> can take. Let us set up the stage.</p>
+<blockquote>
+<p>In the IID setting we draw <span class="math">\(n\)</span> samples/trials from a distribution <span class="math">\(X\)</span>. We will denote the mean of that distribution by <span class="math">\(\mu\)</span> and the standard deviation of this distribution by <span class="math">\(\sigma\)</span>.</p>
+<p>Then we can compute the mean and standard deviation of the <em>sampling distribution of <span class="math">\(\bar x\)</span></em>:</p>
+<p><span class="math">\[\mu_{\bar x} = \mu\]</span> <span class="math">\[\sigma_{\bar x} = \frac{\sigma}{\sqrt{n}}\]</span></p>
+</blockquote>
+<p>The greek letters on the left-hand side denote the mean and standard deviation of the random variable <span class="math">\(\bar x\)</span>, in other words the mean and standard deviation of the sampling distribution.</p>
+<p>Let us rephrase this:</p>
+<blockquote>
+<p>Suppose we draw samples of size <span class="math">\(n\)</span> by drawing independent values from a population <span class="math">\(X\)</span> with mean <span class="math">\(\mu\)</span> and standard deviation <span class="math">\(\sigma\)</span>.</p>
+<p>If we then compute the sample mean values <span class="math">\(\bar x\)</span>, one for each possible sample of <span class="math">\(n\)</span> values, then the mean of these values is <span class="math">\(\mu\)</span> and the standard deviation is <span class="math">\(\frac{\sigma}{\sqrt{n}}\)</span>.</p>
+<p><em>Sample averages vary less than the original values</em>, by a factor of <span class="math">\(\sqrt{n}\)</span>.</p>
+<p><em>Sample averages are on average the same as the original values</em>.</p>
+</blockquote>
+<p>This tells us at least the mean and standard deviation of the sampling distribution of <span class="math">\(\bar x\)</span>. Amazingly, we can say more about it. This is the famous Central Limit Theorem.</p>
+<h3 id="the-central-limit-theorem">The Central Limit Theorem</h3>
+<blockquote>
+<p><strong>Central Limit Theorem</strong></p>
+<p>When the sample size <span class="math">\(n\)</span> is “sufficiently large”, then the sampling distribution of <span class="math">\(\bar x\)</span> will be approximately normal.</p>
+<p>So we can assume that <span class="math">\(\bar x\)</span> follows the distribution:</p>
+<p><span class="math">\[N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)\]</span></p>
+</blockquote>
+<p>This is a remarkable theorem. It tells us that no matter what kind of distribution our original values had, heavily skewed, outliers, multiple modes and so on, then once we take large enough samples, the possible values are behaving like a normal distribution. <em>No matter what we started with</em>.</p>
+<p>This is the reason why we have standardized tests. Your score in a standardized test is an average of your scores in many questions, and averages tend to behave in a more normal way than the original values.</p>
+<blockquote>
+<ul>
+<li><em>Sample averages are on average the same as the original values</em>.</li>
+<li><em>Sample averages vary less than the original values</em>.</li>
+<li><em>Sample averages are more normal than the original values</em>.</li>
+</ul>
+</blockquote>
+<p>The only thing left is to answer the question of what is “sufficiently large sample size”. All we have is a general rule of thumb, but the bottom line is: <em>The more non-normal the original population, the larger the sample size you would need</em>.</p>
+<blockquote>
+<p><strong>Rule of Thumb</strong> for sufficient sample size for the Central Limit Theorem to apply.</p>
+<ul>
+<li>If the original population is heavily skewed, outliers etc, we would need a sample size near <span class="math">\(n=100\)</span> or more.</li>
+<li>If the original population is only slightly skewed, without many outliers, a sample size around <span class="math">\(n=40\)</span> or more would suffice.</li>
+<li>If the original population is close to symmetric, a sample size of 10-20 is enough.</li>
+<li>If the original population is normal, then even a sample size of <span class="math">\(n=1\)</span> is sufficient.</li>
+</ul>
+<p>The larger the sample size, the better. These are starting points depending on the population.</p>
+</blockquote>
+<p>One important observation is that these sample sizes are just the minimums required to be able to claim that <span class="math">\(\bar x\)</span> is normally distributed. We typically still need even bigger sample sizes, in order to keep <span class="math">\(\sigma_{\bar x} = \frac{\sigma}{\sqrt{n}}\)</span> small.</p>
+<h3 id="an-example">An example</h3>
+<p>Suppose we draw at random a sample of size <span class="math">\(40\)</span> from the Hanover student body, and consider their GPAs.</p>
+<ul>
+<li>We first consider whether this fits into the IID setting.
+<ul>
+<li>The students are selected at random, so that’s a good start.</li>
+<li>We do remove the students from the population as we select them, so we need to make sure we have at least 20 times as many students to begin with. Since <span class="math">\(20\times 40 = 800\)</span>, as long as we have more than <span class="math">\(800\)</span> students on campus we are OK with the assumption of independent trials.</li>
+<li>Each student we pick at random has the same possible outcomes for their GPAs. This would not be the case for instance, if we constantly alternated between selecting a male student and a female student, as in general those two groups have different GPA distributions. But if we trully pick the students at random, then they would be identically distributed.</li>
+<li>We do not know what the mean and standard deviation of the entire population is, but that’s what <span class="math">\(\mu\)</span> and <span class="math">\(\sigma\)</span> would stand for. So <span class="math">\(\mu\)</span> is the average GPA of students at Hanover, and <span class="math">\(\sigma\)</span> is the standard deviation of all student GPAs.
+<ul>
+<li>For the purposes of this problem we will assume that the average Hanover GPA is <span class="math">\(\mu = 2.98\)</span>, and that the standard deviation of Hanover GPAs is <span class="math">\(\sigma = 0.55\)</span>. The true value for <span class="math">\(\sigma\)</span> might be a bit smaller, but it is unlikely to be much larger (the allowed range of GPAs prohibits it).</li>
+</ul></li>
+<li>All these allow us to say we are in an IID setting, with <span class="math">\(n=40\)</span>. And <span class="math">\(\bar x\)</span>, is the average GPA in the sample of 40 we selected.</li>
+</ul></li>
+<li>Next we need to consider if we can apply the Central Limit Theorem.
+<ul>
+<li>In order to answer that, we would need to know something about how the population is distributed.</li>
+<li>Our sample of <span class="math">\(n=40\)</span> fits into the “second” option in the list earlier. In other words, if the population distribution is NOT worse than slightly normal, we are OK.</li>
+<li>We don’t actually know the population distribution. We have to therefore make an educated guess. In this instance we have two tools at our disposal.
+<ul>
+<li>Prior knowledge. College GPAs in general tend to approach a normal distribution.</li>
+<li>Examine the sample: We have 40 values in our sample, and they came from the population. If the population was heavily skewed, then it is reasonable to expect that we would be able to observe some of that skeweness in our sample values. Therefore plotting a histogram of the 40 values in our data would be a good place to start. If we don’t see much skeweness there, we can guess that the population didn’t have much skewness either.</li>
+</ul></li>
+<li>So this would allow us to say that the Central Limit Theorem “kicks in”. Therefore <span class="math">\(\bar x\)</span> is distributed normally.</li>
+</ul></li>
+<li>Next, we compute the mean and standard deviation of this distribution.
+<ul>
+<li><span class="math">\(\mu_{\bar x} = \mu = 2.98\)</span></li>
+<li><span class="math">\(\sigma_{\bar x} = \frac{\sigma}{\sqrt{n}} = \frac{0.55}{\sqrt{40}} = 0.087\)</span></li>
+<li>Notice how considerably smaller this standard deviation is: Our sample mean <span class="math">\(\bar x\)</span> cannot deviate all that much from the <span class="math">\(2.98\)</span> value.</li>
+</ul></li>
+<li><p>All this leads us to being able to say that <span class="math">\(\bar x\)</span> behaves according to the normal distribution <span class="math">\(N(2.98, 0.087)\)</span>. We can use our knowledge of that distribution to answer various questions about <span class="math">\(\bar x\)</span>.</p>
+<p>For example, say I want to find a range that captures <span class="math">\(90\%\)</span> of the possible <span class="math">\(\bar x\)</span> values.</p>
+<ul>
+<li>In terms of the normal distribution, I need to leave a <span class="math">\(5\%\)</span> out on either side. So we will be working with <span class="math">\(p=0.05\)</span>.</li>
+<li>Table A tells us that the corresponding <span class="math">\(z\)</span> value is <span class="math">\(z=-1.645\)</span>.</li>
+<li><p>We scale that back to an <span class="math">\(\bar x\)</span> value using the formulas</p>
+<span class="math">\[z = \frac{\bar x - \mu_{\bar x}}{\sigma_{\bar x}}\]</span> <span class="math">\[\bar x = \sigma_{\bar x} \cdot z + \mu_{\bar x}\]</span></li>
+<li>In our case that means <span class="math">\(\bar x = \pm 0.089 \cdot(-1.645) + 2.98 = 2.98 \pm 0.1464\)</span>.</li>
+<li>The two values we get that way are <span class="math">\(2.83\)</span> and <span class="math">\(3.13\)</span>.</li>
+<li><p>So what this means is that <span class="math">\(90\%\)</span> of the possible samples out there have a sample mean value <span class="math">\(\bar x\)</span> somewhere between <span class="math">\(2.83\)</span> and <span class="math">\(3.13\)</span>. So <span class="math">\(90\%\)</span> of the times when we choose a sample we’re no more than <span class="math">\(0.15\)</span> away from the actual mean.</p></li>
+</ul></li>
+</ul>
+</body>
+</html>
