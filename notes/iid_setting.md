@@ -136,3 +136,33 @@ Suppose we draw at random a sample of size $40$ from the Hanover student body, a
     - In our case that means $\bar x = \pm 0.089 \cdot(-1.645) + 2.98 = 2.98 \pm 0.1464$.
     - The two values we get that way are $2.83$ and $3.13$.
     - So what this means is that $90\%$ of the possible samples out there have a sample mean value $\bar x$ somewhere between $2.83$ and $3.13$. So $90\%$ of the times when we choose a sample we're no more than $0.15$ away from the actual mean.
+
+### Comparison Between Binomial and Normal
+
+-------------------------------  ------------------------------------------ ---------------------------------------
+Concept                                                            Binomial                                  Normal
+-------------------------------  ------------------------------------------ ---------------------------------------
+Sample Size                                                     $n$ (fixed)                             $n$ (fixed)
+
+Sample Values                                                        Yes/No                                 Numeric
+
+Distribution                                Same probability of Success $p$            Identical $X$ for each trial
+
+Independent                          $20$ times sample less than population  $20$ times sample less than population
+                                                   And other considerations                And other considerations
+
+Parameter (from population)             Population percent of success ($p$)     Population mean $\mu$ (mean of $X$)
+
+Statistic (from sample)                Sample percent of success ($\hat p$)                    Sample mean $\bar x$
+
+Sampling Distribution mean                               $\mu_{\hat p} = p$                    $\mu_{\bar x} = \mu$
+
+Sampling Distribution std. dev    $\sigma_{\hat p}=\frac{\sqrt{p(1-p)}}{n}$     $\sigma_{\bar x} =\frac{\sigma}{n}$
+
+Sampling Distribution is Normal             $np\geq 10$ and $n(1-p)\geq 10$   Central Limit Theorem (rule of thumb)
+
+-------------------------------  ------------------------------------------ ---------------------------------------
+
+
+
+

@@ -142,5 +142,67 @@
 <li><p>So what this means is that <span class="math">\(90\%\)</span> of the possible samples out there have a sample mean value <span class="math">\(\bar x\)</span> somewhere between <span class="math">\(2.83\)</span> and <span class="math">\(3.13\)</span>. So <span class="math">\(90\%\)</span> of the times when we choose a sample we’re no more than <span class="math">\(0.15\)</span> away from the actual mean.</p></li>
 </ul></li>
 </ul>
+<h3 id="comparison-between-binomial-and-normal">Comparison Between Binomial and Normal</h3>
+<table>
+<colgroup>
+<col width="28%" />
+<col width="37%" />
+<col width="33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Concept</th>
+<th align="right">Binomial</th>
+<th align="right">Normal</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Sample Size</td>
+<td align="right"><span class="math">\(n\)</span> (fixed)</td>
+<td align="right"><span class="math">\(n\)</span> (fixed)</td>
+</tr>
+<tr class="even">
+<td align="left">Sample Values</td>
+<td align="right">Yes/No</td>
+<td align="right">Numeric</td>
+</tr>
+<tr class="odd">
+<td align="left">Distribution</td>
+<td align="right">Same probability of Success <span class="math">\(p\)</span></td>
+<td align="right">Identical <span class="math">\(X\)</span> for each trial</td>
+</tr>
+<tr class="even">
+<td align="left">Independent</td>
+<td align="right"><span class="math">\(20\)</span> times sample less than population And other considerations</td>
+<td align="right"><span class="math">\(20\)</span> times sample less than population And other considerations</td>
+</tr>
+<tr class="odd">
+<td align="left">Parameter (from population)</td>
+<td align="right">Population percent of success (<span class="math">\(p\)</span>)</td>
+<td align="right">Population mean <span class="math">\(\mu\)</span> (mean of <span class="math">\(X\)</span>)</td>
+</tr>
+<tr class="even">
+<td align="left">Statistic (from sample)</td>
+<td align="right">Sample percent of success (<span class="math">\(\hat p\)</span>)</td>
+<td align="right">Sample mean <span class="math">\(\bar x\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Sampling Distribution mean</td>
+<td align="right"><span class="math">\(\mu_{\hat p} = p\)</span></td>
+<td align="right"><span class="math">\(\mu_{\bar x} = \mu\)</span></td>
+</tr>
+<tr class="even">
+<td align="left">Sampling Distribution std. dev</td>
+<td align="right"><span class="math">\(\sigma_{\hat p}=\frac{\sqrt{p(1-p)}}{n}\)</span></td>
+<td align="right"><span class="math">\(\sigma_{\bar x} =\frac{\sigma}{n}\)</span></td>
+</tr>
+<tr class="odd">
+<td align="left">Sampling Distribution is Normal</td>
+<td align="right"><span class="math">\(np\geq 10\)</span> and <span class="math">\(n(1-p)\geq 10\)</span></td>
+<td align="right">Central Limit Theorem (rule of thumb)</td>
+</tr>
+</tbody>
+</table>
 </body>
 </html>
