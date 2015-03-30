@@ -162,12 +162,12 @@ Day 3
   ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 4
-  ~ [Samples and Populations](notes/iid_setting.md)
+  ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
 
 ## Week 13 (03/30-04/03)
 
 Day 1
-  ~ TBA
+  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
 Day 2
   ~ TBA
