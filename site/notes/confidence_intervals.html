@@ -66,6 +66,8 @@
 <li>There is a chance we will be wrong. This is measured by <span class="math">\(C\)</span> (or rather <span class="math">\(1-C\)</span>, and is a measure of our <strong>confidence</strong> in our prediction.</li>
 </ul>
 <p>We will see in a moment that there is a tradeoff involved: We can increase our accuracy if we are willing to reduce our confidence, and vice versa.</p>
+<p>In any case, there is always a <span class="math">\(1-C\)</span> chance of being wrong. This is especially important if we want to compute multiple confidence intervals, for more than one variable. Suppose we take samples and compute confidence intervals for <span class="math">\(k\)</span> different variables, independent of each other. If each confidence interval is taken at the <span class="math">\(C\)</span> level, then the chances that all intervals are correct are <span class="math">\(C^k\)</span>. The assumption of independence is rarely correct however, and other more complicated techniques have to be used in that case. For now, it is something to keep in mind when considering multiple confidence intervals.</p>
+<p>in any case, a <span class="math">\(95\%\)</span> confidence level for example means that in about one out of 20 times when we do this we’ll be wrong.</p>
 <h3 id="controlling-the-margin-of-error">Controlling the Margin of Error</h3>
 <p>A key quantity in a confidence interval is the margin of error <span class="math">\(m\)</span>. We want it to be as small as possible, but it comes at a cost.</p>
 <blockquote>

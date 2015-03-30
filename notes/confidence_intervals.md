@@ -55,6 +55,10 @@ This last point is important: There are two sources of indeterminacy, if you lik
 
 We will see in a moment that there is a tradeoff involved: We can increase our accuracy if we are willing to reduce our confidence, and vice versa.
 
+In any case, there is always a $1-C$ chance of being wrong. This is especially important if we want to compute multiple confidence intervals, for more than one variable. Suppose we take samples and compute confidence intervals for $k$ different variables, independent of each other. If each confidence interval is taken at the $C$ level, then the chances that all intervals are correct are $C^k$. The assumption of independence is rarely correct however, and other more complicated techniques have to be used in that case. For now, it is something to keep in mind when considering multiple confidence intervals.
+
+in any case, a $95\%$ confidence level for example means that in about one out of 20 times when we do this we'll be wrong.
+
 ### Controlling the Margin of Error
 
 A key quantity in a confidence interval is the margin of error $m$. We want it to be as small as possible, but it comes at a cost.
