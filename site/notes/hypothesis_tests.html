@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="hypothesis-tests">Hypothesis Tests</h1>
+<h2 id="reading">Reading</h2>
+<ul>
+<li>Section 9.1</li>
+<li>Section 9.2</li>
+<li>Section 9.3</li>
+</ul>
+<h2 id="practice-problems">Practice Problems</h2>
+<p>9.1 (Page) ~</p>
+<h2 id="notes">Notes</h2>
+<h3 id="hypothesis-tests-in-general">Hypothesis Tests in general</h3>
+<p>Hypothesis Testing has a ubiquitous presence in applied statistics and related disciplines. Almost every study out there is accompanied by appropriate hypothesis tests.</p>
+<p>We start by describing some standard terminology associated with hypothesis tests.</p>
+<h4 id="null-and-alternative-hypotheses">Null and Alternative Hypotheses</h4>
+<blockquote>
+<p>In every hypothesis test there are two statements, the null hypothesis and the alternative hypothesis.</p>
+<ul>
+<li>The <strong>null hypothesis</strong> is an assertion we are making that we are trying to disprove. So it is a statement about the population, that is claimed to be true. We are trying to determine if there is sufficient evidence against it. It is denoted by <span class="math">\(H_0\)</span>.</li>
+<li>The <strong>alternative hypothesis</strong> is the contradictory assertion. It is what we will accept as truth if we reject the null hypothesis. It is denoted by <span class="math">\(H_a\)</span>.</li>
+</ul>
+<p>It is vital to keep in mind, that the conclusion/decision from the test must be one of the following:</p>
+<ul>
+<li>You have enough evidence to reject <span class="math">\(H_0\)</span> in favor of <span class="math">\(H_a\)</span>, or</li>
+<li>You do not have enough evidence to reject <span class="math">\(H_0\)</span>. This does not mean that it is true, only that we don’t have enough evidence to conclude that it is not.</li>
+</ul>
+<p>You can <em>never</em> prove the null hypothesis. You can only reject it in favor of the alternative.</p>
+</blockquote>
+<p>For example, say we want to test a new diet pill, to see if it is effective.</p>
+<ul>
+<li>We could set up an study where we have people follow the recommended diet for say a month, and then compare the difference in their weight.</li>
+<li>We could then say that the null hypothesis <span class="math">\(H_0\)</span> is that on average people don’t lose weight, so the population mean of the differences between their new weight to their previous weight is <span class="math">\(\mu \geq 0\)</span>.</li>
+<li>The alternative hypothesis would then be that <span class="math">\(\mu &lt; 0\)</span>, i.e. that on average people lose weight.</li>
+</ul>
+<h4 id="types-of-errors">Types of Errors</h4>
+<blockquote>
+<p>In every hypothesis test there are two kinds of errors that we might make.</p>
+<ul>
+<li><strong>Type I errors</strong> occur when we reject the null hypothesis when it actually was true.</li>
+<li><strong>Type II errors</strong> occur when we end up not rejecting the null hypothesis, even though it actually was false.</li>
+</ul>
+<p>The probabilities of making those errors are related to how we set up our test and what parameters and bounds we use. We will see some of this in a bit.</p>
+</blockquote>
+<p>We have seen these types of errors before, when we were looking at medical tests.</p>
+<p>As a general principle, we want to keep both of those errors to a minimum. Some times however, one of the two types is more critical and we might be willing to allow for a higher chance of error in the other type in order to make the chance of error in the first type smaller.</p>
+<h3 id="hypothesis-test-for-population-mean">Hypothesis Test for population mean</h3>
+<p>We will now focus specifically on tests for the population mean <span class="math">\(\mu\)</span>. We assume that we are in the IID setting, and that <span class="math">\(n\)</span> is sufficiently large for us to use the Central Limit Theorem. Therefore we are working under the assumption that:</p>
+<p><span class="math">\[\bar x \sim N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)\]</span></p>
+<p>There are three types of hypotheses tests we may encounter:</p>
+<blockquote>
+<ul>
+<li><p>The null hypothesis is that the population mean <span class="math">\(\mu\)</span> equals a certain value <span class="math">\(\mu_0\)</span> (some specific number). The alternative hypothesis would then simply say that <span class="math">\(\mu\neq \mu_0\)</span>. We usually summarize this as follows:</p>
+<span class="math">\[\begin{cases}H_0:&amp;\mu = \mu_0\\ H_a:&amp;\mu \neq \mu_0\end{cases}\]</span></li>
+<li><p>The null hypothesis is that the population mean <span class="math">\(\mu\)</span> is at least a certain value <span class="math">\(\mu_0\)</span> (some specific number). The alternative hypothesis would then simply say that <span class="math">\(\mu &lt; \mu_0\)</span>. So:</p>
+<span class="math">\[\begin{cases}H_0:&amp;\mu \geq \mu_0\\ H_a:&amp;\mu &lt; \mu_0\end{cases}\]</span></li>
+<li><p>The null hypothesis is that the population mean <span class="math">\(\mu\)</span> is at most a certain value <span class="math">\(\mu_0\)</span> (some specific number). The alternative hypothesis would then simply say that <span class="math">\(\mu &gt; \mu_0\)</span>. We usually summarize this as follows:</p>
+<p><span class="math">\[\begin{cases}H_0:&amp;\mu \leq \mu_0\\ H_a:&amp;\mu &gt; \mu_0\end{cases}\]</span></p></li>
+</ul>
+</blockquote>
+<p>Depending on the wording of the question, you have to choose the appropriate test. The first one, with the so-called “two-sided alternative”, is the default choice.</p>
+<p>The logic behind the hypothesis tests goes like this:</p>
+<ul>
+<li>Suppose the null hypothesis were true. In particular, <span class="math">\(\mu = \mu_0\)</span> is a pivotal value for it.</li>
+<li>With that assumed value for <span class="math">\(\mu\)</span>, our sample mean <span class="math">\(\bar x\)</span> comes from a fully known distribution <span class="math">\(N\left(\mu_0, \frac{\sigma}{\sqrt{n}}\right)\)</span>.</li>
+<li>We now ask ourselves: How <em>extreme</em> is the value <span class="math">\(\bar x\)</span> we obtained from our sample, compared to what that distribution suggests? in other words, <em>what are the chances that <span class="math">\(\bar x\)</span> would be as far away from <span class="math">\(\mu_0\)</span> as it appears to be from our sample</em>?</li>
+<li><p>This translates to wanting to compute an area under the curve in a normal distribution, and we usually convert the <span class="math">\(\bar x\)</span> into a <span class="math">\(z\)</span> first, via:</p>
+<p><span class="math">\[z = \frac{\bar x - \mu_0}{\sigma/\sqrt{n}}\]</span></p>
+In this context this value <span class="math">\(z\)</span> is called the <strong>test statistic</strong>. It has a known distribution under the assumption that the null hypothesis is true.</li>
+<li>The area we compute is interpreted as <em>the chances, if the null hypothesis were correct, that we would see the kind of extreme value we saw</em>. We call this the <strong><span class="math">\(P\)</span>-value</strong>.</li>
+<li>A small <span class="math">\(P\)</span>-value means that if the null hypothesis were correct, then the kind of sample we just witnessed would have been very unlikely.</li>
+<li>But since we did just witness that sample, we have to either accept that we just witnessed something rare or to accept that the null hypothesis is incorrect, and to reject it in favor of the alternative.</li>
+<li><p>This is the essence of the hypothesis test: We end up rejecting the null hypothesis on the basis that the kind of data we saw would have been very rare if the null hypothesis were true.</p></li>
+</ul>
+<p>How we compute the <span class="math">\(P\)</span>-value depends on which of the three types of hypothesis tests we are considering. We will phrase our answers in terms of <span class="math">\(z\)</span>.</p>
+<ul>
+<li><p>In the alternative:</p>
+<p><span class="math">\[\begin{cases}H_0:&amp;\mu = \mu_0\\ H_a:&amp;\mu \neq \mu_0\end{cases}\]</span></p>
+We compute the area that is above <span class="math">\(|z|\)</span> or below <span class="math">\(-|z|\)</span>.</li>
+<li><p>In the alternative:</p>
+<p><span class="math">\[\begin{cases}H_0:&amp;\mu \geq \mu_0\\ H_a:&amp;\mu &lt; \mu_0\end{cases}\]</span></p>
+We compute the area that is below <span class="math">\(z\)</span>. If <span class="math">\(z &gt; 0\)</span> this would be bad (large), and that is a good thing as a <span class="math">\(\bar x\)</span> that is greater than <span class="math">\(\mu_0\)</span> should not help us at all in proving the alternative <span class="math">\(\mu &lt; \mu_0\)</span>.</li>
+<li><p>In the alternative:</p>
+<p><span class="math">\[\begin{cases}H_0:&amp;\mu \leq \mu_0\\ H_a:&amp;\mu &gt; \mu_0\end{cases}\]</span></p>
+<p>We compute the area that is above <span class="math">\(z\)</span>. If <span class="math">\(z &lt; 0\)</span> this would be bad (large), and that is a good thing as a <span class="math">\(\bar x\)</span> that is less than <span class="math">\(\mu_0\)</span> should not help us at all in proving the alternative <span class="math">\(\mu &gt; \mu_0\)</span>.</p></li>
+</ul>
+</body>
+</html>

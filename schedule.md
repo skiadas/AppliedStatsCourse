@@ -170,13 +170,13 @@ Day 1
   ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
 Day 2
-  ~ TBA
+  ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
 
 Day 3
-  ~ TBA
+  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
 
 Day 4
-  ~ TBA
+  ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
 
 ## Week 14 (04/06-04/10)
 
