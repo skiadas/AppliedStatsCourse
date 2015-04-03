@@ -19,9 +19,33 @@
 <li>Section 9.1</li>
 <li>Section 9.2</li>
 <li>Section 9.3</li>
+<li>Section 9.4</li>
+<li>Section 9.5</li>
 </ul>
 <h2 id="practice-problems">Practice Problems</h2>
-<p>9.1 (Page) ~</p>
+<dl>
+<dt>9.1 (Page 499)</dt>
+<dd>1-2, 6, 8, 9
+</dd>
+<dt>9.2 (Page 500)</dt>
+<dd>11, 12
+</dd>
+<dt>9.4 (Page 501)</dt>
+<dd>32, 40
+</dd>
+<dt>9.5 (Page 502)</dt>
+<dd>54-57
+</dd>
+<dt>9.1 (Page 503)</dt>
+<dd>63-65
+</dd>
+<dt>9.2 (Page 504)</dt>
+<dd>66-68, 71
+</dd>
+<dt>9.5 (Page 505)</dt>
+<dd>75, 76, 78, 80, 85, 88-93, 105, 106, 115
+</dd>
+</dl>
 <h2 id="notes">Notes</h2>
 <h3 id="hypothesis-tests-in-general">Hypothesis Tests in general</h3>
 <p>Hypothesis Testing has a ubiquitous presence in applied statistics and related disciplines. Almost every study out there is accompanied by appropriate hypothesis tests.</p>
@@ -97,5 +121,14 @@ We compute the area that is below <span class="math">\(z\)</span>. If <span clas
 <p><span class="math">\[\begin{cases}H_0:&amp;\mu \leq \mu_0\\ H_a:&amp;\mu &gt; \mu_0\end{cases}\]</span></p>
 <p>We compute the area that is above <span class="math">\(z\)</span>. If <span class="math">\(z &lt; 0\)</span> this would be bad (large), and that is a good thing as a <span class="math">\(\bar x\)</span> that is less than <span class="math">\(\mu_0\)</span> should not help us at all in proving the alternative <span class="math">\(\mu &gt; \mu_0\)</span>.</p></li>
 </ul>
+<h3 id="an-example">An Example</h3>
+<p>The college claims that the average GPA of our students is at least <span class="math">\(3.1\)</span>. Suppose we know that the standard deviation of all Hanover GPAs is <span class="math">\(0.55\)</span>. We will use a sample of <span class="math">\(50\)</span> students. We find the mean in our sample to be only <span class="math">\(2.9\)</span>. We would like to see if this is enough evidence to reject the college’s claim. We therefore set a hypothesis test, one-sided since the college claimed “at least”:</p>
+<p><span class="math">\[\begin{cases}H_0:&amp;\mu \geq 3.1\\ H_a:&amp;\mu &lt; 3.1\end{cases}\]</span></p>
+<p>To carry out the test, we would compute</p>
+<p><span class="math">\[z = \frac{\bar x - \mu}{\sigma/\sqrt{n}} = \frac{2.9-3.1}{0.5/\sqrt{50}} = -2.83\]</span></p>
+<p>We then compute the area below that value and we find it to be <span class="math">\(0.0023\)</span>. Therefore there is a less than <span class="math">\(0.25\%\)</span> chance that we would see such a low mean if the college’s claim was correct. As this is extremely unlikely, we can consider it very strong evidence against the college’s claim (null hypothesis). We would therefore reject the null hypothesis, and instead suggest that the true mean is smaller. In fact we may provide a confidence interval.</p>
+<h3 id="significance-level">Significance Level</h3>
+<p>When setting up a hypothesis test, it is important to agree beforehand how small a percentage we would consider strong enough evidence. This is called the <strong>significance level</strong> and is denoted by <span class="math">\(\alpha\)</span>. For example we might decide that we want <span class="math">\(\alpha = 0.05\)</span>, meaning that we will reject the null hypothesis as long as the <span class="math">\(P\)</span>-value we compute is less than that.</p>
+<p>A significance level of <span class="math">\(5\%\)</span> is fairly typical.</p>
 </body>
 </html>

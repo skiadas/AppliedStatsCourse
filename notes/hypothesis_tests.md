@@ -5,11 +5,33 @@
 - Section 9.1
 - Section 9.2
 - Section 9.3
+- Section 9.4
+- Section 9.5
 
 ## Practice Problems
 
-9.1 (Page)
-  ~
+9.1 (Page 499)
+  ~ 1-2, 6, 8, 9
+
+9.2 (Page 500)
+  ~ 11, 12
+
+9.4 (Page 501)
+  ~ 32, 40
+
+9.5 (Page 502)
+  ~ 54-57
+
+9.1 (Page 503)
+  ~ 63-65
+
+9.2 (Page 504)
+  ~ 66-68, 71
+
+9.5 (Page 505)
+  ~ 75, 76, 78, 80, 85, 88-93, 105, 106, 115
+
+
 
 ## Notes
 
@@ -104,3 +126,21 @@ How we compute the $P$-value depends on which of the three types of hypothesis t
     $$\begin{cases}H_0:&\mu \leq \mu_0\\ H_a:&\mu > \mu_0\end{cases}$$
 
     We compute the area that is above $z$. If $z < 0$ this would be bad (large), and that is a good thing as a $\bar x$ that is less than $\mu_0$ should not help us at all in proving the alternative $\mu > \mu_0$.
+
+### An Example
+
+The college claims that the average GPA of our students is at least $3.1$. Suppose we know that the standard deviation of all Hanover GPAs is $0.55$. We will use a sample of $50$ students. We find the mean in our sample to be only $2.9$. We would like to see if this is enough evidence to reject the college's claim. We therefore set a hypothesis test, one-sided since the college claimed "at least":
+
+$$\begin{cases}H_0:&\mu \geq 3.1\\ H_a:&\mu < 3.1\end{cases}$$
+
+To carry out the test, we would compute
+
+$$z = \frac{\bar x - \mu}{\sigma/\sqrt{n}} = \frac{2.9-3.1}{0.5/\sqrt{50}} = -2.83$$
+
+We then compute the area below that value and we find it to be $0.0023$. Therefore there is a less than $0.25\%$ chance that we would see such a low mean if the college's claim was correct. As this is extremely unlikely, we can consider it very strong evidence against the college's claim (null hypothesis). We would therefore reject the null hypothesis, and instead suggest that the true mean is smaller. In fact we may provide a confidence interval.
+
+### Significance Level
+
+When setting up a hypothesis test, it is important to agree beforehand how small a percentage we would consider strong enough evidence. This is called the **significance level** and is denoted by $\alpha$. For example we might decide that we want $\alpha = 0.05$, meaning that we will reject the null hypothesis as long as the $P$-value we compute is less than that.
+
+A significance level of $5\%$ is fairly typical.
