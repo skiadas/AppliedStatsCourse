@@ -21,7 +21,7 @@ Book
   ~ [OpenIntro Statistics](https://www.openintro.org/stat/) by openintro.org, 3rd edition. Free PDF download from the site. Can also buy from online retailers for around \$10.
 
 Websites
-  ~ [for notes](skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=1076).
+  ~ [for notes](http://skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=1076).
 
 Class times
   ~ MWRF 10am-11am in CFA111. On Wednesdays in CFA112C.
