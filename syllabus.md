@@ -9,34 +9,41 @@ Instructor
   ~ Charilaos Skiadas (skiadas at hanover dot edu)
 
 Term
-  ~ Winter 2014-2015
+  ~ Fall 2015-2016
 
 Office
   ~ SCH 121C
 
 Office Hours
-  ~ MWF 3pm-3:30pm, WRF 9am-10am, T 10am-12am
+  ~ MW 2pm-4pm, R 2pm-3pm, and by appointment.
 
 Book
-  ~ [Introductory Statistics](http://openstaxcollege.org/textbooks/introductory-statistics/get) by Openstax College
+  ~ [OpenIntro Statistics](https://www.openintro.org/stat/) by openintro.org, 3rd edition. Free PDF download from the site. Can also buy from online retailers for around \$10.
 
 Websites
-  ~ [for notes](skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=228)
+  ~ [for notes](skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=1076).
 
 Class times
-  ~ MWRF 1pm-2pm in SCC112. On Wednesdays in CFA112C
+  ~ MWRF 10am-11am in CFA111. On Wednesdays in CFA112C.
 
 ## Course Description
 
-Applied Statistics focuses on the statistical study of data, its collection, description and inference based on sample data. For instance, suppose presidential election polls these days show the two candidates getting the same percentage of support. What does that really mean? That the candidates would get exactly that percentage, if we were to hold elections this moment? How was this percentage obtained, and how reliable is it? What range should we expect their true percentage to be in (in other words, what is our margin of error)? Suppose 10 people measured the length of the same room, and they all found somewhat different results. What does this tell us about the length of the room? Can we identify a literary work as belonging to a particular author based on how often common words appear in it? How do we determine the speed of light? It is reasonable to believe that different attempts at measuring that speed would provide us with slightly different values, which one is "correct"? In this course, we will develop the tools to be able to answer these kinds of questions. Simply put:
+Applied Statistics focuses on the statistical study of data, its collection, description and inference based on sample data. Some examples:
 
-> In Statistics our goal is to understand the uncertainty and variability inherent in every experiment and phenomenon, and to attempt to control that variability.
+- suppose presidential election polls these days show the two candidates getting the same percentage of support. What does that really mean? That the candidates would get exactly that percentage, if we were to hold elections this moment? How was this percentage obtained, and how reliable is it? What range should we expect their true percentage to be in (in other words, what is our margin of error)?
+- Suppose 10 people measured the length of the same room, and they all found somewhat different results. What does this tell us about the length of the room?
+- Can we identify a literary work as belonging to a particular author based on how often common words appear in it, compared to the author's other works?
+- How do we determine the speed of light? It is reasonable to believe that different attempts at measuring that speed would provide us with slightly different values, which one is "correct"?
 
-Broadly speaking, the coarse is divided into three parts. We will start with Descriptive Statistics, which deals with the various ways of presenting data, their summaries and inter-relationships, and the problems one might encounter when doing that, both from using bad graphing techniques and from relying too much on numerical summaries. You will be able to understand the pitfalls when people and the media quote average numbers and percentages, and you will be able to put those numbers into a proper perspective. You will familiarize yourself with the various types of graphs, their strengths and weaknesses, as well as common steps to make the information from the graphs more clearly presented.
+In this course, we will develop the tools to be able to answer these kinds of questions. Simply put:
+
+> In Statistics our goal is to understand the uncertainty and variability inherent in every experiment/phenomenon/measurement, and to attempt to control that variability.
+
+Broadly speaking, the coarse is divided into three parts. We will start with Descriptive Statistics, which deals with the various ways of presenting data, their summaries and inter-relationships, and the problems one might encounter when doing that, both from using bad graphing techniques and from relying too much on numerical summaries. You will be able to understand the pitfalls when people and the media quote average numbers and percentages, and you will be able to put those numbers into a proper perspective. You will familiarize yourselves with the various types of graphs, their strengths and weaknesses, as well as common steps to make the information from the graphs more clearly presented.
 
 The second, brief, part of the course deals with the design of experiments, and sampling methods. It is an introduction to the methods used to collect data, and the problems that arise. As an example, during the great depression a popular magazine made an extremely wrong prediction about who would win the presidential elections, which led to the downfall of that magazine. Their description was based on a massive survey that ended up getting answers from almost 2 million people, so it seems very surprising that they would get things wrong. We will investigate the mistakes that they made, and why having this enormous sample size didn't necessarily help them. We will also touch briefly on some of the fundamental principles employed in designing a study or experiment.
 
-The final part of the course deals with Inferential Statistics. Inferential Statistics concerns making predictions about a population based on information from a small sample. For instance, when CNN reports that Obama and McCain both have 47% support, based on a sample of 1000 people, what does that really tell us about the voting preference of all Americans? And what is it that makes us certain that those 1000 people that were polled are sufficient to make a prediction? Would we have been able to make a better prediction with more people, or does it not matter how many we have after a while? Can we provide some range of values that we can be pretty sure the candidate's actual percentage would be in? If a baseball player has a better on-base percentage than another player on a particular season, does this mean that they are truly better at getting to base? Or did they just happen to have a better season? At which point is it true skill and not just 'luck'?
+The final part of the course deals with Inferential Statistics. Inferential Statistics concerns itself with making predictions about a population based on information from a small sample. For instance, when CNN reports that Obama and McCain both have 47% support, based on a sample of 1000 people, what does that really tell us about the voting preference of all Americans? And what is it that makes us certain that those 1000 people that were polled are sufficient to make a prediction? Would we have been able to make a better prediction with more people, or does it not matter how many we have after a while? Can we provide some range of values that we can be pretty sure the candidate's actual percentage would be in? If a baseball player has a better on-base percentage than another player on a particular season, does this mean that they are truly better at getting to base? Or did they just happen to have a better season? At which point is it true skill and not just 'luck'?
 
 In order to understand the mechanics behind Inferential Statistics, we will need to spend some time studying the basics of Probability Theory and the notion of a random variable. Probability Theory is the mathematical study of random phenomena and processes, and it will provide us a tool to deal with a wide range of situations, from sampling from a large population to simply a basketball player shooting from the free-throw line, or even the various tests for diseases and how reliable they are.
 
@@ -44,12 +51,10 @@ In order to understand the mechanics behind Inferential Statistics, we will need
 
 The course has the following main objectives:
 
-- You will learn how to critically think about, analyse and evaluate data, and how to formulate your conclusions. This will enable you to "make critical reflective judgements".
-- You will be using computer technology to analyse real data from various disciplines, often involving large data sets that would be impossible to analyse in other ways.
-- You will work in small groups to complete a term project, which will contain the formulation of a research question and methodology, as well as the collection and analysis of the resulting data. You will have the chance to present both an oral and a written report at the end of the semester. This will enable you to "demonstrate skills in independent thinking by developing your own thesis statement, supporting that thesis with logical rationale and appropriate evidence, and presenting the thesis in a convincing fashion, orally and in writing".
-- You will be introduced to probability theory, which provides the solid foundations on which all statistical inference procedures are based. This will enable you to "understand the nature of symbolic language, formal reasoning, and the process of solving problems by means of abstract modeling".
-- By the study and understanding of random variables, and their ubiquity in modern scientific methodology, you will be able to "identify the essential qualities of these formal tools that underlie their effectiveness in the solution of real-world problems".
-- By examining the various assumptions needed for formal inference procedures, and the extent to which they are violated in practice, you will be able to "explain the limitations of these formal systems of reasoning".
+- You will learn how to critically think about, analyse and evaluate data, and how to formulate your conclusions.
+- You will be using computer technology to analyse real data from various disciplines, often involving large data sets that would be very difficult to analyse in other ways.
+- You will work in small groups to complete a term project, which will contain the formulation of a research question and methodology, as well as the collection and analysis of the resulting data. You will have the chance to present both an oral and a written report at the end of the semester. You will thus demostrate skills in developing a thesis statement, supporting that thesis with logical rationale and quantitative evidence, and presenting that thesis in a convincing fashion, orally and in writing.
+- You will be introduced to probability theory, which provides the solid foundations on which all statistical inference procedures are based. This will provide you with an understanding of the nature of symbolic language, formal reasoning, and the process of solving problems by means of abstract modeling.
 
 ## Course Components
 
@@ -71,7 +76,7 @@ We will be using the [Moodle platform](http://moodle.hanover.edu) for online qui
 
 ### Exams
 
-There will be two midterms, on Wednesday, February 4th and Wednesday, March 18th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
+There will be two midterms, on Wednesday, October 7th and Monday, November 9th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
 
 ### Term Project
 

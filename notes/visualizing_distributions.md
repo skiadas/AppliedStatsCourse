@@ -2,21 +2,12 @@
 
 ## Reading
 
-Sections 2.1, 2.2
+Sections 1.7.1, 1.7.4
 
 ## Practice Problems
 
-2.1 (Page 123)
-  ~ 1-4, 8, 9
-
-2.2 (Page 125)
-  ~ 12-16
-
-2.1 (Page 135)
-  ~ 74-75
-
-2.2 (Page 136)
-  ~ 76-79, 81
+1.9.7 (Page 71)
+  ~ 1.65, 1.66
 
 ## Notes
 
@@ -36,10 +27,29 @@ For every variable we talk about the variable's **distribution**, which means a 
     Pareto Chart
       ~ A bar chart where the values have been ordered from most frequent to least frequent.
 
+![Graph types for one categorical variable](images/catVarGraphs.png)
+
+General Health         Frequency  Rel. frequency
+----------------     ----------- ---------------
+poor                         677          3.385%
+fair                        2019         10.095%
+good                        5675         28.375%
+very good                   6972         34.860%
+excellent                   4657         23.285%
+----------------     ----------- ---------------
+
+- Activity: Looking at these graphs and the table, decide for each of the following statements which graph *best* exemplifies it (makes it easier to notice):
+    1. Approximately 1 in 4 people answered "good" for their health level.
+    2. More people answered "good" than those that answered "excellent".
+    3. The difference in count between "fair" and "poor" is about the same as that between "good" and "very good".
+    4. There are around 3 times more people who said "good" than those who said "fair".
+    5. About 10% of the population answered "poor".
+    6. About 1 in 3 people answered "very good".
+
 - Visualizing Scalar Variables
 
     Summaries
-      ~ Numerical summaries can give us some limited but easy-to-work-with information. Frequency tables turn out to be too unwieldy in this case.
+      ~ Numerical summaries can give us some limited but easy-to-work-with information. Frequency tables turn out to be too unwieldy in this case. We will see a number of these summaries, including the mean, median, standard deviation, and others.
 
     Histogram
       ~ Values are broken into equally spaced intervals. Draw one bar per interval whose height is proportional to the frequency of values in that range.
@@ -52,6 +62,10 @@ For every variable we talk about the variable's **distribution**, which means a 
 
     Density plot
       ~ A continuous line that describes the data a bit like a histogram, only more precisely. We will not be using them in this course, but they are out there and are useful.
+
+![Graph types for one quantitative variable](images/quantVarGraphs.png)
+
+![Graph types for a quantitative variable broken down by a categorical variable](images/quantVsCat.png)
 
 - When visualizing scalar variables, there is some terminology we use and patterns we look for:
 
@@ -72,3 +86,6 @@ For every variable we talk about the variable's **distribution**, which means a 
 
     Outliers
       ~ Any values that seem to deviate from the overall pattern are called outliers. Some times these are simply values that are too far from the rest. But some times they can be outliers for other reasons.
+
+    Look for reasons
+      ~ Whenever you consider a feature, always look for an explanation for it. Is there good reason why the distribution is skewed right? What are those outliers, do they make sense?

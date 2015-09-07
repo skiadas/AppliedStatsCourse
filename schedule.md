@@ -2,7 +2,7 @@
 
 A week-by-week breakdown of the material.
 
-## Week  1 (01/05-01/09)
+## Week  1 (09/07-9/11)
 
 Day 1
   ~ [Basic Terminology](notes/basic_terminology.md)
@@ -16,7 +16,7 @@ Day 3
 Day 4
   ~ [Percentiles](notes/percentiles.md)
 
-## Week  2 (01/12-01/16)
+## Week  2 (09/14-09/18)
 
 Day 1
   ~ [Measures of Center](notes/measures_center.md)
@@ -34,7 +34,7 @@ Day 3
 Day 4
   ~ [The Normal Distribution](notes/normal_distribution.md)
 
-## Week  3 (01/19-01/23)
+## Week  3 (09/21-09/25)
 
 Day 1
   ~ [Relationships between two variables](notes/relationships.md)
@@ -48,7 +48,7 @@ Day 3
 Day 4
   ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
-## Week  4 (01/26-01/30)
+## Week  4 (09/28-10/02)
 
 Day 1
   ~ [Linear Models and Regression Lines](notes/linear_regression.md)
@@ -62,13 +62,13 @@ Day 3
 Day 4
   ~ [Introduction to Probability](notes/probability_intro.md)
 
-## Week  5 (02/02-02/06)
+## Week  5 (10/05-10/09)
 
 Day 1
   ~ Review
 
 Day 2
-  ~ **MIDTERM**
+  ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
   ~ [Introduction to Probability (cont)](notes/probability_intro.md)
@@ -76,7 +76,7 @@ Day 3
 Day 4
   ~ [Independent Events](notes/independent_events.md)
 
-## Week  6 (02/09-02/13)
+## Week  6 (10/12-10/16)
 
 Day 1
   ~ [Probability rules](notes/probability_rules.md)
@@ -90,10 +90,10 @@ Day 3
 Day 4
   ~ [Tree Diagrams (cont)](notes/decision_trees.md)
 
-## Week  7 (02/16-02/20)
+## Week  7 (10/19-10/23)
 
 Day 1
-  ~ Snow day
+  ~ Fall Break
 
 Day 2
   ~ Probability Practice
@@ -104,11 +104,7 @@ Day 3
 Day 4
   ~ Probability Practice
 
-## Week  8 (02/23-02/27)
-
-BREAK
-
-## Week  9 (03/02-03/06)
+## Week  8 (10/26-10/30)
 
 Day 1
   ~ [Random Variables](notes/random_variables.md)
@@ -117,68 +113,84 @@ Day 2
   ~ Lab Practice
 
 Day 3
-  ~ Snow Day
-
-Day 4
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
-## Week 10 (03/09-03/13)
-
-Day 1
+Day 4
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
-Day 2
-  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
-
-Day 3
-  ~ [Combining Random Variables](notes/rv_combine.md)
-
-Day 4
-  ~ [Combining Random Variables (cont)](notes/rv_combine.md)
-
-## Week 11 (03/16-03/20)
+## Week  9 (11/02-11/06)
 
 Day 1
+  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
+
+Day 2
+  ~ [Combining Random Variables](notes/rv_combine.md)
+
+Day 3
+  ~ [Combining Random Variables (cont)](notes/rv_combine.md)
+
+Day 4
   ~ Review / Catchup
+
+## Week 10 (11/09-11/13)
+
+Day 1
+  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 2
   ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
 
 Day 3
-  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
-
-Day 4
   ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
-## Week 12 (03/23-03/27)
+Day 4
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+
+## Week 11 (11/16-11/20)
 
 Day 1
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 2
   ~ Work on Projects
 
 Day 3
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
-
-Day 4
   ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
 
-## Week 13 (03/30-04/03)
-
-Day 1
+Day 4
   ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
-Day 2
+
+## Week 12 (11/23-11/27)
+
+Day 1
   ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
 
+Day 2
+  ~ THANKSGIVING
+
 Day 3
-  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
+  ~ THANKSGIVING
 
 Day 4
+  ~ THANKSGIVING
+
+
+## Week 13 (12/01-12/04)
+
+Day 1
+  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
+
+Day 2
   ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
 
-## Week 14 (04/06-04/10)
+Day 3
+  ~ TBA
+
+Day 4
+  ~ TBA
+
+## Week 14 (12/07-12/11)
 
 Day 1
   ~ TBA

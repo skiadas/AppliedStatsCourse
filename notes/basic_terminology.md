@@ -2,15 +2,15 @@
 
 ## Reading
 
-Section 1.1
+Sections 1.1, 1.2
 
 ## Practice Problems
 
-1.1 (Page 53)
-  ~ 42-52
+1.9.1 (Page 55)
+  ~ 1.1, 1.2
 
-1.2 (Page 53)
-  ~ 53-64 (But use our classification of the variables, slightly different than the book's)
+1.9.2 (Page 56)
+  ~ 1.4, 1.5, 1.6, 1.8
 
 ## Notes
 
@@ -46,3 +46,14 @@ Section 1.1
       ~ Also called **qualitative**. They classify the individuals in groups. Examples: Gender, Grade. Categorical variables are further divided into **Nominal** and **Ordinal**, depending on whether the different categories have a natural order to them or not. Gender would thus be nominal, Grade would be ordinal.
 - Some times it may be hard to determine if some data is scalar or ordinal. The main difference is the types of analyses we do and questions we ask. In general, if the distance between the numbers is important, that tends to make the values scalar. If on the other hand there are two few different possible values, that is a reason to treat the variable as ordinal.
 - Activity: List a number of different variables that you could measure on students. Then assign a type to each variable.
+- **Relationships between variables**. Usually multiple variables are measured on the same individuals. We can then ask how these variables relate to each other. This will be an important component of the class.
+
+    Dependent
+      ~ Two variables are called **dependent**, or **associated**, or **related**, if they show some connection to each other; in other words if knowing the value of the one variable on an individual can give us some information about the value of the ohter variable on that individual.
+
+        An example for instance would be average GPA and gender. In general female students tend to have a higher GPA than male students. So knowing a specific student's gender gives us some information about their GPA.
+
+        When variables are quantitative and associated, then we can talk about a **positive** or **negative association**. In a positive association the large values of the one variable tend to be paired up with the large values of the other variable, and the small values of the one variable tend to be paired up with the small values of the other variable. For a negative association it is the other way around.
+
+    Independent
+      ~ Variables that are not related are called **independent**. In that case knowing the value for one variable on a specific individual does not convey any information about the value of the other variable.

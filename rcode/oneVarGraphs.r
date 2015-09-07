@@ -1,0 +1,37 @@
+cdc <- read.csv("../site/datasets/cdc.csv")
+genh <- ordered(cdc$genhlth, levels = c("poor", "fair", "good", "very good", "excellent"))
+png("../images/catVarGraphs.png", width=800, height=800)
+par(mfrow=c(2,2))
+# Bargraph
+barplot(table(genh), horiz=TRUE, main = "General Health", xlab = "Count", xlim=c(0, 8000))
+abline(h=1:8 * 1000, col= "lightgray", lty=1, lwd=0.5)
+barplot(table(genh), horiz=TRUE, xlim=c(0, 8000), add=TRUE)
+# Pie chart
+pie(table(genh), main="General Health")
+# Dot plot
+dotchart(table(genh), main="General Health", cex=1.2)
+dev.off()
+
+png("../images/quantVarGraphs.png", width = 600, height=800)
+par(mfrow=c(2,1))
+hist(cdc$weight, main=NULL, xlab="Weight")
+boxplot(cdc$weight, horizontal=TRUE, main="Weight")
+dev.off()
+
+png("../images/quantVsCat.png", width = 600, height = 800)
+par(mfrow=c(2,1))
+m = subset(cdc, gender=="m")
+f = subset(cdc, gender=="f")
+h1 = hist(m$weight, plot=FALSE, breaks=30)
+h2 = hist(f$weight, plot=FALSE, breaks=30)
+h2$counts = - h2$counts
+hmax = max(h1$counts)
+hmin = min(h2$counts)
+X = c(h1$breaks, h2$breaks)
+xmax = max(X)
+xmin = min(X)
+plot(h1, ylim=c(hmin, hmax), col="blue", xlab="Weight", xlim=c(xmin, xmax), main=NULL)
+lines(h2, col="pink")
+legend("topright", legend=c("Male", "Female"), fill=c("blue", "pink"))
+boxplot(weight~gender, data=cdc, horizontal=TRUE, xlab="Weight", ylab="Gender")
+dev.off()

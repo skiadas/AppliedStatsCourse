@@ -15,20 +15,11 @@
 <body>
 <h1 id="visualizing-variable-distributions">Visualizing Variable Distributions</h1>
 <h2 id="reading">Reading</h2>
-<p>Sections 2.1, 2.2</p>
+<p>Sections 1.7.1, 1.7.4</p>
 <h2 id="practice-problems">Practice Problems</h2>
 <dl>
-<dt>2.1 (Page 123)</dt>
-<dd>1-4, 8, 9
-</dd>
-<dt>2.2 (Page 125)</dt>
-<dd>12-16
-</dd>
-<dt>2.1 (Page 135)</dt>
-<dd>74-75
-</dd>
-<dt>2.2 (Page 136)</dt>
-<dd>76-79, 81
+<dt>1.9.7 (Page 71)</dt>
+<dd>1.65, 1.66
 </dd>
 </dl>
 <h2 id="notes">Notes</h2>
@@ -49,10 +40,61 @@
 <dd>A bar chart where the values have been ordered from most frequent to least frequent.
 </dd>
 </dl></li>
+</ul>
+<div class="figure">
+<img src="images/catVarGraphs.png" alt="Graph types for one categorical variable" />
+<p class="caption">Graph types for one categorical variable</p>
+</div>
+<table>
+<thead>
+<tr class="header">
+<th align="left">General Health</th>
+<th align="right">Frequency</th>
+<th align="right">Rel. frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">poor</td>
+<td align="right">677</td>
+<td align="right">3.385%</td>
+</tr>
+<tr class="even">
+<td align="left">fair</td>
+<td align="right">2019</td>
+<td align="right">10.095%</td>
+</tr>
+<tr class="odd">
+<td align="left">good</td>
+<td align="right">5675</td>
+<td align="right">28.375%</td>
+</tr>
+<tr class="even">
+<td align="left">very good</td>
+<td align="right">6972</td>
+<td align="right">34.860%</td>
+</tr>
+<tr class="odd">
+<td align="left">excellent</td>
+<td align="right">4657</td>
+<td align="right">23.285%</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Activity: Looking at these graphs and the table, decide for each of the following statements which graph <em>best</em> exemplifies it (makes it easier to notice):
+<ol style="list-style-type: decimal">
+<li>Approximately 1 in 4 people answered “good” for their health level.</li>
+<li>More people answered “good” than those that answered “excellent”.</li>
+<li>The difference in count between “fair” and “poor” is about the same as that between “good” and “very good”.</li>
+<li>There are around 3 times more people who said “good” than those who said “fair”.</li>
+<li>About 10% of the population answered “poor”.</li>
+<li>About 1 in 3 people answered “very good”.</li>
+</ol></li>
 <li><p>Visualizing Scalar Variables</p>
 <dl>
 <dt>Summaries</dt>
-<dd>Numerical summaries can give us some limited but easy-to-work-with information. Frequency tables turn out to be too unwieldy in this case.
+<dd>Numerical summaries can give us some limited but easy-to-work-with information. Frequency tables turn out to be too unwieldy in this case. We will see a number of these summaries, including the mean, median, standard deviation, and others.
 </dd>
 <dt>Histogram</dt>
 <dd>Values are broken into equally spaced intervals. Draw one bar per interval whose height is proportional to the frequency of values in that range.
@@ -67,6 +109,16 @@
 <dd>A continuous line that describes the data a bit like a histogram, only more precisely. We will not be using them in this course, but they are out there and are useful.
 </dd>
 </dl></li>
+</ul>
+<div class="figure">
+<img src="images/quantVarGraphs.png" alt="Graph types for one quantitative variable" />
+<p class="caption">Graph types for one quantitative variable</p>
+</div>
+<div class="figure">
+<img src="images/quantVsCat.png" alt="Graph types for a quantitative variable broken down by a categorical variable" />
+<p class="caption">Graph types for a quantitative variable broken down by a categorical variable</p>
+</div>
+<ul>
 <li><p>When visualizing scalar variables, there is some terminology we use and patterns we look for:</p>
 <dl>
 <dt>Modes</dt>
@@ -86,6 +138,9 @@
 </dd>
 <dt>Outliers</dt>
 <dd>Any values that seem to deviate from the overall pattern are called outliers. Some times these are simply values that are too far from the rest. But some times they can be outliers for other reasons.
+</dd>
+<dt>Look for reasons</dt>
+<dd>Whenever you consider a feature, always look for an explanation for it. Is there good reason why the distribution is skewed right? What are those outliers, do they make sense?
 </dd>
 </dl></li>
 </ul>
