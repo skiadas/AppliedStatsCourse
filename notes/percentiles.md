@@ -2,23 +2,17 @@
 
 ## Reading
 
-Sections 2.3, 2.4
+Section 1.6.5
 
 ## Practice Problems
 
-2.3 (Page 128)
-  ~ 23, 24, 25, 28, 29, 33
-
-2.3 (Page 139)
-  ~ 84, 85
-
-2.4 (Page 140)
-  ~ 86 (important one), 89
+1.9.6 (Page 65)
+  ~ 1.46, 1.48, 1.49a, 1.50, 1.51, 1.53, 1.54
 
 ## Notes
 
 - **Percentiles** measure how many of the values are below a given value.
-- So the 90th percentile is such that 90% of the values are below it.
+- So the 90th percentile is the x value such that 90% of the values are below it.
 - Lower percentiles correspond to lower values.
 - Important percentiles:
     - 25th percentile = first quartile = **Q1**

@@ -2,7 +2,7 @@
 
 ## Reading
 
-Sections 1.7.1, 1.7.4
+Sections 1.6.3, 1.7.1, 1.7.4
 
 ## Practice Problems
 
