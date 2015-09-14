@@ -21,18 +21,20 @@ Day 4
 Day 1
   ~ [Measures of Center](notes/measures_center.md)
 
-    [Measures of Spread](notes/measures_spread.md)
 
 Day 2
   ~ [Lab 2](labs/2.md)
 
 Day 3
-  ~ [Linear Transformations](notes/linear_transformations.md)
+  ~ [Measures of Spread](notes/measures_spread.md)
 
-    [Density Curves](notes/density_curves.md)
+    [Linear Transformations](notes/linear_transformations.md)
+
 
 Day 4
-  ~ [The Normal Distribution](notes/normal_distribution.md)
+  ~ [Density Curves](notes/density_curves.md)
+
+    [The Normal Distribution](notes/normal_distribution.md)
 
 ## Week  3 (09/21-09/25)
 

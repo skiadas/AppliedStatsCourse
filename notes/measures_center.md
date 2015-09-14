@@ -57,4 +57,4 @@ Sections 1.6.2, 1.6.5, 1.6.6
         Mean smaller than Median
 - Example to consider:
 
-    > If we imagine the populations of each of the largest 150 countries as our data points, we will find a mean / average population of $4.6$ million and a median population of $1.07$ million. Think about these numbers and whether/how they make sense.
+    > If we look at the populations of each of the largest 150 countries as our data points, we will find a mean / average population of $4.6$ million and a median population of $1.07$ million. Think about these numbers and whether/how they make sense.
