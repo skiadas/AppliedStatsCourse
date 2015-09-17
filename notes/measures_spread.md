@@ -2,18 +2,12 @@
 
 ## Reading
 
-- Section 2.7
+Sections 1.6.4
 
 ## Practice Problems
 
-2.7 (Page 134)
-  ~ 69, 70, 72
-
-2.7 (Page 143)
-  ~ 94, 95, 97, 98, 99, 100, 101
-
-Overall 2 (p. 145)
-  ~ 109, 110, 113, 114, 115
+1.9.6 (page 65)
+  ~ 1.47
 
 ## Notes
 
