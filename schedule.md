@@ -21,48 +21,44 @@ Day 4
 Day 1
   ~ [Measures of Center](notes/measures_center.md)
 
-
 Day 2
   ~ [Lab 2](labs/2.md)
 
 Day 3
   ~ [Measures of Spread](notes/measures_spread.md)
 
-    [Linear Transformations](notes/linear_transformations.md)
-
-
 Day 4
-  ~ [Density Curves](notes/density_curves.md)
+  ~ [Linear Transformations](notes/linear_transformations.md)
 
-    [The Normal Distribution](notes/normal_distribution.md)
+    [Density Curves](notes/density_curves.md)
 
 ## Week  3 (09/21-09/25)
 
 Day 1
-  ~ [Relationships between two variables](notes/relationships.md)
+  ~ [The Normal Distribution](notes/normal_distribution.md)
 
 Day 2
   ~ [Lab 3](labs/3.md)
 
 Day 3
-  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+  ~ [Relationships between two variables](notes/relationships.md)
 
 Day 4
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
 ## Week  4 (09/28-10/02)
 
 Day 1
-  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
+  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
 Day 2
   ~ [Lab 4](labs/4.md)
 
 Day 3
-  ~ [The question of causation](notes/correlation_causation.md)
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
 Day 4
-  ~ [Introduction to Probability](notes/probability_intro.md)
+  ~ [The question of causation](notes/correlation_causation.md)
 
 ## Week  5 (10/05-10/09)
 
@@ -73,6 +69,7 @@ Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
+  ~ [Introduction to Probability](notes/probability_intro.md)
   ~ [Introduction to Probability (cont)](notes/probability_intro.md)
 
 Day 4

@@ -2,20 +2,13 @@
 
 ## Reading
 
-- Section 5.1
-- Section 5.2
+- Section 2.5
 
 
 ## Practice Problems
 
-5.1 (Page 320)
-  ~ 4, 12, 13, 14
-
-5.2 (Page 321)
-  ~ 29, 30, 33
-
-5.2 (Page 326)
-  ~ 74a-e, g-h, j, 74a-g, 78g, i
+2.6.5 (page 125)
+  ~ 2.43, 2.44
 
 ## Notes
 
