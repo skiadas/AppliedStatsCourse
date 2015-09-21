@@ -30,12 +30,12 @@ Day 3
 Day 4
   ~ [Linear Transformations](notes/linear_transformations.md)
 
-    [Density Curves](notes/density_curves.md)
-
 ## Week  3 (09/21-09/25)
 
 Day 1
-  ~ [The Normal Distribution](notes/normal_distribution.md)
+  ~ [Density Curves](notes/density_curves.md)
+
+    [The Normal Distribution](notes/normal_distribution.md)
 
 Day 2
   ~ [Lab 3](labs/3.md)
