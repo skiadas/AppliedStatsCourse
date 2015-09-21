@@ -41,10 +41,12 @@ Day 2
   ~ [Lab 3](labs/3.md)
 
 Day 3
-  ~ [Relationships between two variables](notes/relationships.md)
+  ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
 
 Day 4
-  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+  ~ [Relationships between two variables](notes/relationships.md)
+
+    [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
 ## Week  4 (09/28-10/02)
 
