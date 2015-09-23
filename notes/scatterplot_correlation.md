@@ -2,16 +2,12 @@
 
 ## Reading
 
-- Section 12.2
-- Section 12.3 (only page 642)
+Section 7.1.4
 
 ## Practice Problems
 
-12.2 (Page 666)
-  ~ 17, 18, 19, 20
-
-12.2 (Page 672)
-  ~ 59, 60, 61
+7.5.1 (Page 356)
+  ~ 7.3, 7.4, 7.6, 7.7, 7.8, 7.9, 7.10, 7.15, 7.16, 7.17, 7.18
 
 ## Notes
 
