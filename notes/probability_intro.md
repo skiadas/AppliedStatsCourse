@@ -2,12 +2,12 @@
 
 ## Reading
 
-Section 3.1
+Section 2.1.1-2.1.5
 
 ## Practice Problems
 
-3.1 (Page 200)
-  ~ 1, 2-5, 12-17, 22, 23, 24-30, 35, 37, 38, 39
+2.6 (Page 116)
+  ~ 2.6.1 2.2, 2.5, 2.6, 2.7, 2.8, 2.11, 2.12, 2.13, 2.14
 
 ## Notes
 
@@ -80,20 +80,3 @@ Key formula that relates the various probabilities:
 
 > $$P(A\textrm{ or }B) = P(A) + P(B) - P(A\textrm{ and }B)$$
 
-### Conditional Probability
-
-> The probability of an event *given another event* is called **conditional probability**. It is one of the hardest concepts to master.
->
-> $P(A|B)$ is the probability of A occuring, given that B does occur.
->
-> Think of it as "restricting the sample space": Only outcomes in $B$ matter; how many of those are also in $A$?
->
-> $$P(A|B) = \frac{P(A\textrm{ and }B)}{P(B)}$$
-
-Example: In the case of the 5-sided die, let us compute $P(A|B)$.
-
-In words this says: Given the number is at least 4, what are the chances the number is even?
-
-It will be: $\frac{P(4)}{P(4\textrm{ or }5)} = \frac{1/5}{2/5} = 1/2$.
-
-Notice the difference between $P(A)$ and $P(A|B)$!!!

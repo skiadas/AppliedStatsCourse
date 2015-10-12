@@ -72,23 +72,25 @@ Day 3
   ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
 Day 4
-  ~ [The question of causation](notes/correlation_causation.md)
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
 ## Week  6 (10/12-10/16)
 
 Day 1
-  ~ [Introduction to Probability](notes/probability_intro.md)
-  ~ [Introduction to Probability (cont)](notes/probability_intro.md)
+  ~ [The question of causation](notes/correlation_causation.md)
+
+    [Introduction to Probability](notes/probability_intro.md)
 
 Day 2
-  ~ [Independent Events](notes/independent_events.md)
+  ~ [Introduction to Probability (cont)](notes/probability_intro.md)
 
 Day 3
   ~ [Probability rules](notes/probability_rules.md)
 
 Day 4
-  ~ [Tree Diagrams](notes/decision_trees.md)
-  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
+  ~ [Conditional Probability](notes/probability_conditional.md)
+
+    [Independent Events](notes/independent_events.md)
 
 ## Week  7 (10/19-10/23)
 
@@ -96,10 +98,10 @@ Day 1
   ~ Fall Break
 
 Day 2
-  ~ Probability Practice
+  ~ [Tree Diagrams](notes/decision_trees.md)
 
 Day 3
-  ~ Probability Practice
+  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
 
 Day 4
   ~ Probability Practice

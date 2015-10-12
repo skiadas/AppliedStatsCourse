@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="conditional-probability">Conditional Probability</h1>
+<h2 id="reading">Reading</h2>
+<p>Section</p>
+<h2 id="practice-problems">Practice Problems</h2>
+<dl>
+<dt>2.6 (Page 116)</dt>
+<dd>2.6.2
+</dd>
+</dl>
+<h2 id="notes">Notes</h2>
+<h3 id="marginal-and-joint-probabilities">Marginal and Joint Probabilities</h3>
+<p>TODO Work in progress</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Health</th>
+<th align="right">poor</th>
+<th align="right">fair</th>
+<th align="right">good</th>
+<th align="right">very good</th>
+<th align="right">excellent</th>
+<th align="right">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Female</td>
+<td align="right">394</td>
+<td align="right">1135</td>
+<td align="right">2953</td>
+<td align="right">3590</td>
+<td align="right">2359</td>
+<td align="right">10431</td>
+</tr>
+<tr class="even">
+<td align="left">Male</td>
+<td align="right">283</td>
+<td align="right">884</td>
+<td align="right">2722</td>
+<td align="right">3382</td>
+<td align="right">2298</td>
+<td align="right">9569</td>
+</tr>
+<tr class="odd">
+<td align="left">Total</td>
+<td align="right">677</td>
+<td align="right">2019</td>
+<td align="right">5675</td>
+<td align="right">6972</td>
+<td align="right">4657</td>
+<td align="right">20000</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Health</th>
+<th align="right">poor</th>
+<th align="right">fair</th>
+<th align="right">good</th>
+<th align="right">very good</th>
+<th align="right">excellent</th>
+<th align="right">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Female</td>
+<td align="right">0.01970</td>
+<td align="right">0.05675</td>
+<td align="right">0.14765</td>
+<td align="right">0.17950</td>
+<td align="right">0.11795</td>
+<td align="right">0.52155</td>
+</tr>
+<tr class="even">
+<td align="left">Male</td>
+<td align="right">0.01415</td>
+<td align="right">0.04420</td>
+<td align="right">0.13610</td>
+<td align="right">0.16910</td>
+<td align="right">0.11490</td>
+<td align="right">0.47845</td>
+</tr>
+<tr class="odd">
+<td align="left">Total</td>
+<td align="right">0.03385</td>
+<td align="right">0.10095</td>
+<td align="right">0.28375</td>
+<td align="right">0.34860</td>
+<td align="right">0.23285</td>
+<td align="right">1.00000</td>
+</tr>
+</tbody>
+</table>
+<h3 id="conditional-probability-1">Conditional Probability</h3>
+<blockquote>
+<p>The probability of an event <em>given another event</em> is called <strong>conditional probability</strong>. It is one of the hardest concepts to master.</p>
+<p><span class="math">\(P(A|B)\)</span> is the probability of A occuring, given that B does occur.</p>
+<p>Think of it as “restricting the sample space”: Only outcomes in <span class="math">\(B\)</span> matter; how many of those are also in <span class="math">\(A\)</span>?</p>
+<p><span class="math">\[P(A|B) = \frac{P(A\textrm{ and }B)}{P(B)}\]</span></p>
+</blockquote>
+<p>Example: In the case of the 5-sided die, let us compute <span class="math">\(P(A|B)\)</span>.</p>
+<p>In words this says: Given the number is at least 4, what are the chances the number is even?</p>
+<p>It will be: <span class="math">\(\frac{P(4)}{P(4\textrm{ or }5)} = \frac{1/5}{2/5} = 1/2\)</span>.</p>
+<p>Notice the difference between <span class="math">\(P(A)\)</span> and <span class="math">\(P(A|B)\)</span>!!!</p>
+</body>
+</html>
