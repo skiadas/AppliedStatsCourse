@@ -15,16 +15,16 @@
 <body>
 <h1 id="conditional-probability">Conditional Probability</h1>
 <h2 id="reading">Reading</h2>
-<p>Section</p>
+<p>Section 2.2.1-2.24</p>
 <h2 id="practice-problems">Practice Problems</h2>
 <dl>
-<dt>2.6 (Page 116)</dt>
-<dd>2.6.2
+<dt>2.6.2 (Page 119)</dt>
+<dd>2.15, 2.16, 2.17, 2.18, 2.19, 2.20
 </dd>
 </dl>
 <h2 id="notes">Notes</h2>
 <h3 id="marginal-and-joint-probabilities">Marginal and Joint Probabilities</h3>
-<p>TODO Work in progress</p>
+<p>In many situations our probability models come from the interaction between 2 or more categorical variables. For instance, recall the CDC data, that had amongst other information two variables, the respondents’ gender and their assessment of their health. The follow contingency table shows how many respondents answered each pair of the 10 possible combinations of values:</p>
 <table>
 <thead>
 <tr class="header">
@@ -67,6 +67,7 @@
 </tr>
 </tbody>
 </table>
+<p>So for instance there were 884 respondents who were male and answered “fair” when asked about their health. We can turn these into probabilities by dividing by the total count:</p>
 <table>
 <thead>
 <tr class="header">
@@ -109,7 +110,33 @@
 </tr>
 </tbody>
 </table>
+<p>For example those 884 respondents correspond to a probability of <span class="math">\(\frac{884}{20000} = 0.0442 = 4.42\%\)</span>.</p>
+<p>We now have a probability model, consisting of 10 possible out comes (all those combinations). If we pick a student at random, these numbers tell us the chances that the student would be in each of those 10 outcomes. This is what we call the <strong>joint probabilities</strong>, as it involves more than one “variable”: Our outcomes are formed out of pairs of outcomes from the two separate questions, Gender and Health.</p>
+<p>These two separate questions also have their own probability distributions, reflected in the “Total” row and column. For instance if we pick a respondent at random there is a <span class="math">\(52.155\%\)</span> chance that they would be female, and a <span class="math">\(28.375\%\)</span> chance that they would be in “good” health. We call these the <strong>marginal probabilities</strong>.</p>
+<p>Using the table of joint probabilities, we can answer a number of questions, for instance:</p>
+<blockquote>
+<p>If we pick the student at random, what are the chances that they would be Female and in at least good condition?</p>
+</blockquote>
+<p>All we have to do for this is to add the 3 relevant entries in the table, so <span class="math">\(0.14765+0.17950+0.11795=0.4451\)</span> or <span class="math">\(44.51\%\)</span>.</p>
 <h3 id="conditional-probability-1">Conditional Probability</h3>
+<p>There is another important kind of question we want to ask, and it leads us to the notion of <em>conditional probability</em>. Suppose instead the question was the following (and there are two versions of it that are equivalent):</p>
+<blockquote>
+<ol style="list-style-type: decimal">
+<li>If we pick a respondent at random and they turn out to be female, what are the chances that they would be in at least good condition?</li>
+<li>If we pick a female respondent at random, what are the chances that they would be in at least good condition?</li>
+</ol>
+</blockquote>
+<p>In both cases the effect is the same: The total group of respondents is reduced to only those that are female. So instead of adding up all those respondents that are female and in at least good condition, and finding our answer, we now need to dig further, and figure out what part that is out of all the female resondents.</p>
+<p>So in our case we could achieve this by doing either:</p>
+<p><span class="math">\[\frac{0.14765+0.17950+0.11795}{0.52155} = \frac{0.4451}{0.52155} = 0.8534\]</span> or <span class="math">\[\frac{2953+3590+2359}{10431} = \frac{8902}{10431} = 0.8534\]</span></p>
+<p>So the answer to this question is <span class="math">\(85.34\%\)</span>.</p>
+<p>We can also ask the question in the other direction, with a different answer:</p>
+<blockquote>
+<p>If we pick a respondent at random and they turn out to have at least good health, what are the chances that they would be a female?</p>
+</blockquote>
+<p>In both cases, this and the previous one, we are interested in the students that are female and in at least good health. what differs is what we compare them to: all the respondents, only female respondents, or only respondents that are in good health? For this last case, we compare to all those that are in at least good health, so we would have:</p>
+<p><span class="math">\[\frac{0.14765+0.17950+0.11795}{0.28375+0.34860+0.23285} = \frac{0.4451}{0.8652} = 0.51445\]</span></p>
+<p>Now we are ready for the general definition:</p>
 <blockquote>
 <p>The probability of an event <em>given another event</em> is called <strong>conditional probability</strong>. It is one of the hardest concepts to master.</p>
 <p><span class="math">\(P(A|B)\)</span> is the probability of A occuring, given that B does occur.</p>

@@ -82,15 +82,14 @@ Day 1
     [Introduction to Probability](notes/probability_intro.md)
 
 Day 2
-  ~ [Introduction to Probability (cont)](notes/probability_intro.md)
+  ~ Lab 5
 
 Day 3
-  ~ [Probability rules](notes/probability_rules.md)
+  ~ [Introduction to Probability (cont)](notes/probability_intro.md)
+
 
 Day 4
-  ~ [Conditional Probability](notes/probability_conditional.md)
-
-    [Independent Events](notes/independent_events.md)
+  ~ [Probability rules](notes/probability_rules.md)
 
 ## Week  7 (10/19-10/23)
 
@@ -98,13 +97,15 @@ Day 1
   ~ Fall Break
 
 Day 2
-  ~ [Tree Diagrams](notes/decision_trees.md)
+  ~ [Conditional Probability](notes/probability_conditional.md)
+
+    [Independent Events](notes/independent_events.md)
 
 Day 3
-  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
+  ~ [Tree Diagrams](notes/decision_trees.md)
 
 Day 4
-  ~ Probability Practice
+  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
 
 ## Week  8 (10/26-10/30)
 
