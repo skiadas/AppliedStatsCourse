@@ -1,18 +1,5 @@
 # Probability Rules
 
-## Reading
-
-Section 3.3
-
-## Practice Problems
-
-3.3 (Page 202)
-  ~ 44-53
-
-3.3 (Page 205)
-  ~ 80, 86-88, 91, 97-100
-
-
 ## Notes
 
 Let us summarize the key probability rules we've encountered so far:

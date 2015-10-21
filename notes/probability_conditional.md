@@ -2,7 +2,7 @@
 
 ## Reading
 
-Section 2.2.1-2.24
+Sections 2.1.6, 2.2.1-2.2.5
 
 ## Practice Problems
 
@@ -33,7 +33,7 @@ Total     0.03385  0.10095  0.28375    0.34860    0.23285  1.00000
 
 For example those 884 respondents correspond to a probability of $\frac{884}{20000} = 0.0442 = 4.42\%$.
 
-We now have a probability model, consisting of 10 possible out comes (all those combinations). If we pick a student at random, these numbers tell us the chances that the student would be in each of those 10 outcomes. This is what we call the **joint probabilities**, as it involves more than one "variable": Our outcomes are formed out of pairs of outcomes from the two separate questions, Gender and Health.
+We now have a probability model, consisting of 10 possible outcomes (all those combinations). If we pick a student at random, these numbers tell us the chances that the student would be in each of those 10 outcomes. This is what we call the **joint probabilities**, as it involves more than one "variable": Our outcomes are formed out of pairs of outcomes from the two separate questions, Gender and Health.
 
 These two separate questions also have their own probability distributions, reflected in the "Total" row and column. For instance if we pick a respondent at random there is a $52.155\%$ chance that they would be female, and a $28.375\%$ chance that they would be in "good" health. We call these the **marginal probabilities**.
 

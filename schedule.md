@@ -99,38 +99,39 @@ Day 1
 Day 2
   ~ [Conditional Probability](notes/probability_conditional.md)
 
-    [Independent Events](notes/independent_events.md)
 
 Day 3
-  ~ [Tree Diagrams](notes/decision_trees.md)
+  ~ [Independent Events](notes/independent_events.md)
 
 Day 4
-  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
+  ~ [Probability rules](notes/probability_rules.md)
+
+    [Tree Diagrams](notes/decision_trees.md)
 
 ## Week  8 (10/26-10/30)
 
 Day 1
-  ~ [Random Variables](notes/random_variables.md)
+  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
 
 Day 2
   ~ Lab Practice
 
 Day 3
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+  ~ [Random Variables](notes/random_variables.md)
 
 Day 4
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 ## Week  9 (11/02-11/06)
 
 Day 1
-  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 2
-  ~ [Combining Random Variables](notes/rv_combine.md)
+  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
 
 Day 3
-  ~ [Combining Random Variables (cont)](notes/rv_combine.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
 
 Day 4
   ~ Review / Catchup
