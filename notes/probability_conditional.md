@@ -78,7 +78,7 @@ Now we are ready for the general definition:
 >
 > $$P(A|B) = \frac{P(A\textrm{ and }B)}{P(B)}$$
 
-Example: In the case of the 5-sided die, let us compute $P(A|B)$.
+Example: In the case of the 5-sided die, suppose $A$ is the event that the number turns out to be even, and $B$ the event that the number is at least 4. Let us compute $P(A|B)$:
 
 In words this says: Given the number is at least 4, what are the chances the number is even?
 
