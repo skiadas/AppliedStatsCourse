@@ -2,15 +2,12 @@
 
 ## Reading
 
-Section 3.5
+Sections 2.2.6, 2.2.7
 
 ## Practice Problems
 
-3.5 (Page 212)
-  ~ 114, 115, 116
-
-General (Page 213)
-  ~ 121, 122, 123
+2.6.2 (Page 119)
+  ~ 2.22, 2.23, 2.24, 2.25, 2.26
 
 ## Notes
 
