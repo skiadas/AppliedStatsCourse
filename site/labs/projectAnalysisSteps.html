@@ -17,30 +17,76 @@
 <p>This is a general guide to help you get started in analyzing your data.</p>
 <p>Work with your group members. Refer to your friendly neighborhood statistics instructor if you have any questions/problems.</p>
 <p>Some steps may not apply in your particular case.</p>
-<h2 id="preparations">Preparations</h2>
+<h2 id="preliminaries">Preliminaries</h2>
 <ul>
-<li>First off, you should document your work along the way in a Word document, so start a new Word document. Think of this as a <strong>journal</strong>, and not what you should turn in as a final report. It is <em>for your use only</em> to keep track of your progress. It is your notes, from which you can build your report. Start out by listing your variables and their types (quantitative, ordinal, nominal?).</li>
-<li>It often would happen, especially if you did a survey, that some of the answers are not in the form you expected, like for instance someone answering with the number 12 when you asked them for something between 1 and 10. For each of these, you need to decide what to do with it. For instance in the above case, you could turn the 12 into a 10, or you could consider it as an invalid answer and leave it blank. There are typically no right or wrong decisions here, but you have to make a decision. Make sure to document these decisions in your journal.</li>
-<li>Next, start SPSS and <strong>import</strong> your data set into SPSS format. If it is an Excel Spreadsheet, which it probably is, then you may need to save it as an “old Excel format” (2003) (but try without this step first). You will definitely need to CLOSE Excel. You cannot read any file into SPSS if it is open in Excel. Finally, in “Read text data”, you can select the file type to be Excel.</li>
-<li>SAVE OFTEN</li>
-<li>Use the Variable Properties menu to change any variables whose type is incorrect. Remember, quantitative variables need to be in <em>scale</em>, ordered categorical variables in <em>ordinal</em>, and the unordered categorical variables in <em>nominal</em>.</li>
-<li>Make sure you understand what each variable measures. Give an appropriate <strong>label</strong> to each variable (Don’t forget, this is what will appear in graphs for that variable, so it should be not overly long but descriptive enough, and should definitely include the units used).</li>
-<li>Check that the value labels for the categorical variables are what you would want them to be, and make any changes necessary. If you coded things with numbers, now is the time to give names to these numbers.</li>
-<li>If you had entered the variables with full words instead, you will want to use “Automatic recode” to convert them in a format that SPSS prefers. Before you do that, do frequency tables, and make sure you don’t see the same value multiple times due to typos (for instance if you see the values ‘Yes’ and ‘yes’ showing up as different values, that needs to be corrected). You may also skip the “Automatic recode” step until it seems necessary.</li>
+<li>Keep a Word document as a Journal of your progress</li>
+<li>Load the data into SPSS
+<ul>
+<li>Start up SPSS</li>
+<li>Use the File -&gt; Read Text Data wizard</li>
+<li>Pay attention to steps 2 and 4</li>
+</ul></li>
+<li>Set up the data properties
+<ul>
+<li>Data -&gt; Define Variable properties</li>
+<li>Check that “measure” is appropriate (Nominal/Ordinal/Scale)</li>
+<li>Add appropriate Label to the variable (top right)</li>
+<li>For categorical variables, add value labels next to each value</li>
+<li>Look for values that shouldn’t be different (e.g. “yes” and “Yes” as separate categories)</li>
+</ul></li>
+<li>Save the data file often</li>
 </ul>
-<p>Don’t forget to SAVE OFTEN.</p>
-<h2 id="explorations">Explorations</h2>
+<h2 id="early-explorations">Early Explorations</h2>
 <ul>
-<li>Did I mention you should SAVE OFTEN?</li>
-<li>The main point of the Explorations section is to <strong>OWN your data</strong>. You want to learn the inns and outs of all your variables, including what time they woke up and what they had for breakfast.</li>
-<li>For each variable, create appropriate graphs and numerical summaries to describe it. For categorical variables, frequency tables, bar graphs, pie charts etc would be appropriate. For quantitative variables, boxplots and histograms, means and standard deviations. Describe your observations in your journal. Along with whether they seem reasonable to you. Do the quantitative variables look like normally distributed, or do they deviate from normality? Are they skewed? Do they have outliers? etc</li>
-<li>You will need to prepare the graphs more carefully at a later day, but for now just copy and paste the appropriate graphs from the Viewer to your journal. Make sure to also <strong>save the Viewer file</strong> this time, to preserve all the work you did on the graphs, and make sure to document how you obtained the graphs, in case you need to get them again. The point is that you will need, at this point, to generate many more graphs than what you will include in the report and presentation, in order to understand your data. So at a later point in the project, once you have decided which graphs you want to include in your report, you can then customize them further. You cannot do this with the copies that are in Microsoft Word, so it is important to keep enough information around in SPSS to be able to recreate the graphs, if needed.</li>
-<li>At this point, you might decide that a particular variable should be grouped in 2-3 groups, instead of being kept as scalar. Or you might need to do some other kind of transformation. Do this now if necessary, using the “Recode” and “Compute Variable” menu options, to create these new variables. Don’t forget to document this step, as with previous steps.</li>
-<li>Once you have gotten a feeling about how your variables are distributed individually, it is time to consider the <strong>interactions</strong> between variables. For instance with the number example above, suppose another variable is male/female. One of the questions would be: Do the numbers for males and females differ? Again graphs and numerical summaries can help with that.</li>
-<li>At this point you want to start thinking about the key questions you wanted to have answered in this report. Typically, those questions can probably be expressed as asking how one of the variables depends on another one, how they are associated. Using the graphs and numerical summaries established in the previous part, try to answer these questions (and document both the questions and their answers). One of the things you should look out for is whether some <em>lurking variable</em> could be influencing what you are seeing, by being confounded with the other variables or by explaining both variables (Recall our discussions about <em>common response</em> and <em>confounding</em> in the “Correlation and Causation” chapter from the book).</li>
-<li>Often you will need to examine the interaction between two variables, subject to the levels of a third variable. For instance, is the relation between weight and height different for males and females? This third variable can appear for instance as a grouping variable in a scatterplot, or as a panel variable in a boxplot. Again, document all your attempts.</li>
-<li>From this point on, it’s up to you. Start putting together a coherent picture of your conclusions, decide what is important and what is not so important, and assemble the important things. Also start thinking of the <strong>best way to present your data</strong>.</li>
-<li>Don’t forget to SAVE OFTEN!</li>
+<li>Goal: To <strong>own</strong> your data. You should get a grasp for the basic behavior of your data.</li>
+<li>Compute appropriate numerical summaries and graphs for each individual variable
+<ul>
+<li>Categorical: Frequency tables, bargraphs, pie charts</li>
+<li>Scalar: Mean, Std.dev, quartiles, skewness, outliers, histogram, boxplot</li>
+</ul></li>
+<li>Summarize conclusions in journal</li>
+<li>Don’t worry about finalizing graphs/tables. This is “exploratory”: It’s for you to learn what is going on with your data.</li>
+<li>You may want to also save your viewer file</li>
+<li>Consider interactions between your variables
+<ul>
+<li>Categorical - Categorical: 100% stacked bar charts</li>
+<li>Categorical - Scalar: boxplots, or split the file and compute numerical summaries</li>
+<li>Scalar - Scalar: scatterplot, “loess” line, linear regression if appropriate</li>
+</ul></li>
+<li>Decide on variable transformations
+<ul>
+<li>Should a scalar variable be “grouped up” to form a categorical variable?</li>
+<li>Should some categories in a categorical variable be consolidated to create more balanced groupings?</li>
+<li>etc</li>
+</ul></li>
+</ul>
+<h2 id="moving-further">Moving further</h2>
+<ul>
+<li>Start looking at the questions you considered in your proposal’s “expectations” section.</li>
+<li>For each question
+<ul>
+<li>Prepare graphs and numerical summaries that would help answer it.</li>
+<li>Consider the effect of other variables to the interaction you observe (for example might a GPA effect based on gender be an effect based on year behind the scenes, because you happened to have too many male seniors in your survey?)</li>
+<li>Consider the effect of group/sample sizes on your conclusions. Do you have too few people in a group to draw conclusions about that group? Do you have outliers that might affect what you are seeing?</li>
+</ul></li>
+<li>Keep asking questions and digging deeper</li>
+<li>When you are satisfied, start putting together two things:
+<ul>
+<li>Word document
+<ul>
+<li>Brief introduction and conclusions sections</li>
+<li>Sections for each question/topic you wish to address</li>
+<li>Graphs/tables to back up your results</li>
+<li>Make sure to customize the graphs/tables, make them <strong>presentable</strong></li>
+<li>Graphs are best customized in SPSS first, before transfering.</li>
+</ul></li>
+<li>Powerpoint presentation
+<ul>
+<li>Edit the graphs (they probably require different editing than the document ones)</li>
+<li>Graphs should be readable from a distance. Test them!</li>
+<li>Avoid long text</li>
+</ul></li>
+</ul></li>
 </ul>
 </body>
 </html>
