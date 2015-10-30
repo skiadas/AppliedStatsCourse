@@ -1,17 +1,5 @@
 # Random Variables
 
-## Reading
-
-- Section 4.1
-
-## Practice Problems
-
-4.1 (Page 262)
-  ~ 1, 2, 3, 6, 7, 8, 10, 11, 13-17
-
-4.1 (Page 267)
-  ~ 69
-
 ## Notes
 
 ### Random Variables
@@ -43,11 +31,11 @@ We can also think of a corresponding random variable: "Pick one person at random
 
 ### Probability Distribution Function
 
-The *Probability Distribution Function* (often abreviated as PDF or pdf) is the function for a given $k$ tells us what $P(X=k)$ is. For discrete distributions, we can express it as a table. Let us look at an example:
+The *Probability Distribution Function* (often abreviated as PDF or pdf) is the function that for a given $k$ tells us what $P(X=k)$ is. For discrete distributions, we can express it as a table. Let us look at an example:
 
 > We roll a fair 6-sided die. If it is 3 or less, we don't win anything. If it is 4 or more we win $\$1$ and roll the die a second time. If that second time is a $5$ or $6$ then we win one more dollar.
 >
-> X is the number of dollars end up winning.
+> X is the number of dollars we end up winning.
 
 Make a tree/decision diagram showing how the play might go, and what values of $X$ you get on each resulting path. You should end up with the following table:
 
