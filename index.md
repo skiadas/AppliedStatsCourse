@@ -10,5 +10,5 @@ Course website for MAT 217 Applied Statistics
 - [Moodle site](https://moodle.hanover.edu/course/view.php?id=1076)
 - [Book](https://www.openintro.org/stat/)
 - [Datasets](datasets.md)
-- [Labs](labs.md)
 - [Sample Project Proposal](project_proposal.md)
+- [Project instructions](labs/projectAnalysisSteps.md)
