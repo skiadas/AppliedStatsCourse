@@ -2,7 +2,7 @@
 
 This midterm is about probability concepts, as well as linear modeling.
 
-This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 6-9 and Homework Assignments 9-14.
+This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 5-7 and Homework Assignments 8-11.
 
 1. When we have a regression line fitted to some data, explain the following terms: predicted value, actual value, residual, sum of squared residuals.
 2. What is the key property that makes the "*least squares regression line*" special?
