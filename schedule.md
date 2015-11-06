@@ -126,13 +126,12 @@ Day 1
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 2
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
-
+  ~ [Work on Projects](labs/projectAnalysisSteps.md)
 Day 3
-  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 4
-  ~ [Combining Random Variables](notes/rv_combine.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 ## Week 10 (11/09-11/13)
 
@@ -140,21 +139,21 @@ Day 1
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 2
-  ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
+  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
 
 Day 3
-  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
 
 Day 4
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
 ## Week 11 (11/16-11/20)
 
 Day 1
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 Day 2
-  ~ Work on Projects
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 3
   ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
