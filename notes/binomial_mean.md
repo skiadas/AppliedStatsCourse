@@ -1,16 +1,13 @@
-# The Binomial Setting and Distribution
+# Mean and Standard Deviation of the Binomial Distribution
 
 ## Reading
 
-- Section 4.3
+- Section 3.4.1, 3.4.2, 3.4.3
 
 ## Practice Problems
 
-4.3 (Page 266)
-  ~ 41, 42
-
-4.3 (Page 271)
-  ~ 86, 89, 95
+3.6.4 (Page 163)
+  ~ 3.27, 3.28, 3.29, 3.30, 3.36
 
 ## Notes
 

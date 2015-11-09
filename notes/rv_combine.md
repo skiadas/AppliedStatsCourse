@@ -1,5 +1,15 @@
 # Combining Random Variables
 
+## Reading
+
+- Section 2.4.3, 2.4.4
+
+## Practice Problems
+
+2.6.4 (Page 123)
+  ~ 2.41, 2.42
+
+
 There are two main ways we will look at of creating new random variables from existing ones: linear transformations and addition of variables.
 
 ### Linear Transformations

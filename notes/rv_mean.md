@@ -2,15 +2,12 @@
 
 ## Reading
 
-- Section 4.2
+- Section 2.4.1, 2.4.2
 
 ## Practice Problems
 
-4.2 (Page 263)
-  ~ 18-36
-
-4.2 (Page 268)
-  ~ 70-76, 78-79
+2.6.4 (Page 123)
+  ~ 2.34, 2.36, 2.38, 2.39
 
 ## Notes
 

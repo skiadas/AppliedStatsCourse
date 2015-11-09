@@ -131,7 +131,7 @@ Day 3
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 4
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+  ~ Review
 
 ## Week 10 (11/09-11/13)
 
@@ -139,7 +139,7 @@ Day 1
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
 Day 2
-  ~ [Mean and Standard Deviation of Random Variables (cont)](notes/rv_mean.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 3
   ~ [Combining Random Variables](notes/rv_combine.md)
