@@ -5,3 +5,4 @@ exams/*
 site/datasets/studentDirectory.txt
 site/datasets/studentDirectory2.csv
 oldInfo/*
+Report*.doc
