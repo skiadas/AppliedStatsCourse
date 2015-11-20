@@ -2,19 +2,15 @@
 
 ## Reading
 
-- Section 7.1, 7.3
-- Section 7.2 (optional)
+- Section 4.1, 4.4
 
 ## Practice Problems
 
-7.1 (Page 396)
-  ~ 1-6
+4.6.1 (Page 203)
+  ~ 1, 2, 3, 4, 5
 
-7.1 (Page 399)
-  ~ 62-65, 67-70
-
-7.3 (Page 402)
-  ~ 77b-j, 83, 84, 87a-f, 89, 90c,f-h
+4.6.4 (Page 214)
+  ~ 33, 34, 35, 36
 
 ## Notes
 
