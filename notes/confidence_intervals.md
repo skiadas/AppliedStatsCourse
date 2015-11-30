@@ -2,13 +2,12 @@
 
 ## Reading
 
-- Section 8.1
-- Section 8.3
+- Sections 4.1, 4.2
 
 ## Practice Problems
 
-8.1 (Page 444)
-  ~ 1-22
+4.6.2 (Page 206)
+  ~ 4.7, 4.8, 4.9, 4.10, 4.11, 4.12, 4.13, 4.14
 
 ## Notes
 
