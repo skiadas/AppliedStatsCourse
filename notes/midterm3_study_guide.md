@@ -1,6 +1,6 @@
 # Midterm 3 Study Guide
 
-This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 10-11 and Homework Assignments 15-17.
+This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 8-11 and Homework Assignments 12-17.
 
 1. What differentiates *random variables* from other random phenomena? Give examples of random variables
 2. What conditions must we meet in order to be in the *binomial setting*?
@@ -23,6 +23,6 @@ This is meant to be a representative sampling of the key concepts you will need 
 19. What are the options we have when we want to reduce the *margin of error*? What are the tradeoffs?
 20. How do we compute the sample size needed to achieve a specific margin of error?
 21. What is the general idea behind a hypothesis test?
-22. What kinds the two types of results can we get from a hypothesis test?
+22. What are the two kinds of conclusions we can get from a hypothesis test?
 23. What errors do we refer to as Type I errors? What about Type II errors?
 24. What three parts of our work in a hypothesis test or confidence interval are affected by the sample size and a change in the sample size?
