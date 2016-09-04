@@ -9,22 +9,22 @@ Instructor
   ~ Charilaos Skiadas (skiadas at hanover dot edu)
 
 Term
-  ~ Fall 2015-2016
+  ~ Fall 2016-2017
 
 Office
   ~ SCH 121C
 
 Office Hours
-  ~ MW 2pm-4pm, R 2pm-3pm, and by appointment.
+  ~ MWF 10am-11am, and by appointment.
 
 Book
   ~ [OpenIntro Statistics](https://www.openintro.org/stat/) by openintro.org, 3rd edition. Free PDF download from the site. Can also buy from online retailers for around \$10.
 
 Websites
-  ~ [for notes](http://skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=1076).
+  ~ [for notes](http://skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=2195).
 
 Class times
-  ~ MWRF 10am-11am in CFA111. On Wednesdays in CFA112C.
+  ~ MWF 2:40pm-3:50pm in CFA111. On Fridays in CFA112C.
 
 ## Course Description
 
@@ -76,7 +76,7 @@ We will be using the [Moodle platform](http://moodle.hanover.edu) for online qui
 
 ### Exams
 
-There will be two midterms, on Wednesday, October 7th and Monday, November 9th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
+There will be two midterms, on Friday, October 7th and Friday, November 11th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
 
 ### Term Project
 
