@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -17,7 +17,7 @@
 <h2 id="notes">Notes</h2>
 <p>Let us summarize the key probability rules we’ve encountered so far:</p>
 <blockquote>
-<p><span class="math">\[P(A&#39;) = 1 - P(A)\]</span> <span class="math">\[P(A\textrm{ or }B) = P(A) + P(B) - P(A\textrm{ and }B)\]</span> <span class="math">\[P(A\textrm{ or }B) = P(A) + P(B)\textrm{ if }A,B\textrm{ are disjoint}\]</span> <span class="math">\[P(A\textrm{ and }B) = P(A)P(B|A) = P(B)P(A|B)\]</span> <span class="math">\[P(A\textrm{ and }B) = P(A)P(B)\textrm{ if }A,B\textrm{ are independent}\]</span></p>
+<p><span class="math display">\[P(A&#39;) = 1 - P(A)\]</span> <span class="math display">\[P(A\textrm{ or }B) = P(A) + P(B) - P(A\textrm{ and }B)\]</span> <span class="math display">\[P(A\textrm{ or }B) = P(A) + P(B)\textrm{ if }A,B\textrm{ are disjoint}\]</span> <span class="math display">\[P(A\textrm{ and }B) = P(A)P(B|A) = P(B)P(A|B)\]</span> <span class="math display">\[P(A\textrm{ and }B) = P(A)P(B)\textrm{ if }A,B\textrm{ are independent}\]</span></p>
 </blockquote>
 <p>These are called the <strong>addition rule</strong> and the <strong>multiplication rule</strong> respectively.</p>
 <p>We will see the rules in action in the following example:</p>
@@ -34,19 +34,19 @@
 </ol>
 <p>We are essentially interested in the event that is the combination of 1 and 3. What we are given is some partial information.</p>
 <p>We will denote by A and B the two events for which road Peter can choose, and C the event that he runs into traffic. Then using the addition rule we can write:</p>
-<p><span class="math">\[P(C) = P(A\textrm{ and }C) + P(B\textrm{ and }C)\]</span></p>
+<p><span class="math display">\[P(C) = P(A\textrm{ and }C) + P(B\textrm{ and }C)\]</span></p>
 <p>So if we can find those two probabilities, we can also find the probability of C, which is what we were after. For that, we will use the multiplication rule:</p>
-<p><span class="math">\[P(A\textrm{ and }C) = P(A)P(C|A)\]</span></p>
+<p><span class="math display">\[P(A\textrm{ and }C) = P(A)P(C|A)\]</span></p>
 <p>Let us read the right-hand-side out: We multiply the probability that Peter takes road A (60%) with the probability that he runs into traffic given that he is taking road A (70%). This gives us the probability that he takes road A and runs into traffic (42%).</p>
 <p>Similarly:</p>
-<p><span class="math">\[P(B\textrm{ and }C) = P(B)P(C|B) = 0.4\times 0.4 = 0.16 = 16\%\]</span></p>
-<p>Therefore the total probability that Peter will run into traffic is <span class="math">\(P(C) = 0.42 + 0.16 = 0.58\)</span>, or 58%.</p>
+<p><span class="math display">\[P(B\textrm{ and }C) = P(B)P(C|B) = 0.4\times 0.4 = 0.16 = 16\%\]</span></p>
+<p>Therefore the total probability that Peter will run into traffic is <span class="math inline">\(P(C) = 0.42 + 0.16 = 0.58\)</span>, or 58%.</p>
 <blockquote>
 <p>Continuing on the same problem, suppose Peter does run into traffic. What are the chances, that he took road A?</p>
 </blockquote>
-<p>To answer this question, we need to compute <span class="math">\(P(A|C)\)</span>. Let us use the formula:</p>
-<p><span class="math">\[P(A|C) = \frac{P(A\textrm{ and }C)}{P(C)} = \frac{0.42}{0.58} = 0.7241\]</span></p>
-<p>So there is a <span class="math">\(72.4\)</span>% chance that Peter took road A.</p>
+<p>To answer this question, we need to compute <span class="math inline">\(P(A|C)\)</span>. Let us use the formula:</p>
+<p><span class="math display">\[P(A|C) = \frac{P(A\textrm{ and }C)}{P(C)} = \frac{0.42}{0.58} = 0.7241\]</span></p>
+<p>So there is a <span class="math inline">\(72.4\)</span>% chance that Peter took road A.</p>
 <p>Let us think about this logically for a second: Given that we know that Peter ended up in traffic, his chance of having taken road A went up from 60% to 72%. This makes sense, because Peter would have been more likely to run into traffic via road A than via road B. So the fact that he ended up in traffic makes road A somewhat more likely.</p>
 <p>The book has a number of other examples, study them!</p>
 </body>

@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -31,31 +31,31 @@
 <h2 id="notes">Notes</h2>
 <ul>
 <li>The <strong>Normal Distribution</strong> is a bell-shaped curve.</li>
-<li>Its equation depends on two parameters, <span class="math">\(\mu\)</span> (mean) and <span class="math">\(\sigma\)</span> (standard deviation)
+<li>Its equation depends on two parameters, <span class="math inline">\(\mu\)</span> (mean) and <span class="math inline">\(\sigma\)</span> (standard deviation)
 <ul>
-<li><span class="math">\(\mu\)</span> controls the center</li>
-<li><span class="math">\(\sigma\)</span> controls the width. More specifically, it is the distance between the center and the “inflection point”.</li>
+<li><span class="math inline">\(\mu\)</span> controls the center</li>
+<li><span class="math inline">\(\sigma\)</span> controls the width. More specifically, it is the distance between the center and the “inflection point”.</li>
 </ul></li>
-<li>Denoted <span class="math">\(N(\mu, \sigma)\)</span>.</li>
+<li>Denoted <span class="math inline">\(N(\mu, \sigma)\)</span>.</li>
 <li>We use Table A or calculator/computer for computing values. We will explain shortly.</li>
-<li><p>Key step: <span class="math">\(z\)</span>-scores.</p>
-<p><span class="math">\[z = \frac{x-\mu}{\sigma}\]</span></p></li>
-<li>They are a simple rescaling of the <span class="math">\(x\)</span> values.</li>
+<li><p>Key step: <span class="math inline">\(z\)</span>-scores.</p>
+<p><span class="math display">\[z = \frac{x-\mu}{\sigma}\]</span></p></li>
+<li>They are a simple rescaling of the <span class="math inline">\(x\)</span> values.</li>
 <li><p>Can also write:</p>
-<p><span class="math">\[x = \mu + \sigma \times z\]</span></p>
+<p><span class="math display">\[x = \mu + \sigma \times z\]</span></p>
 <blockquote>
-<p><span class="math">\(z\)</span> scores measure “number of standard deviations away from the mean” that the corresponding <span class="math">\(x\)</span> value is.</p>
+<p><span class="math inline">\(z\)</span> scores measure “number of standard deviations away from the mean” that the corresponding <span class="math inline">\(x\)</span> value is.</p>
 </blockquote></li>
-<li><span class="math">\(z\)</span>-scores follow <strong>Standard Normal Distribution</strong>. With mean <span class="math">\(0\)</span> and standard deviation <span class="math">\(1\)</span>.</li>
-<li><p>It is those <span class="math">\(z\)</span> values we can look up in the table.</p></li>
+<li><span class="math inline">\(z\)</span>-scores follow <strong>Standard Normal Distribution</strong>. With mean <span class="math inline">\(0\)</span> and standard deviation <span class="math inline">\(1\)</span>.</li>
+<li><p>It is those <span class="math inline">\(z\)</span> values we can look up in the table.</p></li>
 </ul>
-<h3 id="working-with-z-values-and-table-a">Working with <span class="math">\(z\)</span> values and Table A</h3>
+<h3 id="working-with-z-values-and-table-a">Working with <span class="math inline">\(z\)</span> values and Table A</h3>
 <ul>
-<li>Compute <span class="math">\(z\)</span> from <span class="math">\(x\)</span> if need be.</li>
-<li>Look <span class="math">\(z\)</span> up in the table. For example say <span class="math">\(z=2.31\)</span>:
+<li>Compute <span class="math inline">\(z\)</span> from <span class="math inline">\(x\)</span> if need be.</li>
+<li>Look <span class="math inline">\(z\)</span> up in the table. For example say <span class="math inline">\(z=2.31\)</span>:
 <ul>
-<li>Find <span class="math">\(2.3\)</span> on the left column.</li>
-<li>Find <span class="math">\(0.01\)</span> at the top row.</li>
+<li>Find <span class="math inline">\(2.3\)</span> on the left column.</li>
+<li>Find <span class="math inline">\(0.01\)</span> at the top row.</li>
 <li>Their intersection is the “p-value”.</li>
 </ul></li>
 <li>p-value is “the percent of values below this value”.</li>
@@ -64,26 +64,26 @@
 </ul>
 <p>Practice questions:</p>
 <ul>
-<li>What percent of the data is below <span class="math">\(z=1.23\)</span>?</li>
-<li>What percent of the data is below <span class="math">\(z=-1.5\)</span>?</li>
-<li>What percent of the data is below <span class="math">\(z=-1.555\)</span>?</li>
-<li>What percent of the data is above <span class="math">\(z=2.1\)</span>?</li>
-<li>What percent of the data is between <span class="math">\(z=1.56\)</span> and <span class="math">\(z=2.1\)</span>?</li>
+<li>What percent of the data is below <span class="math inline">\(z=1.23\)</span>?</li>
+<li>What percent of the data is below <span class="math inline">\(z=-1.5\)</span>?</li>
+<li>What percent of the data is below <span class="math inline">\(z=-1.555\)</span>?</li>
+<li>What percent of the data is above <span class="math inline">\(z=2.1\)</span>?</li>
+<li>What percent of the data is between <span class="math inline">\(z=1.56\)</span> and <span class="math inline">\(z=2.1\)</span>?</li>
 </ul>
 <h3 id="inverse-lookups-in-table-a">Inverse Lookups in Table A</h3>
 <ul>
-<li>Do this if you know a <span class="math">\(p\)</span> and want to find a <span class="math">\(z\)</span>:</li>
-<li>Make sure the <span class="math">\(p\)</span> represents “data below a point”. If not convert it.</li>
-<li>Look for the <span class="math">\(p\)</span> INSIDE Table A. You will probably find one value bigger than it, right next to a value smaller than it.</li>
-<li>If your <span class="math">\(p\)</span> is closer to one of these values, just use the <span class="math">\(z\)</span> from that value.</li>
-<li>If it’s closer to the middle between, them, use the average of the two <span class="math">\(z\)</span> values.</li>
+<li>Do this if you know a <span class="math inline">\(p\)</span> and want to find a <span class="math inline">\(z\)</span>:</li>
+<li>Make sure the <span class="math inline">\(p\)</span> represents “data below a point”. If not convert it.</li>
+<li>Look for the <span class="math inline">\(p\)</span> INSIDE Table A. You will probably find one value bigger than it, right next to a value smaller than it.</li>
+<li>If your <span class="math inline">\(p\)</span> is closer to one of these values, just use the <span class="math inline">\(z\)</span> from that value.</li>
+<li>If it’s closer to the middle between, them, use the average of the two <span class="math inline">\(z\)</span> values.</li>
 </ul>
 <p>Practice questions:</p>
 <ul>
-<li>At what <span class="math">\(z\)</span> is the first quartile?</li>
-<li>At what <span class="math">\(z\)</span> is the third quartile?</li>
+<li>At what <span class="math inline">\(z\)</span> is the first quartile?</li>
+<li>At what <span class="math inline">\(z\)</span> is the third quartile?</li>
 <li>What is the IQR for the standard normal distribution?</li>
-<li>Find the <span class="math">\(z\)</span> range where the middle 20% of the data lies.</li>
+<li>Find the <span class="math inline">\(z\)</span> range where the middle 20% of the data lies.</li>
 </ul>
 </body>
 </html>

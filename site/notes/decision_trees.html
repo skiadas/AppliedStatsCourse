@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -56,11 +56,11 @@
 <img src="images/tree1.png" title="A tree diagram" alt="Tree Diagram, Best out of 3" />
 <p class="caption">Tree Diagram, “Best out of 3”</p>
 </div>
-<p>You can see that we have one branching point for each game, with two options each time depending on which game wins. The conditional probabilities along the branches are always <span class="math">\(0.6\)</span> and <span class="math">\(0.4\)</span>.</p>
+<p>You can see that we have one branching point for each game, with two options each time depending on which game wins. The conditional probabilities along the branches are always <span class="math inline">\(0.6\)</span> and <span class="math inline">\(0.4\)</span>.</p>
 <p>Notice that some paths only need to go 2 levels deep, as a third game is not always necessary.</p>
 <p>So now to find the overall chances of team A winning, we have to follow all the paths that end up with a win for A. These are the paths AA, ABA and BAA. They are disjoint, so we add their probabilities:</p>
-<p><span class="math">\[P(AA) + P(ABA) + P(BAA) = 0.36 + 0.144 + 0.144 = 0.648\]</span></p>
-<p>So team A has a <span class="math">\(64.8\)</span>% chance of winning a “best out of 3” against team B. Their chances went up vs a single game: This is because the more games they have to play, the more opportunities they have to assert their 60% superiority.</p>
+<p><span class="math display">\[P(AA) + P(ABA) + P(BAA) = 0.36 + 0.144 + 0.144 = 0.648\]</span></p>
+<p>So team A has a <span class="math inline">\(64.8\)</span>% chance of winning a “best out of 3” against team B. Their chances went up vs a single game: This is because the more games they have to play, the more opportunities they have to assert their 60% superiority.</p>
 <p>As a better illustration of that, imagine they played 500 games. How likely are they to win over half of those games? The more they play, the more pronounced the difference between 40% and 60% becomes.</p>
 <p>We will now consider a number of related questions:</p>
 <blockquote>
@@ -74,19 +74,19 @@
 <p>Let us try to answer those questions.</p>
 <ol style="list-style-type: decimal">
 <li><p>The first is simple. It is a conditional probability, given that team A ended up winning. So it will be a quotient, where the denominator is all the ways team A wins an the numerator are those ways in which team A wins and 3 games are played. So we would have:</p>
-<p><span class="math">\[\frac{P(ABA) + P(BAA)}{P(AA) + P(ABA) + P(BAA)} = \frac{0.288}{0.648} = 0.4444\]</span></p>
-So the chances that a third game was necessary given that A won are <span class="math">\(44.44\)</span>%</li>
+<p><span class="math display">\[\frac{P(ABA) + P(BAA)}{P(AA) + P(ABA) + P(BAA)} = \frac{0.288}{0.648} = 0.4444\]</span></p>
+So the chances that a third game was necessary given that A won are <span class="math inline">\(44.44\)</span>%</li>
 <li><p>Now we proceed to the second question, the chances that a third game was necessary. To do that, we actually want to stop earlier in the paths. So we want to follow the two middle paths, AB and BA, but only up to that point, as those are the two locations that would necessitate a third game. The chances would therefore be:</p>
-<p><span class="math">\[P(AB) + P(BA) = 0.24 + 0.24 = 0.48\]</span></p>
+<p><span class="math display">\[P(AB) + P(BA) = 0.24 + 0.24 = 0.48\]</span></p>
 <p>or 48%. Another way to do the same problem would have been to look at the complement, which would have been that the series ended in 2 games, then subtract that probability from 1. This would be:</p>
-<span class="math">\[1 - P(AA) - P(BB) = 1-0.36-0.16 = 1-0.52=0.48\]</span></li>
+<span class="math display">\[1 - P(AA) - P(BB) = 1-0.36-0.16 = 1-0.52=0.48\]</span></li>
 <li><p>For the third question, it is again a conditional. We need to compute a quotient where the denominator is what we just computed, and the numerator is those paths with 3 games that ended up in a team A win. So we would have:</p>
-<p><span class="math">\[\frac{P(ABA) + P(BAA)}{0.48} = \frac{0.288}{0.48} = 0.6\]</span></p>
+<p><span class="math display">\[\frac{P(ABA) + P(BAA)}{0.48} = \frac{0.288}{0.48} = 0.6\]</span></p>
 <p>So the chances are 60%.</p>
 Take a moment to ponder this: The chances of A winning, given that we know a third game was necessary, are the same as the chances of A winning a single game. There is a very simple explanation for that, make sure you figure it out.</li>
 <li><p>This is similar to previous problems. The computation would be:</p>
-<p><span class="math">\[\frac{P(AA)}{P(AA) + P(BB)} = \frac{0.36}{0.52} = 0.6923\]</span></p>
-<p>So there is a <span class="math">\(69.23\)</span>% probability.</p></li>
+<p><span class="math display">\[\frac{P(AA)}{P(AA) + P(BB)} = \frac{0.36}{0.52} = 0.6923\]</span></p>
+<p>So there is a <span class="math inline">\(69.23\)</span>% probability.</p></li>
 </ol>
 <h3 id="medical-tests">Medical tests</h3>
 <p>Tree diagrams and conditional probabilities can help us understand the setup on most medical tests. There are two key components: The sample and the test. This is more generally the setup for what is known as “binary classification test”.</p>
@@ -103,41 +103,41 @@ Take a moment to ponder this: The chances of A winning, given that we know a thi
 <img src="images/tree2.png" title="Medical Tests diagram" alt="Tree Diagram, medical tests" />
 <p class="caption">Tree Diagram, medical tests</p>
 </div>
-<p>The probabilities associated with the first branches are <span class="math">\(P(S-)\)</span> and <span class="math">\(P(S+)\)</span>. These are the chances that the person is positive/negative, so for these we need to know some population statistics, i.e. what percent of those who go for a test are positive/negative.</p>
-<p>The second set of branches is more interesting. It contains things like <span class="math">\(P(T-|S-)\)</span>, i.e. conditional probabilities, given that we know if the sample is positive/negative, of getting the test to be positive/negative. These are usually known to us by the work that was done during the development of the test: The test was probably tested on a number of samples that we knew were positive/negative, and we measured how many times it was right/wrong. These probabilities have specific names:</p>
+<p>The probabilities associated with the first branches are <span class="math inline">\(P(S-)\)</span> and <span class="math inline">\(P(S+)\)</span>. These are the chances that the person is positive/negative, so for these we need to know some population statistics, i.e. what percent of those who go for a test are positive/negative.</p>
+<p>The second set of branches is more interesting. It contains things like <span class="math inline">\(P(T-|S-)\)</span>, i.e. conditional probabilities, given that we know if the sample is positive/negative, of getting the test to be positive/negative. These are usually known to us by the work that was done during the development of the test: The test was probably tested on a number of samples that we knew were positive/negative, and we measured how many times it was right/wrong. These probabilities have specific names:</p>
 <dl>
 <dt>sensitivity</dt>
-<dd>This is <span class="math">\(P(T+|S+)\)</span>, in other words the percent of positive samples that are correctly classified. Also known as <em>true positive rate</em> or <em>recall rate</em>.
+<dd>This is <span class="math inline">\(P(T+|S+)\)</span>, in other words the percent of positive samples that are correctly classified. Also known as <em>true positive rate</em> or <em>recall rate</em>.
 </dd>
 <dt>false negative rate</dt>
-<dd>This is <span class="math">\(P(T-|S+)\)</span>, i.e. the percent of the positive samples that are misclassified. This is complementary to the sensitivity.
+<dd>This is <span class="math inline">\(P(T-|S+)\)</span>, i.e. the percent of the positive samples that are misclassified. This is complementary to the sensitivity.
 </dd>
 <dt>specificity</dt>
-<dd>This is <span class="math">\(P(T-|S-)\)</span>, i.e. the percent of negative samples that are correctly classified. It is also known as <em>true negative rate</em>.
+<dd>This is <span class="math inline">\(P(T-|S-)\)</span>, i.e. the percent of negative samples that are correctly classified. It is also known as <em>true negative rate</em>.
 </dd>
 <dt>false positive rate</dt>
-<dd>This is <span class="math">\(P(T+|S-)\)</span>, i.e. the percent of negative samples that are misclassified. Complementary to the specificity.
+<dd>This is <span class="math inline">\(P(T+|S-)\)</span>, i.e. the percent of negative samples that are misclassified. Complementary to the specificity.
 </dd>
 </dl>
 <p>Both sensitivity and specificity are important: Sensitivity is the test’s ability to detect positive patients, specificity is its ability to detect negative patients.</p>
-<p>Let us work out a specific example. Suppose we try to diagnose a disease that only 5% of the population has (so <span class="math">\(P(S+) = 0.05\)</span> assuming all people are equally likely to come in for a test). The particular test we will employ has a specificity of <span class="math">\(0.96\)</span> and a sensitivity of <span class="math">\(0.99\)</span>. In other words, it misclassifies one in every 100 positive samples and 4 in every 100 negative samples.</p>
+<p>Let us work out a specific example. Suppose we try to diagnose a disease that only 5% of the population has (so <span class="math inline">\(P(S+) = 0.05\)</span> assuming all people are equally likely to come in for a test). The particular test we will employ has a specificity of <span class="math inline">\(0.96\)</span> and a sensitivity of <span class="math inline">\(0.99\)</span>. In other words, it misclassifies one in every 100 positive samples and 4 in every 100 negative samples.</p>
 <p>The question of interest in practice is this: If the test comes out negative, what are the chances that the person is in fact negative?</p>
 <p>This is in fact a conditional probability given a test result, which is the opposite of what we are given as part of our inputs.</p>
 <blockquote>
-<p>In binary classification tests / medical diagnosis we know <span class="math">\(P(T\pm|S\pm)\)</span> and we need to find out <span class="math">\((S\pm|T\pm)\)</span>.</p>
+<p>In binary classification tests / medical diagnosis we know <span class="math inline">\(P(T\pm|S\pm)\)</span> and we need to find out <span class="math inline">\((S\pm|T\pm)\)</span>.</p>
 </blockquote>
-<p>For instance let us compute <span class="math">\(P(S-|T-)\)</span>:</p>
-<p><span class="math">\[P(S-|T-) = \frac{P(S-T-)}{P(T-)} = \frac{P(S-T-)}{P(S-T-) + P(S+T-)}\]</span></p>
+<p>For instance let us compute <span class="math inline">\(P(S-|T-)\)</span>:</p>
+<p><span class="math display">\[P(S-|T-) = \frac{P(S-T-)}{P(T-)} = \frac{P(S-T-)}{P(S-T-) + P(S+T-)}\]</span></p>
 <p>We can use the tree diagram to compute the required probabilities:</p>
-<p><span class="math">\[P(S-T-) = P(S-)P(T-|S-) = 0.95 \cdot 0.96 = 0.912\]</span></p>
-<p><span class="math">\[P(S+T-) = P(S+)P(T-|S+) = 0.05 \cdot 0.01 = 0.0005\]</span></p>
+<p><span class="math display">\[P(S-T-) = P(S-)P(T-|S-) = 0.95 \cdot 0.96 = 0.912\]</span></p>
+<p><span class="math display">\[P(S+T-) = P(S+)P(T-|S+) = 0.05 \cdot 0.01 = 0.0005\]</span></p>
 <p>So we can now finish the computation:</p>
-<p><span class="math">\[P(S-|T-) = \frac{0.912}{0.9125} = 0.99945\]</span></p>
-<p>So this is nice, if the test is negative we have a very high probability of being negative, and a very small (<span class="math">\(0.00055 = 0.055\%\)</span>) of being positive.</p>
+<p><span class="math display">\[P(S-|T-) = \frac{0.912}{0.9125} = 0.99945\]</span></p>
+<p>So this is nice, if the test is negative we have a very high probability of being negative, and a very small (<span class="math inline">\(0.00055 = 0.055\%\)</span>) of being positive.</p>
 <p>For practice:</p>
 <ul>
 <li>Work out the chances of being positive given that the test came out positive.</li>
-<li>Work out the same questions if <span class="math">\(P(S+) = 0.4\)</span>, i.e. if we had more of the positive people coming in for tests, and not as many of the negative people.</li>
+<li>Work out the same questions if <span class="math inline">\(P(S+) = 0.4\)</span>, i.e. if we had more of the positive people coming in for tests, and not as many of the negative people.</li>
 </ul>
 </body>
 </html>

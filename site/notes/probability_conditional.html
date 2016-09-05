@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -110,14 +110,14 @@
 </tr>
 </tbody>
 </table>
-<p>For example those 884 respondents correspond to a probability of <span class="math">\(\frac{884}{20000} = 0.0442 = 4.42\%\)</span>.</p>
+<p>For example those 884 respondents correspond to a probability of <span class="math inline">\(\frac{884}{20000} = 0.0442 = 4.42\%\)</span>.</p>
 <p>We now have a probability model, consisting of 10 possible outcomes (all those combinations). If we pick a student at random, these numbers tell us the chances that the student would be in each of those 10 outcomes. This is what we call the <strong>joint probabilities</strong>, as it involves more than one “variable”: Our outcomes are formed out of pairs of outcomes from the two separate questions, Gender and Health.</p>
-<p>These two separate questions also have their own probability distributions, reflected in the “Total” row and column. For instance if we pick a respondent at random there is a <span class="math">\(52.155\%\)</span> chance that they would be female, and a <span class="math">\(28.375\%\)</span> chance that they would be in “good” health. We call these the <strong>marginal probabilities</strong>.</p>
+<p>These two separate questions also have their own probability distributions, reflected in the “Total” row and column. For instance if we pick a respondent at random there is a <span class="math inline">\(52.155\%\)</span> chance that they would be female, and a <span class="math inline">\(28.375\%\)</span> chance that they would be in “good” health. We call these the <strong>marginal probabilities</strong>.</p>
 <p>Using the table of joint probabilities, we can answer a number of questions, for instance:</p>
 <blockquote>
 <p>If we pick the student at random, what are the chances that they would be Female and in at least good condition?</p>
 </blockquote>
-<p>All we have to do for this is to add the 3 relevant entries in the table, so <span class="math">\(0.14765+0.17950+0.11795=0.4451\)</span> or <span class="math">\(44.51\%\)</span>.</p>
+<p>All we have to do for this is to add the 3 relevant entries in the table, so <span class="math inline">\(0.14765+0.17950+0.11795=0.4451\)</span> or <span class="math inline">\(44.51\%\)</span>.</p>
 <h3 id="conditional-probability-1">Conditional Probability</h3>
 <p>There is another important kind of question we want to ask, and it leads us to the notion of <em>conditional probability</em>. Suppose instead the question was the following (and there are two versions of it that are equivalent):</p>
 <blockquote>
@@ -128,24 +128,24 @@
 </blockquote>
 <p>In both cases the effect is the same: The total group of respondents is reduced to only those that are female. So instead of adding up all those respondents that are female and in at least good condition, and finding our answer, we now need to dig further, and figure out what part that is out of all the female resondents.</p>
 <p>So in our case we could achieve this by doing either:</p>
-<p><span class="math">\[\frac{0.14765+0.17950+0.11795}{0.52155} = \frac{0.4451}{0.52155} = 0.8534\]</span> or <span class="math">\[\frac{2953+3590+2359}{10431} = \frac{8902}{10431} = 0.8534\]</span></p>
-<p>So the answer to this question is <span class="math">\(85.34\%\)</span>.</p>
+<p><span class="math display">\[\frac{0.14765+0.17950+0.11795}{0.52155} = \frac{0.4451}{0.52155} = 0.8534\]</span> or <span class="math display">\[\frac{2953+3590+2359}{10431} = \frac{8902}{10431} = 0.8534\]</span></p>
+<p>So the answer to this question is <span class="math inline">\(85.34\%\)</span>.</p>
 <p>We can also ask the question in the other direction, with a different answer:</p>
 <blockquote>
 <p>If we pick a respondent at random and they turn out to have at least good health, what are the chances that they would be a female?</p>
 </blockquote>
 <p>In both cases, this and the previous one, we are interested in the students that are female and in at least good health. what differs is what we compare them to: all the respondents, only female respondents, or only respondents that are in good health? For this last case, we compare to all those that are in at least good health, so we would have:</p>
-<p><span class="math">\[\frac{0.14765+0.17950+0.11795}{0.28375+0.34860+0.23285} = \frac{0.4451}{0.8652} = 0.51445\]</span></p>
+<p><span class="math display">\[\frac{0.14765+0.17950+0.11795}{0.28375+0.34860+0.23285} = \frac{0.4451}{0.8652} = 0.51445\]</span></p>
 <p>Now we are ready for the general definition:</p>
 <blockquote>
 <p>The probability of an event <em>given another event</em> is called <strong>conditional probability</strong>. It is one of the hardest concepts to master.</p>
-<p><span class="math">\(P(A|B)\)</span> is the probability of A occuring, given that B does occur.</p>
-<p>Think of it as “restricting the sample space”: Only outcomes in <span class="math">\(B\)</span> matter; how many of those are also in <span class="math">\(A\)</span>?</p>
-<p><span class="math">\[P(A|B) = \frac{P(A\textrm{ and }B)}{P(B)}\]</span></p>
+<p><span class="math inline">\(P(A|B)\)</span> is the probability of A occuring, given that B does occur.</p>
+<p>Think of it as “restricting the sample space”: Only outcomes in <span class="math inline">\(B\)</span> matter; how many of those are also in <span class="math inline">\(A\)</span>?</p>
+<p><span class="math display">\[P(A|B) = \frac{P(A\textrm{ and }B)}{P(B)}\]</span></p>
 </blockquote>
-<p>Example: In the case of the 5-sided die, suppose <span class="math">\(A\)</span> is the event that the number turns out to be even, and <span class="math">\(B\)</span> the event that the number is at least 4. Let us compute <span class="math">\(P(A|B)\)</span>:</p>
+<p>Example: In the case of the 5-sided die, suppose <span class="math inline">\(A\)</span> is the event that the number turns out to be even, and <span class="math inline">\(B\)</span> the event that the number is at least 4. Let us compute <span class="math inline">\(P(A|B)\)</span>:</p>
 <p>In words this says: Given the number is at least 4, what are the chances the number is even?</p>
-<p>It will be: <span class="math">\(\frac{P(4)}{P(4\textrm{ or }5)} = \frac{1/5}{2/5} = 1/2\)</span>.</p>
-<p>Notice the difference between <span class="math">\(P(A)\)</span> and <span class="math">\(P(A|B)\)</span>!!!</p>
+<p>It will be: <span class="math inline">\(\frac{P(4)}{P(4\textrm{ or }5)} = \frac{1/5}{2/5} = 1/2\)</span>.</p>
+<p>Notice the difference between <span class="math inline">\(P(A)\)</span> and <span class="math inline">\(P(A|B)\)</span>!!!</p>
 </body>
 </html>

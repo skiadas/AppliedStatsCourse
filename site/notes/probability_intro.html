@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -41,13 +41,13 @@
 <p>Let us look at some standard “random phenomena/experiments”. We will typically refer to them as “probability models”, they are idealized theoretical representations of an experiment (i.e. thinking of flipping a coin and what would happen, rather than actually flipping a physical coin and recording the results).</p>
 <dl>
 <dt>Coin Flip</dt>
-<dd>Flipping a fair coin. Sample space: <span class="math">\(\{H, T\}\)</span>. Probability of <span class="math">\(1/2\)</span> for each.
+<dd>Flipping a fair coin. Sample space: <span class="math inline">\(\{H, T\}\)</span>. Probability of <span class="math inline">\(1/2\)</span> for each.
 </dd>
 <dt>Unfair Coin Flip</dt>
-<dd>Flipping an unfair coin. <span class="math">\(P(H) = p\)</span>, <span class="math">\(P(T) = 1-p\)</span>.
+<dd>Flipping an unfair coin. <span class="math inline">\(P(H) = p\)</span>, <span class="math inline">\(P(T) = 1-p\)</span>.
 </dd>
 <dt>Five-sided die</dt>
-<dd>Rolling a “five-sided” die. From a mathematical point of view there is no problem with that. Sample space: <span class="math">\(\{1, 2, 3, 4, 5\}\)</span>. Probability of <span class="math">\(1/5\)</span>th for each.
+<dd>Rolling a “five-sided” die. From a mathematical point of view there is no problem with that. Sample space: <span class="math inline">\(\{1, 2, 3, 4, 5\}\)</span>. Probability of <span class="math inline">\(1/5\)</span>th for each.
 </dd>
 <dt>Unfair die</dt>
 <dd>Imagine a five-sided die where “1” is 3 times as likely as any of the others. Find their probabilities.
@@ -59,33 +59,33 @@
 <p>A key concept in probability theory is that of an event:</p>
 <blockquote>
 <p>An <strong>event</strong> is a collection of zero or more outcomes.</p>
-<p>The probability of an event, <span class="math">\(P(E)\)</span>, is the sum of the probabilities of its outcomes.</p>
+<p>The probability of an event, <span class="math inline">\(P(E)\)</span>, is the sum of the probabilities of its outcomes.</p>
 </blockquote>
 <p>For example, here are some events for the 5-sided die model:</p>
 <ul>
-<li>A = “all even outcomes”. So <span class="math">\(A = \{2, 4\}\)</span>. <span class="math">\(P(A) = 2/5\)</span>.</li>
-<li>B = “At least a 4”. So <span class="math">\(B = \{4, 5\}\)</span>. <span class="math">\(P(B) = 2/5\)</span>.</li>
+<li>A = “all even outcomes”. So <span class="math inline">\(A = \{2, 4\}\)</span>. <span class="math inline">\(P(A) = 2/5\)</span>.</li>
+<li>B = “At least a 4”. So <span class="math inline">\(B = \{4, 5\}\)</span>. <span class="math inline">\(P(B) = 2/5\)</span>.</li>
 </ul>
 <p>What events can you think of in the example model with smoking and gender? What are their probabilities?</p>
 <h3 id="event-operations">Event Operations</h3>
 <p>There are some standard ways to combine events:</p>
 <dl>
 <dt>Complement</dt>
-<dd>The complement of an event <span class="math">\(A\)</span>, denoted <span class="math">\(A&#39;\)</span>, is the event consisting of all outcomes that are not in <span class="math">\(A\)</span>.
+<dd>The complement of an event <span class="math inline">\(A\)</span>, denoted <span class="math inline">\(A&#39;\)</span>, is the event consisting of all outcomes that are not in <span class="math inline">\(A\)</span>.
 </dd>
 <dt>Union</dt>
-<dd>The union of two events <span class="math">\(A\)</span> and <span class="math">\(B\)</span>, denoted <span class="math">\(A\cup B\)</span> or “<span class="math">\(A\textrm{ or }B\)</span>”, is all outcomes that are in at least one of the two sets. It informally says: “I want at least one of these two events to occur.”
+<dd>The union of two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, denoted <span class="math inline">\(A\cup B\)</span> or “<span class="math inline">\(A\textrm{ or }B\)</span>”, is all outcomes that are in at least one of the two sets. It informally says: “I want at least one of these two events to occur.”
 </dd>
 <dt>Intersection</dt>
-<dd>The intersection of two events <span class="math">\(A\)</span> and <span class="math">\(B\)</span>, denoted by <span class="math">\(A\cap B\)</span> or “<span class="math">\(A\textrm{ and }B\)</span>”, is all outcomes that belong to both sets. It informally says: “I want both events to occur <em>at the same time</em>.”
+<dd>The intersection of two events <span class="math inline">\(A\)</span> and <span class="math inline">\(B\)</span>, denoted by <span class="math inline">\(A\cap B\)</span> or “<span class="math inline">\(A\textrm{ and }B\)</span>”, is all outcomes that belong to both sets. It informally says: “I want both events to occur <em>at the same time</em>.”
 </dd>
 </dl>
 <p>For instance in the 5-side die example:</p>
-<p><span class="math">\[A\textrm{ or }B = \{2, 4, 5\}\]</span></p>
-<p><span class="math">\[A\textrm{ and }B = \{4\}\]</span></p>
+<p><span class="math display">\[A\textrm{ or }B = \{2, 4, 5\}\]</span></p>
+<p><span class="math display">\[A\textrm{ and }B = \{4\}\]</span></p>
 <p>Key formula that relates the various probabilities:</p>
 <blockquote>
-<p><span class="math">\[P(A\textrm{ or }B) = P(A) + P(B) - P(A\textrm{ and }B)\]</span></p>
+<p><span class="math display">\[P(A\textrm{ or }B) = P(A) + P(B) - P(A\textrm{ and }B)\]</span></p>
 </blockquote>
 </body>
 </html>

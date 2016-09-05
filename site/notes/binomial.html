@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -31,18 +31,18 @@
 <blockquote>
 <p><strong>Binomial Setting</strong></p>
 <ol style="list-style-type: decimal">
-<li>We have a fixed number of <strong>trials</strong> (the coin flips). We denote it by <span class="math">\(n\)</span>.</li>
+<li>We have a fixed number of <strong>trials</strong> (the coin flips). We denote it by <span class="math inline">\(n\)</span>.</li>
 <li>Each trial has exactly two possible outcomes. We call one <strong>success</strong> and the other <strong>failure</strong>. These are often called <em>Bernoulli trials</em>.</li>
-<li>The probability of success is the same on each trial. We denote it by <span class="math">\(p\)</span>.</li>
+<li>The probability of success is the same on each trial. We denote it by <span class="math inline">\(p\)</span>.</li>
 <li>The trials are <em>independent</em> of each other: Success on the first trial does not alter the chances of success on the second trial.</li>
 </ol>
 <p>We could therefore say that the binomial setting is a “fixed number of identical independent Bernoulli trials”.</p>
 <p>When we are in a binomial setting, there are two primary quantities of interest, and they are both random variables:</p>
 <ul>
-<li>The <strong>number of successes</strong>, usually denoted by <span class="math">\(X\)</span>.</li>
-<li>The <strong>percent of successes</strong>, usually denoted by <span class="math">\(\hat p\)</span>.</li>
+<li>The <strong>number of successes</strong>, usually denoted by <span class="math inline">\(X\)</span>.</li>
+<li>The <strong>percent of successes</strong>, usually denoted by <span class="math inline">\(\hat p\)</span>.</li>
 </ul>
-<p>We say this <span class="math">\(X\)</span> follows a <strong>binomial distribution</strong>, and we write <span class="math">\(X\sim B(n, p)\)</span>.</p>
+<p>We say this <span class="math inline">\(X\)</span> follows a <strong>binomial distribution</strong>, and we write <span class="math inline">\(X\sim B(n, p)\)</span>.</p>
 </blockquote>
 <p>When you are given a verbal description of a problem, you have to decide if it “fits” into the binomial setting. To that end, you have to answer each of these questions:</p>
 <ul>
@@ -63,16 +63,16 @@
 <li>We can consider each person we pick and ask as one trial.</li>
 <li>They have exactly two options, to say yes or to say no.</li>
 <li>For our purposes we will associate “success” with a yes answer, because we are interested at the end of the day in the percent of people who said yes. So a person answering yes is success for that trial.</li>
-<li>There is a fixed number of trials, <span class="math">\(n=1000\)</span>, since we are asking exactly 1000 people.</li>
-<li>Each person is selected in exactly the same way, at random among all people, so the chance of success is the same for each trial, and is equal to the percent of people among the entire population who would answer yes to this question. Whatever that percent is, that is our <span class="math">\(p\)</span>.</li>
+<li>There is a fixed number of trials, <span class="math inline">\(n=1000\)</span>, since we are asking exactly 1000 people.</li>
+<li>Each person is selected in exactly the same way, at random among all people, so the chance of success is the same for each trial, and is equal to the percent of people among the entire population who would answer yes to this question. Whatever that percent is, that is our <span class="math inline">\(p\)</span>.</li>
 <li>Are the trials independent of each other? Does who we have selected for the first say 5 trials have an effect on what might happen on the 6th trial? To an extent it does: We can’t pick those 5 people again, so the pool has changed slightly. Given how big the population of the United States is, this change is hardly noticeable. So we can assume the trials are independent.</li>
 </ol>
 <p>Let us elaborate on this last point:</p>
 <p>When we sample from a population, we change the population size for any subsequent samples. So after we select 3 people from a group, this changes what options we have for the 4th person. How much of an effect this has on the calculations depends on how many people we have altogether.</p>
-<p>Suppose for example that we have overall <span class="math">\(20\)</span> people, and we are considering their gender. Say that to begin with <span class="math">\(10\)</span> are men and <span class="math">\(10\)</span> are women. What happens after we have selected three people? What are the chances that the fourth one we pick is a man?</p>
-<p>There are two extreme cases: One is if the first three people we picke were all men. Then we have only <span class="math">\(7\)</span> men left, and <span class="math">\(17\)</span> people to choose from total, so the chance that the fourth person is a man is <span class="math">\(7/17 = 41.18\%\)</span>. At the other extreme we have the case where the first three people were all women, and then the chance that the fourth person is a man is <span class="math">\(10/17 = 58.82\%\)</span>.</p>
+<p>Suppose for example that we have overall <span class="math inline">\(20\)</span> people, and we are considering their gender. Say that to begin with <span class="math inline">\(10\)</span> are men and <span class="math inline">\(10\)</span> are women. What happens after we have selected three people? What are the chances that the fourth one we pick is a man?</p>
+<p>There are two extreme cases: One is if the first three people we picke were all men. Then we have only <span class="math inline">\(7\)</span> men left, and <span class="math inline">\(17\)</span> people to choose from total, so the chance that the fourth person is a man is <span class="math inline">\(7/17 = 41.18\%\)</span>. At the other extreme we have the case where the first three people were all women, and then the chance that the fourth person is a man is <span class="math inline">\(10/17 = 58.82\%\)</span>.</p>
 <p>So this is a case where we clearly don’t have independence of the trials: The chances that the fourth selection is a man depend a whole lot on what happened on the first three trials.</p>
-<p>If on the other hand we had <span class="math">\(10000\)</span> people to begin with, so <span class="math">\(50000\)</span> of them are men and <span class="math">\(50000\)</span> are women, then what happens after 3 are picked? On the one extreme, if we pick 3 men, then we have <span class="math">\(49997\)</span> left, out of <span class="math">\(99997\)</span>, so the chance that the fourth is a man is <span class="math">\(49997/99997 = 49.9985\%\)</span>. On the other extreme, if we pick 3 women, then we still have <span class="math">\(50000\)</span> men left and the chance that the fourth is a man is <span class="math">\(50000/99997=50.0015\%\)</span>.</p>
+<p>If on the other hand we had <span class="math inline">\(10000\)</span> people to begin with, so <span class="math inline">\(50000\)</span> of them are men and <span class="math inline">\(50000\)</span> are women, then what happens after 3 are picked? On the one extreme, if we pick 3 men, then we have <span class="math inline">\(49997\)</span> left, out of <span class="math inline">\(99997\)</span>, so the chance that the fourth is a man is <span class="math inline">\(49997/99997 = 49.9985\%\)</span>. On the other extreme, if we pick 3 women, then we still have <span class="math inline">\(50000\)</span> men left and the chance that the fourth is a man is <span class="math inline">\(50000/99997=50.0015\%\)</span>.</p>
 <p>So in this second case the probability changes so little that we might as well pretend that it does not change at all. So for all practical purposes, we can assume the trials are independent.</p>
 <blockquote>
 <p>If the population size is at least around 20 times larger than the sample size, then we can assume that when sampling from that population each person sampled is independent of the previously selected persons.</p>
@@ -86,20 +86,20 @@
 <li>There might be reasons to doubt the assumption of independence of trials. For instance if the sample size is too large relative to the population size. But there are other sources of dependence. For example if we pick at random a group of students as they come out of a building, and we ask 2 of them for their gender, then those two selections are probably not independent of each other, as students tend to some extent to spend more time with other students of the same gender.</li>
 </ol>
 <h3 id="the-binomial-distribution">The Binomial Distribution</h3>
-<p>When we are in a binomial setting, with parameters <span class="math">\(n\)</span> (number of trials) and <span class="math">\(p\)</span> (probability of success on a given trial), we are typically interested in the variable <span class="math">\(X\)</span> that denotes the number of successes that occur. This is similar to rolling a die say 10 times and counting how many times we get heads.</p>
+<p>When we are in a binomial setting, with parameters <span class="math inline">\(n\)</span> (number of trials) and <span class="math inline">\(p\)</span> (probability of success on a given trial), we are typically interested in the variable <span class="math inline">\(X\)</span> that denotes the number of successes that occur. This is similar to rolling a die say 10 times and counting how many times we get heads.</p>
 <p>This is a random variable, as the outcome can vary each time we try it out, but we will describe its distribution precisely.</p>
 <blockquote>
-<p>We say <span class="math">\(X\)</span> follows a <strong>binomial distribution</strong>, and we write <span class="math">\(X\sim B(n, p)\)</span>.</p>
-<p>The main formula for computing using the binomial distribution is: <span class="math">\[P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\]</span></p>
+<p>We say <span class="math inline">\(X\)</span> follows a <strong>binomial distribution</strong>, and we write <span class="math inline">\(X\sim B(n, p)\)</span>.</p>
+<p>The main formula for computing using the binomial distribution is: <span class="math display">\[P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}\]</span></p>
 </blockquote>
-<p>So we have a nice compact formula for the chances that <span class="math">\(X\)</span> would equal exactly <span class="math">\(k\)</span>, or in other words that we would get <em>exactly</em> <span class="math">\(k\)</span> successes.</p>
-<p>Recall the definition of <span class="math">\(\binom{n}{k}\)</span>. It is a special symbol that indicates “the number of ways of choosing k out of n objects”. It is formally computed as:</p>
-<p><span class="math">\[\binom{n}{k} = \frac{n\cdot(n-1)\cdot(n-2)\cdots(n-k+1)}{k\cdot(k-1)\cdot(k-2)\cdots \phantom{(n-k+)}1}\]</span></p>
-<p>Simply put there are exactly <span class="math">\(k\)</span> terms top and bottom; the bottom terms go from <span class="math">\(k\)</span> and down by <span class="math">\(1\)</span> till we hit <span class="math">\(1\)</span>, the top terms start at <span class="math">\(n\)</span> and go down by <span class="math">\(1\)</span> matching the bottom terms.</p>
-<p>Two extreme cases are when <span class="math">\(k=0\)</span>, in which case the answer is automatically <span class="math">\(1\)</span>, and when <span class="math">\(k=n\)</span>, in which case again the answer is <span class="math">\(1\)</span>.</p>
-<p>The explanation of the formula is simple: In order to get exactly <span class="math">\(k\)</span> successes we must get <span class="math">\(k\)</span> successes, hence the <span class="math">\(p^k\)</span> factor, and we must get <span class="math">\(n-k\)</span> failures, hence the <span class="math">\((1-p)^{n-k}\)</span> factor. We then have to count this product once for each way we could arrange for the <span class="math">\(k\)</span> successes and <span class="math">\(n-k\)</span> failures to occur, which is what <span class="math">\(\binom{n}{k}\)</span> measures.</p>
-<p>Let us do a simple example, in a binomial with <span class="math">\(n=6\)</span> and <span class="math">\(p=0.3\)</span>. We have:</p>
-<p><span class="math">\[P(X=0) = 1\cdot 0.3^0\cdot 0.7^6 = 0.1176\]</span> <span class="math">\[P(X=1) = 6\cdot 0.3^1\cdot 0.7^5 = 0.3025\]</span> <span class="math">\[P(X=2) = 15\cdot 0.3^2\cdot 0.7^4 = 0.3241\]</span></p>
+<p>So we have a nice compact formula for the chances that <span class="math inline">\(X\)</span> would equal exactly <span class="math inline">\(k\)</span>, or in other words that we would get <em>exactly</em> <span class="math inline">\(k\)</span> successes.</p>
+<p>Recall the definition of <span class="math inline">\(\binom{n}{k}\)</span>. It is a special symbol that indicates “the number of ways of choosing k out of n objects”. It is formally computed as:</p>
+<p><span class="math display">\[\binom{n}{k} = \frac{n\cdot(n-1)\cdot(n-2)\cdots(n-k+1)}{k\cdot(k-1)\cdot(k-2)\cdots \phantom{(n-k+)}1}\]</span></p>
+<p>Simply put there are exactly <span class="math inline">\(k\)</span> terms top and bottom; the bottom terms go from <span class="math inline">\(k\)</span> and down by <span class="math inline">\(1\)</span> till we hit <span class="math inline">\(1\)</span>, the top terms start at <span class="math inline">\(n\)</span> and go down by <span class="math inline">\(1\)</span> matching the bottom terms.</p>
+<p>Two extreme cases are when <span class="math inline">\(k=0\)</span>, in which case the answer is automatically <span class="math inline">\(1\)</span>, and when <span class="math inline">\(k=n\)</span>, in which case again the answer is <span class="math inline">\(1\)</span>.</p>
+<p>The explanation of the formula is simple: In order to get exactly <span class="math inline">\(k\)</span> successes we must get <span class="math inline">\(k\)</span> successes, hence the <span class="math inline">\(p^k\)</span> factor, and we must get <span class="math inline">\(n-k\)</span> failures, hence the <span class="math inline">\((1-p)^{n-k}\)</span> factor. We then have to count this product once for each way we could arrange for the <span class="math inline">\(k\)</span> successes and <span class="math inline">\(n-k\)</span> failures to occur, which is what <span class="math inline">\(\binom{n}{k}\)</span> measures.</p>
+<p>Let us do a simple example, in a binomial with <span class="math inline">\(n=6\)</span> and <span class="math inline">\(p=0.3\)</span>. We have:</p>
+<p><span class="math display">\[P(X=0) = 1\cdot 0.3^0\cdot 0.7^6 = 0.1176\]</span> <span class="math display">\[P(X=1) = 6\cdot 0.3^1\cdot 0.7^5 = 0.3025\]</span> <span class="math display">\[P(X=2) = 15\cdot 0.3^2\cdot 0.7^4 = 0.3241\]</span></p>
 <p>and so on. Fill in the rest of the table! Check that the answers add up to 1.</p>
 </body>
 </html>

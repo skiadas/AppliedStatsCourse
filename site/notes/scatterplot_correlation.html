@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -74,37 +74,37 @@
 </div>
 <p>Even in this zoomed-in version we do not see much of a pattern going on. Overall we can conclude that there is not much of a relationship between a country’s area and its population.</p>
 <h3 id="correlation">Correlation</h3>
-<p>The <strong>correlation coefficient</strong> is a specific number, denoted by <span class="math">\(r\)</span>, that we compute from our data.</p>
+<p>The <strong>correlation coefficient</strong> is a specific number, denoted by <span class="math inline">\(r\)</span>, that we compute from our data.</p>
 <p>It is only appropriate to use for linear relationships without too many outliers.</p>
 <p>In that case it can measure the <em>strength</em> and <em>direction</em> of the linear relationship.</p>
 <p>Some key facts about the correlation coefficient, before we look at its computation:</p>
 <ul>
-<li>It is a unitless number. No matter what measuring units the variables have, <span class="math">\(r\)</span> does not have any.</li>
+<li>It is a unitless number. No matter what measuring units the variables have, <span class="math inline">\(r\)</span> does not have any.</li>
 <li>It does not change if the variables undergo linear transformations: It only depends on their z-scores.</li>
 <li>It is always a value between -1 and 1.</li>
-<li><span class="math">\(r= 1\)</span> means a perfect positive linear relation (all points exactly on a line).</li>
-<li><span class="math">\(r= -1\)</span> means a perfect negative linear relation (all points exactly on a line).</li>
+<li><span class="math inline">\(r= 1\)</span> means a perfect positive linear relation (all points exactly on a line).</li>
+<li><span class="math inline">\(r= -1\)</span> means a perfect negative linear relation (all points exactly on a line).</li>
 <li>Values close to those indicate strong association.</li>
-<li>Values close to <span class="math">\(0\)</span> indicate a very weak association.</li>
+<li>Values close to <span class="math inline">\(0\)</span> indicate a very weak association.</li>
 </ul>
-<p>For example, our mileage example earlier has an <span class="math">\(r = 0.94\)</span>, while the population example has an <span class="math">\(r=0.306\)</span>, which is typical of a very weak positive correlation.</p>
-<p>If we “zoom in” on the lower left part of that graph, we find a correlation of <span class="math">\(r = -0.0856\)</span>, practically 0.</p>
+<p>For example, our mileage example earlier has an <span class="math inline">\(r = 0.94\)</span>, while the population example has an <span class="math inline">\(r=0.306\)</span>, which is typical of a very weak positive correlation.</p>
+<p>If we “zoom in” on the lower left part of that graph, we find a correlation of <span class="math inline">\(r = -0.0856\)</span>, practically 0.</p>
 <p>Now we describe the computation. First the formula:</p>
 <blockquote>
-<p><span class="math">\[r = \frac{1}{n-1}\sum \left(\frac{x-\bar x}{s_x}\right)\left(\frac{y-\bar y}{s_y}\right)\]</span></p>
+<p><span class="math display">\[r = \frac{1}{n-1}\sum \left(\frac{x-\bar x}{s_x}\right)\left(\frac{y-\bar y}{s_y}\right)\]</span></p>
 </blockquote>
 <p>Basically:</p>
 <ul>
-<li>Compute the standardized values of the <span class="math">\(x\)</span>’s and the <span class="math">\(y\)</span>’s.</li>
+<li>Compute the standardized values of the <span class="math inline">\(x\)</span>’s and the <span class="math inline">\(y\)</span>’s.</li>
 <li>Pairwise multiply the corresponding standardized values.</li>
-<li>Average those products, dividing by <span class="math">\(n-1\)</span>.</li>
+<li>Average those products, dividing by <span class="math inline">\(n-1\)</span>.</li>
 </ul>
 <p>The idea behind this is as follows:</p>
 <ul>
 <li>The standardized values are negative when below the mean, and positive when above the mean.</li>
-<li>If we have a positive association, then high <span class="math">\(x\)</span> values (above the mean) will tend to be paired with high <span class="math">\(y\)</span> values (above the mean), and conversely for low <span class="math">\(x\)</span> values. Therefore positive standardized values from <span class="math">\(x\)</span> are paired with and multiplied with positive standardized values from <span class="math">\(y\)</span>, while negatives are paired with negatives. The result is that almost all of the pairwise products are positive, resulting in a large positive <span class="math">\(r\)</span>.</li>
-<li>Conversely, if we have a negative association, then high <span class="math">\(x\)</span> values are paired with low <span class="math">\(y\)</span> values, and low <span class="math">\(x\)</span> values are paired with high <span class="math">\(y\)</span> values. In terms of standardized values, it means that positives are paired with negatives, resulting in negative pairwise products. When we average them all up, we end up with negative <span class="math">\(r\)</span>.</li>
-<li>Finally, if there is no clear association, then we end up with a mixture of products, which cancel each other out in the summation. This results in <span class="math">\(r\)</span> close to <span class="math">\(0\)</span>.</li>
+<li>If we have a positive association, then high <span class="math inline">\(x\)</span> values (above the mean) will tend to be paired with high <span class="math inline">\(y\)</span> values (above the mean), and conversely for low <span class="math inline">\(x\)</span> values. Therefore positive standardized values from <span class="math inline">\(x\)</span> are paired with and multiplied with positive standardized values from <span class="math inline">\(y\)</span>, while negatives are paired with negatives. The result is that almost all of the pairwise products are positive, resulting in a large positive <span class="math inline">\(r\)</span>.</li>
+<li>Conversely, if we have a negative association, then high <span class="math inline">\(x\)</span> values are paired with low <span class="math inline">\(y\)</span> values, and low <span class="math inline">\(x\)</span> values are paired with high <span class="math inline">\(y\)</span> values. In terms of standardized values, it means that positives are paired with negatives, resulting in negative pairwise products. When we average them all up, we end up with negative <span class="math inline">\(r\)</span>.</li>
+<li>Finally, if there is no clear association, then we end up with a mixture of products, which cancel each other out in the summation. This results in <span class="math inline">\(r\)</span> close to <span class="math inline">\(0\)</span>.</li>
 </ul>
 </body>
 </html>

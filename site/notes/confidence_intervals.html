@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -29,68 +29,68 @@
 <p>When we take a sample from a population, there two kinds of questions we aim at answering. The first of these is the idea of confidence intervals.</p>
 <blockquote>
 <p><strong>Confidence Interval Question</strong></p>
-<p>We have taken a sample from a population, and have computed its sample mean <span class="math">\(\bar x\)</span> and other information. What can we say about the population mean <span class="math">\(\mu\)</span>?</p>
+<p>We have taken a sample from a population, and have computed its sample mean <span class="math inline">\(\bar x\)</span> and other information. What can we say about the population mean <span class="math inline">\(\mu\)</span>?</p>
 <p>Given the randomness of the sample, we should expect a certain degree of uncertainty in our answer. Confidence intervals make this more precise.</p>
 </blockquote>
 <p>The idea of confidence intervals goes as follows:</p>
 <ul>
-<li><p>Once we have verified some conditions, we can say that <span class="math">\(\bar x\)</span> follows a normal distribution:</p>
-<span class="math">\[N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)\]</span></li>
-<li>We decide on a percentage <span class="math">\(C\)</span> that we will call the confidence level C (e.g. <span class="math">\(90\%\)</span>).</li>
-<li>We locate the range in the normal distribution that covers <span class="math">\(C\)</span> of the cases. We do this by computing a number <span class="math">\(m\)</span> such that <span class="math">\(C\)</span> of the cases are between <span class="math">\(\mu - m\)</span> and <span class="math">\(\mu + m\)</span>. Note that <span class="math">\(\mu\)</span> is actually an unknown, but we will be able to know <span class="math">\(m\)</span>.</li>
-<li>This means that <span class="math">\(C\)</span> of the possible samples out there produce a <span class="math">\(\bar x\)</span> in the range between <span class="math">\(\mu - m\)</span> and <span class="math">\(\mu + m\)</span>.</li>
-<li>So now make the assumption that the sample we took is in fact one of those <span class="math">\(C\)</span> of them. We have a <span class="math">\(C\)</span> chance of being correct in that assumption.</li>
-<li>With that assumption in place, the <span class="math">\(\bar x\)</span> from the sample, which we have computed, is within <span class="math">\(m\)</span> from <span class="math">\(\mu\)</span>.</li>
-<li><p>Turning that around, we can say that <span class="math">\(\mu\)</span> must be within <span class="math">\(m\)</span> from <span class="math">\(\bar x\)</span>.</p></li>
+<li><p>Once we have verified some conditions, we can say that <span class="math inline">\(\bar x\)</span> follows a normal distribution:</p>
+<span class="math display">\[N\left(\mu, \frac{\sigma}{\sqrt{n}}\right)\]</span></li>
+<li>We decide on a percentage <span class="math inline">\(C\)</span> that we will call the confidence level C (e.g. <span class="math inline">\(90\%\)</span>).</li>
+<li>We locate the range in the normal distribution that covers <span class="math inline">\(C\)</span> of the cases. We do this by computing a number <span class="math inline">\(m\)</span> such that <span class="math inline">\(C\)</span> of the cases are between <span class="math inline">\(\mu - m\)</span> and <span class="math inline">\(\mu + m\)</span>. Note that <span class="math inline">\(\mu\)</span> is actually an unknown, but we will be able to know <span class="math inline">\(m\)</span>.</li>
+<li>This means that <span class="math inline">\(C\)</span> of the possible samples out there produce a <span class="math inline">\(\bar x\)</span> in the range between <span class="math inline">\(\mu - m\)</span> and <span class="math inline">\(\mu + m\)</span>.</li>
+<li>So now make the assumption that the sample we took is in fact one of those <span class="math inline">\(C\)</span> of them. We have a <span class="math inline">\(C\)</span> chance of being correct in that assumption.</li>
+<li>With that assumption in place, the <span class="math inline">\(\bar x\)</span> from the sample, which we have computed, is within <span class="math inline">\(m\)</span> from <span class="math inline">\(\mu\)</span>.</li>
+<li><p>Turning that around, we can say that <span class="math inline">\(\mu\)</span> must be within <span class="math inline">\(m\)</span> from <span class="math inline">\(\bar x\)</span>.</p></li>
 </ul>
 <p>Let us summarize all this:</p>
 <blockquote>
 <p><strong>Confidence Interval for population mean</strong></p>
 <ul>
-<li>Decide on a <strong>confidence level C</strong> (often <span class="math">\(95\%\)</span>).</li>
-<li>Compute <span class="math">\(z^*\)</span>.
+<li>Decide on a <strong>confidence level C</strong> (often <span class="math inline">\(95\%\)</span>).</li>
+<li>Compute <span class="math inline">\(z^*\)</span>.
 <ul>
-<li>This is the value in the standard normal distribution <span class="math">\(N(0,1)\)</span> such that <span class="math">\(C\)</span> of the distribution is between <span class="math">\(-z^*\)</span> and <span class="math">\(z^*\)</span>.</li>
-<li>You can find the power endpoint as the <span class="math">\(z\)</span> with <span class="math">\(p=\frac{1-C}{2}\)</span>.</li>
-<li>Or the upper endpoint as the <span class="math">\(z\)</span> with <span class="math">\(p = \frac{1+C}{2}\)</span>.</li>
+<li>This is the value in the standard normal distribution <span class="math inline">\(N(0,1)\)</span> such that <span class="math inline">\(C\)</span> of the distribution is between <span class="math inline">\(-z^*\)</span> and <span class="math inline">\(z^*\)</span>.</li>
+<li>You can find the power endpoint as the <span class="math inline">\(z\)</span> with <span class="math inline">\(p=\frac{1-C}{2}\)</span>.</li>
+<li>Or the upper endpoint as the <span class="math inline">\(z\)</span> with <span class="math inline">\(p = \frac{1+C}{2}\)</span>.</li>
 </ul></li>
-<li>Compute the <strong>margin of error</strong>: <span class="math">\[m = z^*\frac{\sigma}{\sqrt{n}}\]</span></li>
-<li>Then we say that we have for the population mean <span class="math">\(\mu\)</span> the <strong>confidence interval</strong> <span class="math">\((\bar x - m, \bar x + m)\)</span>, with confidence level <span class="math">\(C\)</span>.</li>
-<li>What this means is this: We are claiming that the population mean <span class="math">\(\mu\)</span> is somewhere in the range <span class="math">\((\bar x - m, \bar x + m)\)</span>, and we are <span class="math">\(C\)</span> confident of this fact, because we followed a process that has a <span class="math">\(C\)</span> chance of being correct.</li>
+<li>Compute the <strong>margin of error</strong>: <span class="math display">\[m = z^*\frac{\sigma}{\sqrt{n}}\]</span></li>
+<li>Then we say that we have for the population mean <span class="math inline">\(\mu\)</span> the <strong>confidence interval</strong> <span class="math inline">\((\bar x - m, \bar x + m)\)</span>, with confidence level <span class="math inline">\(C\)</span>.</li>
+<li>What this means is this: We are claiming that the population mean <span class="math inline">\(\mu\)</span> is somewhere in the range <span class="math inline">\((\bar x - m, \bar x + m)\)</span>, and we are <span class="math inline">\(C\)</span> confident of this fact, because we followed a process that has a <span class="math inline">\(C\)</span> chance of being correct.</li>
 </ul>
 </blockquote>
 <p>This last point is important: There are two sources of indeterminacy, if you like:</p>
 <ul>
-<li>We are claiming <span class="math">\(\mu\)</span> is somewhere in a range, rather than an exact value. The width of that range is controlled by <span class="math">\(m\)</span>, and is a measure of the <strong>accuracy</strong> of our prediction.</li>
-<li>There is a chance we will be wrong. This is measured by <span class="math">\(C\)</span> (or rather <span class="math">\(1-C\)</span>, and is a measure of our <strong>confidence</strong> in our prediction.</li>
+<li>We are claiming <span class="math inline">\(\mu\)</span> is somewhere in a range, rather than an exact value. The width of that range is controlled by <span class="math inline">\(m\)</span>, and is a measure of the <strong>accuracy</strong> of our prediction.</li>
+<li>There is a chance we will be wrong. This is measured by <span class="math inline">\(C\)</span> (or rather <span class="math inline">\(1-C\)</span>, and is a measure of our <strong>confidence</strong> in our prediction.</li>
 </ul>
 <p>We will see in a moment that there is a tradeoff involved: We can increase our accuracy if we are willing to reduce our confidence, and vice versa.</p>
-<p>In any case, there is always a <span class="math">\(1-C\)</span> chance of being wrong. This is especially important if we want to compute multiple confidence intervals, for more than one variable. Suppose we take samples and compute confidence intervals for <span class="math">\(k\)</span> different variables, independent of each other. If each confidence interval is taken at the <span class="math">\(C\)</span> level, then the chances that all intervals are correct are <span class="math">\(C^k\)</span>. The assumption of independence is rarely correct however, and other more complicated techniques have to be used in that case. For now, it is something to keep in mind when considering multiple confidence intervals.</p>
-<p>in any case, a <span class="math">\(95\%\)</span> confidence level for example means that in about one out of 20 times when we do this we’ll be wrong.</p>
+<p>In any case, there is always a <span class="math inline">\(1-C\)</span> chance of being wrong. This is especially important if we want to compute multiple confidence intervals, for more than one variable. Suppose we take samples and compute confidence intervals for <span class="math inline">\(k\)</span> different variables, independent of each other. If each confidence interval is taken at the <span class="math inline">\(C\)</span> level, then the chances that all intervals are correct are <span class="math inline">\(C^k\)</span>. The assumption of independence is rarely correct however, and other more complicated techniques have to be used in that case. For now, it is something to keep in mind when considering multiple confidence intervals.</p>
+<p>in any case, a <span class="math inline">\(95\%\)</span> confidence level for example means that in about one out of 20 times when we do this we’ll be wrong.</p>
 <h3 id="controlling-the-margin-of-error">Controlling the Margin of Error</h3>
-<p>A key quantity in a confidence interval is the margin of error <span class="math">\(m\)</span>. We want it to be as small as possible, but it comes at a cost.</p>
+<p>A key quantity in a confidence interval is the margin of error <span class="math inline">\(m\)</span>. We want it to be as small as possible, but it comes at a cost.</p>
 <blockquote>
-<p>To reduce the margin of error <span class="math">\[m = z^*\frac{\sigma}{\sqrt{n}}\]</span> we can:</p>
+<p>To reduce the margin of error <span class="math display">\[m = z^*\frac{\sigma}{\sqrt{n}}\]</span> we can:</p>
 <ul>
-<li><p>Make <span class="math">\(z^*\)</span> smaller. This means making <span class="math">\(C\)</span> smaller.</p>
+<li><p>Make <span class="math inline">\(z^*\)</span> smaller. This means making <span class="math inline">\(C\)</span> smaller.</p>
 Cost: less confidence in our answer.</li>
-<li><p>Make <span class="math">\(\sigma\)</span> smaller. We unfortunately do not have much control over <span class="math">\(\sigma\)</span>, it is the population standard deviation. We can however try some techniques like <em>stratified sampling</em> that might result in a smaller <span class="math">\(\sigma\)</span> at parts of the computation.</p>
+<li><p>Make <span class="math inline">\(\sigma\)</span> smaller. We unfortunately do not have much control over <span class="math inline">\(\sigma\)</span>, it is the population standard deviation. We can however try some techniques like <em>stratified sampling</em> that might result in a smaller <span class="math inline">\(\sigma\)</span> at parts of the computation.</p>
 Cost: Much more complicated sampling process and analysis phase.</li>
-<li><p>Make <span class="math">\(n\)</span> larger. Because of the presence of the square root, you often need a disproportionate increase in the sample size (e.g. 100-fold increase in <span class="math">\(n\)</span> for a 10-fold decrease in <span class="math">\(m\)</span>).</p>
+<li><p>Make <span class="math inline">\(n\)</span> larger. Because of the presence of the square root, you often need a disproportionate increase in the sample size (e.g. 100-fold increase in <span class="math inline">\(n\)</span> for a 10-fold decrease in <span class="math inline">\(m\)</span>).</p>
 <p>Cost: Considerable resource cost increase. Calling 4000 people rather than 40 is a lot more expensive, and might even be impossible depending on the population size.</p></li>
 </ul>
 </blockquote>
-<p>As an example, suppose that <span class="math">\(\sigma = 1\)</span> and <span class="math">\(n = 50\)</span>. Let us try to achieve a confidence level of <span class="math">\(C=90\%\)</span>. To find <span class="math">\(z^*\)</span>, we will look up <span class="math">\(p=\frac{1+0.9}{2} = 0.95\)</span> in the table, and find <span class="math">\(z^* = 1.645\)</span>. Therefore we find a margin of error:</p>
-<p><span class="math">\[m = 1.645\times\frac{1}{\sqrt{40}} = 0.26\]</span></p>
-<p>In other words, we will be predicting that the population mean <span class="math">\(\mu\)</span> is within <span class="math">\(0.26\)</span> of whatever value our sample mean <span class="math">\(\bar x\)</span> has.</p>
-<p>Suppose we want to achieve a margin of <span class="math">\(0.1\)</span>. Let us look at our options. Suppose first that we want to keep our confidence level fixed, and therefore <span class="math">\(z^*\)</span> fixed. Then the only other thing we really have control over is <span class="math">\(n\)</span>.</p>
+<p>As an example, suppose that <span class="math inline">\(\sigma = 1\)</span> and <span class="math inline">\(n = 50\)</span>. Let us try to achieve a confidence level of <span class="math inline">\(C=90\%\)</span>. To find <span class="math inline">\(z^*\)</span>, we will look up <span class="math inline">\(p=\frac{1+0.9}{2} = 0.95\)</span> in the table, and find <span class="math inline">\(z^* = 1.645\)</span>. Therefore we find a margin of error:</p>
+<p><span class="math display">\[m = 1.645\times\frac{1}{\sqrt{40}} = 0.26\]</span></p>
+<p>In other words, we will be predicting that the population mean <span class="math inline">\(\mu\)</span> is within <span class="math inline">\(0.26\)</span> of whatever value our sample mean <span class="math inline">\(\bar x\)</span> has.</p>
+<p>Suppose we want to achieve a margin of <span class="math inline">\(0.1\)</span>. Let us look at our options. Suppose first that we want to keep our confidence level fixed, and therefore <span class="math inline">\(z^*\)</span> fixed. Then the only other thing we really have control over is <span class="math inline">\(n\)</span>.</p>
 <blockquote>
 <p>The sample size needed to achieve a given margin of error is:</p>
-<p><span class="math">\[n = \left(\frac{z^*\sigma}{m}\right)^2\]</span></p>
+<p><span class="math display">\[n = \left(\frac{z^*\sigma}{m}\right)^2\]</span></p>
 </blockquote>
-<p>In our case this means <span class="math">\(n = \left(\frac{1.645\times 1}{0.1}\right)^2 = 270.6\)</span>, so <span class="math">\(271\)</span> samples, almost <span class="math">\(7\)</span> times more than what we started with.</p>
-<p>The other alternative would be to reduce our confidence level. Let us compute what <span class="math">\(z^*\)</span> should be:</p>
-<p><span class="math">\[0.1 = z^*\frac{1}{\sqrt{40}} = 0.158\times z^*\]</span></p>
-<p>Therefore <span class="math">\(z^* = 0.633\)</span>. The corresponding <span class="math">\(p\)</span> value is <span class="math">\(0.737\)</span>. Turning that into a <span class="math">\(C\)</span> value would require <span class="math">\(p = \frac{1+C}{2}\)</span>. We would get <span class="math">\(C = 2p-1 = 0.474\)</span>. So to achieve that margin of error we would need to drop down to a <span class="math">\(47.5\%\)</span> confidence level. That is very low.</p>
+<p>In our case this means <span class="math inline">\(n = \left(\frac{1.645\times 1}{0.1}\right)^2 = 270.6\)</span>, so <span class="math inline">\(271\)</span> samples, almost <span class="math inline">\(7\)</span> times more than what we started with.</p>
+<p>The other alternative would be to reduce our confidence level. Let us compute what <span class="math inline">\(z^*\)</span> should be:</p>
+<p><span class="math display">\[0.1 = z^*\frac{1}{\sqrt{40}} = 0.158\times z^*\]</span></p>
+<p>Therefore <span class="math inline">\(z^* = 0.633\)</span>. The corresponding <span class="math inline">\(p\)</span> value is <span class="math inline">\(0.737\)</span>. Turning that into a <span class="math inline">\(C\)</span> value would require <span class="math inline">\(p = \frac{1+C}{2}\)</span>. We would get <span class="math inline">\(C = 2p-1 = 0.474\)</span>. So to achieve that margin of error we would need to drop down to a <span class="math inline">\(47.5\%\)</span> confidence level. That is very low.</p>
 </body>
 </html>

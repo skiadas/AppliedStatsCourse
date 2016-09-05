@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -30,7 +30,7 @@
 <dl>
 <dt>Std. Dev.</dt>
 <dd><p>Standard Deviation. Measures distance of data from the mean.</p>
-<p>Often denoted by <span class="math">\(s\)</span>.</p>
+<p>Often denoted by <span class="math inline">\(s\)</span>.</p>
 <p>Not resistant.</p>
 </dd>
 <dt>IQR</dt>
@@ -39,7 +39,7 @@
 </dd>
 </dl></li>
 <li><p>Let us review how the standard deviation is computed. Its formula is a bit complicated, and it looks something like this:</p>
-<p><span class="math">\[s = \sqrt{\frac{1}{n-1} \sum (x-\bar{x})^2}\]</span></p>
+<p><span class="math display">\[s = \sqrt{\frac{1}{n-1} \sum (x-\bar{x})^2}\]</span></p>
 Basically:
 <ul>
 <li>Compute the mean of all the values.</li>
@@ -48,11 +48,11 @@ Basically:
 <ul>
 <li>Ensures values are positive before computing average.</li>
 </ul></li>
-<li>Average these squared deviations: Add them all up, then divide by <span class="math">\(n-1\)</span>. The result at this stage is called the <strong>variance</strong>.
+<li>Average these squared deviations: Add them all up, then divide by <span class="math inline">\(n-1\)</span>. The result at this stage is called the <strong>variance</strong>.
 <ul>
-<li>Why <span class="math">\(n-1\)</span>: Technical reason, and won’t really matter for large <span class="math">\(n\)</span>.</li>
-<li>One way to think about it: The deviations always add up to <span class="math">\(0\)</span>, so once you know <span class="math">\(n-1\)</span> of them the last one is determined.</li>
-<li>In this context, <span class="math">\(n-1\)</span> is called the “degrees of freedom”.</li>
+<li>Why <span class="math inline">\(n-1\)</span>: Technical reason, and won’t really matter for large <span class="math inline">\(n\)</span>.</li>
+<li>One way to think about it: The deviations always add up to <span class="math inline">\(0\)</span>, so once you know <span class="math inline">\(n-1\)</span> of them the last one is determined.</li>
+<li>In this context, <span class="math inline">\(n-1\)</span> is called the “degrees of freedom”.</li>
 </ul></li>
 <li>Take a square root at the end.
 <ul>

@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -28,8 +28,8 @@
 <h3 id="mean-of-a-random-variable">Mean of a Random Variable</h3>
 <blockquote>
 <p>The <strong>mean</strong> or <strong>expected value</strong> of a random variable can be thought of as the “long-term average”, meaning the average of the outcomes of an ever increasing number of trials of the experiment.</p>
-<p>Denoted <span class="math">\(E(X)\)</span> or <span class="math">\(\mu_X\)</span>.</p>
-<p>If the variable <span class="math">\(X\)</span> takes the values <span class="math">\(x_1, x_2, \ldots x_n\)</span> with probabilities <span class="math">\(p_1, p_2, \ldots, p_n\)</span> respectively, then the mean is defined as: <span class="math">\[E(X) = \mu_X = p_1x_1 + p_2x_2 + \cdots + p_nx_n\]</span></p>
+<p>Denoted <span class="math inline">\(E(X)\)</span> or <span class="math inline">\(\mu_X\)</span>.</p>
+<p>If the variable <span class="math inline">\(X\)</span> takes the values <span class="math inline">\(x_1, x_2, \ldots x_n\)</span> with probabilities <span class="math inline">\(p_1, p_2, \ldots, p_n\)</span> respectively, then the mean is defined as: <span class="math display">\[E(X) = \mu_X = p_1x_1 + p_2x_2 + \cdots + p_nx_n\]</span></p>
 </blockquote>
 <p>You can think of this as a <em>weighted average</em> of the values, with their probabilities as weights. This makes sense: We want to take all values into account, but those values that have a higher probability are meant to appear more often, and so should contribute more. <em>Each value contributes an amount proportionate to its relative frequency</em>.</p>
 <p>As a simple example, consider the example from the last section, with probability table:</p>
@@ -43,23 +43,23 @@
 </tr>
 <tr class="even">
 <td align="right">P(X)</td>
-<td align="right"><span class="math">\(1/2\)</span></td>
-<td align="right"><span class="math">\(1/4\)</span></td>
-<td align="right"><span class="math">\(1/4\)</span></td>
+<td align="right"><span class="math inline">\(1/2\)</span></td>
+<td align="right"><span class="math inline">\(1/4\)</span></td>
+<td align="right"><span class="math inline">\(1/4\)</span></td>
 </tr>
 </tbody>
 </table>
 <p>Then for the mean we would have:</p>
-<p><span class="math">\[E(X) = \frac{1}{2}\cdot 0 + \frac{1}{4} \cdot 1 + \frac{1}{4} \cdot 2 = \frac{3}{4} = 0.75\]</span></p>
-<p>We can think of this as saying that if you were to play that game repeatedly, you would be gaining on average <span class="math">\(\$0.75\)</span> per game. You can also think of it as the “fair price to pay to play the game”.</p>
+<p><span class="math display">\[E(X) = \frac{1}{2}\cdot 0 + \frac{1}{4} \cdot 1 + \frac{1}{4} \cdot 2 = \frac{3}{4} = 0.75\]</span></p>
+<p>We can think of this as saying that if you were to play that game repeatedly, you would be gaining on average <span class="math inline">\(\$0.75\)</span> per game. You can also think of it as the “fair price to pay to play the game”.</p>
 <p>We examined a number of games in the previous section. Compute the mean of the random variables in each of those games.</p>
 <h3 id="standard-deviation-of-a-random-variable">Standard Deviation of a Random Variable</h3>
 <p>The standard deviation follows a similar formula:</p>
 <blockquote>
-<p><span class="math">\[\sigma_X^2 = p_1 (x_1 - \mu_X)^2 + p_2 (x_2 - \mu_X)^2 + \cdots p_n (x_n - \mu_X)^2\]</span></p>
+<p><span class="math display">\[\sigma_X^2 = p_1 (x_1 - \mu_X)^2 + p_2 (x_2 - \mu_X)^2 + \cdots p_n (x_n - \mu_X)^2\]</span></p>
 </blockquote>
 <p>So we look at how far each value is from the mean, square to remove the signs, average while accounting for the different probabilities, and finally take a square root.</p>
-<p>This square of the standard deviation, typically called the <em>Variance</em> <span class="math">\(\textrm{Var}(X)\)</span>, you will often see written as <span class="math">\(E\left((X-\mu_X)^2\right)\)</span>.</p>
+<p>This square of the standard deviation, typically called the <em>Variance</em> <span class="math inline">\(\textrm{Var}(X)\)</span>, you will often see written as <span class="math inline">\(E\left((X-\mu_X)^2\right)\)</span>.</p>
 <p>Compute the standard deviation for each of the examples discussed so far.</p>
 </body>
 </html>
