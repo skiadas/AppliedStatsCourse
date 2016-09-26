@@ -47,8 +47,10 @@ Day 3
 Day 1
   ~ [Relationships between two variables](notes/relationships.md)
 
+    [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+
 Day 2
-  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
 Day 3
   ~ [Lab 4](labs/4.md)
@@ -56,10 +58,10 @@ Day 3
 ## Week  5 (10/03-10/07)
 
 Day 1
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
 Day 2
-  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
+  ~ [The question of causation](notes/correlation_causation.md)
 
 Day 3
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
@@ -67,9 +69,7 @@ Day 3
 ## Week  6 (10/10-10/14)
 
 Day 1
-  ~ [The question of causation](notes/correlation_causation.md)
-
-    [Introduction to Probability](notes/probability_intro.md)
+  ~ [Introduction to Probability](notes/probability_intro.md)
 
 Day 2
   ~ [Conditional Probability](notes/probability_conditional.md)
