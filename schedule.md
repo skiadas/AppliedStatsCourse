@@ -53,15 +53,17 @@ Day 2
   ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
 Day 3
-  ~ [Lab 4](labs/4.md)
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
+
+    [Lab 4](labs/4.md)
 
 ## Week  5 (10/03-10/07)
 
 Day 1
-  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
+  ~ [The question of causation](notes/correlation_causation.md)
 
 Day 2
-  ~ [The question of causation](notes/correlation_causation.md)
+  ~ [Introduction to Probability](notes/probability_intro.md)
 
 Day 3
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
@@ -69,18 +71,7 @@ Day 3
 ## Week  6 (10/10-10/14)
 
 Day 1
-  ~ [Introduction to Probability](notes/probability_intro.md)
-
-Day 2
   ~ [Conditional Probability](notes/probability_conditional.md)
-
-Day 3
-  ~ Lab 5
-
-## Week  7 (10/17-10/21)
-
-Day 1
-  ~ Fall Break
 
 Day 2
   ~ [Probability rules](notes/probability_rules.md)
@@ -88,13 +79,24 @@ Day 2
 Day 3
   ~ [Independent Events](notes/independent_events.md)
 
+## Week  7 (10/17-10/21)
+
+Day 1
+  ~ Fall Break
+
+Day 2
+  ~ [Tree Diagrams](notes/decision_trees.md)
+
+Day 3
+  ~ [Random Variables](notes/random_variables.md)
+
 ## Week  8 (10/24-10/28)
 
 Day 1
-  ~ [Tree Diagrams](notes/decision_trees.md)
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 2
-  ~ [Random Variables](notes/random_variables.md)
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 3
   ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
@@ -102,25 +104,15 @@ Day 3
 ## Week  9 (10/31-11/04)
 
 Day 1
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
-
-Day 2
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
-Day 3
-  ~ [Work on Projects](labs/projectAnalysisSteps.md)
-
-## Week 10 (11/07-11/11)
-
-Day 1
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 2
   ~ [Combining Random Variables](notes/rv_combine.md)
 
-Day 4
-  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
+Day 3
+  ~ [Work on Projects](labs/projectAnalysisSteps.md)
 
-## Week 11 (11/14-11/18)
+## Week 10 (11/07-11/11)
 
 Day 1
   ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
@@ -129,13 +121,23 @@ Day 2
   ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 Day 3
+  ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
+
+## Week 11 (11/14-11/18)
+
+Day 1
   ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
+Day 2
+  ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
+
+Day 3
+  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
 ## Week 12 (11/21-11/25)
 
 Day 1
-  ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
+  ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
 
 Day 2
   ~ THANKSGIVING
@@ -146,21 +148,21 @@ Day 3
 ## Week 13 (11/28-12/02)
 
 Day 1
-  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
+  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
 
 Day 2
-  ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
+  ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
 
 Day 3
-  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
+  ~ TBA
 
 ## Week 14 (12/05-12/09)
 
 Day 1
-  ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
+  ~ TBA
 
 Day 2
-  ~ Going further: t-distributions
+  ~ TBA
 
 Day 3
   ~ Presentations
