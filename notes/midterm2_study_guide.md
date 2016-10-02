@@ -4,11 +4,6 @@ This midterm is about probability concepts, as well as linear modeling.
 
 This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 5-7 and Homework Assignments 8-11.
 
-1. When we have a regression line fitted to some data, explain the following terms: predicted value, actual value, residual, sum of squared residuals.
-2. What is the key property that makes the "*least squares regression line*" special?
-3. What is the meaning of "r-squared" in the context of the least squares regression line?
-4. How does the *residual plot* work? What do we expect from it if we have a suitable fit?
-5. Outliers far in the x direction and only far in the y direction affect the least squares regression line in very different ways. Explain.
 6. What are the key characteristics of a *random phenomenon*?
 7. What can we say about the probabilities of outcomes in a random phenomenon / probability model? Can they be any numbers? There are some restrictions to them (both on what numbers they can be, and on what their sum must be).
 8. What is an *event* and how do we define its probability?

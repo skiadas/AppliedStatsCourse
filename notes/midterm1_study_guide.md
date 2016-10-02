@@ -20,3 +20,8 @@ This is meant to be a representative sampling of the key concepts you will need 
 16. What graphs are appropriate when we want to examine the relationship between two variables? What types of variables does each apply to?
 17. What terms do we use to describe the relationship between two scalar variables?
 18. What does the correlation coefficient $r$ measure?
+19. When we have a regression line fitted to some data, explain the following terms: predicted value, actual value, residual, sum of squared residuals.
+20. What is the key property that makes the "*least squares regression line*" special?
+21. What is the meaning of "r-squared" in the context of the least squares regression line?
+22. How does the *residual plot* work? What do we expect from it if we have a suitable fit?
+23. Outliers far in the x direction and only far in the y direction affect the least squares regression line in very different ways. Explain.
