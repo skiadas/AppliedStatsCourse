@@ -1,6 +1,6 @@
 # Midterm 1 Study Guide
 
-This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 1-4 and Homework Assignments 1-7, as well as the recommended problems from the book.
+This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 1-5 and Homework Assignments 1-8, as well as the recommended problems from the book.
 
 1. In what way does the data we use in statistics differ from just a bunch of numbers?
 2. What are the main types of variables? What distinguishes them?
