@@ -41,7 +41,7 @@ Make a tree/decision diagram showing how the play might go, and what values of $
 
 ----- ------ ------ ------
     X      0      1      2
- P(X)  $1/2$  $1/4$  $1/4$
+ P(X)  $1/2$  $1/3$  $1/6$
 ----- ------ ------ ------
 
 Let us consider one more example:
