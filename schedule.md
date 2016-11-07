@@ -107,7 +107,7 @@ Day 1
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 2
-  ~ [Combining Random Variables](notes/rv_combine.md)
+  ~ [Work on Projects](labs/projectAnalysisSteps.md)
 
 Day 3
   ~ [Work on Projects](labs/projectAnalysisSteps.md)
@@ -115,10 +115,10 @@ Day 3
 ## Week 10 (11/07-11/11)
 
 Day 1
-  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
 
 Day 2
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
 Day 3
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
@@ -126,18 +126,18 @@ Day 3
 ## Week 11 (11/14-11/18)
 
 Day 1
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 Day 2
-  ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 3
-  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
+  ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
 
 ## Week 12 (11/21-11/25)
 
 Day 1
-  ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
+  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
 Day 2
   ~ THANKSGIVING
@@ -148,13 +148,13 @@ Day 3
 ## Week 13 (11/28-12/02)
 
 Day 1
-  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
+  ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
 
 Day 2
-  ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
+  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
 
 Day 3
-  ~ TBA
+  ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
 
 ## Week 14 (12/05-12/09)
 
