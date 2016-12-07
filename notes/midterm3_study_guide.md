@@ -1,6 +1,6 @@
 # Midterm 3 Study Guide
 
-This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 8-11 and Homework Assignments 12-17.
+This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 10-11 and Homework Assignments 15-17.
 
 9. What are the mean and standard deviation of $X$ and $\hat p$ in a binomial setting?
 10. What condition must $n$, $p$ satisfy in order for us to be able to use the normal distribution for the computations in a binomial setting?
