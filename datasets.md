@@ -1,6 +1,7 @@
 A list of links to the datasets used in the class:
 
-- [Behavioral Survey (CDC)](https://www.openintro.org/stat/data/cdc.csv)
+- [Behavioral Survey (CDC)](datasets/cdc.csv)
+- [County data](datasets/countyComplete.txt)
 - [African Countries](datasets/AfricanCountries.txt)
 - [Alcohol vs Smoking](datasets/AlcoholSmokingUK.dat)
 - [Cars 2004](datasets/04cars.dat)

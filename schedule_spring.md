@@ -11,7 +11,7 @@ Day 1
 
     [Percentiles](notes/percentiles.md)
 
-    Lab: Introduction to SPSS
+    [Lab: Introduction to SPSS](labs/1.md)
 
 Day 2
   ~ [Measures of Center](notes/measures_center.md)
