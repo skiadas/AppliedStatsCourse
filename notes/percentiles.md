@@ -37,3 +37,31 @@ Section 1.6.5
 - **Modified boxplot**:
     - Whiskers extend to last values before the suspected outliers
     - suspected outliers marked with a symbol
+
+### Practice
+
+The following table contains the populations for each state, in millions. Determine the 5 number summary and draw the boxplot.
+
+State   Pop(mil) State   Pop(mil) State   Pop(mil)
+------ --------- ------ --------- ------ ---------
+WY          0.56 MS          2.97 NJ          8.79
+DC          0.60 IA          3.05 NC          9.54
+VT          0.63 CT          3.57 GA          9.69
+ND          0.67 OK          3.75 MI          9.88
+AK          0.71 OR          3.83 OH         11.54
+SD          0.81 KY          4.34 PA         12.70
+DE          0.90 LA          4.53 IL         12.83
+MT          0.99 SC          4.63 FL         18.80
+RI          1.05 AL          4.78 NY         19.38
+NH          1.32 CO          5.03 TX         25.15
+ME          1.33 MN          5.30 CA         37.25
+HI          1.36 WI          5.69
+ID          1.57 MD          5.77
+NE          1.83 MO          5.99
+WV          1.85 TN          6.35
+NM          2.06 AZ          6.39
+NV          2.70 IN          6.48
+UT          2.76 MA          6.55
+KS          2.85 WA          6.72
+AR          2.92 VA          8.00
+------ --------- ------ --------- ------ ---------

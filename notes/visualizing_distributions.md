@@ -2,7 +2,7 @@
 
 ## Reading
 
-Sections 1.6.3, 1.7.1, 1.7.4
+Sections 1.6.3, 1.7.1, 1.7.4, 1.7.5
 
 ## Practice Problems
 
@@ -89,3 +89,24 @@ excellent                   4657         23.285%
 
     Look for reasons
       ~ Whenever you consider a feature, always look for an explanation for it. Is there good reason why the distribution is skewed right? What are those outliers, do they make sense?
+
+#### Example: County Data
+
+The following graph contains one data-point for each county in the US. The value is the percent of female population in that county. Discuss the pattern of the distribution, and provide possible explanations.
+
+![Female population proportion in county](images/countyFemale.png)
+
+1. What is the overall pattern? Does that make sense?
+2. Do the average/typical values make sense?
+3. Are there deviations from the pattern? What might explain them?
+4. What further questions might we want to ask? What would we need to do in order to get answers?
+
+The following is a graph of the percent of african american population in the state. Answer the same questions.
+
+![African-American population proportion in county](images/countyBlack.png)
+
+1. What is the overall pattern? Does that make sense?
+2. Do the average/typical values make sense?
+3. Are there deviations from the pattern? What might explain them?
+4. Why does this graph differ from the previous?
+5. What further questions might we want to ask? What would we need to do in order to get answers?
