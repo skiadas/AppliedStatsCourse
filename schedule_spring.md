@@ -21,7 +21,7 @@ Day 2
 
     [Measures of Spread](notes/measures_spread.md)
 
-    Lab: Describing Variables
+    [Lab: Describing Variables](labs/2.md)
 
 Day 3
   ~ [Linear Transformations](notes/linear_transformations.md)
@@ -30,7 +30,7 @@ Day 3
 
     [The Normal Distribution](notes/normal_distribution.md)
 
-    Lab: Investigations related to normality
+    [Lab: Project Prep](labs/project_prep.md)
 
 Day 4
   ~ [Relationships between two variables](notes/relationships.md)
