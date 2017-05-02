@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="county-data">County data</h1>
+<p>Brief explanations of the variables in the set.</p>
+<dl>
+<dt>state</dt>
+<dd>State.
+</dd>
+<dt>name</dt>
+<dd>County name.
+</dd>
+<dt>FIPS</dt>
+<dd>FIPS code.
+</dd>
+<dt>pop2010</dt>
+<dd>2010 county population.
+</dd>
+<dt>pop2000</dt>
+<dd>2000 county population.
+</dd>
+<dt>age_under_5</dt>
+<dd>Percent of population under 5 (2010).
+</dd>
+<dt>age_under_18</dt>
+<dd>Percent of population under 18 (2010).
+</dd>
+<dt>age_over_65</dt>
+<dd>Percent of population over 65 (2010).
+</dd>
+<dt>female</dt>
+<dd>Percent of population that is female (2010).
+</dd>
+<dt>white</dt>
+<dd>Percent of population that is white (2010).
+</dd>
+<dt>black</dt>
+<dd>Percent of population that is black (2010).
+</dd>
+<dt>native</dt>
+<dd>Percent of population that is a Native American (2010).
+</dd>
+<dt>asian</dt>
+<dd>Percent of population that is a Asian (2010).
+</dd>
+<dt>pac_isl</dt>
+<dd>Percent of population that is Hawaii or Pacific Islander (2010).
+</dd>
+<dt>two_plus_races</dt>
+<dd>Percent of population that identifies as two or more races (2010).
+</dd>
+<dt>hispanic</dt>
+<dd>Percent of population that is Hispanic (2010).
+</dd>
+<dt>white_not_hispanic</dt>
+<dd>Percent of population that is white and not Hispanic (2010).
+</dd>
+<dt>no_move_in_one_plus_year</dt>
+<dd>Percent of population that has not moved in at least one year (2006-2010).
+</dd>
+<dt>foreign_born</dt>
+<dd>Percent of population that is foreign-born (2006-2010).
+</dd>
+<dt>foreign_spoken_at_home</dt>
+<dd>Percent of population that speaks a foreign language at home (2006-2010).
+</dd>
+<dt>hs_grad</dt>
+<dd>Percent of population that is a high school graduate (2006-2010).
+</dd>
+<dt>bachelors</dt>
+<dd>Percent of population that earned a bachelor’s degree (2006-2010).
+</dd>
+<dt>veterans</dt>
+<dd>Percent of population that are veterans (2006-2010).
+</dd>
+<dt>mean_work_travel</dt>
+<dd>Mean travel time to work (2006-2010).
+</dd>
+<dt>housing_units</dt>
+<dd>Number of housing units (2010).
+</dd>
+<dt>home_ownership</dt>
+<dd>Homeownership rate (2006-2010).
+</dd>
+<dt>housing_multi_unit</dt>
+<dd>Housing units in multi-unit structures (2006-2010).
+</dd>
+<dt>median_val_owner_occupied</dt>
+<dd>Median value of owner-occupied housing units (2006-2010).
+</dd>
+<dt>households</dt>
+<dd>Households (2006-2010).
+</dd>
+<dt>persons_per_household</dt>
+<dd>Persons per household (2006-2010).
+</dd>
+<dt>per_capita_income</dt>
+<dd>Per capita money income in past 12 months (2010 dollars, 2006-2010)
+</dd>
+<dt>median_household_income</dt>
+<dd>Median household income (2006-2010).
+</dd>
+<dt>poverty</dt>
+<dd>Percent below poverty level (2006-2010).
+</dd>
+<dt>private_nonfarm_establishments</dt>
+<dd>Private nonfarm establishments (2009).
+</dd>
+<dt>private_nonfarm_employment</dt>
+<dd>Private nonfarm employment (2009).
+</dd>
+<dt>percent_change_private_nonfarm_employment</dt>
+<dd>Private nonfarm employment, percent change from 2000 to 2009.
+</dd>
+<dt>nonemployment_establishments</dt>
+<dd>Nonemployer establishments (2009).
+</dd>
+<dt>firms</dt>
+<dd>Total number of firms (2007).
+</dd>
+<dt>black_owned_firms</dt>
+<dd>Black-owned firms, percent (2007).
+</dd>
+<dt>native_owned_firms</dt>
+<dd>Native American-owned firms, percent (2007).
+</dd>
+<dt>asian_owned_firms</dt>
+<dd>Asian-owned firms, percent (2007).
+</dd>
+<dt>pac_isl_owned_firms</dt>
+<dd>Native Hawaiian and other Pacific Islander-owned firms, percent (2007).
+</dd>
+<dt>hispanic_owned_firms</dt>
+<dd>Hispanic-owned firms, percent (2007).
+</dd>
+<dt>women_owned_firms</dt>
+<dd>Women-owned firms, percent (2007).
+</dd>
+<dt>manufacturer_shipments_2007</dt>
+<dd>Manufacturer shipments, 2007 ($1000).
+</dd>
+<dt>mercent_whole_sales_2007</dt>
+<dd>Merchange wholesaler sales, 2007 ($1000).
+</dd>
+<dt>sales</dt>
+<dd>Retail sales, 2007 ($1000).
+</dd>
+<dt>sales_per_capita</dt>
+<dd>Retail sales per capita, 2007.
+</dd>
+<dt>accommodation_food_service</dt>
+<dd>Accommodation and food services sales, 2007 ($1000).
+</dd>
+<dt>building_permits</dt>
+<dd>Building permits (2010).
+</dd>
+<dt>fed_spending</dt>
+<dd>Federal spending (2009).
+</dd>
+<dt>area</dt>
+<dd>Land area in square miles (2010).
+</dd>
+<dt>density</dt>
+<dd>Persons per square mile (2010).
+</dd>
+</dl>
+</body>
+</html>

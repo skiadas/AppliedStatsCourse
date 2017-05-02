@@ -9,21 +9,24 @@ Day 1
 
     [Visualizing Variables](notes/visualizing_distributions.md)
 
-    [Percentiles](notes/percentiles.md)
 
     [Lab: Introduction to SPSS](labs/1.md)
 
 Day 2
-  ~ [Measures of Center](notes/measures_center.md)
+  ~ [Project Selection](notes/projects.md)
+
+    [Percentiles](notes/percentiles.md)
+
+    [Measures of Center](notes/measures_center.md)
 
     [Measures of Spread](notes/measures_spread.md)
 
-    [Linear Transformations](notes/linear_transformations.md)
-
-    Lab: Computing numerical summaries
+    Lab: Describing Variables
 
 Day 3
-  ~ [Density Curves](notes/density_curves.md)
+  ~ [Linear Transformations](notes/linear_transformations.md)
+
+    [Density Curves](notes/density_curves.md)
 
     [The Normal Distribution](notes/normal_distribution.md)
 
@@ -41,14 +44,14 @@ Day 5
 
     [Linear Models and Regression Lines](notes/linear_regression.md)
 
-    Lab: Regression lines, scatterplot smoothers
-
 ## Week  2 (05/08-05/12)
 
 Day 1
   ~ [The question of causation](notes/correlation_causation.md)
 
     [Introduction to Probability](notes/probability_intro.md)
+
+    Lab: Regression lines, scatterplot smoothers
 
 Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
