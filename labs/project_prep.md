@@ -20,6 +20,7 @@ You should begin work on the dataset for your project.
 
 1. Download the corresponding file.
 2. Use the "Read Text Data" process to get the file into SPSS.
-3. Use "Define Variable Properties" to set up the properties for the various variables in the dataset. In particular set the measurement type, set up a label for the variable, and set up value labels for the values of categorical variables if they are coded in a particular way.
+3. Use "Define Variable Properties" to set up the properties for the various variables in the dataset. In particular set the measurement type, set up a label for the variable, and set up value labels for the values of categorical variables if they are coded in a particular way. Read the project description for details on these codes.
 4. Identify variables that should be ordered, but where the natural alphabetical order is incorrect. We will need to modify those variables in the future.
 5. Save the SPSS data file.
+6. You can stop here for now, or you can start creating graphs of the various individual variables involved, to start making sense of the data. We will be doing more of that later.

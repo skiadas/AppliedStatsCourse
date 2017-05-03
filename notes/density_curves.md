@@ -21,14 +21,15 @@
     >
     > Total area under curve equals 1 (100%).
 
-- To really compute things would need to know the equation of this curve, and do some Calculus.
-- Some examples of distributions are easy to work with:
+- To really compute things we would need to know the equation of this curve, and do some Calculus.
+- Distributions have *parameters* that specify their exact shape.
+- Some examples of distributions that are easy to work with:
 
     Uniform
-      ~ Straight line from $a$ to $b$. Represents the idea that all numbers between $a$ and $b$ are equally likely.
+      ~ Straight line from $a$ to $b$. Represents the idea that all numbers between $a$ and $b$ are equally likely. For example most computers are equipped with "random number generators" that produce uniformly random numbers between $0$ and $1$.
 
     Normal
-      ~ Has well known formula and tables to use. We will see this in next section.
+      ~ Has well known formula and tables to use. We will see this in next section. Plays a dominant role in statistics because of the "Central Limit Theorem" we will discuss later.
 
 ### Uniform Distribution
 
@@ -52,3 +53,10 @@
 
     IQR
       ~ $\frac{b-a}{2}$
+
+Example: Consider the uniform distribution from $a=1$ to $b=3$.
+
+- Draw the graph.
+- Compute using the graph the amount of data between $x=1.2$ and $x=2.9$.
+- Find using the graph the location of the 90th percentile.
+- Compute the mean, standard deviation, and IQR.
