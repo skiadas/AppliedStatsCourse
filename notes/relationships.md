@@ -24,24 +24,66 @@ Quantitative - Quantitative
 
 ### Categorical - Categorical
 
+Let us consider the problem of comparing two categorical variables. A convenient way to arrange the information is by a two-dimensional table, often call a "cross-tabulation". It shows us how many cases fall in each combination of values from the two categories. For example, the following is a cross-tabulation between the variables "exercise" and "general health" that asked people if they exercised in the last month and how they would describe their overall health.
+
+exercise   poor  fair  good  very good  excellent  Total
+--------- ----- ----- ----- ---------- ---------- ------
+No          384   857  1731       1352        762   5086
+Yes         293  1162  3944       5620       3895  14914
+Total       677  2019  5675       6972       4657  20000
+--------- ----- ----- ----- ---------- ---------- ------
+
+For example we can see in this table that there were a total of 1731 respondents who said they considered their general health to be "good" and also did not exercise in the last month ("No").
+
+Graphically we can represent the same information via a **clustered bar chart**:
+
+![Example of a clustered bar chart](images/clusteredBar.png "A clustered bar chart")
+
+The key question we want to ask is this:
+
+> Is it the case, that those who exercised in the last month tend to perceive themselves as in better health?
+
+Does the table above, or the clustered bar chart, help us answer this question? The answer is "not really". For example we can see that almost all the numbers in the "Yes" column are bigger than the corresponding numbers in the "No" column, but that does not mean anything as there are in general more Yes answers than No answers. The real question is this:
+
+> Do the "Yes" answers tend to gravitate more towards the "good or above" health values, more so than the "No" values?
+>
+> To answer this, we need the **percent** of "Yes" answers that are actually in the "good or above" entries, and compare that to the "No" answers that are in the "good or above" entries.
+
+In terms of a table, we can answer this via a table that contains "row percentages" in this case:
+
+exercise   poor  fair  good  very good  excellent
+--------- ----- ----- ----- ---------- ----------
+No          7.6  16.9  34.0       26.6       15.0
+Yes         2.0   7.8  26.4       37.7       26.1
+--------- ----- ----- ----- ---------- ----------
+
+Here is the same data in a stacked-bar-chart form:
+
 ![Example of a Stacked Bar Graph](images/stackedBar.png "A Stacked Bar Graph")
 
-Here is an example of looking for a relationship based on a stacked bar graph. We are comparing car types and number of cylinders. Notice that some car types have higher percent of specific numbers of cylinders than others. For instance, about 40% of standard cars have 4 cylinders, while only 25% or so of the sports cars have 4 cylinders. This is an indication that the two variables are associated.
+Looking at either the table or the graph, we can see that **a higher percentage of the "Yes" answers comes from the "very good" and "excellent" categories, compared to the percentages for the "No" answers**.
 
-Here is a numeric table that will tell us the same percentages that the graph does:
+> Those that had exercised in the last month were *more likely* to describe their health as "very good" or "excellent" than those who did not exercise.
 
------------ ------ ------ ------
-Car Type         4      6      8
------------ ------ ------ ------
-Standard     41.1%  42.8%  16.1%
-Sports       24.4%  44.4%  31.1%
-SUV          11.9%  50.8%  37.3%
-Wagon        48.3%  37.9%  13.8%
-Minivan       5.0%  95.0%   0.0%
-Truck        25.0%  37.5%  37.5%
------------ ------ ------ ------
+We can go further, and decide to break the plot in two, separately for males and for females:
 
-Each row's percentages add up to 100%. What we are looking for is sufficiently different distribution of the percentages across each column.
+![Example of a Stacked Bar Graph with Panel Variable](images/stackedBarPanels.png "A Stacked Bar Graph with Panel Variable")
+
+This would allow us to answer "Is the relation between exercise and perceived general health different for men and for women?". If that were the case, then the bar graphs on each panel would exhibit some different behavior. This does not seem to be the case.
+
+#### Note of caution
+
+There are always two ways to look at a stacked bar chart, depending on what kinds of percentages we compute, "row" or column. We could have computed column percentages:
+
+exerany    poor  fair  good  very good  excellent
+--------- ----- ----- ----- ---------- ----------
+No         56.7  42.4  30.5       19.4       16.4
+Yes        43.3  57.6  69.5       80.6       83.6
+--------- ----- ----- ----- ---------- ----------
+
+These percentages mean something different. For instance the $80.6$ tells us that $80\%$ of the respondents who described their health as "very good" said they exercise. These numbers will not help us reach the previous conclusion. All these numbers say, effectively, is that there are more people who exercise. The fact the percentage of "Yes" values does increase as we move towards the "excellent" group does hint at our desired conclusion, but in general this way of aligning the data does not make our case very well.
+
+> Choose which variable you will place where in a stacked bar chart. Ask yourself which percentages you want to be able to read. Percentages within one bar always add up to $100\%$.
 
 ### Categorical - Scalar
 

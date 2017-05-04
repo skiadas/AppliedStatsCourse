@@ -34,37 +34,146 @@
 </dd>
 </dl>
 <h3 id="categorical---categorical">Categorical - Categorical</h3>
-<div class="figure">
-<img src="images/stackedBar.png" title="A Stacked Bar Graph" alt="Example of a Stacked Bar Graph" />
-<p class="caption">Example of a Stacked Bar Graph</p>
-</div>
-<p>Here is an example of looking for a relationship based on a stacked bar graph. We are comparing car types and number of cylinders. Notice that some car types have higher percent of specific numbers of cylinders than others. For instance, about 40% of standard cars have 4 cylinders, while only 25% or so of the sports cars have 4 cylinders. This is an indication that the two variables are associated.</p>
-<p>Here is a numeric table that will tell us the same percentages that the graph does:</p>
-<table style="width:46%;">
-<colgroup>
-<col width="16%" />
-<col width="9%" />
-<col width="9%" />
-<col width="9%" />
-</colgroup>
+<p>Let us consider the problem of comparing two categorical variables. A convenient way to arrange the information is by a two-dimensional table, often call a “cross-tabulation”. It shows us how many cases fall in each combination of values from the two categories. For example, the following is a cross-tabulation between the variables “exercise” and “general health” that asked people if they exercised in the last month and how they would describe their overall health.</p>
+<table>
 <thead>
 <tr class="header">
-<th align="left">Car Type</th>
-<th align="right">4</th>
-<th align="right">6</th>
-<th align="right">8</th>
+<th align="left">exercise</th>
+<th align="right">poor</th>
+<th align="right">fair</th>
+<th align="right">good</th>
+<th align="right">very good</th>
+<th align="right">excellent</th>
+<th align="right">Total</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td align="left">Standard Sports SUV Wagon Minivan Truck</td>
-<td align="right">41.1% 24.4% 11.9% 48.3% 5.0% 25.0%</td>
-<td align="right">42.8% 44.4% 50.8% 37.9% 95.0% 37.5%</td>
-<td align="right">16.1% 31.1% 37.3% 13.8% 0.0% 37.5%</td>
+<td align="left">No</td>
+<td align="right">384</td>
+<td align="right">857</td>
+<td align="right">1731</td>
+<td align="right">1352</td>
+<td align="right">762</td>
+<td align="right">5086</td>
+</tr>
+<tr class="even">
+<td align="left">Yes</td>
+<td align="right">293</td>
+<td align="right">1162</td>
+<td align="right">3944</td>
+<td align="right">5620</td>
+<td align="right">3895</td>
+<td align="right">14914</td>
+</tr>
+<tr class="odd">
+<td align="left">Total</td>
+<td align="right">677</td>
+<td align="right">2019</td>
+<td align="right">5675</td>
+<td align="right">6972</td>
+<td align="right">4657</td>
+<td align="right">20000</td>
 </tr>
 </tbody>
 </table>
-<p>Each row’s percentages add up to 100%. What we are looking for is sufficiently different distribution of the percentages across each column.</p>
+<p>For example we can see in this table that there were a total of 1731 respondents who said they considered their general health to be “good” and also did not exercise in the last month (“No”).</p>
+<p>Graphically we can represent the same information via a <strong>clustered bar chart</strong>:</p>
+<div class="figure">
+<img src="images/clusteredBar.png" title="A clustered bar chart" alt="Example of a clustered bar chart" />
+<p class="caption">Example of a clustered bar chart</p>
+</div>
+<p>The key question we want to ask is this:</p>
+<blockquote>
+<p>Is it the case, that those who exercised in the last month tend to perceive themselves as in better health?</p>
+</blockquote>
+<p>Does the table above, or the clustered bar chart, help us answer this question? The answer is “not really”. For example we can see that almost all the numbers in the “Yes” column are bigger than the corresponding numbers in the “No” column, but that does not mean anything as there are in general more Yes answers than No answers. The real question is this:</p>
+<blockquote>
+<p>Do the “Yes” answers tend to gravitate more towards the “good or above” health values, more so than the “No” values?</p>
+<p>To answer this, we need the <strong>percent</strong> of “Yes” answers that are actually in the “good or above” entries, and compare that to the “No” answers that are in the “good or above” entries.</p>
+</blockquote>
+<p>In terms of a table, we can answer this via a table that contains “row percentages” in this case:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">exercise</th>
+<th align="right">poor</th>
+<th align="right">fair</th>
+<th align="right">good</th>
+<th align="right">very good</th>
+<th align="right">excellent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">No</td>
+<td align="right">7.6</td>
+<td align="right">16.9</td>
+<td align="right">34.0</td>
+<td align="right">26.6</td>
+<td align="right">15.0</td>
+</tr>
+<tr class="even">
+<td align="left">Yes</td>
+<td align="right">2.0</td>
+<td align="right">7.8</td>
+<td align="right">26.4</td>
+<td align="right">37.7</td>
+<td align="right">26.1</td>
+</tr>
+</tbody>
+</table>
+<p>Here is the same data in a stacked-bar-chart form:</p>
+<div class="figure">
+<img src="images/stackedBar.png" title="A Stacked Bar Graph" alt="Example of a Stacked Bar Graph" />
+<p class="caption">Example of a Stacked Bar Graph</p>
+</div>
+<p>Looking at either the table or the graph, we can see that <strong>a higher percentage of the “Yes” answers comes from the “very good” and “excellent” categories, compared to the percentages for the “No” answers</strong>.</p>
+<blockquote>
+<p>Those that had exercised in the last month were <em>more likely</em> to describe their health as “very good” or “excellent” than those who did not exercise.</p>
+</blockquote>
+<p>We can go further, and decide to break the plot in two, separately for males and for females:</p>
+<div class="figure">
+<img src="images/stackedBarPanels.png" title="A Stacked Bar Graph with Panel Variable" alt="Example of a Stacked Bar Graph with Panel Variable" />
+<p class="caption">Example of a Stacked Bar Graph with Panel Variable</p>
+</div>
+<p>This would allow us to answer “Is the relation between exercise and perceived general health different for men and for women?”. If that were the case, then the bar graphs on each panel would exhibit some different behavior. This does not seem to be the case.</p>
+<h4 id="note-of-caution">Note of caution</h4>
+<p>There are always two ways to look at a stacked bar chart, depending on what kinds of percentages we compute, “row” or column. We could have computed column percentages:</p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">exerany</th>
+<th align="right">poor</th>
+<th align="right">fair</th>
+<th align="right">good</th>
+<th align="right">very good</th>
+<th align="right">excellent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">No</td>
+<td align="right">56.7</td>
+<td align="right">42.4</td>
+<td align="right">30.5</td>
+<td align="right">19.4</td>
+<td align="right">16.4</td>
+</tr>
+<tr class="even">
+<td align="left">Yes</td>
+<td align="right">43.3</td>
+<td align="right">57.6</td>
+<td align="right">69.5</td>
+<td align="right">80.6</td>
+<td align="right">83.6</td>
+</tr>
+</tbody>
+</table>
+<p>These percentages mean something different. For instance the <span class="math inline">\(80.6\)</span> tells us that <span class="math inline">\(80\%\)</span> of the respondents who described their health as “very good” said they exercise. These numbers will not help us reach the previous conclusion. All these numbers say, effectively, is that there are more people who exercise. The fact the percentage of “Yes” values does increase as we move towards the “excellent” group does hint at our desired conclusion, but in general this way of aligning the data does not make our case very well.</p>
+<blockquote>
+<p>Choose which variable you will place where in a stacked bar chart. Ask yourself which percentages you want to be able to read. Percentages within one bar always add up to <span class="math inline">\(100\%\)</span>.</p>
+</blockquote>
 <h3 id="categorical---scalar">Categorical - Scalar</h3>
 <p>When comparing categorical and scalar variables, a good first step is a boxplot:</p>
 <div class="figure">

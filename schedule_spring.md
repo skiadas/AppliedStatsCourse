@@ -28,19 +28,20 @@ Day 3
 
     [Density Curves](notes/density_curves.md)
 
-    [The Normal Distribution](notes/normal_distribution.md)
 
     [Lab: Project Prep](labs/project_prep.md)
 
 Day 4
-  ~ [Relationships between two variables](notes/relationships.md)
+  ~ [The Normal Distribution](notes/normal_distribution.md)
 
-    [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+    [Relationships between two variables](notes/relationships.md)
 
-    Lab: Plotting relationships between variables
+    [Lab: Investigating relationships between variables](labs/3.md)
 
 Day 5
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+
+    [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
     [Linear Models and Regression Lines](notes/linear_regression.md)
 
