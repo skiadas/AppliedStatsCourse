@@ -41,18 +41,14 @@ Day 4
 Day 5
   ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
-    [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
-
-    [Linear Models and Regression Lines](notes/linear_regression.md)
-
 ## Week  2 (05/08-05/12)
 
 Day 1
-  ~ [The question of causation](notes/correlation_causation.md)
+  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
-    [Introduction to Probability](notes/probability_intro.md)
+    [Linear Models and Regression Lines](notes/linear_regression.md)
 
-    Lab: Regression lines, scatterplot smoothers
+    [Lab: Regression lines, scatterplot smoothers](labs/4.md)
 
 Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
@@ -60,21 +56,25 @@ Day 2
     Lab: Project work
 
 Day 3
-  ~ [Conditional Probability](notes/probability_conditional.md)
+  ~ [The question of causation](notes/correlation_causation.md)
 
-    [Probability rules](notes/probability_rules.md)
+    [Introduction to Probability](notes/probability_intro.md)
+
+    [Conditional Probability](notes/probability_conditional.md)
+
+Day 4
+  ~ [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
 
-Day 4
-  ~ [Tree Diagrams](notes/decision_trees.md)
-
-    [Random Variables](notes/random_variables.md)
+    [Tree Diagrams](notes/decision_trees.md)
 
     Lab: Project work
 
 Day 5
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+  ~ [Random Variables](notes/random_variables.md)
+
+    [The Binomial Setting and Distribution](notes/binomial.md)
 
 ## Week  3 (05/15-05/19)
 
@@ -83,10 +83,10 @@ Day 1
 
     [Combining Random Variables](notes/rv_combine.md)
 
-    [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
-
 Day 2
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+
+    [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 Day 3
   ~ [The Sample Mean / IID Setting](notes/iid_setting.md)

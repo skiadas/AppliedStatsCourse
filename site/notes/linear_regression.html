@@ -88,6 +88,11 @@
 <p><span class="math inline">\(r^2\)</span> measures the percent of the variance of <span class="math inline">\(y\)</span> that is explained by the variance in <span class="math inline">\(x\)</span>.</p>
 </blockquote>
 <p>In our example, <span class="math inline">\(r=0.94\)</span> and so <span class="math inline">\(r^2=0.8836\)</span>. So we can say that 88% of the variation we observe in HMpG can be explained by the corresponding variation in $CMpG.</p>
+<p>In fact something further happens: The overall Variance is decomposed in two parts:</p>
+<blockquote>
+<p><span class="math display">\[\textrm{Variance}(y) = \textrm{Variance}(\hat y) + \textrm{adjusted SSR}\]</span></p>
+</blockquote>
+<p>Quite literally, the overall variance is a sum of the variance of the predicted values, plus the adjusted square error, which we can think of as the leftover variance that we have not yet explained via the linear relation.</p>
 <h3 id="residuals-in-the-graph">Residuals in the Graph</h3>
 <p>Recall that the residual is the difference between the <span class="math inline">\(y\)</span> value and the corresponding <span class="math inline">\(\hat y\)</span> predicted value. Geometrically we can think of the residuals as the vertical distances from each point to the regression line:</p>
 <div class="figure">
@@ -114,5 +119,11 @@
 <p>In a residual plot, we look for the <em>absence of a pattern</em>. Since the residuals are the error our model makes when predicting values, they should appear to be just random “noise” if our model accurately captures the interaction between the variables.</p>
 <p>If a pattern exists in the residual plot, it is an indication that our model does not accurately capture the behavior of the data, that there is something else going on.</p>
 </blockquote>
+<p>Here is an example of such a situation. The data does look extremely linear, and a linear model would be a good fit. In fact the correlation coefficient is <span class="math inline">\(r=0.9992\)</span>, indicating an extremely strong linear relation. The residual plot on the right however, shows that the residuals have a distinct curve to them. This is because the data actually follows a slightly quadratic pattern, that we cannot see because it is imperceptible. When we take the linear part out of the picture, the need for the quadratic term becomes clear.</p>
+<div class="figure">
+<img src="images/residualPlots.png" title="Residual plot" alt="Residual plot" />
+<p class="caption">Residual plot</p>
+</div>
+<p>Studying these models goes beyond the introductory nature of this course.</p>
 </body>
 </html>

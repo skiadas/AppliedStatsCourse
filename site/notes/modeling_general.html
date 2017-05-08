@@ -59,21 +59,35 @@
 <p>We will focus exclusively on linear functions of one predictor variable, so we will not be able to do many of these. But in this introduction I will talk about some of these concepts in more general terms.</p>
 <h3 id="model-examples">Model Examples</h3>
 <p>Here are some basic examples of the above ideas. Our target variable is student GPA, we want to try to find a way to predict it.</p>
-<h4 id="constant">Constant</h4>
-<p>This is the simplest model we can try to fit. We have no predictor variables, so all we can do is predict a single number.</p>
-<p>In terms of equations it might look like <span class="math inline">\(Y \sim \beta\)</span> where <span class="math inline">\(\beta\)</span> is the parameter. All we have to do to “fit” the model is to provide a constant value for the parameter. So we could for instance say <span class="math inline">\(Y \sim 2.93\)</span>, meaning that we predict that the student’s GPA is equal to <span class="math inline">\(2.93\)</span>.</p>
+<h4 id="constant-model">Constant Model</h4>
+<p>This is the simplest model we can try to fit. We have no predictor variables, so all we can do is predict a single number: <span class="math display">\[Y \sim \beta\]</span> Where <span class="math inline">\(\beta\)</span> is the parameter. All we have to do to “fit” the model is to provide a constant value for the parameter. So we could for instance say <span class="math inline">\(Y \sim 2.93\)</span>, meaning that we predict that the student’s GPA is equal to <span class="math inline">\(2.93\)</span>.</p>
 <p>The predicted values in this case are always equal to this constant value. The residuals are the differences <span class="math inline">\(y - \beta\)</span>.</p>
 <p>It turns out, that if we want to choose a value for <span class="math inline">\(\beta\)</span> that makes the SSR as small as possible, then we must choose <span class="math inline">\(\beta = \bar y\)</span>, the mean of the <span class="math inline">\(y\)</span> values.</p>
 <blockquote>
 <p>The best constant model fit is when that constant is equal to the mean of the <span class="math inline">\(y\)</span> values, <span class="math inline">\(\bar y\)</span>. The Adjusted SSR measure in this case equals the <em>variance</em> of <span class="math inline">\(y\)</span>.</p>
 </blockquote>
+<p>As one example of this, consider the behavioral survey data we have been looking at. If we were asked to fit a constant model to the height variable in that dataset, then we would make the model <span class="math inline">\(Y\sim 67.183\)</span> as that value is the mean. We can see that this value is the one that minimizes the “sum of squared residuals”: <span class="math display">\[\frac{\sum(y-\hat y)^2}{n-1}\]</span> In the case of a constant model, that ends up being what we called the variance, because <span class="math inline">\(\hat y\)</span> is always equal to the mean <span class="math inline">\(\bar y\)</span>.</p>
+<p>If we try to compute the sum <span class="math display">\[\frac{\sum(y-b)^2}{n-1}\]</span> for different values of <span class="math inline">\(b\)</span>, we can see that the mean achieves the smallest value. In the following graph, the <span class="math inline">\(x\)</span> axis represents possible values for the constant <span class="math inline">\(b\)</span>, and the <span class="math inline">\(y\)</span> axis represents the corresponding average squared prediction error for that constant. Our goal is to minimize that error.</p>
+<div class="figure">
+<img src="images/minimizingSSR.png" title="Prediction error in constant model" alt="Prediction error. Constant model" />
+<p class="caption">Prediction error. Constant model</p>
+</div>
 <h4 id="factors">Factors</h4>
 <p>Another common case is when we try to have a predictor variable that is categorical. These are often called “factors”. For instance we could say that we will try to predict the student’s GPA based on their gender.</p>
 <p>In this case we would basically need to provide two parameter values: One parameter for our guess for the GPA if the student is male, and another for the GPA if the student is female.</p>
-<p>It turns out that the best guesses in this case are again the means of the male and female students respectively.</p>
+<p>It turns out that the best guesses in this case are again the means of the male and female students respectively:</p>
+<blockquote>
+<p>The best model for the case where <span class="math inline">\(Y\)</span> is a scalar variable and <span class="math inline">\(X\)</span> is a categorical variable is to assign for a particular value <span class="math inline">\(x_0\)</span> the average of the <span class="math inline">\(y\)</span> values for those cases whose <span class="math inline">\(x\)</span> value equals <span class="math inline">\(x_0\)</span>.</p>
+</blockquote>
+<p>As an example, in the behavioral survey, one of the variables is the gender. To build a model that based on the gender tries to predict the height, we simply need to provide a value for the male gender, and a value for the female gender. These values are respectively the height averages for males and females, <span class="math inline">\(70.252\)</span> and <span class="math inline">\(64.368\)</span> respectively.</p>
+<p>In this case our model <span class="math inline">\(Y\sim f(X)\)</span> has two parameters: <span class="math inline">\(f(\textrm{male}) = b\)</span> and <span class="math inline">\(f(\textrm{female}) = c\)</span>. These are chosen so at to make the corresponding sum of squared residuals as small as possible. The following two-dimensional graph gives us a sense of where this minimum overall error is achieved. The darker areas correspond to more error.</p>
+<div class="figure">
+<img src="images/minimizingSSRfactor.png" title="Prediction error in a gender factor model" alt="Prediction error. Factor model" />
+<p class="caption">Prediction error. Factor model</p>
+</div>
 <h4 id="linear-equation">Linear Equation</h4>
 <p>The most common model, and one we will spend more time with next week, is that of a linear equation. For example, perhaps we think that a student’s high-school gpa should be a good predictor of their college gpa. In that case, if we denote a student’s high-school GPA with <span class="math inline">\(x\)</span> and their college gpa with <span class="math inline">\(y\)</span>, we would be looking for an equation of the form:</p>
-<p><span class="math display">\[y = a + b x\]</span></p>
-<p>Where <span class="math inline">\(a,b\)</span> are the parameters, and we would like to choose their “best values” to fit the data in any given scenario. We will explore this more in the next section.</p>
+<p><span class="math display">\[y = \alpha + \beta x\]</span></p>
+<p>Where <span class="math inline">\(\alpha,\beta\)</span> are the parameters, and we would like to choose their “best values” to fit the data in any given scenario. We will explore this more in the next section.</p>
 </body>
 </html>

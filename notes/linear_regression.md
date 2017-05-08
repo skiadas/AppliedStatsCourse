@@ -79,6 +79,12 @@ We can think of that equation as "explaining part of the variance in $y$". It do
 
 In our example, $r=0.94$ and so $r^2=0.8836$. So we can say that 88% of the variation we observe in HMpG can be explained by the corresponding variation in $CMpG.
 
+In fact something further happens: The overall Variance is decomposed in two parts:
+
+> $$\textrm{Variance}(y) = \textrm{Variance}(\hat y) + \textrm{adjusted SSR}$$
+
+Quite literally, the overall variance is a sum of the variance of the predicted values, plus the adjusted square error, which we can think of as the leftover variance that we have not yet explained via the linear relation.
+
 ### Residuals in the Graph
 
 Recall that the residual is the difference between the $y$ value and the corresponding $\hat y$ predicted value. Geometrically we can think of the residuals as the vertical distances from each point to the regression line:
@@ -113,3 +119,9 @@ The effect of this is that it accenuates any non-linear patterns that were possi
 >
 > If a pattern exists in the residual plot, it is an indication that our model does
 > not accurately capture the behavior of the data, that there is something else going on.
+
+Here is an example of such a situation. The data does look extremely linear, and a linear model would be a good fit. In fact the correlation coefficient is $r=0.9992$, indicating an extremely strong linear relation. The residual plot on the right however, shows that the residuals have a distinct curve to them. This is because the data actually follows a slightly quadratic pattern, that we cannot see because it is imperceptible. When we take the linear part out of the picture, the need for the quadratic term becomes clear.
+
+![Residual plot](images/residualPlots.png "Residual plot")
+
+Studying these models goes beyond the introductory nature of this course.
