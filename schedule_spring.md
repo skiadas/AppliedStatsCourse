@@ -56,23 +56,25 @@ Day 2
     Lab: Project work
 
 Day 3
-  ~ [The question of causation](notes/correlation_causation.md)
+  ~ [Data Collection](notes/data_collection.md)
+
+    [The question of causation](notes/correlation_causation.md)
 
     [Introduction to Probability](notes/probability_intro.md)
 
-    [Conditional Probability](notes/probability_conditional.md)
-
 Day 4
-  ~ [Probability rules](notes/probability_rules.md)
+  ~ [Conditional Probability](notes/probability_conditional.md)
+
+    [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
-
-    [Tree Diagrams](notes/decision_trees.md)
 
     Lab: Project work
 
 Day 5
-  ~ [Random Variables](notes/random_variables.md)
+  ~ [Tree Diagrams](notes/decision_trees.md)
+
+    [Random Variables](notes/random_variables.md)
 
     [The Binomial Setting and Distribution](notes/binomial.md)
 
