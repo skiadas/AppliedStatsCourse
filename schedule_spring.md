@@ -53,14 +53,14 @@ Day 1
 Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
-    Lab: Project work
-
 Day 3
   ~ [Data Collection](notes/data_collection.md)
 
     [The question of causation](notes/correlation_causation.md)
 
     [Introduction to Probability](notes/probability_intro.md)
+
+    [Lab: Practice 1](labs/practice1.md)
 
 Day 4
   ~ [Conditional Probability](notes/probability_conditional.md)
