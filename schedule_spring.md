@@ -58,18 +58,18 @@ Day 3
 
     [The question of causation](notes/correlation_causation.md)
 
-    [Introduction to Probability](notes/probability_intro.md)
-
     [Lab: Practice 1](labs/practice1.md)
 
 Day 4
-  ~ [Conditional Probability](notes/probability_conditional.md)
+  ~ [Introduction to Probability](notes/probability_intro.md)
+
+    [Conditional Probability](notes/probability_conditional.md)
 
     [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
 
-    Lab: Project work
+    Lab: Continue Practice Lab 1
 
 Day 5
   ~ [Tree Diagrams](notes/decision_trees.md)
