@@ -63,30 +63,30 @@ Day 3
 Day 4
   ~ [Introduction to Probability](notes/probability_intro.md)
 
-    [Conditional Probability](notes/probability_conditional.md)
+    Lab: Continue Practice Lab 1
+
+Day 5
+  ~ [Conditional Probability](notes/probability_conditional.md)
 
     [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
 
-    Lab: Continue Practice Lab 1
-
-Day 5
-  ~ [Tree Diagrams](notes/decision_trees.md)
-
-    [Random Variables](notes/random_variables.md)
-
-    [The Binomial Setting and Distribution](notes/binomial.md)
+    [Tree Diagrams](notes/decision_trees.md)
 
 ## Week  3 (05/15-05/19)
 
 Day 1
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+  ~ [Random Variables](notes/random_variables.md)
 
-    [Combining Random Variables](notes/rv_combine.md)
+    [The Binomial Setting and Distribution](notes/binomial.md)
+
+    [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 2
-  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
+
+    [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
     [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
