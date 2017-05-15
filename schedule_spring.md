@@ -72,26 +72,26 @@ Day 5
 
     [Independent Events](notes/independent_events.md)
 
-    [Tree Diagrams](notes/decision_trees.md)
-
 ## Week  3 (05/15-05/19)
 
 Day 1
-  ~ [Random Variables](notes/random_variables.md)
+  ~ [Tree Diagrams (cont)](notes/decision_trees.md)
+
+    [Random Variables](notes/random_variables.md)
 
     [The Binomial Setting and Distribution](notes/binomial.md)
 
-    [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
-
 Day 2
-  ~ [Combining Random Variables](notes/rv_combine.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+
+    [Combining Random Variables](notes/rv_combine.md)
 
     [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
-    [Binomial: Approximating by Normal](notes/binomial_mean.md)
-
 Day 3
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+
+    [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 4
   ~ **MIDTERM 2** ([study guide](notes/midterm2_study_guide.md))
