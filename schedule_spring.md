@@ -84,14 +84,10 @@ Day 1
 Day 2
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
-    [Combining Random Variables](notes/rv_combine.md)
+Day 3
+  ~ [Combining Random Variables](notes/rv_combine.md)
 
     [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
-
-Day 3
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
-
-    [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 4
   ~ **MIDTERM 2** ([study guide](notes/midterm2_study_guide.md))
@@ -104,18 +100,20 @@ Day 5
 ## Week  4 (05/22-05/26)
 
 Day 1
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+
+    [The Sample Mean / IID Setting](notes/iid_setting.md)
+
+Day 2
   ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
     [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
-
-Day 2
-  ~ TBD
 
 Day 3
   ~ TBD
 
 Day 4
-  ~ **MIDTERM 3** ([study guide](notes/midterm3_study_guide.md))
+  ~ Presentations
 
 Day 5
-  ~ Presentations
+  ~ **MIDTERM 3** ([study guide](notes/midterm3_study_guide.md))
