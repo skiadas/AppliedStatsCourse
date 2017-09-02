@@ -7,9 +7,9 @@
   <meta name="generator" content="pandoc" />
   <title></title>
   <style type="text/css">code{white-space: pre;}</style>
-<link rel="stylesheet" href="https://skiadas.github.io/css/course.css" type="text/css" />
+<link rel="stylesheet" href="http://skiadas.github.io/css/course.css" type="text/css" />
 <script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
 </head>
 <body>
@@ -33,16 +33,10 @@
 <li><p>Key Terms:</p>
 <dl>
 <dt>Population</dt>
-<dd>A collection of “things/entities/persons” we want to study. Often we are unable to collect information for all members of the population. We rely on a representative sample.
+<dd>A collection of “things/entities/persons” we want to study. Often we are unable to collect information for all members of the population. We rely on a representative sample. For example the totality of the Hanover College students could be considered as our population. Depending on our resources, it may be hard to collect information about all of them.
 </dd>
 <dt>Sample</dt>
 <dd>A <em>manageable</em> portion/subset of the population. We collect information only for the sample, and this gives us our data. How the sample is to be selected is an important question to consider.
-</dd>
-<dt>Statistic</dt>
-<dd>A statistic is a number that represents a property of the sample data. For instance if we have a sample of students, it could be their average gpa.
-</dd>
-<dt>Parameter</dt>
-<dd>A number that is a property of the entire population. Typically unknown to us. But we use the statistic to try to estimate it.
 </dd>
 <dt>Variable</dt>
 <dd>A characteristic of each individual/case in the population. For each individual and each variable there is a corresponding well-defined and unique value.
@@ -50,24 +44,57 @@
 <dt>Data</dt>
 <dd>The actual values of the variable, one for each individual.
 </dd>
+<dt>Statistic</dt>
+<dd>A statistic is a number that represents a property of the sample data. For instance if we have a sample of students, it could be their average gpa.
+</dd>
+<dt>Parameter</dt>
+<dd>A number that is a property of the entire population. Typically unknown to us. But we use the statistic to try to estimate it. For instance the overall Hanover College gpa could be considered a parameter.
+</dd>
 </dl></li>
 <li><p><strong>Variables</strong> are arranged in two main types:</p>
 <dl>
 <dt>Scalar</dt>
-<dd><p>Also called <strong>numerical</strong> or <strong>quantitative</strong> variables. Their values are numbers in a scale, in some specific unit of measurement. A defining characteristic of scalar variables is that it makes sense to form averages. Examples: GPA, height in feet, income in USD.</p>
+<dd><p>Also called <strong>numerical</strong> or <strong>quantitative</strong> variables. Their values are numbers in a range, in some specific unit of measurement. A defining characteristic of scalar variables is that it makes sense to form averages. Examples: GPA, height in feet, income in USD.</p>
 <p>Scalar variables are often broken into two types: <strong>continuous</strong> and <strong>discrete</strong>. For continuous variables all real numbers in some range are possible values. For discrete variables, only certain numbers are allowed. For instance the number of family dependents, or a county’s population, can be thought of as discrete. A person’s height would be continuous.</p>
 </dd>
 <dt>Categorical</dt>
 <dd><p>Also called <strong>qualitative</strong>. They classify the individuals in groups. Examples: Gender, Grade.</p>
 <p>Categorical variables are further divided into <strong>Nominal</strong> and <strong>Ordinal</strong>, depending on whether the different categories have a natural order to them or not. Gender would thus be nominal, Grade would be ordinal.</p>
 </dd>
-</dl></li>
-<li>Some times it may be hard to determine if some data is discrete or ordinal. The main difference is the types of analyses we do and questions we ask. In general, if the distance between the numbers is important, that tends to make the values scalar. If on the other hand there are too few different possible values, and their relative ordering is the only important factor, that is a reason to treat the variable as ordinal.</li>
-<li>Activity: List a number of different variables that you could measure on students. Then assign a type to each variable.</li>
+</dl>
+<img src="images/variableClassification.png" alt="Variable Classification" style="width:70.0%" /></li>
+<li>Some times it may be hard to determine if some data is discrete or ordinal. The main difference is the types of analyses we do and questions we ask. In general:
+<ul>
+<li>If the distance between the numbers is important, that tends to make the values <em>scalar</em>.</li>
+<li>If there are too few different possible values, and their relative ordering is the only important factor, that is a reason to treat the variable as <em>ordinal</em>.</li>
+</ul></li>
+<li><p>Activity: Here is a number of different variables we could measure on students. Assign a type to each variable.</p>
+<table>
+<tbody>
+<tr class="odd">
+<td align="left">Height (in)</td>
+<td align="left">Grade (F/S/J/Sr)</td>
+<td align="left">Any siblings</td>
+<td align="left">Hrs sleep/night</td>
+</tr>
+<tr class="even">
+<td align="left">No units in term</td>
+<td align="left">Primary major</td>
+<td align="left">Hrs study/week</td>
+<td align="left">Days drink/week</td>
+</tr>
+<tr class="odd">
+<td align="left">Overall GPA</td>
+<td align="left">GPA bracket</td>
+<td align="left">On probation</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table></li>
 <li><p><strong>Relationships between variables</strong>. Usually multiple variables are measured on the same individuals. We can then ask how these variables relate to each other. This will be an important component of the class.</p>
 <dl>
 <dt>Dependent</dt>
-<dd><p>Two variables are called <strong>dependent</strong>, or <strong>associated</strong>, or <strong>related</strong>, if they show some connection to each other; in other words if knowing the value of the one variable on an individual can give us some information about the value of the ohter variable on that individual.</p>
+<dd><p>Two variables are called <strong>dependent</strong>, or <strong>associated</strong>, or <strong>related</strong>, if they show some connection to each other; in other words if knowing the value of the one variable on an individual can give us some information about the value of the other variable on that individual.</p>
 <p>An example for instance would be average GPA and gender. In general female students tend to have a higher GPA than male students. So knowing a specific student’s gender gives us some information about their GPA, but it will not completely determine their GPA.</p>
 <p>When variables are quantitative and associated, then we can talk about a <strong>positive</strong> or <strong>negative association</strong>. In a positive association the large values of the one variable tend to be paired up with the large values of the other variable, and the small values of the one variable tend to be paired up with the small values of the other variable. For a negative association it is the other way around.</p>
 </dd>

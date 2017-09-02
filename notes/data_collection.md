@@ -80,7 +80,26 @@ Cluster Sample
     The difference from stratified samples is that we expect individuals within clusters to be different from each other, but that clusters overall are similar to each other. In stratified sampling on the other hand, we expect the individuals within a stratum to be similar to each other, but that strata would be different from each other.
 
 Multistage Sample
-  ~ This is an extension of the cluster sampling method. After we divide the entire population in clusters and randomly select some clusters, whe further randomly select a number of individuals within each cluster, rather than sampling everyone within the cluster.
+  ~ This is an extension of the cluster sampling method. After we divide the entire population in clusters and randomly select some clusters, we further randomly select a number of individuals within each cluster, rather than sampling everyone within the cluster.
+
+Here is a brief summary of the methods:
+
+Stratified Random Sample
+
+:   - Individuals within a stratum similar to each other.
+    - Sampling from *each* stratum.
+    - Random sample within each stratum.
+
+Cluster Sample
+
+:   - Clusters similar to each other.
+    - Random sample of the clusters.
+    - Sampling *everyone* in the selected clusters.
+
+Multistage Sample
+
+:   - Random sample of the clusters.
+    - Random sample within each selected cluster.
 
 ### Principles of Experiment Design
 

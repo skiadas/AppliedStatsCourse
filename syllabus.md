@@ -9,22 +9,22 @@ Instructor
   ~ Charilaos Skiadas (skiadas at hanover dot edu)
 
 Term
-  ~ Fall 2016-2017
+  ~ Fall 2017-2018
 
 Office
   ~ SCH 121C / LYN 108
 
 Office Hours
-  ~ MWF 10am-11am, and by appointment.
+  ~ MWF 10am-10:30am, and by appointment.
 
 Book
   ~ [OpenIntro Statistics](https://www.openintro.org/stat/) by openintro.org, 3rd edition. Free PDF download from the site. Can also buy from online retailers for around \$10.
 
-Websites
-  ~ [for notes](http://skiadas.github.io/AppliedStatsCourse/site/), [for assignments](https://moodle.hanover.edu/course/view.php?id=2195).
+Website
+  ~ [for notes](http://skiadas.github.io/AppliedStatsCourse/site/), [for quizzes](https://moodle.hanover.edu/course/view.php?id=201).
 
 Class times
-  ~ MWF 2:40pm-3:50pm in CFA111. On Fridays in CFA112C.
+  ~ MWF 10:40am-11:50am in SCC115. Labs on Fridays in CFA112C.
 
 ## Course Description
 
@@ -72,11 +72,11 @@ Around once or twice a week, I will be assigning homework. These will be collect
 
 ### Online quizzes
 
-We will be using the [Moodle platform](http://moodle.hanover.edu) for online quizzes and homework assignments. You will typically have one quiz each week. Each quiz has a two hour time limit, and will have a deadline no more than a week after we cover that topic. You are allowed to take the quiz up to 3 times before that deadline, and you receive feedback after each attempt. Only the best of those 3 tries will count. You are expected to work on the quizzes on your own, and you are allowed to refer to the book and class notes while taking them. Your quiz score is 10% of your final grade.
+We will be using the [Moodle platform](http://moodle.hanover.edu) for online quizzes. You will typically have one quiz each week. Each quiz has a two hour time limit, and will have a deadline no more than a week after we cover that topic. You are allowed to take the quiz up to 2 times before that deadline, and you receive feedback after each attempt. The average of the two tries will be your final quiz score. You are expected to work on the quizzes on your own, and you are allowed to refer to the book and class notes while taking them. Your quiz score is 10% of your final grade.
 
 ### Exams
 
-There will be two midterms, on Friday, October 7th and Friday, November 11th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
+There will be two midterms, on Wednesday, October 4th and Friday, November 10th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
 
 ### Term Project
 
@@ -104,7 +104,9 @@ Here is a more specific schedule:
 
 ### Getting Help
 
-- The learning center has set up study groups for the class. USE THEM!
+- The learning center has set up study groups for the class. USE THEM! Tutoring sessions are run by Jordan Craven in CFA111, every:
+    - Tuesday 7pm-8pm
+    - Thursday 9pm-10pm
 - You should never hesitate to ask me questions. I will never think any less of anyone for asking a question. Stop by my office hours or just email me your question, which has the great benefit of forcing you to write it down in clear terms, which often helps you understand it better.
 - You are allowed, and in fact encouraged, to work together and help each other regarding the notes and the practice problems. However, I strongly encourage you to try the problems out on your own first before talking to someone about them.
 - You may discuss homework problems with others, but only after you have spent some time trying them on your own. And in any event the submitted work must be your own! So even though you may talk to others about the problem, when you sit down to write the answers you should be on your own.

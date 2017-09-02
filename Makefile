@@ -9,9 +9,11 @@ IMGFILES := $(shell find images -name \*.png)
 IMGFILES := $(IMGFILES:%=site/notes/%)
 
 $(HTMLFILES): site/%.html: %.md $(TEMPLATE)
+	mkdir -p $(@D)
 	pandoc -o $@ --template=$(TEMPLATE) --mathjax --smart --filter ./makeHtml.hs $<
 
 $(PDFS): site/%.pdf: %.md $(TEXTEMPLATE)
+	mkdir -p $(@D)
 	pandoc -o $@ --template=$(TEXTEMPLATE) -t latex --listings --filter ./makeTex.hs $<
 
 

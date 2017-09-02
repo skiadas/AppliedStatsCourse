@@ -2,21 +2,29 @@
 
 A week-by-week breakdown of the material.
 
-## Week  1 (09/05-9/09)
+## Week  1 (09/04-9/08)
 
 Day 1
-  ~ [Basic Terminology](notes/basic_terminology.md)
+  ~ [A taste of statistics](notes/taste.md)
+
+    [Basic Terminology](notes/basic_terminology.md)
+
+    [Data Collection](notes/data_collection.md)
+
+    [HW1 (due Fri)](assignments/hw1.md)
 
 Day 2
   ~ [Visualizing Variables](notes/visualizing_distributions.md)
 
+    [Percentiles](notes/percentiles.md)
+
+    [Quiz 1 due Sun](https://moodle.hanover.edu/mod/quiz/view.php?id=5177)
+
 Day 3
-  ~ [Percentiles](notes/percentiles.md)
-
-    [Lab 1](labs/1.md)
+  ~ [Lab 1](https://hanoverstatslabs.github.io/resources/labs/Lab1Instructions.html)
 
 
-## Week  2 (09/12-09/16)
+## Week  2 (09/11-09/15)
 
 Day 1
   ~ [Measures of Center](notes/measures_center.md)
@@ -29,7 +37,7 @@ Day 3
 
     [Lab 2](labs/2.md)
 
-## Week  3 (09/19-09/23)
+## Week  3 (09/18-09/22)
 
 Day 1
   ~ [Density Curves](notes/density_curves.md)
@@ -42,7 +50,7 @@ Day 2
 Day 3
   ~ [Lab 3](labs/3.md)
 
-## Week  4 (09/26-09/30)
+## Week  4 (09/25-09/29)
 
 Day 1
   ~ [Relationships between two variables](notes/relationships.md)
@@ -57,18 +65,18 @@ Day 3
 
     [Lab 4](labs/4.md)
 
-## Week  5 (10/03-10/07)
+## Week  5 (10/02-10/06)
 
 Day 1
   ~ [The question of causation](notes/correlation_causation.md)
 
 Day 2
-  ~ [Introduction to Probability](notes/probability_intro.md)
-
-Day 3
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
-## Week  6 (10/10-10/14)
+Day 3
+  ~ [Introduction to Probability](notes/probability_intro.md)
+
+## Week  6 (10/09-10/13)
 
 Day 1
   ~ [Conditional Probability](notes/probability_conditional.md)
@@ -79,21 +87,21 @@ Day 2
 Day 3
   ~ [Independent Events](notes/independent_events.md)
 
-## Week  7 (10/17-10/21)
+## Week  7 (10/16-10/20)
+
+Day 1
+  ~ [Tree Diagrams](notes/decision_trees.md)
+
+Day 2
+  ~ [Random Variables](notes/random_variables.md)
+
+Day 3
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+
+## Week  8 (10/23-10/27)
 
 Day 1
   ~ Fall Break
-
-Day 2
-  ~ [Tree Diagrams](notes/decision_trees.md)
-
-Day 3
-  ~ [Random Variables](notes/random_variables.md)
-
-## Week  8 (10/24-10/28)
-
-Day 1
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 2
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
@@ -101,7 +109,7 @@ Day 2
 Day 3
   ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
 
-## Week  9 (10/31-11/04)
+## Week  9 (10/30-11/03)
 
 Day 1
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
@@ -112,7 +120,7 @@ Day 2
 Day 3
   ~ [Work on Projects](labs/projectAnalysisSteps.md)
 
-## Week 10 (11/07-11/11)
+## Week 10 (11/06-11/10)
 
 Day 1
   ~ [Combining Random Variables](notes/rv_combine.md)
@@ -123,7 +131,7 @@ Day 2
 Day 3
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
 
-## Week 11 (11/14-11/18)
+## Week 11 (11/13-11/17)
 
 Day 1
   ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
@@ -134,7 +142,7 @@ Day 2
 Day 3
   ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
 
-## Week 12 (11/21-11/25)
+## Week 12 (11/20-11/24)
 
 Day 1
   ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
@@ -145,7 +153,7 @@ Day 2
 Day 3
   ~ THANKSGIVING
 
-## Week 13 (11/28-12/02)
+## Week 13 (11/27-12/01)
 
 Day 1
   ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
@@ -156,7 +164,7 @@ Day 2
 Day 3
   ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
 
-## Week 14 (12/05-12/09)
+## Week 14 (12/04-12/08)
 
 Day 1
   ~ TBA

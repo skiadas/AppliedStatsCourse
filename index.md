@@ -5,8 +5,8 @@ Course website for MAT 217 Applied Statistics
 
 [Hanover College](http://www.hanover.edu)
 
-- [Syllabus](syllabus_spring.md)
-- [Schedule](schedule_spring.md)
+- [Syllabus](syllabus.md)
+- [Schedule](schedule.md)
 - [Notes](notes.md)
 - [Moodle site](https://moodle.hanover.edu/course/view.php?id=2795)
 - [Book](https://www.openintro.org/stat/)
