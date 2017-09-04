@@ -11,7 +11,7 @@ Day 1
 
     [Data Collection](notes/data_collection.md)
 
-    [HW1 (due Fri)](assignments/hw1.md)
+    [HW1 due Fri](assignments/hw1.md)
 
 Day 2
   ~ [Visualizing Variables](notes/visualizing_distributions.md)
