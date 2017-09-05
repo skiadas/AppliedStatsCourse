@@ -9,8 +9,6 @@ Day 1
 
     [Basic Terminology](notes/basic_terminology.md)
 
-    [Data Collection](notes/data_collection.md)
-
     [HW1 due Fri](assignments/hw1.md)
 
 Day 2
@@ -31,6 +29,8 @@ Day 1
 
 Day 2
   ~ [Measures of Spread](notes/measures_spread.md)
+
+    [Data Collection](notes/data_collection.md)
 
 Day 3
   ~ [Linear Transformations](notes/linear_transformations.md)

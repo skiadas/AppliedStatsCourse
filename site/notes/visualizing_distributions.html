@@ -24,8 +24,7 @@
 </dl>
 <h2 id="notes">Notes</h2>
 <p>For every variable we talk about the variable’s <strong>distribution</strong>, which means a description of what values the variable takes, and how frequently it takes those values. Variables are visualized differently depending on their type.</p>
-<ul>
-<li><p>Visualizing Categorical Variables</p>
+<h3 id="visualizing-categorical-variables">Visualizing Categorical Variables</h3>
 <dl>
 <dt>Frequency Table</dt>
 <dd>A table showing each possible value, along with its <em>frequency</em> i.e. the count of its occurencies. One can also include <em>relative frequencies</em>.
@@ -39,8 +38,7 @@
 <dt>Pareto Chart</dt>
 <dd>A bar chart where the values have been ordered from most frequent to least frequent.
 </dd>
-</dl></li>
-</ul>
+</dl>
 <div class="figure">
 <img src="images/catVarGraphs.png" alt="Graph types for one categorical variable" />
 <p class="caption">Graph types for one categorical variable</p>
@@ -81,8 +79,7 @@
 </tr>
 </tbody>
 </table>
-<ul>
-<li>Activity: Looking at these graphs and the table, decide for each of the following statements which graph <em>best</em> exemplifies it (makes it easier to notice):
+<p><strong>Activity:</strong> Looking at these graphs and the table, decide for each of the following statements which graph <em>best</em> exemplifies it (makes it easier to notice):</p>
 <ol style="list-style-type: decimal">
 <li>Approximately 1 in 4 people answered “good” for their health level.</li>
 <li>More people answered “good” than those that answered “excellent”.</li>
@@ -90,8 +87,10 @@
 <li>There are around 3 times more people who said “good” than those who said “fair”.</li>
 <li>About 10% of the population answered “poor”.</li>
 <li>About 1 in 3 people answered “very good”.</li>
-</ol></li>
-<li><p>Visualizing Scalar Variables</p>
+</ol>
+<h3 id="visualizing-scalar-variables">Visualizing Scalar Variables</h3>
+<p>Visualizing scalar variables is more challenging. There are too many individual values to consider and just presenting each value is not all that helpful. For instance telling someone exactly how many respondents have a height of 62 inches, exactly how many are at 63 inches and so on is overwhelming and not really helpful in terms of establishing trends. We need ways to organize the information into more digestible nuggets.</p>
+<p>Here are some of the standard tools for visualizing quantitative information.</p>
 <dl>
 <dt>Summaries</dt>
 <dd>Numerical summaries can give us some limited but easy-to-work-with information. Frequency tables turn out to be too unwieldy in this case. We will see a number of these summaries, including the mean, median, standard deviation, and others.
@@ -108,33 +107,28 @@
 <dt>Density plot</dt>
 <dd>A continuous line that describes the data a bit like a histogram, only more precisely. We will not be using them in this course, but they are out there and are useful.
 </dd>
-</dl></li>
-</ul>
+</dl>
 <div class="figure">
 <img src="images/quantVarGraphs.png" alt="Graph types for one quantitative variable" />
 <p class="caption">Graph types for one quantitative variable</p>
 </div>
+<p>We often consider the values of a quantitative variable separately for each category defined by a categorical variable, and in this case variants of the above graphs can help.</p>
 <div class="figure">
 <img src="images/quantVsCat.png" alt="Graph types for a quantitative variable broken down by a categorical variable" />
 <p class="caption">Graph types for a quantitative variable broken down by a categorical variable</p>
 </div>
-<ul>
-<li><p>When visualizing scalar variables, there is some terminology we use and patterns we look for:</p>
+<p>When visualizing scalar variables, there is some terminology we use and patterns we look for:</p>
 <dl>
-<dt>Modes</dt>
+<dt>Mode</dt>
 <dd>A mode refers to a distinct section of the data that “stands out” as a spike in the graph. It need not be a single value, more of a tendency for values to concentrate around that point. A graph with a single mode is called <strong>unimodal</strong>, one with two modes is called <strong>bimodal</strong>. When multiple modes are present, they become the main characteristic of the dataset.
 </dd>
-<dt>Tails</dt>
+<dt>Tail</dt>
 <dd>A term referring to the two ends of the data. A long tail indicates that the data on that side is spread out and “goes on for a while”.
 </dd>
-<dt>Skewed Left</dt>
-<dd>A skewed left distribution is one where the left tail is longer. This represents a concentration of data (higher bars) to the right.
-</dd>
-<dt>Skewed Right</dt>
-<dd>A skewed right distribution is one where the right tail is longer. This represents a concentration of data (higher bars) to the left.
-</dd>
-<dt>Symmetric</dt>
-<dd>In a symmetric distribution both tails seem to be about the same. If you look in the middle of a symmetric distribution, then the two sides around the middle should be (close to) mirror images of each other.
+<dt>Skewness</dt>
+<dd><p>A <strong>skewed left</strong> distribution is one where the left tail is longer. This represents a concentration of data (higher bars) to the right.</p>
+<p>A <strong>skewed right</strong> distribution is one where the right tail is longer. This represents a concentration of data (higher bars) to the left.</p>
+<p>A <strong>symmetric</strong> distribution has both tails be about the same. If you look in the middle of a symmetric distribution, then the two sides around the middle should be (close to) mirror images of each other.</p>
 </dd>
 <dt>Outliers</dt>
 <dd>Any values that seem to deviate from the overall pattern are called outliers. Some times these are simply values that are too far from the rest. But some times they can be outliers for other reasons.
@@ -142,8 +136,7 @@
 <dt>Look for reasons</dt>
 <dd>Whenever you consider a feature, always look for an explanation for it. Is there good reason why the distribution is skewed right? What are those outliers, do they make sense?
 </dd>
-</dl></li>
-</ul>
+</dl>
 <h4 id="example-county-data">Example: County Data</h4>
 <p>The following graph contains one data-point for each county in the US. The value is the percent of female population in that county. Discuss the pattern of the distribution, and provide possible explanations.</p>
 <div class="figure">
