@@ -7,10 +7,18 @@ import Text.Pandoc.JSON
 changeLinkInline :: Inline -> Inline
 changeLinkInline (Str "ANSWERSPACE") = Space
 changeLinkInline (Link attr xs (t, n)) = Link attr xs (fixLink t, fixLink n)
+changeLinkInline (Image attr xs (t, n)) = Image attr xs (fixImageLink t, fixImageLink n)
 changeLinkInline x = x
 
 isMarkdown :: String -> Bool
 isMarkdown = (== ".md") . takeExtension
+
+isImage :: String -> Bool
+isImage = (== ".png") . takeExtension
+
+fixImageLink :: String -> String
+fixImageLink s | isImage s = ".." </> s
+               | otherwise    = s
 
 fixLink :: String -> String
 fixLink s | isMarkdown s = replaceExtension s "html"

@@ -69,7 +69,7 @@
 <p>As one example of this, consider the behavioral survey data we have been looking at. If we were asked to fit a constant model to the height variable in that dataset, then we would make the model <span class="math inline">\(Y\sim 67.183\)</span> as that value is the mean. We can see that this value is the one that minimizes the “sum of squared residuals”: <span class="math display">\[\frac{\sum(y-\hat y)^2}{n-1}\]</span> In the case of a constant model, that ends up being what we called the variance, because <span class="math inline">\(\hat y\)</span> is always equal to the mean <span class="math inline">\(\bar y\)</span>.</p>
 <p>If we try to compute the sum <span class="math display">\[\frac{\sum(y-b)^2}{n-1}\]</span> for different values of <span class="math inline">\(b\)</span>, we can see that the mean achieves the smallest value. In the following graph, the <span class="math inline">\(x\)</span> axis represents possible values for the constant <span class="math inline">\(b\)</span>, and the <span class="math inline">\(y\)</span> axis represents the corresponding average squared prediction error for that constant. Our goal is to minimize that error.</p>
 <div class="figure">
-<img src="images/minimizingSSR.png" title="Prediction error in constant model" alt="Prediction error. Constant model" />
+<img src="../images/minimizingSSR.png" title="Prediction error in constant model" alt="Prediction error. Constant model" />
 <p class="caption">Prediction error. Constant model</p>
 </div>
 <h4 id="factors">Factors</h4>
@@ -82,7 +82,7 @@
 <p>As an example, in the behavioral survey, one of the variables is the gender. To build a model that based on the gender tries to predict the height, we simply need to provide a value for the male gender, and a value for the female gender. These values are respectively the height averages for males and females, <span class="math inline">\(70.252\)</span> and <span class="math inline">\(64.368\)</span> respectively.</p>
 <p>In this case our model <span class="math inline">\(Y\sim f(X)\)</span> has two parameters: <span class="math inline">\(f(\textrm{male}) = b\)</span> and <span class="math inline">\(f(\textrm{female}) = c\)</span>. These are chosen so at to make the corresponding sum of squared residuals as small as possible. The following two-dimensional graph gives us a sense of where this minimum overall error is achieved. The darker areas correspond to more error.</p>
 <div class="figure">
-<img src="images/minimizingSSRfactor.png" title="Prediction error in a gender factor model" alt="Prediction error. Factor model" />
+<img src="../images/minimizingSSRfactor.png" title="Prediction error in a gender factor model" alt="Prediction error. Factor model" />
 <p class="caption">Prediction error. Factor model</p>
 </div>
 <h4 id="linear-equation">Linear Equation</h4>
