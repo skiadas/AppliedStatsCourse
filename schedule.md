@@ -14,8 +14,6 @@ Day 1
 Day 2
   ~ [Visualizing Variables](notes/visualizing_distributions.md)
 
-    [Percentiles](notes/percentiles.md)
-
     [Quiz 1 due Sun](https://moodle.hanover.edu/mod/quiz/view.php?id=5177)
 
 Day 3
@@ -25,12 +23,16 @@ Day 3
 ## Week  2 (09/11-09/15)
 
 Day 1
-  ~ [Measures of Center](notes/measures_center.md)
+  ~ [Percentiles](notes/percentiles.md)
+
+    [Measures of Center](notes/measures_center.md)
+
+    [Measures of Spread](notes/measures_spread.md)
+
+    [HW2 due Fri](assignments/hw2.md)
 
 Day 2
-  ~ [Measures of Spread](notes/measures_spread.md)
-
-    [Data Collection](notes/data_collection.md)
+  ~ [Data Collection](notes/data_collection.md)
 
 Day 3
   ~ [Linear Transformations](notes/linear_transformations.md)
