@@ -33,6 +33,7 @@ Section 1.6.5
     - A "box" from Q1 to Q3
     - A thick line marking the median
     - "whiskers" extend to min/max
+    - These boxplots can be misleading in the presence of outliers.
 - **Outlier test**. Values that are more than $1.5\times IQR$ from the quartiles are suspected outliers.
 - **Modified boxplot**:
     - Whiskers extend to last values before the suspected outliers

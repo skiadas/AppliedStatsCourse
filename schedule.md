@@ -31,6 +31,8 @@ Day 1
 
     [HW2 due Fri](assignments/hw2.md)
 
+    [Quiz 2 due Thu](https://moodle.hanover.edu/mod/quiz/view.php?id=5178)
+
 Day 2
   ~ [Data Collection](notes/data_collection.md)
 

@@ -11,7 +11,9 @@ Sections 1.6.4
 
 ## Notes
 
-- The goal of measures of spead is to assess the "variation" in the data in some way.
+- The goal of measures of spread is to assess the "variation" in the data in some way.
+    - Are the values spread out and far from each other, or are they all real close?
+    - Are the values of one variable less or more spread out than those of another variable?
 - Different measures achieve this in different ways.
 - The two main measures of spread are:
 
@@ -27,16 +29,17 @@ Sections 1.6.4
 
         Resistant.
 
+- NOTE: The standard deviation and the IQR are in general not comparable to each other, they measure spread in very different ways.
 - Let us review how the standard deviation is computed. Its formula is a bit complicated, and it looks something like this:
 
     $$s = \sqrt{\frac{1}{n-1} \sum (x-\bar{x})^2}$$
 
     Basically:
-    - Compute the mean of all the values.
-    - Subtract the mean from each value (the result of this step is the "**deviations**").
+    - Compute the mean of all the values (the $\bar x$).
+    - Subtract the mean from each value (the result of this step is the "**deviations**", $x-\bar x$).
     - Square all the deviations.
         - Ensures values are positive before computing average.
-    - Average these squared deviations: Add them all up, then divide by $n-1$. The result at this stage is called the **variance**.
+    - Average these squared deviations: Add them all up (the big "sigma"), then divide by $n-1$. The result at this stage is called the **variance**.
         - Why $n-1$: Technical reason, and won't really matter for large $n$.
         - One way to think about it: The deviations always add up to $0$, so once you know $n-1$ of them the last one is determined.
         - In this context, $n-1$ is called the "degrees of freedom".

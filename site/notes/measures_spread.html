@@ -24,7 +24,11 @@
 </dl>
 <h2 id="notes">Notes</h2>
 <ul>
-<li>The goal of measures of spead is to assess the “variation” in the data in some way.</li>
+<li>The goal of measures of spread is to assess the “variation” in the data in some way.
+<ul>
+<li>Are the values spread out and far from each other, or are they all real close?</li>
+<li>Are the values of one variable less or more spread out than those of another variable?</li>
+</ul></li>
 <li>Different measures achieve this in different ways.</li>
 <li><p>The two main measures of spread are:</p>
 <dl>
@@ -38,17 +42,18 @@
 <p>Resistant.</p>
 </dd>
 </dl></li>
+<li>NOTE: The standard deviation and the IQR are in general not comparable to each other, they measure spread in very different ways.</li>
 <li><p>Let us review how the standard deviation is computed. Its formula is a bit complicated, and it looks something like this:</p>
 <p><span class="math display">\[s = \sqrt{\frac{1}{n-1} \sum (x-\bar{x})^2}\]</span></p>
 Basically:
 <ul>
-<li>Compute the mean of all the values.</li>
-<li>Subtract the mean from each value (the result of this step is the “<strong>deviations</strong>”).</li>
+<li>Compute the mean of all the values (the <span class="math inline">\(\bar x\)</span>).</li>
+<li>Subtract the mean from each value (the result of this step is the “<strong>deviations</strong>”, <span class="math inline">\(x-\bar x\)</span>).</li>
 <li>Square all the deviations.
 <ul>
 <li>Ensures values are positive before computing average.</li>
 </ul></li>
-<li>Average these squared deviations: Add them all up, then divide by <span class="math inline">\(n-1\)</span>. The result at this stage is called the <strong>variance</strong>.
+<li>Average these squared deviations: Add them all up (the big “sigma”), then divide by <span class="math inline">\(n-1\)</span>. The result at this stage is called the <strong>variance</strong>.
 <ul>
 <li>Why <span class="math inline">\(n-1\)</span>: Technical reason, and won’t really matter for large <span class="math inline">\(n\)</span>.</li>
 <li>One way to think about it: The deviations always add up to <span class="math inline">\(0\)</span>, so once you know <span class="math inline">\(n-1\)</span> of them the last one is determined.</li>
