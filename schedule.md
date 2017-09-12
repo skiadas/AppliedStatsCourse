@@ -36,15 +36,21 @@ Day 1
 Day 2
   ~ [Data Collection](notes/data_collection.md)
 
-Day 3
-  ~ [Linear Transformations](notes/linear_transformations.md)
+    [Linear Transformations](notes/linear_transformations.md)
 
-    [Lab 2](labs/2.md)
+    [HW3 due Mon](assignments/hw3.md)
+
+Day 3
+  ~ [Lab 2](labs/2.md)
 
 ## Week  3 (09/18-09/22)
 
 Day 1
-  ~ [Density Curves](notes/density_curves.md)
+  ~ [Standardized scores](notes/linear_transformations.md)
+
+    [Density Curves](notes/density_curves.md)
+
+    [HW4 due Fri](assignments/hw4.md)
 
     [The Normal Distribution](notes/normal_distribution.md)
 

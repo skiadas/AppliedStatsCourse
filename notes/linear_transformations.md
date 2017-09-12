@@ -8,7 +8,7 @@ $$y = a + b x$$
 
 where $a$, $b$ are some numbers. For instance $y = x + 10$, or $y = 2x - 1$.
 
-We think of $y$ here as a *new variable*, and the equation tells us how to convert values of the one variable into values of the other.
+We think of $y$ here as a *new variable*, and the equation tells us *how to convert values of the one variable into values of the other variable*.
 
 Examples:
 
@@ -44,6 +44,14 @@ But how measures of center or spread behave requires more thinking!
 >   ~ Only follows the multiplier (std. dev., IQR do that)
 >
 >     e.g. $s_y = b s_x$.
+
+-------  ---------------------- --------------------
+aspect    multiplication by $b$      addition of $a$
+-------  ---------------------- --------------------
+shape        ignores/unaffected   ignores/unaffected
+center                 affected             affected
+spread                 affected   ignores/unaffected
+-------  ---------------------- --------------------
 
 **Practice**: If some temperatures have a mean of $67$ degrees F, and standard deviation of $5$ degrees F, how would the corresponding temperatures in C behave?
 
