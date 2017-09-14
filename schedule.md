@@ -41,7 +41,7 @@ Day 2
     [HW3 due Mon](assignments/hw3.md)
 
 Day 3
-  ~ [Lab 2](labs/2.md)
+  ~ [Lab 2](https://hanoverstatslabs.github.io/resources/labs/Lab2Instructions.html)
 
 ## Week  3 (09/18-09/22)
 
