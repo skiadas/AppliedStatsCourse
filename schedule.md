@@ -51,17 +51,15 @@ Day 1
 Day 2
   ~ [Density Curves](notes/density_curves.md)
 
-    [The Normal Distribution](notes/normal_distribution.md)
-
     [HW4 due Wed](assignments/hw4.md)
 
 Day 3
-  ~ [Lab 3](https://hanoverstatslabs.github.io/resources/labs/Lab2Instructions.html)
+  ~ [Lab 3](https://hanoverstatslabs.github.io/resources/labs/Lab3Instructions.html)
 
 ## Week  4 (09/25-09/29)
 
 Day 1
-  ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
+  ~ [The Normal Distribution](notes/normal_distribution.md)
 
 Day 2
   ~ [Relationships between two variables](notes/relationships.md)
@@ -69,30 +67,30 @@ Day 2
     [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
 Day 3
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
-
-    [Lab 4](labs/4.md)
+  ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
 
 ## Week  5 (10/02-10/06)
 
 Day 1
-  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
-
-    [The question of causation](notes/correlation_causation.md)
+  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
 Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
-  ~ [Introduction to Probability](notes/probability_intro.md)
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
+
+    [The question of causation](notes/correlation_causation.md)
 
 ## Week  6 (10/09-10/13)
 
 Day 1
-  ~ [Conditional Probability](notes/probability_conditional.md)
+  ~ [Introduction to Probability](notes/probability_intro.md)
 
 Day 2
-  ~ [Probability rules](notes/probability_rules.md)
+  ~ [Conditional Probability](notes/probability_conditional.md)
+
+    [Probability rules](notes/probability_rules.md)
 
 Day 3
   ~ [Independent Events](notes/independent_events.md)
