@@ -1,4 +1,4 @@
-# Applied Statistics HW 5
+# Applied Statistics HW 6
 
 1. In a test, students receive a grade from 1 to 100. In a class consisting of about 500 students, their test scores follow an approximately normal distribution, with a mean of 76.5 and a standard deviation of 10.3.
     a. Students who scored 95 and above would get an A. Approximately how many students would that be?
