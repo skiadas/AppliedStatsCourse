@@ -69,10 +69,14 @@ Day 2
 Day 3
   ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
 
+    [HW5 due Fri](assignments/hw5.md)
+
 ## Week  5 (10/02-10/06)
 
 Day 1
   ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+
+    [HW6 due Mon](assignments/hw6.md)
 
 Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
