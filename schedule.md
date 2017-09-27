@@ -62,9 +62,9 @@ Day 1
   ~ [The Normal Distribution](notes/normal_distribution.md)
 
 Day 2
-  ~ [Relationships between two variables](notes/relationships.md)
+  ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
 
-    [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+    [Relationships between two variables](notes/relationships.md)
 
 Day 3
   ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
@@ -74,7 +74,7 @@ Day 3
 ## Week  5 (10/02-10/06)
 
 Day 1
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
     [HW6 due Mon](assignments/hw6.md)
 
@@ -82,7 +82,9 @@ Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
-  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
+  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+
+    [Linear Models and Regression Lines](notes/linear_regression.md)
 
     [The question of causation](notes/correlation_causation.md)
 
