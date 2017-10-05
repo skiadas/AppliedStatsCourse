@@ -82,29 +82,33 @@ Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
-
-    [Linear Models and Regression Lines](notes/linear_regression.md)
-
-    [The question of causation](notes/correlation_causation.md)
+  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
 ## Week  6 (10/09-10/13)
 
 Day 1
-  ~ [Introduction to Probability](notes/probability_intro.md)
+  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+
+    [Linear Models and Regression Lines](notes/linear_regression.md)
 
 Day 2
+  ~ [The question of causation](notes/correlation_causation.md)
+
+    [Introduction to Probability](notes/probability_intro.md)
+
+    [HW7 due Mon](assignments/hw7.md)
+
+Day 3
   ~ [Conditional Probability](notes/probability_conditional.md)
 
     [Probability rules](notes/probability_rules.md)
 
-Day 3
-  ~ [Independent Events](notes/independent_events.md)
-
 ## Week  7 (10/16-10/20)
 
 Day 1
-  ~ [Tree Diagrams](notes/decision_trees.md)
+  ~ [Independent Events](notes/independent_events.md)
+
+    [Tree Diagrams](notes/decision_trees.md)
 
 Day 2
   ~ [Random Variables](notes/random_variables.md)
