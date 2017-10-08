@@ -64,8 +64,6 @@ Day 1
 Day 2
   ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
 
-    [Relationships between two variables](notes/relationships.md)
-
 Day 3
   ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
 
@@ -74,7 +72,7 @@ Day 3
 ## Week  5 (10/02-10/06)
 
 Day 1
-  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+  ~ [Relationships between two variables](notes/relationships.md)
 
     [HW6 due Mon](assignments/hw6.md)
 
@@ -82,39 +80,41 @@ Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
 
 Day 3
-  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
+  ~ [Lab 5](https://hanoverstatslabs.github.io/resources/labs/Lab5Instructions.html)
 
 ## Week  6 (10/09-10/13)
 
 Day 1
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+  ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
-    [Linear Models and Regression Lines](notes/linear_regression.md)
+    [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
 Day 2
-  ~ [The question of causation](notes/correlation_causation.md)
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
-    [Introduction to Probability](notes/probability_intro.md)
+    [The question of causation](notes/correlation_causation.md)
 
     [HW7 due Mon](assignments/hw7.md)
 
 Day 3
-  ~ [Conditional Probability](notes/probability_conditional.md)
-
-    [Probability rules](notes/probability_rules.md)
+  ~ [Lab 6](https://hanoverstatslabs.github.io/resources/labs/Lab6Instructions.html)
 
 ## Week  7 (10/16-10/20)
 
 Day 1
-  ~ [Independent Events](notes/independent_events.md)
+  ~ [Introduction to Probability](notes/probability_intro.md)
+
+    [Conditional Probability](notes/probability_conditional.md)
+
+Day 2
+  ~ [Probability rules](notes/probability_rules.md)
+
+    [Independent Events](notes/independent_events.md)
 
     [Tree Diagrams](notes/decision_trees.md)
 
-Day 2
-  ~ [Random Variables](notes/random_variables.md)
-
 Day 3
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+  ~ [Random Variables](notes/random_variables.md)
 
 ## Week  8 (10/23-10/27)
 
