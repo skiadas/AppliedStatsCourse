@@ -87,12 +87,10 @@ Day 3
 Day 1
   ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
-    [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
-
 Day 2
-  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
+  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
-    [The question of causation](notes/correlation_causation.md)
+    [Linear Models and Regression Lines](notes/linear_regression.md)
 
     [HW7 due Mon](assignments/hw7.md)
 
@@ -102,19 +100,21 @@ Day 3
 ## Week  7 (10/16-10/20)
 
 Day 1
+  ~ [Linear Models and Regression Lines (cont)](notes/linear_regression.md)
+
+    [The question of causation](notes/correlation_causation.md)
+
+Day 2
   ~ [Introduction to Probability](notes/probability_intro.md)
 
     [Conditional Probability](notes/probability_conditional.md)
 
-Day 2
+Day 3
   ~ [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
 
     [Tree Diagrams](notes/decision_trees.md)
-
-Day 3
-  ~ [Random Variables](notes/random_variables.md)
 
 ## Week  8 (10/23-10/27)
 
@@ -122,7 +122,7 @@ Day 1
   ~ Fall Break
 
 Day 2
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+  ~ [Random Variables](notes/random_variables.md)
 
 Day 3
   ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
@@ -130,10 +130,10 @@ Day 3
 ## Week  9 (10/30-11/03)
 
 Day 1
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 2
-  ~ [Work on Projects](labs/projectAnalysisSteps.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 3
   ~ [Work on Projects](labs/projectAnalysisSteps.md)
