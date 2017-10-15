@@ -116,6 +116,8 @@ Day 3
 
     [Tree Diagrams](notes/decision_trees.md)
 
+    [HW8 due Mon](assignments/hw8.md)
+
 ## Week  8 (10/23-10/27)
 
 Day 1
