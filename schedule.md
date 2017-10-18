@@ -102,14 +102,20 @@ Day 3
 Day 1
   ~ [Linear Models and Regression Lines (cont)](notes/linear_regression.md)
 
-    [The question of causation](notes/correlation_causation.md)
-
 Day 2
+  ~ [The question of causation](notes/correlation_causation.md)
+
+Day 3
   ~ [Introduction to Probability](notes/probability_intro.md)
 
     [Conditional Probability](notes/probability_conditional.md)
 
-Day 3
+## Week  8 (10/23-10/27)
+
+Day 1
+  ~ Fall Break
+
+Day 2
   ~ [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
@@ -118,14 +124,6 @@ Day 3
 
     [HW8 due](assignments/hw8.md)
 
-## Week  8 (10/23-10/27)
-
-Day 1
-  ~ Fall Break
-
-Day 2
-  ~ [Random Variables](notes/random_variables.md)
-
 Day 3
   ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
 
@@ -133,12 +131,12 @@ Day 3
 ## Week  9 (10/30-11/03)
 
 Day 1
+  ~ [Random Variables](notes/random_variables.md)
+
+Day 2
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
     [HW9 due](assignments/hw9.md)
-
-Day 2
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 3
   ~ [Work on Projects](labs/projectAnalysisSteps.md)
@@ -146,10 +144,10 @@ Day 3
 ## Week 10 (11/06-11/10)
 
 Day 1
-  ~ [Combining Random Variables](notes/rv_combine.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 2
-  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
 
 Day 3
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
@@ -157,13 +155,13 @@ Day 3
 ## Week 11 (11/13-11/17)
 
 Day 1
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
 Day 2
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 Day 3
-  ~ [The Sample Mean / IID Setting (cont)](notes/iid_setting.md)
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 ## Week 12 (11/20-11/24)
 
