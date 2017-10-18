@@ -9,7 +9,7 @@ Day 1
 
     [Basic Terminology](notes/basic_terminology.md)
 
-    [HW1 due Fri](assignments/hw1.md)
+    [HW1 due](assignments/hw1.md)
 
 Day 2
   ~ [Visualizing Variables](notes/visualizing_distributions.md)
@@ -29,7 +29,7 @@ Day 1
 
     [Measures of Spread](notes/measures_spread.md)
 
-    [HW2 due Fri](assignments/hw2.md)
+    [HW2 due](assignments/hw2.md)
 
     [Quiz 2 due Thu](https://moodle.hanover.edu/mod/quiz/view.php?id=5178)
 
@@ -38,7 +38,7 @@ Day 2
 
     [Linear Transformations](notes/linear_transformations.md)
 
-    [HW3 due Mon](assignments/hw3.md)
+    [HW3 due](assignments/hw3.md)
 
 Day 3
   ~ [Lab 2](https://hanoverstatslabs.github.io/resources/labs/Lab2Instructions.html)
@@ -51,7 +51,7 @@ Day 1
 Day 2
   ~ [Density Curves](notes/density_curves.md)
 
-    [HW4 due Wed](assignments/hw4.md)
+    [HW4 due](assignments/hw4.md)
 
 Day 3
   ~ [Lab 3](https://hanoverstatslabs.github.io/resources/labs/Lab3Instructions.html)
@@ -67,14 +67,14 @@ Day 2
 Day 3
   ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
 
-    [HW5 due Fri](assignments/hw5.md)
+    [HW5 due](assignments/hw5.md)
 
 ## Week  5 (10/02-10/06)
 
 Day 1
   ~ [Relationships between two variables](notes/relationships.md)
 
-    [HW6 due Mon](assignments/hw6.md)
+    [HW6 due](assignments/hw6.md)
 
 Day 2
   ~ **MIDTERM**  ([study guide](notes/midterm1_study_guide.md))
@@ -92,7 +92,7 @@ Day 2
 
     [Linear Models and Regression Lines](notes/linear_regression.md)
 
-    [HW7 due Mon](assignments/hw7.md)
+    [HW7 due](assignments/hw7.md)
 
 Day 3
   ~ [Lab 6](https://hanoverstatslabs.github.io/resources/labs/Lab6Instructions.html)
@@ -116,7 +116,7 @@ Day 3
 
     [Tree Diagrams](notes/decision_trees.md)
 
-    [HW8 due Mon](assignments/hw8.md)
+    [HW8 due](assignments/hw8.md)
 
 ## Week  8 (10/23-10/27)
 
@@ -129,10 +129,13 @@ Day 2
 Day 3
   ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
 
+
 ## Week  9 (10/30-11/03)
 
 Day 1
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
+
+    [HW9 due](assignments/hw9.md)
 
 Day 2
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
