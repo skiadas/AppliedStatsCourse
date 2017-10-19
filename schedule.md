@@ -106,9 +106,7 @@ Day 2
   ~ [The question of causation](notes/correlation_causation.md)
 
 Day 3
-  ~ [Introduction to Probability](notes/probability_intro.md)
-
-    [Conditional Probability](notes/probability_conditional.md)
+  ~ [Lab 7](https://hanoverstatslabs.github.io/resources/labs/Lab7Instructions.html)
 
 ## Week  8 (10/23-10/27)
 
@@ -116,17 +114,19 @@ Day 1
   ~ Fall Break
 
 Day 2
-  ~ [Probability rules](notes/probability_rules.md)
+  ~ [Introduction to Probability](notes/probability_intro.md)
+
+    [Conditional Probability](notes/probability_conditional.md)
+
+
+Day 3
+  ~ Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
 
     [Tree Diagrams](notes/decision_trees.md)
 
     [HW8 due](assignments/hw8.md)
-
-Day 3
-  ~ [Lab: Work on Projects](labs/projectAnalysisSteps.md)
-
 
 ## Week  9 (10/30-11/03)
 
