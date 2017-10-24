@@ -120,7 +120,7 @@ Day 2
 
 
 Day 3
-  ~ Probability rules](notes/probability_rules.md)
+  ~ [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
 
