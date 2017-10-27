@@ -116,35 +116,37 @@ Day 1
 Day 2
   ~ [Introduction to Probability](notes/probability_intro.md)
 
-    [Conditional Probability](notes/probability_conditional.md)
-
 
 Day 3
-  ~ [Probability rules](notes/probability_rules.md)
+  ~ [Conditional Probability](notes/probability_conditional.md)
+
+    [Probability rules](notes/probability_rules.md)
 
     [Independent Events](notes/independent_events.md)
-
-    [Tree Diagrams](notes/decision_trees.md)
 
     [HW8 due](assignments/hw8.md)
 
 ## Week  9 (10/30-11/03)
 
 Day 1
-  ~ [Random Variables](notes/random_variables.md)
+  ~ [Tree Diagrams](notes/decision_trees.md)
 
 Day 2
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+  ~ [Random Variables](notes/random_variables.md)
 
     [HW9 due](assignments/hw9.md)
 
 Day 3
-  ~ [Work on Projects](labs/projectAnalysisSteps.md)
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+
+    [HW10 due](assignments/hw10.md)
 
 ## Week 10 (11/06-11/10)
 
 Day 1
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+
+    [HW11 due](assignments/hw11.md)
 
 Day 2
   ~ [Combining Random Variables](notes/rv_combine.md)
