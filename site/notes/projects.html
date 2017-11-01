@@ -14,39 +14,37 @@
 </head>
 <body>
 <h1 id="projects">Projects</h1>
-<p>There are six projects described in this section. Each project will be assigned to at most two groups. Discuss with your group and email me an ordering of the projects in order from most preferred to least preferred. I will try to assign to each group one of their top choices.</p>
+<p>There are seven projects described in this section. Each project will be assigned to at most two groups. Discuss with your group and email me an ordering of the projects in order from most preferred to least preferred. I will try to assign to each group one of their top choices.</p>
 <ol style="list-style-type: decimal">
-<li>Baseball Statistics</li>
 <li>US Census Data</li>
 <li>Google Transparency Report</li>
-<li>Anti-Piracy Legislation</li>
-<li>Guns and Violence around the world</li>
 <li>Course Evaluations</li>
+<li>Diamond Prices</li>
+<li>Mammal Sleep Patterns</li>
+<li>BRFSS</li>
+<li>SAT data</li>
 </ol>
-<h3 id="baseball-player-statistics">Baseball Player Statistics</h3>
-<p>Statistics for Baseball teams from 2011.</p>
-<p>Brief description: <a href="https://www.openintro.org/stat/data/?data=mlb11" class="uri">https://www.openintro.org/stat/data/?data=mlb11</a></p>
-<p>Data: <a href="http://www.openintro.org/stat/data/mlb11.csv" class="uri">http://www.openintro.org/stat/data/mlb11.csv</a></p>
 <h3 id="us-census-county-data">US Census County Data</h3>
-<p>Contains information on all US counties based on the 2010 census.</p>
+<p>Contains information on all US counties based on the 2010 census. This is the <code>counties</code> dataset that we have been using. You should focus on some part of the data that interests you. For instance you can focus on an in-depth comparison between a few states. Or conversely you can continue looking at all the states but focus on a small set of columns/variables.</p>
 <p>A description of some of the variables: <a href="countyExplanations.html">notes/countyExplanations</a></p>
-<p>Data: <a href="https://skiadas.github.io/AppliedStatsCourse/site/datasets/countyComplete.txt" class="uri">https://skiadas.github.io/AppliedStatsCourse/site/datasets/countyComplete.txt</a></p>
-<p>This is a rich dataset, and your group will only work on part of the data.</p>
-<h3 id="google-transparency-report">Google transparency report</h3>
+<h3 id="google-transparency-report">Google Transparency Report</h3>
 <p>Contains information about requests for account information that Google has received from various countries. Records variables related to the country’s demographics, politics and freedom of the press, as well as the number of requests received and complied with.</p>
 <p>Brief description: <a href="https://www.openintro.org/stat/data/?data=goog" class="uri">https://www.openintro.org/stat/data/?data=goog</a></p>
 <p>Data: <a href="http://www.openintro.org/stat/data/goog.csv" class="uri">http://www.openintro.org/stat/data/goog.csv</a></p>
-<h3 id="anti-piracy-legislation">Anti-piracy legislation</h3>
-<p>Contains observations on US Senators and Representatives related to their support of anti-piracy legislation that was introduced at the end of 2011.</p>
-<p>Brief description: <a href="https://www.openintro.org/stat/data/?data=piracy" class="uri">https://www.openintro.org/stat/data/?data=piracy</a></p>
-<p>Data: <a href="http://www.openintro.org/stat/data/piracy.csv" class="uri">http://www.openintro.org/stat/data/piracy.csv</a></p>
-<h3 id="guns-and-violence-around-the-world">Guns and violence around the world</h3>
-<p>Contains data from various countries around the world, on the number of guns owned, mortality rates, and general human development index.</p>
-<p>Brief description: <a href="https://www.openintro.org/stat/data/?data=gun_violence" class="uri">https://www.openintro.org/stat/data/?data=gun_violence</a></p>
-<p>Data: <a href="http://www.openintro.org/stat/data/gun_violence.csv" class="uri">http://www.openintro.org/stat/data/gun_violence.csv</a></p>
-<h2 id="course-evaluation-data">Course evaluation data</h2>
+<h2 id="course-evaluation-data">Course Evaluation Data</h2>
 <p>Data from the Hanover College course evaluation data for the year 2016-2017. This is a subset of the actual answers provided by the students, but with identifiable information removed.</p>
 <p>Brief description: <a href="studentEvalsDescriptions.html">studentEvalsDescriptions.md</a></p>
 <p>Data: Ask me for access to the data if you want to do this project. This data is not to be shared with anyone else.</p>
+<h2 id="diamond-prices">Diamond Prices</h2>
+<p>A dataset called “diamonds” is included with the <code>ggplot2</code> package and is available via our <code>hanoverbase</code> package. It contains prices, quality, color and size information for over 54000 diamonds. You can discuss various aspects of this dataset, but your focus should be how the “four Cs” variables (carat, cut, clarity, color) affect the price of diamonds. In particular, you should provide an explanation of why it appears that diamonds of “Ideal cut” appear to have relatively lower prices than diamonds of “Premium cut”, which is a lower-quality cut. You will need to investigate how those 5 variables relate in various ways.</p>
+<p>Use <code>data(diamonds)</code> to load the data, and <code>help(diamonds)</code> to bring up the documentation.</p>
+<h2 id="mammal-sleep-patterns">Mammal Sleep Patterns</h2>
+<p>A dataset called “msleep” is included with the <code>ggplot2</code> package and is available via our <code>hanoverbase</code> package. It contains information about the various species of mammals related to their sleep cycles. This is a fairly open-ended dataset.</p>
+<p>Use <code>data(msleep)</code> to load the data, and <code>help(msleep)</code> to bring up the documentation.</p>
+<h2 id="brfss">BRFSS</h2>
+<p>The <code>brfss</code> dataset that we have been using in our assignments contains many extra variables that we have not considered. You can choose to focus your project on some subset of these variables.</p>
+<h2 id="sat-data">SAT Data</h2>
+<p>The dataset <code>SAT</code>, which is part of the <code>mosaicData</code> dataset and included with our <code>hanoverbase</code> package, contains state-by-state information related to the SAT exam. You are free to explore the dataset in various ways, but at the very least you should explore the relation between verbal and math scores, as well as the relation between the <code>frac</code> and <code>sat</code> variables.</p>
+<p>Use <code>data(SAT)</code> to load the data, and <code>help(SAT)</code> to bring up the documentation.</p>
 </body>
 </html>
