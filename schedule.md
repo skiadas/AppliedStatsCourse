@@ -135,19 +135,19 @@ Day 2
     [HW9 due](assignments/hw9.md)
 
 Day 3
-  ~ [Random Variables](notes/random_variables.md)
-
-    [HW10 due](assignments/hw10.md)
+  ~ [Lab 8](https://hanoverstatslabs.github.io/resources/labs/Lab8Instructions.html)
 
 ## Week 10 (11/06-11/10)
 
 Day 1
+  ~ [Random Variables](notes/random_variables.md)
+
+    [HW10 due](assignments/hw10.md)
+
+Day 2
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
     [HW11 due](assignments/hw11.md)
-
-Day 2
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
 Day 3
   ~ **MIDTERM** ([study guide](notes/midterm2_study_guide.md))
@@ -155,20 +155,20 @@ Day 3
 ## Week 11 (11/13-11/17)
 
 Day 1
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+
+Day 2
   ~ [Combining Random Variables](notes/rv_combine.md)
 
     [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
-Day 2
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
-
 Day 3
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 ## Week 12 (11/20-11/24)
 
 Day 1
-  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 2
   ~ THANKSGIVING
@@ -179,7 +179,7 @@ Day 3
 ## Week 13 (11/27-12/01)
 
 Day 1
-  ~ [Inference I: Confidence Intervals (cont)](notes/confidence_intervals.md)
+  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
 Day 2
   ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
