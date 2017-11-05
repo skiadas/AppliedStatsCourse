@@ -1,8 +1,8 @@
 # Midterm 2 Study Guide
 
-This midterm is about probability concepts, as well as linear modeling.
+This midterm is about key probability concepts, as well as two variable relationships and linear modeling.
 
-This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 4-9 and Homework Assignments 7-14.
+This is meant to be a representative sampling of the key concepts you will need to know, and it is not meant to be exhaustive. You should make sure that you are comfortable with Quizzes 4-7 and Homework Assignments 7-11.
 
 1. What graphs are appropriate when we want to examine the relationship between two variables? What types of variables does each apply to?
 2. What terms do we use to describe the relationship between two scalar variables?
@@ -24,11 +24,3 @@ This is meant to be a representative sampling of the key concepts you will need 
 18. When can I say that $P(A\cap B) = P(A)P(B)$?
 19. When can I say that $P(A\cup B) = P(A) + P(B)$?
 20. What are the different parts in a tree diagram / decision tree? What probabilities do we associate with each part?
-21. What differentiates *random variables* from other random phenomena? Give examples of random variables
-22. What conditions must we meet in order to be in the *binomial setting*?
-23. What is the formula for the *binomial distribution*?
-24. How do we compute the mean and the standard deviation of a random variable?
-25. How do we compute the mean and standard deviation of the binomial distribution?
-26. What can we say about the mean and standard deviation of a linear transformation of a variable?
-27. What can we say about the mean and standard deviation of a sum of two variables?
-28. What do $X$ and $\hat p$ represent in the binomial setting?
