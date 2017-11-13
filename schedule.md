@@ -145,7 +145,7 @@ Day 1
     [HW10 due](assignments/hw10.md)
 
 Day 2
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+  ~ Review
 
     [HW11 due](assignments/hw11.md)
 
@@ -155,20 +155,26 @@ Day 3
 ## Week 11 (11/13-11/17)
 
 Day 1
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+  ~ [Random Variables (cont)](notes/random_variables.md)
+
+    [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 2
-  ~ [Combining Random Variables](notes/rv_combine.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
-    [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+    [Combining Random Variables](notes/rv_combine.md)
 
 Day 3
-  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+
+    [HW12 due](assignments/hw12.md)
 
 ## Week 12 (11/20-11/24)
 
 Day 1
-  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
+  ~ [Binomial: Approximating by Normal](notes/binomial_mean.md)
+
+    [HW13 due](assignments/hw13.md)
 
 Day 2
   ~ THANKSGIVING
@@ -179,18 +185,18 @@ Day 3
 ## Week 13 (11/27-12/01)
 
 Day 1
-  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
+  ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
 Day 2
-  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
+  ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
 
 Day 3
-  ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
+  ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
 
 ## Week 14 (12/04-12/08)
 
 Day 1
-  ~ TBA
+  ~ [Inference II: Hypothesis Tests (cont)](notes/hypothesis_tests.md)
 
 Day 2
   ~ TBA
