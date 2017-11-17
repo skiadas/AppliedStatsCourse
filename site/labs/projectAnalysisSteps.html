@@ -19,72 +19,66 @@
 <p>Some steps may not apply in your particular case.</p>
 <h2 id="preliminaries">Preliminaries</h2>
 <ul>
-<li>Keep a Word document as a Journal of your progress</li>
-<li>Load the data into SPSS
-<ul>
-<li>Start up SPSS</li>
-<li>Use the File -&gt; Read Text Data wizard</li>
-<li>Pay attention to steps 2 and 4</li>
-</ul></li>
-<li>Set up the data properties
-<ul>
-<li>Data -&gt; Define Variable properties</li>
-<li>Check that “measure” is appropriate (Nominal/Ordinal/Scale)</li>
-<li>Add appropriate Label to the variable (top right)</li>
-<li>For categorical variables, add value labels next to each value</li>
-<li>Look for values that shouldn’t be different (e.g. “yes” and “Yes” as separate categories)</li>
-</ul></li>
-<li>Save the data file often</li>
+<li>Choose one member of the group to be the one whose computer will contain the project.</li>
+<li>Start an “RStudio project” for your project</li>
+<li>(If needed) Download the data file from the internet/email to the computer.</li>
+<li>Use the Upload button in Rstudio Files pane (bottom right) to upload your data file into the project folder.</li>
+<li>Click the data file in the Files pane, and choose the import option to import the file.</li>
+<li>Start an RMarkdown report file.</li>
+<li>Delete the material after the first code chunk, then add a code chunk to load the <code>hanoverbase</code> library and another code chunk for the data import code.</li>
+<li>Use the report space to take notes and create graphs. You will clean it up later removing what is not needed and polishing the graphs.</li>
+<li>If you prefer you can instead create a second RMarkdown document, called “journal” or something of the sort, to store the progress in your analysis. Then you will move parts of the journal into your final “report”.</li>
+<li>You will need to generate a lot more graphs and compute a lot more numerical summaries than what will go into your final report.</li>
+<li>Save and knit often.</li>
 </ul>
 <h2 id="early-explorations">Early Explorations</h2>
 <ul>
-<li>Goal: To <strong>own</strong> your data. You should get a grasp for the basic behavior of your data.</li>
+<li>The first primary goal is to <strong>own</strong> your data. You should get a grasp for the basic behavior of your data, and know all you can about it, including what your data had for breakfast.</li>
 <li>Compute appropriate numerical summaries and graphs for each individual variable
 <ul>
-<li>Categorical: Frequency tables, bargraphs, pie charts</li>
-<li>Scalar: Mean, Std.dev, quartiles, skewness, outliers, histogram, boxplot</li>
+<li>Categorical: Frequency tables, bargraphs, pie charts, dotplots</li>
+<li>Quantitative: Favstats (Mean, Std.dev, quartiles), skewness, outliers, histogram, boxplot</li>
 </ul></li>
-<li>Summarize conclusions in journal</li>
+<li>Summarize your conclusions in the journal. Don’t try to keep important information in memory, write it down in your journal or report.</li>
 <li>Don’t worry about finalizing graphs/tables. This is “exploratory”: It’s for you to learn what is going on with your data.</li>
-<li>You may want to also save your viewer file</li>
 <li>Consider interactions between your variables
 <ul>
 <li>Categorical - Categorical: 100% stacked bar charts</li>
-<li>Categorical - Scalar: boxplots, or split the file and compute numerical summaries</li>
-<li>Scalar - Scalar: scatterplot, “loess” line, linear regression if appropriate</li>
+<li>Categorical - Scalar: boxplots, numerical summaries by category</li>
+<li>Scalar - Scalar: scatterplot, “loess” smooth line, linear regression if appropriate, correlation</li>
 </ul></li>
 <li>Decide on variable transformations
 <ul>
-<li>Should a scalar variable be “grouped up” to form a categorical variable?</li>
+<li>Should a scalar variable be “grouped up” to form a categorical variable? Ask me how to do it if you need it.</li>
 <li>Should some categories in a categorical variable be consolidated to create more balanced groupings?</li>
 <li>etc</li>
 </ul></li>
 </ul>
 <h2 id="moving-further">Moving further</h2>
 <ul>
-<li>Start looking at the questions you considered in your proposal’s “expectations” section.</li>
+<li>Create a list of questions you would like to try to answer about the data, or just questions that you think are important to address.</li>
 <li>For each question
 <ul>
-<li>Prepare graphs and numerical summaries that would help answer it.</li>
-<li>Consider the effect of other variables to the interaction you observe (for example might a GPA effect based on gender be an effect based on year behind the scenes, because you happened to have too many male seniors in your survey?)</li>
+<li>Prepare graphs and numerical summaries that would help answer it. Maybe you already created them above. Now you may have to dig deeper.</li>
+<li>Consider the effect of other variables to the interaction you observe (for example might a GPA effect based on gender be an effect based on year behind the scenes, because you happened to have too many male seniors in your survey?) You may need to create paneled plots to explore this.</li>
 <li>Consider the effect of group/sample sizes on your conclusions. Do you have too few people in a group to draw conclusions about that group? Do you have outliers that might affect what you are seeing?</li>
 </ul></li>
 <li>Keep asking questions and digging deeper</li>
 <li>When you are satisfied, start putting together two things:
 <ul>
-<li>Word document
+<li>Your project report (in RMarkdown)
 <ul>
 <li>Brief introduction and conclusions sections</li>
 <li>Sections for each question/topic you wish to address</li>
 <li>Graphs/tables to back up your results</li>
 <li>Make sure to customize the graphs/tables, make them <strong>presentable</strong></li>
-<li>Graphs are best customized in SPSS first, before transfering.</li>
 </ul></li>
 <li>Powerpoint presentation
 <ul>
-<li>Edit the graphs (they probably require different editing than the document ones)</li>
+<li>Create the graphs in the console. Then click on them and save them or copy/paste them into a Powerpoint presentation.</li>
+<li>You may have to edit the graphs separately (they probably require different editing than the document ones).</li>
 <li>Graphs should be readable from a distance. Test them!</li>
-<li>Avoid long text</li>
+<li>Avoid long texts in your slides.</li>
 </ul></li>
 </ul></li>
 </ul>
