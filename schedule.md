@@ -170,8 +170,6 @@ Day 3
 Day 1
   ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
-    [Combining Random Variables](notes/rv_combine.md)
-
     [HW13 due](assignments/hw13.md)
 
 Day 2
@@ -183,23 +181,33 @@ Day 3
 ## Week 13 (11/27-12/01)
 
 Day 1
-  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
+
+    [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
     [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
 Day 2
   ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
+    [HW14 due](assignments/hw14.md)
+
 Day 3
   ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
+
+    [HW15 due](assignments/hw15.md)
 
 ## Week 14 (12/04-12/08)
 
 Day 1
   ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
 
+    [HW16 due](assignments/hw16.md)
+
 Day 2
   ~ TBA
+
+    [HW17 due](assignments/hw17.md)
 
 Day 3
   ~ Presentations
