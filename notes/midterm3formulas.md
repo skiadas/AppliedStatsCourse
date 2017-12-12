@@ -8,7 +8,7 @@ Random Variables via Table
 
 Random Variable via Linear Transform
 
-:   If $Y = \mu_{a + bX}$ then $\mu_Y = a + b \mu_X$ and $\sigma_Y = b \sigma_X$
+:   If $Y = a + bX$ then $\mu_Y = a + b \mu_X$ and $\sigma_Y = b \sigma_X$
 
 Random Variable Sum
 
@@ -19,3 +19,9 @@ Binomial Distribution
 :   $\mu_X = np$, $\sigma_X = \sqrt{n p (1-p)}$
 
     $\mu_{\hat p} = p$, $\sigma_{\hat p} = \frac{\sqrt{p(1-p)}}{\sqrt{n}}$
+
+IID Setting
+
+:   $\mu_{\bar x} = \mu$
+
+    $\sigma_{\bar x} = \frac{\sigma}{\sqrt{n}}$
