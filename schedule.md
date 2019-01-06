@@ -9,12 +9,13 @@ Day 1
 
     [Basic Terminology](notes/basic_terminology.md)
 
-    [HW1 due](assignments/hw1.md)
 
 Day 2
-  ~ [Visualizing Variables](notes/visualizing_distributions.md)
+  ~ [HW1 due Fri](assignments/hw1.md)
 
-    [Quiz 1 due Sun](https://moodle.hanover.edu/mod/quiz/view.php?id=5177)
+    [Visualizing Variables](notes/visualizing_distributions.md)
+
+    [Quiz 1 due Sun](https://moodle.hanover.edu/mod/quiz/view.php?id=14001)
 
 Day 3
   ~ [Lab 1](https://hanoverstatslabs.github.io/resources/labs/Lab1Instructions.html)
@@ -31,7 +32,7 @@ Day 1
 
     [HW2 due](assignments/hw2.md)
 
-    [Quiz 2 due Thu](https://moodle.hanover.edu/mod/quiz/view.php?id=5178)
+    [Quiz 2](https://moodle.hanover.edu/mod/quiz/view.php?id=14002)
 
 Day 2
   ~ [Data Collection](notes/data_collection.md)
@@ -64,6 +65,8 @@ Day 1
 Day 2
   ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
 
+    [Quiz 3](https://moodle.hanover.edu/mod/quiz/view.php?id=14005)
+
 Day 3
   ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
 
@@ -87,6 +90,8 @@ Day 3
 Day 1
   ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
+    [Quiz 4](https://moodle.hanover.edu/mod/quiz/view.php?id=14010)
+
 Day 2
   ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
@@ -104,6 +109,8 @@ Day 1
 
 Day 2
   ~ [The question of causation](notes/correlation_causation.md)
+
+    [Quiz 5](https://moodle.hanover.edu/mod/quiz/view.php?id=14011)
 
 Day 3
   ~ [Lab 7](https://hanoverstatslabs.github.io/resources/labs/Lab7Instructions.html)
@@ -129,10 +136,14 @@ Day 1
 
     [Independent Events](notes/independent_events.md)
 
+    [Quiz 6](https://moodle.hanover.edu/mod/quiz/view.php?id=14014)
+
 Day 2
   ~ [Tree Diagrams](notes/decision_trees.md)
 
     [HW9 due](assignments/hw9.md)
+
+    [Quiz 7](https://moodle.hanover.edu/mod/quiz/view.php?id=14018)
 
 Day 3
   ~ [Lab 8](https://hanoverstatslabs.github.io/resources/labs/Lab8Instructions.html)
@@ -159,6 +170,8 @@ Day 1
 
 Day 2
   ~ [The Binomial Setting and Distribution](notes/binomial.md)
+
+    [Quiz 8](https://moodle.hanover.edu/mod/quiz/view.php?id=14020)
 
 Day 3
   ~ Project work
@@ -187,10 +200,14 @@ Day 1
 
     [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
+    [Quiz 9](https://moodle.hanover.edu/mod/quiz/view.php?id=14023)
+
 Day 2
   ~ [The Sample Mean / IID Setting](notes/iid_setting.md)
 
     [HW14 due](assignments/hw14.md)
+
+    [Quiz 10](https://moodle.hanover.edu/mod/quiz/view.php?id=14026)
 
 Day 3
   ~ [Inference I: Confidence Intervals](notes/confidence_intervals.md)
@@ -203,6 +220,8 @@ Day 1
   ~ [Inference II: Hypothesis Tests](notes/hypothesis_tests.md)
 
     [HW16 due](assignments/hw16.md)
+
+    [Quiz 11](https://moodle.hanover.edu/mod/quiz/view.php?id=14028)
 
 Day 2
   ~ TBA

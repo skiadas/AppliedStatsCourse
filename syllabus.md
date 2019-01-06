@@ -9,31 +9,35 @@ Instructor
   ~ Charilaos Skiadas (skiadas at hanover dot edu)
 
 Term
-  ~ Fall 2017-2018
+  ~ Winter 2018-2019
 
 Office
-  ~ SCH 121C / LYN 108
+  ~ SCH 111 / LYN 108
 
 Office Hours
-  ~ MWF 10am-10:30am, and by appointment.
+  ~ MWF 2:40pm-3:50pm in LYN 108, and by appointment.
 
 Book
   ~ [OpenIntro Statistics](https://www.openintro.org/stat/) by openintro.org, 3rd edition. Free PDF download from the site. Can also buy from online retailers for around \$10.
 
 Website
-  ~ [for notes](http://skiadas.github.io/AppliedStatsCourse/site/), [for quizzes](https://moodle.hanover.edu/course/view.php?id=201).
+  ~ [for notes](http://skiadas.github.io/AppliedStatsCourse/site/), [for quizzes](https://moodle.hanover.edu/course/view.php?id=648).
 
 Class times
-  ~ MWF 10:40am-11:50am in SCC115. Labs on Fridays in CFA112C.
+  ~ MWF 10:40am-11:50am in LYN120B. Labs on Fridays in CFA112C.
 
 ## Course Description
 
-Applied Statistics focuses on the statistical study of data, its collection, description and inference based on sample data. Some examples:
+Applied Statistics focuses on the statistical study of data, its collection, description and inference based on sample data. Here are some of the kinds of questions we might ask:
 
-- suppose presidential election polls these days show the two candidates getting the same percentage of support. What does that really mean? That the candidates would get exactly that percentage, if we were to hold elections this moment? How was this percentage obtained, and how reliable is it? What range should we expect their true percentage to be in (in other words, what is our margin of error)?
-- Suppose 10 people measured the length of the same room, and they all found somewhat different results. What does this tell us about the length of the room?
+- Suppose we would like to predict the winner of some future elections. As we cannot ask every single citizen what they would vote, we would need to rely on taking a smaller sample.
+    - How big should this sample be?
+    - How should we go about selecting who would be part of the sample?
+    - As there is a certain degree of variability in the answers we get (different samples would have given us different answers) what can the sample's results tell us about the possible election results? With what certainty can we predict a winner based on the given sample?
+- Suppose 10 people measured the length of the same room, and they all found somewhat different results. What does this tell us about the actual length of the room?
+- More broadly, repeating runs of an experiment would produce slightly different values for the same physical quantity (e.g. the speed of light). What does that tell us about the actual value of that quantity?
 - Can we identify a literary work as belonging to a particular author based on how often common words appear in it, compared to the author's other works?
-- How do we determine the speed of light? It is reasonable to believe that different attempts at measuring that speed would provide us with slightly different values, which one is "correct"?
+- A person claims that they can detect, when drinking tea with milk, whether the milk was poured first in the cup or whether it was the tea. How would we go about testing that person? At what point would we feel reasonably certain that they can or cannot detect it?
 
 In this course, we will develop the tools to be able to answer these kinds of questions. Simply put:
 
@@ -53,7 +57,7 @@ The course has the following main objectives:
 
 - You will learn how to critically think about, analyse and evaluate data, and how to formulate your conclusions.
 - You will be using computer technology to analyse real data from various disciplines, often involving large data sets that would be very difficult to analyse in other ways.
-- You will work in small groups to complete a term project, which will contain the formulation of a research question and methodology, as well as the collection and analysis of the resulting data. You will have the chance to present both an oral and a written report at the end of the semester. You will thus demostrate skills in developing a thesis statement, supporting that thesis with logical rationale and quantitative evidence, and presenting that thesis in a convincing fashion, orally and in writing.
+- You will work in small groups to complete a term project involving the analysis and presentation of certain data. You will have the chance to present both an oral and a written report at the end of the semester. You will thus demostrate skills in developing a thesis statement, supporting that thesis with logical rationale and quantitative evidence, and presenting that thesis in a convincing fashion, orally and in writing.
 - You will be introduced to probability theory, which provides the solid foundations on which all statistical inference procedures are based. This will provide you with an understanding of the nature of symbolic language, formal reasoning, and the process of solving problems by means of abstract modeling.
 
 ## Course Components
@@ -80,37 +84,20 @@ There will be two midterms, on Wednesday, October 4th and Friday, November 10th,
 
 ### Term Project
 
-Throughout the semester, you will work in groups of three on a term project. The project consists of four phases:
+Throughout the semester, you will work in groups of three on a term project.
 
-- Getting a group together and formulating your research question and methodology. This should happen within the first 2-3 weeks.
-- Collecting the data necessary for answering the question. This should take the next 1-2 weeks.
-- Analysing the data. This should take the next 4-5 weeks.
-- Writing a report and presenting your conclusions to the other students. This will happen during the last 2-3 weeks.
-
-Here is a more specific schedule:
-
-- In the first week you should find two more people to be your teammates. The teams should email me by the end of the **first week**. Any people not in an assigned team by Monday of the second week will be assigned a team by me. When forming your teams, you will need to also have, and email to me along with the team member names, at least **5 hours** during the week that you can all meet to work on the project, or if that is not possible, then exactly how you are planning to meet and work together on the project. By joining a team you are making a commitment to your team-mates, to work with them over the semester. I expect you to honor that commitment.
-- All teams should email me their proposals in class by the end of 2nd week. These proposals should fit in at most 2 pages, plus a third page with the survey questions, prepared in Word or something similar, and contain the following:
-    - A **project description**. What is the main focus of your project? What kind of relation/phenomenon are you trying to examine with this project? Be **original**, find something that interests you.
-    - A list of the **variables** you will be measuring. You should have, at the very least, two categorical and two quantitative variables, and overall about 6 to 8 variables. These should be accompanied with a short list of what interactions you expect between these variables. These **expectations** can then be used as a starting point when analyzing the data.
-    - A description of the methodology you are going to follow for collecting your data. Is it going to be a survey? How will it be administered? Are you going to collect data from the internet? How are you planning to assert the reliability of that data?
-
-    I will give you a sample proposal by the end of the first week, so that you have a model to base yours on.
-
-  - These proposals should be finalized by the end of the third week. In the next two weeks, your data should be collected and assembled in a datasheet. This sheet should be emailed to me no later than the end of the sixth week.
-  - From this point on, you should gather together and analyse your data, discussing how it helps you answer the questions, and any pitfalls and problems you might have. We will spend some lab time on this part to get you started, but you will be expected to make considerable progress outside of the lab times. **It is very important that this part of the analysis be done with all 3 members working together**.
-  - A **final paper report** will be due during the last week. You may send me draft reports before that, if you want to receive feedback on them, and I strongly encourage you to do that.
-  - The last two days of classes will be devoted to in-class **presentations** of your project. This is an opportunity to talk about your work to members of the other teams, as well as hear about their projects. **Each** member of the team will have to talk for at least 5 minutes.
+- In the first 2 days you will need to pick group-mates and choose from a short list of pre-selected projects.
+- At the beginning of the term you will start by creating a series of questions to ask about the given data.
+- As we move along the term, you will be applying the skills we learn to analyze the given data and answer key questions about the dataset.
+- At the end of the term you will a report and present your conclusions to the other students.
 
 ### Getting Help
 
-- The learning center has set up study groups for the class. USE THEM! Tutoring sessions are run by Jordan Craven in CFA111, every:
-    - Tuesday 7pm-8pm
-    - Thursday 9pm-10pm
+- The learning center has some awesome tutors that can really help you out with the material. USE THEM! But make sure to go prepared to those meetings; you should have specific questions ready. And keep in mind that tutors are there to help you understand the concepts, they are not there to do your homework for you.
 - You should never hesitate to ask me questions. I will never think any less of anyone for asking a question. Stop by my office hours or just email me your question, which has the great benefit of forcing you to write it down in clear terms, which often helps you understand it better.
 - You are allowed, and in fact encouraged, to work together and help each other regarding the notes and the practice problems. However, I strongly encourage you to try the problems out on your own first before talking to someone about them.
 - You may discuss homework problems with others, but only after you have spent some time trying them on your own. And in any event the submitted work must be your own! So even though you may talk to others about the problem, when you sit down to write the answers you should be on your own.
-- Your work on the online quizzes must be your own. You may ask me or the tutors for questions.
+- Your work on the online quizzes must be your own. You may ask me or the tutors any questions you have related to them, but your final answers must be your own.
 
 ## Grading
 

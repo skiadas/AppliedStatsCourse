@@ -4,7 +4,7 @@ Random Variables via Table
 
 :   $\mu_X = p_1x_1+p_2x_2 + \cdots$
 
-    $\sigma_X = \sqrt{p_1(\mu_X-x_1)^2 + p_2(\mu_X-x_2)^2 + \cdots}$
+    $\sigma_X = \sqrt{p_1(x_1-\mu_X)^2 + p_2(x_2-\mu_X)^2 + \cdots}$
 
 Random Variable via Linear Transform
 

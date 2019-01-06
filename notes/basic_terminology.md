@@ -15,7 +15,7 @@ Sections 1.1, 1.2
 ## Notes
 
 - The science of **statistics** deals with the collection, analysis, interpretation, and presentation of **data**.
-- **Descriptive Statistics** deals with organizing and summarizing of the data
+- **Descriptive Statistics** deals with organizing and summarizing of the data.
 - **Inferential Statistics** deals with drawing conclusions from sample data about the larger population they represent.
 - Key Terms:
 
