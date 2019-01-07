@@ -72,7 +72,7 @@ You are expected to attend every class meeting, including labs. You are only all
 
 ### Homework Assignments
 
-Around once or twice a week, I will be assigning homework. These will be collected, and counted on a completion scale of $0, 0.25, 0.5, 0.75, 1$, depending on how much effort you have put and how complete your work is. Questions on the quizzes and exams tend to be similar to the homework problems, so it is to your advantage to really *understand* the homework, and not merely "do it" or copy it just to get it turned in. Homework assignments are 5% of your final grade.
+Around once or twice a week, I will be assigning homework. These will be collected, and counted on a completion scale, depending on how much effort you have put and how complete your work is. Questions on the quizzes and exams tend to be similar to the homework problems, so it is to your advantage to really *understand* the homework, and not merely "do it" or copy it just to get it turned in. Homework assignments are 5% of your final grade.
 
 ### Online quizzes
 
@@ -80,7 +80,7 @@ We will be using the [Moodle platform](http://moodle.hanover.edu) for online qui
 
 ### Exams
 
-There will be two midterms, on Wednesday, October 4th and Friday, November 10th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
+There will be two midterms, on Friday February 8th, Friday March 15th, and a final/3rd midterm during finals week. **You have to be here for the exams**. If you have conflicts with these days, let me know as soon as possible. Do not plan your vacation before you are aware of the finals schedule. In terms of your final grade, the exams you did better on will weigh more.
 
 ### Term Project
 
