@@ -1,6 +1,6 @@
 # Applied Statistics HW 2
 
-1. For each of the following histograms, describe the distribution, specifically focusing on the shape (modes, skewness) and the presence of outliers. Say a few words about the reasons for the presence of skewness and outliers, in the context of the particular data set under discussion. Describe a central/typical value, and how that value makes sense. Describe a range/spread, for the values, and how that makes sense.
+1. For each of the following histograms, describe the distribution, specifically focusing on the shape (modes, skewness) and the presence of outliers. Say a few words about the **reasons** for the presence of skewness and outliers, in the context of the particular data set under discussion. Describe a central/typical value, and how that value makes sense. Describe a range/spread, for the values, and how that makes sense.
 
     a. City mileage for all 2004 car models.
 
@@ -50,7 +50,7 @@
 
     \newpage
 
-2. For each of the previous examples, decide where the mean is in relation to the median.
+2. For each of the previous examples, decide where the mean is in relation to the median (bigger, about the same, smaller).
 
 \vfill
 
