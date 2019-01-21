@@ -54,20 +54,22 @@ Day 2
 
     [Density Curves](notes/density_curves.md)
 
+    [The Normal Distribution](notes/normal_distribution.md)
+
+    [Quiz 3](https://moodle.hanover.edu/mod/quiz/view.php?id=14005)
+
 Day 3
   ~ [Lab 3](https://hanoverstatslabs.github.io/resources/labs/Lab3Instructions.html)
 
 ## Week  4 (01/28-02/01)
 
 Day 1
-  ~ [The Normal Distribution](notes/normal_distribution.md)
+  ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
 
     [HW4 due](assignments/hw4.md)
 
 Day 2
-  ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
-
-    [Quiz 3](https://moodle.hanover.edu/mod/quiz/view.php?id=14005)
+  ~ [Relationships between two variables](notes/relationships.md)
 
 Day 3
   ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
@@ -77,9 +79,7 @@ Day 3
 ## Week  5 (02/04-02/08)
 
 Day 1
-  ~ [Relationships between two variables](notes/relationships.md)
-
-    [HW6 due](assignments/hw6.md)
+  ~ [HW6 due](assignments/hw6.md)
 
 Day 2
   ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
