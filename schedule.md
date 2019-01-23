@@ -45,12 +45,12 @@ Day 3
 Day 1
   ~ [Data Collection](notes/data_collection.md)
 
-    [Linear Transformations](notes/linear_transformations.md)
-
     [HW3 due](assignments/hw3.md)
 
 Day 2
-  ~ [Standardized scores](notes/linear_transformations.md)
+  ~ [Linear Transformations](notes/linear_transformations.md)
+
+    [Standardized scores](notes/linear_transformations.md)
 
     [Density Curves](notes/density_curves.md)
 
@@ -66,10 +66,10 @@ Day 3
 Day 1
   ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
 
-    [HW4 due](assignments/hw4.md)
-
 Day 2
   ~ [Relationships between two variables](notes/relationships.md)
+
+    [HW4 due](assignments/hw4.md)
 
 Day 3
   ~ [Lab 4](https://hanoverstatslabs.github.io/resources/labs/Lab4Instructions.html)
