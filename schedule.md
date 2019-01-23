@@ -52,19 +52,17 @@ Day 2
 
     [Standardized scores](notes/linear_transformations.md)
 
-    [Density Curves](notes/density_curves.md)
-
-    [The Normal Distribution](notes/normal_distribution.md)
-
-    [Quiz 3](https://moodle.hanover.edu/mod/quiz/view.php?id=14005)
-
 Day 3
   ~ [Lab 3](https://hanoverstatslabs.github.io/resources/labs/Lab3Instructions.html)
 
 ## Week  4 (01/28-02/01)
 
 Day 1
-  ~ [The Normal Distribution (cont)](notes/normal_distribution.md)
+  ~ [Density Curves](notes/density_curves.md)
+
+    [The Normal Distribution](notes/normal_distribution.md)
+
+    [Quiz 3](https://moodle.hanover.edu/mod/quiz/view.php?id=14005)
 
 Day 2
   ~ [Relationships between two variables](notes/relationships.md)
