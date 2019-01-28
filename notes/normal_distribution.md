@@ -76,7 +76,7 @@ Practice questions:
 - Make sure the $p$ represents "data below a point". If not convert it.
 - Look for the $p$ INSIDE Table A. You will probably find one value bigger than it, right next to a value smaller than it.
 - If your $p$ is closer to one of these values, just use the $z$ from that value.
-- If it's closer to the middle between, them, use the average of the two $z$ values.
+- If it's closer to the middle between them, use the average of the two $z$ values.
 
 Practice questions:
 
