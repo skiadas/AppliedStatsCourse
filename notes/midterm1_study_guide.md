@@ -12,7 +12,7 @@ This is meant to be a representative sampling of the key concepts you will need 
 8. How does the "suspected outlier test" work?
 9. How is the (modified) boxplot drawn?
 10. Suppose a distribution is skewed to the right. How will that show in the boxplot?
-11. What does it mean to say that a measure is *resistant*?
+11. What does it mean to say that a measure is *resistant*? Give examples of resistant as well as non-resistant measures.
 12. In terms of the $z$-values, what are the first and third quartile for the normal distribution?
 13. What percent of values in a normal distribution would be classified as outliers?
 14. How do we find where the middle 40% of data lies in a normal distribution?
