@@ -82,8 +82,6 @@ Day 1
 Day 2
   ~ [Scatterplots and Correlation](notes/scatterplot_correlation.md)
 
-    [Quiz 4](https://moodle.hanover.edu/mod/quiz/view.php?id=14010)
-
     [HW6 due](assignments/hw6.md)
 
 Day 3
@@ -92,17 +90,19 @@ Day 3
 ## Week  6 (02/11-02/15)
 
 Day 1
-  ~ [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
+  ~ [Scatterplots and Correlation (cont)](notes/scatterplot_correlation.md)
 
-    [Linear Models and Regression Lines](notes/linear_regression.md)
+    [General Theory on Modeling and Data Fitting](notes/modeling_general.md)
 
-    [HW7 due](assignments/hw7.md)
+    [Quiz 4](https://moodle.hanover.edu/mod/quiz/view.php?id=14010)
 
 Day 2
-  ~ [Linear Models and Regression Lines (cont)](notes/linear_regression.md)
+  ~ [Linear Models and Regression Lines](notes/linear_regression.md)
 
 Day 3
-  ~ [Lab 5](https://hanoverstatslabs.github.io/resources/labs/Lab5Instructions.html)
+  ~ [HW7 due](assignments/hw7.md)
+
+    [Lab 5](https://hanoverstatslabs.github.io/resources/labs/Lab5Instructions.html)
 
 ## Week  7 (02/18-02/22)
 
