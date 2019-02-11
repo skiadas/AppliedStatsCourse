@@ -117,6 +117,8 @@ Day 2
 Day 3
   ~ [Lab 6](https://hanoverstatslabs.github.io/resources/labs/Lab6Instructions.html)
 
+    [HW8 due](assignments/hw8.md)
+
 ## Week  8 (02/25-03/01)
 
 WINTER BREAK
@@ -125,8 +127,6 @@ WINTER BREAK
 
 Day 1
   ~ [Conditional Probability](notes/probability_conditional.md)
-
-    [HW8 due](assignments/hw8.md)
 
 Day 2
   ~ [Probability rules](notes/probability_rules.md)
