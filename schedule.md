@@ -126,12 +126,14 @@ WINTER BREAK
 ## Week  9 (03/04-03/08)
 
 Day 1
-  ~ [Conditional Probability](notes/probability_conditional.md)
+  ~ [Introduction to Probability](notes/probability_intro.md)
+
+    [Conditional Probability](notes/probability_conditional.md)
 
 Day 2
-  ~ [Probability rules](notes/probability_rules.md)
+  ~ [Conditional Probability](notes/probability_conditional.md)
 
-    [Independent Events](notes/independent_events.md)
+    [Probability rules](notes/probability_rules.md)
 
     [Quiz 6](https://moodle.hanover.edu/mod/quiz/view.php?id=14014)
 
@@ -141,7 +143,9 @@ Day 3
 ## Week 10 (03/11-03/15)
 
 Day 1
-  ~ [Tree Diagrams](notes/decision_trees.md)
+  ~ [Independent Events](notes/independent_events.md)
+
+    [Tree Diagrams](notes/decision_trees.md)
 
     [HW9 due](assignments/hw9.md)
 
