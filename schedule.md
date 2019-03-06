@@ -154,6 +154,8 @@ Day 1
 Day 2
   ~ Review
 
+    [HW10 due](assignments/hw10.md)
+
     [HW11 due](assignments/hw11.md)
 
 Day 3
