@@ -11,7 +11,7 @@ This is meant to be a representative sampling of the key concepts you will need 
 5. What is the key property that makes the "*least squares regression line*" special?
 6. What is the meaning of "r-squared" in the context of the least squares regression line?
 7. How does the *residual plot* work? What do we expect from it if we have a suitable fit?
-8. Outliers far in the x direction and only far in the y direction affect the least squares regression line in very different ways. Explain.
+8. Outliers that are far in the x direction only and those that are far in the y direction only affect the least squares regression line in very different ways. Explain.
 9. What are the key characteristics of a *random phenomenon*?
 10. What can we say about the probabilities of outcomes in a random phenomenon / probability model? Can they be any numbers? There are some restrictions to them (both on what numbers they can be, and on what their sum must be).
 11. What is an *event* and how do we define its probability?
