@@ -24,7 +24,7 @@ Brief description: [https://www.openintro.org/stat/data/?data=goog](https://www.
 
 Data: [http://www.openintro.org/stat/data/goog.csv](http://www.openintro.org/stat/data/goog.csv)
 
-## Course Evaluation Data
+### Course Evaluation Data
 
 Data from the Hanover College course evaluation data for the year 2016-2017. This is a subset of the actual answers provided by the students, but with identifiable information removed.
 
@@ -32,23 +32,23 @@ Brief description: [studentEvalsDescriptions.md](studentEvalsDescriptions.md)
 
 Data: Ask me for access to the data if you want to do this project. This data is not to be shared with anyone else.
 
-## Diamond Prices
+### Diamond Prices
 
 A dataset called "diamonds" is included with the `ggplot2` package and is available via our `hanoverbase` package. It contains prices, quality, color and size information for over 54000 diamonds. You can discuss various aspects of this dataset, but your focus should be how the "four Cs" variables (carat, cut, clarity, color) affect the price of diamonds. In particular, you should provide an explanation of why it appears that diamonds of "Ideal cut" appear to have relatively lower prices than diamonds of "Premium cut", which is a lower-quality cut. You will need to investigate how those 5 variables relate in various ways.
 
 Use `data(diamonds)` to load the data, and `help(diamonds)` to bring up the documentation.
 
-## Mammal Sleep Patterns
+### Mammal Sleep Patterns
 
 A dataset called "msleep" is included with the `ggplot2` package and is available via our `hanoverbase` package. It contains information about the various species of mammals related to their sleep cycles. This is a fairly open-ended dataset.
 
 Use `data(msleep)` to load the data, and `help(msleep)` to bring up the documentation.
 
-## BRFSS
+### BRFSS
 
 The `brfss` dataset that we have been using in our assignments contains many extra variables that we have not considered. You can choose to focus your project on some subset of these variables.
 
-## SAT Data
+### SAT Data
 
 The dataset `SAT`, which is part of the `mosaicData` dataset and included with our `hanoverbase` package, contains state-by-state information related to the SAT exam. You are free to explore the dataset in various ways, but at the very least you should explore the relation between verbal and math scores, as well as the relation between the `frac` and `sat` variables.
 
