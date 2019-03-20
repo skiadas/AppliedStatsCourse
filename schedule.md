@@ -169,7 +169,7 @@ Day 1
     [HW10 due](assignments/hw10.md)
 
 Day 2
-  ~ [Random Variables (cont)](notes/random_variables.md)
+  ~ [The Binomial Setting and Distribution](notes/binomial.md)
 
 Day 3
   ~ [Lab 8](https://hanoverstatslabs.github.io/resources/labs/Lab8Instructions.html)
@@ -179,12 +179,12 @@ Day 3
 ## Week 12 (03/25-03/29)
 
 Day 1
-  ~ [The Binomial Setting and Distribution](notes/binomial.md)
+  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
 
     [Quiz 8](https://moodle.hanover.edu/mod/quiz/view.php?id=14020)
 
 Day 2
-  ~ [Mean and Standard Deviation of Random Variables](notes/rv_mean.md)
+  ~ [Combining Random Variables](notes/rv_combine.md)
 
     [HW13 due](assignments/hw13.md)
 
@@ -194,9 +194,7 @@ Day 3
 ## Week 13 (04/01-04/05)
 
 Day 1
-  ~ [Combining Random Variables](notes/rv_combine.md)
-
-    [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
+  ~ [Mean and Standard Deviation of the Binomial](notes/binomial_mean.md)
 
     [Binomial: Approximating by Normal](notes/binomial_mean.md)
 
