@@ -18,7 +18,7 @@ A linear transformation of random variables is similar to the corresponding tran
 
 $$Y = bX + a$$
 
-Let us look at an example: In a certain theater show the ticket price is $\$5$ plus twice the roll of a die. So if you roll a 3, then you pay $5 + 3\cdot 3 = \$14$.
+Let us look at an example: In a certain theater show the ticket price is $\$5$ plus twice the roll of a die. So if you roll a 3, then you pay $5 + 2\cdot 3 = \$11$.
 
 We can represent this more generally as follows: Denote by $X$ the result of rolling a die, and by $Y$ the price of the ticket. Then we can write:
 
@@ -57,7 +57,7 @@ Another key operation is when we want to add two random variables. This is a mor
 
 > **Case A**
 >
-> We roll a six-sided die. If the result is $4$ or more then Bob wins $\$2$. If it is a $3$ or a $5$, then Alice wins $\$3$. Denote by $X$ Bob's winnings, by $Y$ Alice's winnings, and by $Z$ their total winnings, which we could write symbolically as $Z = X+Y$.
+> We roll a six-sided die. If the result is $4$ or more then Bob wins $\$2$. If it is a $3$, $4$ or $5$, then Alice wins $\$3$. Denote by $X$ Bob's winnings, by $Y$ Alice's winnings, and by $Z$ their total winnings, which we could write symbolically as $Z = X+Y$.
 
 > **Case B**
 >

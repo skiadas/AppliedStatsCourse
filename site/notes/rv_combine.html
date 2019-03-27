@@ -28,7 +28,7 @@
 <h3 id="linear-transformations">Linear Transformations</h3>
 <p>A linear transformation of random variables is similar to the corresponding transformations we had seen earlier, it boils down to an equation like so:</p>
 <p><span class="math display">\[Y = bX + a\]</span></p>
-<p>Let us look at an example: In a certain theater show the ticket price is <span class="math inline">\(\$5\)</span> plus twice the roll of a die. So if you roll a 3, then you pay <span class="math inline">\(5 + 3\cdot 3 = \$14\)</span>.</p>
+<p>Let us look at an example: In a certain theater show the ticket price is <span class="math inline">\(\$5\)</span> plus twice the roll of a die. So if you roll a 3, then you pay <span class="math inline">\(5 + 2\cdot 3 = \$11\)</span>.</p>
 <p>We can represent this more generally as follows: Denote by <span class="math inline">\(X\)</span> the result of rolling a die, and by <span class="math inline">\(Y\)</span> the price of the ticket. Then we can write:</p>
 <p><span class="math display">\[Y = 2X + 5\]</span></p>
 <p>So the question is how the two variables relate. That formula is a start: It means that for any particular value of <span class="math inline">\(X\)</span> we can compute the corresponding value for <span class="math inline">\(Y\)</span>. The key thing with linear transformations is that the probabilities stay the same, only the values change. So the probability tables for our variables would look as follows:</p>
@@ -77,7 +77,7 @@
 <p>Another key operation is when we want to add two random variables. This is a more complicated operation, which actually depends on how the two variables relate to each other. Let us consider the following two problems:</p>
 <blockquote>
 <p><strong>Case A</strong></p>
-<p>We roll a six-sided die. If the result is <span class="math inline">\(4\)</span> or more then Bob wins <span class="math inline">\(\$2\)</span>. If it is a <span class="math inline">\(3\)</span> or a <span class="math inline">\(5\)</span>, then Alice wins <span class="math inline">\(\$3\)</span>. Denote by <span class="math inline">\(X\)</span> Bob’s winnings, by <span class="math inline">\(Y\)</span> Alice’s winnings, and by <span class="math inline">\(Z\)</span> their total winnings, which we could write symbolically as <span class="math inline">\(Z = X+Y\)</span>.</p>
+<p>We roll a six-sided die. If the result is <span class="math inline">\(4\)</span> or more then Bob wins <span class="math inline">\(\$2\)</span>. If it is a <span class="math inline">\(3\)</span>, <span class="math inline">\(4\)</span> or <span class="math inline">\(5\)</span>, then Alice wins <span class="math inline">\(\$3\)</span>. Denote by <span class="math inline">\(X\)</span> Bob’s winnings, by <span class="math inline">\(Y\)</span> Alice’s winnings, and by <span class="math inline">\(Z\)</span> their total winnings, which we could write symbolically as <span class="math inline">\(Z = X+Y\)</span>.</p>
 </blockquote>
 <blockquote>
 <p><strong>Case B</strong></p>
